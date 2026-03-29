@@ -3,20 +3,13 @@
   "@type": "WebSite",
   "name": "Vaskemaskin.no",
   "url": "https://vaskemaskin.no",
-  "description": "Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, kjopsguider, merkesammenligninger og vedlikeholdstips.",
+  "description": "Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, kjøpsguider, merkesammenligninger og vedlikeholdstips.",
   "inLanguage": "nb",
   "publisher": {
     "@type": "Organization",
     "name": "IT-Firma.no",
     "url": "https://it-firma.no"
   },
-  "about": [
-    {
-      "@type": "Thing",
-      "name": "Vaskemaskiner",
-      "description": "Hvitevarer for vask av tekstiler og klaer"
-    }
-  ],
   "mainEntity": {
     "@type": "ItemList",
     "name": "Vaskemaskinmerker",
@@ -34,9 +27,9 @@
   "hasPart": [
     { "@type": "WebPage", "name": "Toppmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/toppmatere/" },
     { "@type": "WebPage", "name": "Frontmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/frontmatere/" },
-    { "@type": "WebPage", "name": "Vasketorkere", "url": "https://vaskemaskin.no/kategori/vasketorker/" },
-    { "@type": "WebPage", "name": "Energi og miljo", "url": "https://vaskemaskin.no/kategori/energi-og-miljo/" },
+    { "@type": "WebPage", "name": "Vasketørkere", "url": "https://vaskemaskin.no/kategori/vasketorker/" },
+    { "@type": "WebPage", "name": "Energi og miljø", "url": "https://vaskemaskin.no/kategori/energi-og-miljo/" },
     { "@type": "WebPage", "name": "Vedlikehold", "url": "https://vaskemaskin.no/kategori/vedlikehold/" },
-    { "@type": "WebPage", "name": "Kjopsguider", "url": "https://vaskemaskin.no/kategori/kjopsguide/" }
+    { "@type": "WebPage", "name": "Kjøpsguider", "url": "https://vaskemaskin.no/kategori/kjopsguide/" }
   ]
 }

@@ -11,19 +11,11 @@ export const metadata: Metadata = {
     default: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
     template: '%s | Vaskemaskin.no',
   },
-  description: 'Norges mest komplette ressurs om vaskemaskiner. Kjopsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for aa velge riktig vaskemaskin.',
+  description: 'Norges mest komplette ressurs om vaskemaskiner. Kjøpsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for å velge riktig vaskemaskin.',
   metadataBase: new URL('https://vaskemaskin.no'),
   alternates: { canonical: 'https://vaskemaskin.no' },
-  openGraph: {
-    type: 'website',
-    locale: 'nb_NO',
-    siteName: 'Vaskemaskin.no',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  openGraph: { type: 'website', locale: 'nb_NO', siteName: 'Vaskemaskin.no' },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

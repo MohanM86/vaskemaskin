@@ -35,15 +35,15 @@ export default function CookieConsent() {
       <div className="container-site">
         <div className="bg-white rounded-xl shadow-2xl border border-slate-200 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 max-w-2xl">
           <p className="text-sm text-slate-600 flex-1">
-            Vi bruker informasjonskapsler for aa forbedre opplevelsen din og analysere trafikk.
-            Les mer i vaar <a href="/personvern/" className="text-aqua-600 underline">personvernerklaering</a>.
+            Vi bruker informasjonskapsler for å forbedre opplevelsen din og analysere trafikk.
+            Les mer i vår <a href="/personvern/" className="text-aqua-600 underline">personvernerklæring</a>.
           </p>
           <div className="flex gap-2 flex-shrink-0">
             <button
               onClick={decline}
               className="px-4 py-2 text-sm font-medium text-slate-600 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors"
             >
-              Avslaa
+              Avslå
             </button>
             <button
               onClick={accept}

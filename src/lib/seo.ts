@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 const SITE_NAME = 'Vaskemaskin.no'
 const SITE_URL = 'https://vaskemaskin.no'
-const SITE_DESCRIPTION = 'Norges mest komplette ressurs om vaskemaskiner. Kjopsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for aa velge riktig vaskemaskin.'
+const SITE_DESCRIPTION = 'Norges mest komplette ressurs om vaskemaskiner. Kjøpsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for å velge riktig vaskemaskin.'
 
 export function createMeta(opts: {
   title: string
