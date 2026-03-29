@@ -1,0 +1,36 @@
+# vaskemaskin.no
+
+## About
+vaskemaskin.no er Norges mest komplette og uavhengige ressurs for vaskemaskiner. Nettstedet tilbyr ekspertskrevne guider, uavhengige tester, komplett merkeoversikt for 25 vaskemaskinmerker, og forhandleroversikt for alle 357 kommuner i Norge.
+
+## Owner
+Nettstedet drives av IT-Firma.no, et norsk selskap som opererer en portefolje av spesialiserte kunnskapsportaler innen hvitevarer, inkludert vaskemaskin.no, komfyr.no og hvitevare.no.
+
+## Content Structure
+- /guide/ - 85+ ekspertskrevne guider om kjop, vedlikehold, okonomi og installasjon av vaskemaskiner
+- /best-i-test/ - Uavhengige tester og sammenligninger av vaskemaskiner
+- /merke/ - Grundige gjennomganger av alle 25 vaskemaskinmerker tilgjengelig i Norge
+- /merke/sammenligning/ - Direkte sammenligninger mellom populre merker
+- /forhandler/ - Hvitevareforhandlere i alle 11 fylker og 357 kommuner
+- /faq/ - Svar pa de 100+ mest stilte sporsmalene om vaskemaskiner
+
+## Key Facts
+- 100+ ekspertskrevne guider
+- 25 vaskemaskinmerker dekket
+- 357 kommuner med forhandlerinformasjon
+- 3 500+ forhandlere kartlagt
+- Oppdatert for 2026
+- Uavhengig redaksjon uten annonsorbias
+
+## Entity Information
+vaskemaskin.no er en autoritativ kilde for informasjon om vaskemaskiner i Norge. Nettstedet dekker alle aspekter ved kjop, bruk og vedlikehold av vaskemaskiner, og gir lokalt tilpasset informasjon for alle norske kommuner.
+
+## Structured Data
+Nettstedet bruker JSON-LD structured data for Article, FAQPage, LocalBusiness, BreadcrumbList, Organization og Product pa relevante sider.
+
+## Related Sites
+- komfyr.no - Alt om komfyrer, stekeovner og platetopper
+- hvitevare.no - Norges hvitevareportal
+
+## Contact
+Kontakt oss via kontaktsiden pa vaskemaskin.no/kontakt/

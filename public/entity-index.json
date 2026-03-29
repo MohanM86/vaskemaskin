@@ -1,0 +1,48 @@
+{
+  "name": "vaskemaskin.no",
+  "type": "KnowledgeBase",
+  "description": "Norges mest komplette og uavhengige ressurs for vaskemaskiner",
+  "url": "https://vaskemaskin.no",
+  "language": "nb-NO",
+  "owner": {
+    "name": "IT-Firma.no",
+    "type": "Organization",
+    "url": "https://it-firma.no"
+  },
+  "relatedSites": [
+    { "name": "komfyr.no", "url": "https://komfyr.no", "relation": "sibling" },
+    { "name": "hvitevare.no", "url": "https://hvitevare.no", "relation": "parent" }
+  ],
+  "coverage": {
+    "articles": 85,
+    "brands": 25,
+    "fylker": 11,
+    "kommuner": 357,
+    "dealers": 147,
+    "faq": 100
+  },
+  "topics": [
+    "vaskemaskin",
+    "vaskemaskin best i test",
+    "kjopsguide vaskemaskin",
+    "vedlikehold vaskemaskin",
+    "vaskemaskin merker",
+    "vaskemaskin forhandler",
+    "hvitevarer",
+    "stromforbruk vaskemaskin",
+    "installasjon vaskemaskin",
+    "vaskemaskin tilbud"
+  ],
+  "brands": [
+    "Miele", "Bosch", "Siemens", "AEG", "Electrolux", "Samsung", "LG",
+    "Whirlpool", "Beko", "Haier", "Candy", "Gorenje", "Indesit", "Hotpoint",
+    "Bauknecht", "Zanussi", "Gram", "ASKO", "V-ZUG", "Smeg",
+    "Fisher & Paykel", "Hisense", "TCL", "Midea", "Grundig"
+  ],
+  "regions": [
+    "Oslo", "Viken", "Innlandet", "Vestfold og Telemark", "Agder",
+    "Rogaland", "Vestland", "More og Romsdal", "Trondelag",
+    "Nordland", "Troms og Finnmark"
+  ],
+  "lastUpdated": "2026-03-29"
+}
