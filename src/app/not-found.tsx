@@ -1,28 +1,19 @@
-import Link from "next/link"
+import Link from 'next/link'
+import { IconWasher } from '@/components/Icons'
 
 export default function NotFound() {
   return (
-    <section className="section" style={{ textAlign: "center", paddingTop: "6rem", paddingBottom: "6rem" }}>
-      <div className="container container-narrow">
-        <h1 style={{ fontSize: "4rem", fontWeight: 700, color: "var(--blue)", marginBottom: "1rem" }}>
-          404
-        </h1>
-        <h2 style={{ fontSize: "1.5rem", fontWeight: 600, marginBottom: "1rem" }}>
-          Siden finnes ikke
-        </h2>
-        <p style={{ color: "var(--muted)", marginBottom: "2rem" }}>
-          Beklager, men siden du leter etter eksisterer ikke eller har blitt
-          flyttet.
-        </p>
-        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/" className="btn-primary">
-            Til forsiden
-          </Link>
-          <Link href="/artikler" className="btn-secondary">
-            Se alle artikler
-          </Link>
-        </div>
+    <div className="container-site py-24 text-center">
+      <div className="text-aqua-300 mb-6">
+        <IconWasher size={64} />
       </div>
-    </section>
+      <h1 className="font-serif text-4xl font-bold text-slate-900 mb-3">Siden ble ikke funnet</h1>
+      <p className="text-lg text-slate-500 mb-8 max-w-md mx-auto">
+        Beklager, men siden du leter etter finnes ikke. Den kan ha blitt flyttet eller slettet.
+      </p>
+      <Link href="/" className="btn-primary">
+        Tilbake til forsiden
+      </Link>
+    </div>
   )
 }

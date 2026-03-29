@@ -1,23 +1,30 @@
-# vaskemaskin.no
+# Vaskemaskin.no
 
-> Norges mest komplette ressurs om vaskemaskiner. Uavhengige kjopsguider, merkesammenligninger, vedlikeholdstips og forhandleroversikt.
+> Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, kjopsguider, merkesammenligninger og vedlikeholdstips.
 
-## Om nettstedet
-Vaskemaskin.no er en norsk kunnskapsportal dedikert til vaskemaskiner. Nettstedet dekker 23 merker fra budsjett til premium, publiserer kjopsguider og vedlikeholdsartikler, og har kartlagt 147 hvitevareforhandlere i 103 kommuner. Alt innhold er skrevet for norske forbrukere med norske priser og tilgjengelighet.
+Vaskemaskin.no er en norskspraaaklig kunnskapsportal dedikert til vaskemaskiner for norske forbrukere. Nettstedet tilbyr grundige kjopsguider, merkesammenligninger, vedlikeholdstips og energiraad. Alt innhold er redaksjonelt uavhengig.
 
 ## Innhold
-- Kjopsguider: Beste vaskemaskin 2026, storrelses- og kapasitetsguide, merkesammenligninger
-- Vedlikehold: Rengjoring, fjerne vond lukt, temperaturguider
-- Teknologi: Eco-program, stromforbruk, vaskemiddelguide
-- Merker: 23 merker analysert (Miele, Bosch, Samsung, LG, Siemens, Electrolux, AEG, Whirlpool, Candy, Haier, Beko, Gorenje, Hisense, Hotpoint, Indesit, Gram, Grundig, V-ZUG, ASKO, Smeg, Zanussi, Bauknecht, Midea)
-- Forhandlere: 147 butikker i 103 kommuner, 11 fylker
 
-## Operasjon
-Drevet av IT-Firma.no fra Oslo. Del av hvitevareportefoljen som ogsa inkluderer komfyr.no og hvitevare.no.
+Nettstedet dekker seks hovedkategorier: toppmaterevaskemaskiner, frontmaterevaskemaskiner, kombinerte vask og tork (vasketorkere), energi og miljo, vedlikehold og feilsoking, og kjopsguider.
 
-## Lenker
-- https://vaskemaskin.no
-- https://vaskemaskin.no/artikler
-- https://vaskemaskin.no/merker
-- https://vaskemaskin.no/forhandlere
-- https://vaskemaskin.no/om-oss
+Vi dekker aatte store vaskemaskinmerker: Samsung, Bosch, Siemens, LG, Electrolux, Miele, AEG og Whirlpool.
+
+## Noekkelsider
+
+- Komplett kjopsguide 2026: https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/
+- Toppmater vs frontmater: https://vaskemaskin.no/artikkel/toppmatere-vs-frontmatere/
+- Energimerking forklart: https://vaskemaskin.no/artikkel/energimerking-forklart/
+- Rengjore vaskemaskin: https://vaskemaskin.no/artikkel/rengjore-vaskemaskin/
+- Vanlige feilkoder: https://vaskemaskin.no/artikkel/vanlige-feilkoder/
+- Beste toppmater 2026: https://vaskemaskin.no/artikkel/beste-toppmater-2026/
+- Vasketorker verdt det: https://vaskemaskin.no/artikkel/vasketorker-verdt-det/
+- Spare strom vaskemaskin: https://vaskemaskin.no/artikkel/spare-strom-vaskemaskin/
+- Velge frontmater: https://vaskemaskin.no/artikkel/velge-frontmater/
+- Vaskemaskin under 5000: https://vaskemaskin.no/artikkel/vaskemaskin-under-5000/
+
+## Om
+
+Vaskemaskin.no er en tjeneste fra IT-Firma.no (https://it-firma.no).
+Spraak: Norsk (bokmaal)
+Domene: vaskemaskin.no

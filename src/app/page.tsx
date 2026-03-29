@@ -1,313 +1,184 @@
-import Link from "next/link"
-import { articles } from "@/data/articles"
-import { brands } from "@/data/brands"
-import { Metadata } from "next"
+import Link from 'next/link'
+import { categories } from '@/data/categories'
+import { brands } from '@/data/brands'
+import { articles } from '@/data/articles'
+import { CategoryIcon, IconArrow, IconWasher } from '@/components/Icons'
+import { ArticleCard } from '@/components/UI'
+import { jsonLdWebSite, jsonLdOrganization, jsonLdFaq } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: "Vaskemaskin.no | Norges komplette vaskemaskin-guide",
-  description:
-    "Alt om vaskemaskiner samlet pa ett sted. Kjøpsguider, merkesammenligninger, vedlikeholdstips og forhandleroversikt for hele Norge. Finn riktig vaskemaskin for ditt behov.",
-  openGraph: {
-    title: "Vaskemaskin.no | Norges komplette vaskemaskin-guide",
-    description:
-      "Kjøpsguider, merkesammenligninger, vedlikeholdstips og forhandleroversikt. Finn riktig vaskemaskin for ditt behov.",
-    url: "https://vaskemaskin.no",
-    siteName: "Vaskemaskin.no",
-    locale: "nb_NO",
-    type: "website",
-  },
-}
-
-const heroStats = [
-  { value: "25+", label: "Merker analysert" },
-  { value: "85+", label: "Guider og artikler" },
-  { value: "147", label: "Forhandlere i Norge" },
-  { value: "11", label: "Fylker dekket" },
+const heroFaq = [
+  { question: 'Hvilken vaskemaskin er best i 2026?', answer: 'Det avhenger av dine behov. For de fleste familier er en frontmater med aatte kilo kapasitet og energiklasse B eller C det beste valget. Merker som Bosch, Samsung og Electrolux tilbyr solide modeller i alle prisklasser.' },
+  { question: 'Hvor lenge varer en vaskemaskin?', answer: 'En vaskemaskin varer i gjennomsnitt 10 til 12 aar ved normal bruk. Premiummerker som Miele tester for 20 aars levetid. Riktig vedlikehold kan forlenge levetiden betydelig.' },
+  { question: 'Hva koster en god vaskemaskin i Norge?', answer: 'En god vaskemaskin koster typisk mellom fem tusen og ti tusen kroner. For under fem tusen faar du grunnleggende modeller som vasker godt. Over ti tusen faar du premiumfunksjoner som automatisk dosering og dampfunksjon.' },
 ]
-
-const categoryLinks = [
-  { href: "/artikler", label: "Alle artikler", desc: "Guider, tester og tips" },
-  { href: "/merker", label: "Alle merker", desc: "25 vaskemaskinmerker" },
-  { href: "/forhandlere", label: "Finn forhandler", desc: "147 butikker i Norge" },
-  { href: "/fylke", label: "Fylkesoversikt", desc: "Forhandlere per fylke" },
-]
-
-function ArticleCard({ article }: { article: (typeof articles)[0] }) {
-  const categoryLabels: Record<string, string> = {
-    guide: "Kjopsguide",
-    test: "Test",
-    vedlikehold: "Vedlikehold",
-    tips: "Tips",
-    teknologi: "Teknologi",
-  }
-  return (
-    <Link href={"/artikler/" + article.slug} className="article-card group">
-      <div className="article-card-category">
-        {categoryLabels[article.category] || article.category}
-      </div>
-      <h3 className="article-card-title">{article.title}</h3>
-      <p className="article-card-excerpt">{article.excerpt}</p>
-      <div className="article-card-meta">
-        <span>{article.readingTime} min lesetid</span>
-        <span className="article-card-arrow group-hover:translate-x-1 transition-transform">
-          Les mer
-        </span>
-      </div>
-    </Link>
-  )
-}
-
-function BrandPill({ brand }: { brand: (typeof brands)[0] }) {
-  const rangeLabels: Record<string, string> = {
-    budsjett: "Budsjett",
-    mellomklasse: "Mellomklasse",
-    premium: "Premium",
-  }
-  return (
-    <Link href={"/merker/" + brand.slug} className="brand-pill group">
-      <span className="brand-pill-name">{brand.name}</span>
-      <span className="brand-pill-range">{rangeLabels[brand.priceRange]}</span>
-    </Link>
-  )
-}
 
 export default function HomePage() {
   const featuredArticles = articles.slice(0, 6)
-  const premiumBrands = brands.filter((b) => b.priceRange === "premium")
-  const midBrands = brands.filter((b) => b.priceRange === "mellomklasse")
-  const budgetBrands = brands.filter((b) => b.priceRange === "budsjett")
-
-  const homeFaq = [
-    {
-      q: "Hvilken vaskemaskin er best i 2026?",
-      a: "De best testede vaskemaskinene i 2026 er Miele WSD663 (premium), Bosch WGG244A (mellomklasse) og Samsung WW90T (best verdi). Valget avhenger av budsjett og prioriteringer.",
-    },
-    {
-      q: "Hvor mye koster en god vaskemaskin?",
-      a: "En god vaskemaskin for de fleste koster mellom 6000 og 10000 kroner. Under 5000 far du enkle budsjettmodeller. Over 12000 far du premiummodeller fra Miele og Siemens.",
-    },
-    {
-      q: "Hvor lenge varer en vaskemaskin?",
-      a: "Levetiden varierer fra 7 til 20 ar avhengig av merke og vedlikehold. Miele designer for 20 ar, Bosch for 15 ar, Samsung og LG for 10 til 12 ar, og budsjettmerker for 7 til 10 ar.",
-    },
-    {
-      q: "Er det verdt a kjope dyr vaskemaskin?",
-      a: "Over maskinens levetid kan en dyrere maskin lonne seg. En Miele til 15000 kroner som varer 20 ar koster 750 kroner per ar. En budsjettmaskin til 4000 kroner som varer 8 ar koster 500 kroner per ar, men med darligere vaskeresultat og hoyere stromforbruk.",
-    },
-    {
-      q: "Hvilken storrelse vaskemaskin trenger jeg?",
-      a: "For single eller par: 7 til 8 kg. For familier med barn: 9 til 10 kg. For store familier: 10 til 12 kg. Velg kapasitet basert pa hvor mye du vasker per uke.",
-    },
-    {
-      q: "Hva er vaskemaskin.no?",
-      a: "Vaskemaskin.no er Norges mest komplette ressurs om vaskemaskiner. Vi tilbyr uavhengige kjopsguider, merkesammenligninger, vedlikeholdstips og en oversikt over forhandlere i hele Norge.",
-    },
-  ]
 
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              Alt om vaskemaskiner, samlet pa ett sted
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(heroFaq)) }}
+      />
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-aqua-50 via-white to-slate-50">
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #0D9488 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="container-site relative py-16 sm:py-24 lg:py-28">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-aqua-100/60 text-aqua-700 text-xs font-semibold mb-6">
+              <IconWasher size={14} />
+              Uavhengig ressurs for norske forbrukere
+            </div>
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-5">
+              Alt du trenger aa vite om <span className="text-aqua-600">vaskemaskiner</span>
             </h1>
-            <p className="hero-subtitle">
-              Uavhengige kjopsguider, merkesammenligninger, vedlikeholdstips og
-              forhandleroversikt for hele Norge. Vi hjelper deg a finne riktig
-              vaskemaskin for ditt behov og budsjett.
+            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl">
+              Kjopsguider, merkesammenligninger, vedlikeholdstips og ekspertanbefalinger.
+              Vi hjelper deg aa finne den perfekte vaskemaskinen for ditt hjem.
             </p>
-            <div className="hero-actions">
-              <Link href="/artikler/beste-vaskemaskin-2026" className="btn-primary">
-                Se beste vaskemaskin 2026
+            <div className="flex flex-wrap gap-3">
+              <Link href="/artikkel/komplett-kjopsguide-2026/" className="btn-primary">
+                Les kjopsguiden
+                <IconArrow size={16} color="white" />
               </Link>
-              <Link href="/merker" className="btn-secondary">
-                Sammenlign merker
+              <Link href="/kategori/frontmatere/" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-semibold text-sm hover:border-aqua-300 hover:text-aqua-700 transition-all">
+                Utforsk kategorier
               </Link>
             </div>
           </div>
-          <div className="hero-stats">
-            {heroStats.map((stat) => (
-              <div key={stat.label} className="hero-stat">
-                <span className="hero-stat-value">{stat.value}</span>
-                <span className="hero-stat-label">{stat.label}</span>
-              </div>
-            ))}
+        </div>
+      </section>
+
+      {/* Stats bar */}
+      <section className="border-y border-slate-200 bg-white">
+        <div className="container-site py-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="font-serif text-2xl font-bold text-aqua-600">8</div>
+              <div className="text-sm text-slate-500 mt-0.5">merker sammenlignet</div>
+            </div>
+            <div>
+              <div className="font-serif text-2xl font-bold text-aqua-600">10</div>
+              <div className="text-sm text-slate-500 mt-0.5">grundige artikler</div>
+            </div>
+            <div>
+              <div className="font-serif text-2xl font-bold text-aqua-600">6</div>
+              <div className="text-sm text-slate-500 mt-0.5">kategorier dekket</div>
+            </div>
+            <div>
+              <div className="font-serif text-2xl font-bold text-aqua-600">100%</div>
+              <div className="text-sm text-slate-500 mt-0.5">uavhengig innhold</div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Siste artikler og guider</h2>
-            <Link href="/artikler" className="section-link">
-              Se alle artikler
-            </Link>
+      {/* Categories */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container-site">
+          <div className="text-center mb-12">
+            <h2 className="section-heading mb-3">Utforsk etter kategori</h2>
+            <p className="section-subheading mx-auto">
+              Fra toppmateere og frontmatere til vedlikeholdstips og energiguider
+            </p>
           </div>
-          <div className="articles-grid">
-            {featuredArticles.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-alt">
-        <div className="container">
-          <h2 className="section-title">Vaskemaskinmerker i Norge</h2>
-          <p className="section-desc">
-            Vi dekker 25 merker fra budsjett til premium. Finn det merket som
-            passer ditt behov og din lommebok.
-          </p>
-          <div className="brands-section">
-            <div className="brands-group">
-              <h3 className="brands-group-label">Premium</h3>
-              <div className="brands-pills">
-                {premiumBrands.map((b) => (
-                  <BrandPill key={b.slug} brand={b} />
-                ))}
-              </div>
-            </div>
-            <div className="brands-group">
-              <h3 className="brands-group-label">Mellomklasse</h3>
-              <div className="brands-pills">
-                {midBrands.map((b) => (
-                  <BrandPill key={b.slug} brand={b} />
-                ))}
-              </div>
-            </div>
-            <div className="brands-group">
-              <h3 className="brands-group-label">Budsjett</h3>
-              <div className="brands-pills">
-                {budgetBrands.map((b) => (
-                  <BrandPill key={b.slug} brand={b} />
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <Link href="/merker" className="btn-secondary">
-              Se alle 25 merker
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <h2 className="section-title">Utforsk vaskemaskin.no</h2>
-          <div className="category-grid">
-            {categoryLinks.map((cat) => (
-              <Link key={cat.href} href={cat.href} className="category-card group">
-                <h3 className="category-card-title group-hover:text-[var(--blue)]">
-                  {cat.label}
-                </h3>
-                <p className="category-card-desc">{cat.desc}</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {categories.map(cat => (
+              <Link
+                key={cat.slug}
+                href={'/kategori/' + cat.slug + '/'}
+                className="group flex items-start gap-4 p-5 rounded-xl border border-slate-200 bg-white hover:border-aqua-300 hover:shadow-md transition-all"
+              >
+                <div className="w-11 h-11 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600 group-hover:bg-aqua-100 transition-colors flex-shrink-0">
+                  <CategoryIcon slug={cat.slug} size={22} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900 group-hover:text-aqua-700 transition-colors">{cat.shortName}</h3>
+                  <p className="text-sm text-slate-500 mt-1 line-clamp-2">{cat.description}</p>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section section-alt">
-        <div className="container container-narrow">
-          <h2 className="section-title">Ofte stilte sporsmal</h2>
-          <div className="faq-list">
-            {homeFaq.map((item, i) => (
-              <details key={i} className="faq-item">
-                <summary className="faq-question">{item.q}</summary>
-                <p className="faq-answer">{item.a}</p>
+      {/* Featured articles */}
+      <section className="py-16 sm:py-20 bg-slate-50">
+        <div className="container-site">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <h2 className="section-heading mb-2">Siste artikler</h2>
+              <p className="section-subheading">Grundige guider og oppdaterte anbefalinger</p>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {featuredArticles.map(article => (
+              <div key={article.slug} className="reveal">
+                <ArticleCard article={article} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brands */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container-site">
+          <div className="text-center mb-12">
+            <h2 className="section-heading mb-3">Merker vi dekker</h2>
+            <p className="section-subheading mx-auto">
+              Uavhengige oversikter over de stoerste vaskemaskinmerkene i Norge
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {brands.map(brand => (
+              <Link
+                key={brand.slug}
+                href={'/merke/' + brand.slug + '/'}
+                className="group flex items-center gap-3 p-4 rounded-xl border border-slate-200 bg-white hover:border-aqua-300 hover:shadow-sm transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-sm font-bold text-slate-500 group-hover:bg-aqua-50 group-hover:text-aqua-600 transition-colors">
+                  {brand.name.charAt(0)}
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-slate-900 group-hover:text-aqua-700 transition-colors">{brand.name}</div>
+                  <div className="text-xs text-slate-400">{brand.country}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 sm:py-20 bg-slate-50">
+        <div className="container-site max-w-3xl">
+          <h2 className="section-heading text-center mb-10">Ofte stilte spoersmaal</h2>
+          <div className="space-y-3">
+            {heroFaq.map((item, i) => (
+              <details key={i} className="group border border-slate-200 rounded-lg overflow-hidden bg-white">
+                <summary className="flex items-center justify-between cursor-pointer p-5 text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                  {item.question}
+                  <svg className="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9" /></svg>
+                </summary>
+                <div className="px-5 pb-5 text-sm text-slate-600 leading-relaxed">
+                  {item.answer}
+                </div>
               </details>
             ))}
           </div>
         </div>
       </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="pillar-content">
-            <h2>Vaskemaskin.no: Din komplette vaskemaskin-ressurs</h2>
-            <p>
-              Vaskemaskin.no er bygget for a gi norske forbrukere den beste og
-              mest komplette informasjonen om vaskemaskiner. Enten du skal kjope
-              din forste vaskemaskin, oppgradere en gammel modell, eller bare
-              trenger hjelp med vedlikehold, finner du svarene her.
-            </p>
-            <p>
-              Vi dekker over 25 merker fra <Link href="/merker/miele">Miele</Link> og{" "}
-              <Link href="/merker/bosch">Bosch</Link> i premiumsegmentet, via{" "}
-              <Link href="/merker/samsung">Samsung</Link>,{" "}
-              <Link href="/merker/lg">LG</Link> og{" "}
-              <Link href="/merker/electrolux">Electrolux</Link> i mellomklassen,
-              til <Link href="/merker/beko">Beko</Link> og{" "}
-              <Link href="/merker/candy">Candy</Link> for de som ser etter
-              budsjettaltternativer. Hver merkeside inneholder detaljert
-              informasjon om teknologi, populare modeller, priser og
-              brukererfaringer.
-            </p>
-            <p>
-              Vare <Link href="/artikler">guider og artikler</Link> dekker alt
-              fra{" "}
-              <Link href="/artikler/beste-vaskemaskin-2026">
-                kjopsguide for beste vaskemaskin
-              </Link>{" "}
-              til praktiske emner som{" "}
-              <Link href="/artikler/vaskemaskin-rengjoring-vedlikehold">
-                rengjoring og vedlikehold
-              </Link>
-              ,{" "}
-              <Link href="/artikler/vaskemaskin-strom-forbruk">
-                stromforbruk og sparing
-              </Link>{" "}
-              og{" "}
-              <Link href="/artikler/vaskemaskin-temperatur-guide">
-                riktig vasketemperatur
-              </Link>
-              .
-            </p>
-            <p>
-              Med var <Link href="/forhandlere">forhandleroversikt</Link> kan du
-              finne hvitevarebutikker i nerheten, fordelt pa{" "}
-              <Link href="/fylke">alle fylker</Link> og kommuner i Norge. Vi
-              dekker 147 forhandlere pa tvers av 103 kommuner.
-            </p>
-            <p>
-              Vaskemaskin.no er en del av hvitevareportefoljen til{" "}
-              <a href="https://it-firma.no" target="_blank" rel="noopener noreferrer">
-                IT-Firma.no
-              </a>
-              , som ogsa inkluderer{" "}
-              <a href="https://komfyr.no" target="_blank" rel="noopener noreferrer">
-                komfyr.no
-              </a>{" "}
-              og{" "}
-              <a href="https://hvitevare.no" target="_blank" rel="noopener noreferrer">
-                hvitevare.no
-              </a>
-              .
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: homeFaq.map((item) => ({
-              "@type": "Question",
-              name: item.q,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: item.a,
-              },
-            })),
-          }),
-        }}
-      />
     </>
   )
 }

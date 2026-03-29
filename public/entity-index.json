@@ -1,35 +1,42 @@
 {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
   "name": "Vaskemaskin.no",
   "url": "https://vaskemaskin.no",
-  "description": "Norges mest komplette ressurs om vaskemaskiner",
-  "language": "nb-NO",
-  "operator": {
+  "description": "Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, kjopsguider, merkesammenligninger og vedlikeholdstips.",
+  "inLanguage": "nb",
+  "publisher": {
+    "@type": "Organization",
     "name": "IT-Firma.no",
-    "url": "https://it-firma.no",
-    "location": "Oslo, Norge"
+    "url": "https://it-firma.no"
   },
-  "portfolio": [
-    { "name": "Vaskemaskin.no", "url": "https://vaskemaskin.no", "focus": "Vaskemaskiner" },
-    { "name": "Komfyr.no", "url": "https://komfyr.no", "focus": "Komfyrer og ovner" },
-    { "name": "Hvitevare.no", "url": "https://hvitevare.no", "focus": "Hvitevarer generelt" }
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Vaskemaskiner",
+      "description": "Hvitevarer for vask av tekstiler og klaer"
+    }
   ],
-  "content": {
-    "articles": 11,
-    "brands": 23,
-    "dealers": 147,
-    "municipalities": 103,
-    "counties": 11
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Vaskemaskinmerker",
+    "itemListElement": [
+      { "@type": "Brand", "name": "Samsung", "url": "https://vaskemaskin.no/merke/samsung/" },
+      { "@type": "Brand", "name": "Bosch", "url": "https://vaskemaskin.no/merke/bosch/" },
+      { "@type": "Brand", "name": "Siemens", "url": "https://vaskemaskin.no/merke/siemens/" },
+      { "@type": "Brand", "name": "LG", "url": "https://vaskemaskin.no/merke/lg/" },
+      { "@type": "Brand", "name": "Electrolux", "url": "https://vaskemaskin.no/merke/electrolux/" },
+      { "@type": "Brand", "name": "Miele", "url": "https://vaskemaskin.no/merke/miele/" },
+      { "@type": "Brand", "name": "AEG", "url": "https://vaskemaskin.no/merke/aeg/" },
+      { "@type": "Brand", "name": "Whirlpool", "url": "https://vaskemaskin.no/merke/whirlpool/" }
+    ]
   },
-  "brands": [
-    "Samsung", "LG", "Bosch", "Siemens", "Miele", "Electrolux", "AEG",
-    "Whirlpool", "Candy", "Haier", "Beko", "Gorenje", "Hisense", "Hotpoint",
-    "Indesit", "Gram", "Grundig", "V-ZUG", "ASKO", "Smeg", "Zanussi",
-    "Bauknecht", "Midea"
-  ],
-  "urlPatterns": {
-    "articles": "https://vaskemaskin.no/artikler/{slug}",
-    "brands": "https://vaskemaskin.no/merker/{slug}",
-    "dealers": "https://vaskemaskin.no/forhandlere",
-    "counties": "https://vaskemaskin.no/fylke/{slug}"
-  }
+  "hasPart": [
+    { "@type": "WebPage", "name": "Toppmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/toppmatere/" },
+    { "@type": "WebPage", "name": "Frontmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/frontmatere/" },
+    { "@type": "WebPage", "name": "Vasketorkere", "url": "https://vaskemaskin.no/kategori/vasketorker/" },
+    { "@type": "WebPage", "name": "Energi og miljo", "url": "https://vaskemaskin.no/kategori/energi-og-miljo/" },
+    { "@type": "WebPage", "name": "Vedlikehold", "url": "https://vaskemaskin.no/kategori/vedlikehold/" },
+    { "@type": "WebPage", "name": "Kjopsguider", "url": "https://vaskemaskin.no/kategori/kjopsguide/" }
+  ]
 }

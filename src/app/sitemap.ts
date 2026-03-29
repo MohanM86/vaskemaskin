@@ -1,62 +1,39 @@
-import { MetadataRoute } from "next"
-import { articles } from "@/data/articles"
-import { brands } from "@/data/brands"
+import type { MetadataRoute } from 'next'
+import { getAllCategorySlugs } from '@/data/categories'
+import { getAllArticleSlugs } from '@/data/articles'
+import { getAllBrandSlugs } from '@/data/brands'
+
+const BASE = 'https://vaskemaskin.no'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://vaskemaskin.no"
+  const now = new Date().toISOString()
 
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "weekly",
-      priority: 1.0,
-    },
-    {
-      url: baseUrl + "/artikler",
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: baseUrl + "/merker",
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: baseUrl + "/forhandlere",
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: baseUrl + "/fylke",
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: baseUrl + "/om-oss",
-      lastModified: new Date("2026-03-15"),
-      changeFrequency: "monthly",
-      priority: 0.4,
-    },
+    { url: BASE + '/', lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
+    { url: BASE + '/om-oss/', lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: BASE + '/personvern/', lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
   ]
 
-  const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
-    url: baseUrl + "/artikler/" + a.slug,
-    lastModified: new Date(a.updatedDate),
-    changeFrequency: "monthly" as const,
+  const categoryPages: MetadataRoute.Sitemap = getAllCategorySlugs().map(slug => ({
+    url: BASE + '/kategori/' + slug + '/',
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
 
-  const brandPages: MetadataRoute.Sitemap = brands.map((b) => ({
-    url: baseUrl + "/merker/" + b.slug,
-    lastModified: new Date("2026-03-15"),
-    changeFrequency: "monthly" as const,
+  const brandPages: MetadataRoute.Sitemap = getAllBrandSlugs().map(slug => ({
+    url: BASE + '/merke/' + slug + '/',
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
-  return [...staticPages, ...articlePages, ...brandPages]
+  const articlePages: MetadataRoute.Sitemap = getAllArticleSlugs().map(slug => ({
+    url: BASE + '/artikkel/' + slug + '/',
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  return [...staticPages, ...categoryPages, ...brandPages, ...articlePages]
 }

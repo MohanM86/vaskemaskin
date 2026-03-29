@@ -1,30 +1,29 @@
-import { MetadataRoute } from "next"
+import type { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/api/"],
+        userAgent: '*',
+        allow: '/',
       },
       {
-        userAgent: "GPTBot",
-        allow: "/",
+        userAgent: 'GPTBot',
+        allow: '/',
       },
       {
-        userAgent: "ClaudeBot",
-        allow: "/",
+        userAgent: 'ClaudeBot',
+        allow: '/',
       },
       {
-        userAgent: "PerplexityBot",
-        allow: "/",
+        userAgent: 'PerplexityBot',
+        allow: '/',
       },
       {
-        userAgent: "GoogleOther",
-        allow: "/",
+        userAgent: 'GoogleOther',
+        allow: '/',
       },
     ],
-    sitemap: "https://vaskemaskin.no/sitemap.xml",
+    sitemap: 'https://vaskemaskin.no/sitemap.xml',
   }
 }
