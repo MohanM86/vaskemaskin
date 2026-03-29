@@ -7,41 +7,47 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="container-site py-14">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
-          <div className="col-span-2 md:col-span-4 lg:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-6">
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="text-aqua-400"><IconWasher size={24} /></div>
               <span className="font-serif text-lg font-bold text-white">Vaskemaskin<span className="text-aqua-400">.no</span></span>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed">Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, grundige guider og ekspertanbefalinger.</p>
+            <p className="text-sm text-slate-400 leading-relaxed">Norges mest komplette ressurs om vaskemaskiner.</p>
           </div>
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Kategorier</h3>
-            <ul className="space-y-2.5">
-              {categories.map(cat => (<li key={cat.slug}><Link href={'/kategori/' + cat.slug + '/'} className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">{cat.shortName}</Link></li>))}
-            </ul>
+            <ul className="space-y-2">{categories.map(cat => (<li key={cat.slug}><Link href={'/kategori/' + cat.slug + '/'} className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">{cat.shortName}</Link></li>))}</ul>
           </div>
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Merker</h3>
-            <ul className="space-y-2.5">
-              {brands.slice(0, 8).map(brand => (<li key={brand.slug}><Link href={'/merke/' + brand.slug + '/'} className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">{brand.name}</Link></li>))}
+            <ul className="space-y-2">{brands.slice(0, 10).map(b => (<li key={b.slug}><Link href={'/merke/' + b.slug + '/'} className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">{b.name}</Link></li>))}</ul>
+          </div>
+          <div>
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Verktøy</h3>
+            <ul className="space-y-2">
+              <li><Link href="/feilkode/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Feilkoder</Link></li>
+              <li><Link href="/bruksanvisning/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bruksanvisninger</Link></li>
+              <li><Link href="/ordliste/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Ordliste A til Å</Link></li>
+              <li><Link href="/fylker/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Finn butikk</Link></li>
+              <li><Link href="/butikker/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Alle butikker</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Populært</h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               <li><Link href="/artikkel/komplett-kjopsguide-2026/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Kjøpsguide 2026</Link></li>
-              <li><Link href="/artikkel/toppmatere-vs-frontmatere/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Toppmater vs frontmater</Link></li>
-              <li><Link href="/artikkel/energimerking-forklart/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Energimerking forklart</Link></li>
-              <li><Link href="/artikkel/rengjore-vaskemaskin/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Rengjøre vaskemaskin</Link></li>
-              <li><Link href="/artikkel/vaskemaskin-under-5000/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Under 5000 kr</Link></li>
+              <li><Link href="/sammenligning/bosch-vs-samsung/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bosch vs Samsung</Link></li>
+              <li><Link href="/artikkel/energimerking-forklart/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Energimerking</Link></li>
+              <li><Link href="/artikkel/rengjore-vaskemaskin/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Rengjøring</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Informasjon</h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               <li><Link href="/om-oss/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Om oss</Link></li>
               <li><Link href="/personvern/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Personvern</Link></li>
+              <li><a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">IT-Firma.no</a></li>
             </ul>
           </div>
         </div>
