@@ -1,48 +1,35 @@
 {
-  "name": "vaskemaskin.no",
-  "type": "KnowledgeBase",
-  "description": "Norges mest komplette og uavhengige ressurs for vaskemaskiner",
+  "name": "Vaskemaskin.no",
   "url": "https://vaskemaskin.no",
+  "description": "Norges mest komplette ressurs om vaskemaskiner",
   "language": "nb-NO",
-  "owner": {
+  "operator": {
     "name": "IT-Firma.no",
-    "type": "Organization",
-    "url": "https://it-firma.no"
+    "url": "https://it-firma.no",
+    "location": "Oslo, Norge"
   },
-  "relatedSites": [
-    { "name": "komfyr.no", "url": "https://komfyr.no", "relation": "sibling" },
-    { "name": "hvitevare.no", "url": "https://hvitevare.no", "relation": "parent" }
+  "portfolio": [
+    { "name": "Vaskemaskin.no", "url": "https://vaskemaskin.no", "focus": "Vaskemaskiner" },
+    { "name": "Komfyr.no", "url": "https://komfyr.no", "focus": "Komfyrer og ovner" },
+    { "name": "Hvitevare.no", "url": "https://hvitevare.no", "focus": "Hvitevarer generelt" }
   ],
-  "coverage": {
-    "articles": 85,
-    "brands": 25,
-    "fylker": 11,
-    "kommuner": 357,
+  "content": {
+    "articles": 11,
+    "brands": 23,
     "dealers": 147,
-    "faq": 100
+    "municipalities": 103,
+    "counties": 11
   },
-  "topics": [
-    "vaskemaskin",
-    "vaskemaskin best i test",
-    "kjopsguide vaskemaskin",
-    "vedlikehold vaskemaskin",
-    "vaskemaskin merker",
-    "vaskemaskin forhandler",
-    "hvitevarer",
-    "stromforbruk vaskemaskin",
-    "installasjon vaskemaskin",
-    "vaskemaskin tilbud"
-  ],
   "brands": [
-    "Miele", "Bosch", "Siemens", "AEG", "Electrolux", "Samsung", "LG",
-    "Whirlpool", "Beko", "Haier", "Candy", "Gorenje", "Indesit", "Hotpoint",
-    "Bauknecht", "Zanussi", "Gram", "ASKO", "V-ZUG", "Smeg",
-    "Fisher & Paykel", "Hisense", "TCL", "Midea", "Grundig"
+    "Samsung", "LG", "Bosch", "Siemens", "Miele", "Electrolux", "AEG",
+    "Whirlpool", "Candy", "Haier", "Beko", "Gorenje", "Hisense", "Hotpoint",
+    "Indesit", "Gram", "Grundig", "V-ZUG", "ASKO", "Smeg", "Zanussi",
+    "Bauknecht", "Midea"
   ],
-  "regions": [
-    "Oslo", "Viken", "Innlandet", "Vestfold og Telemark", "Agder",
-    "Rogaland", "Vestland", "More og Romsdal", "Trondelag",
-    "Nordland", "Troms og Finnmark"
-  ],
-  "lastUpdated": "2026-03-29"
+  "urlPatterns": {
+    "articles": "https://vaskemaskin.no/artikler/{slug}",
+    "brands": "https://vaskemaskin.no/merker/{slug}",
+    "dealers": "https://vaskemaskin.no/forhandlere",
+    "counties": "https://vaskemaskin.no/fylke/{slug}"
+  }
 }
