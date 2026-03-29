@@ -1,0 +1,115 @@
+export interface ErrorCode {
+  code: string
+  slug: string
+  brand: string
+  brandSlug: string
+  title: string
+  description: string
+  causes: string[]
+  solutions: string[]
+  callService: string
+}
+
+export interface ErrorBrand {
+  slug: string
+  name: string
+  codes: ErrorCode[]
+}
+
+const samsung: ErrorCode[] = [
+  { code: '5E', slug: '5e', brand: 'Samsung', brandSlug: 'samsung', title: 'Dreneringsfeil', description: 'Maskinen klarer ikke å pumpe ut vannet innen tidsfristen. En av de vanligste feilkodene på Samsung vaskemaskiner.', causes: ['Tilstoppet pumpefilter med lo, mynter eller smågjenstander', 'Knekket eller blokkert avløpsslange', 'Defekt dreneringspumpe', 'Tilstoppet avløpsrør i veggen'], solutions: ['Slå av maskinen og vent to minutter', 'Åpne pumpefilterluken nederst på fronten og tøm filteret', 'Sjekk at avløpsslangen ikke er knekket eller ligger for høyt', 'Kontroller at avløpsrøret i veggen ikke er tilstoppet'], callService: 'Hvis filteret er rent og slangen er fri, men feilen vedvarer, kan dreneringspumpen være defekt og bør byttes av en servicetekniker.' },
+  { code: '4E', slug: '4e', brand: 'Samsung', brandSlug: 'samsung', title: 'Vanninntak feil', description: 'Maskinen får ikke nok vann innen tidsfristen. Vanligvis et problem med vanntilførselen, ikke maskinen selv.', causes: ['Vanntilførselskranen er ikke helt åpen', 'Tilstoppet filter i vanntilkoblingen', 'Knekket eller klemt inntaksslange', 'For lavt vanntrykk i boligen'], solutions: ['Sjekk at vanntilførselskranen er helt åpen', 'Skru av slangen og rengjør filteret ved kranen', 'Kontroller at inntaksslangen ikke er knekket', 'Test vanntrykket ved å åpne en annen kran i nærheten'], callService: 'Hvis vanntrykket er normalt og slangen er fri, kan magnetventilen inne i maskinen være defekt.' },
+  { code: 'dE', slug: 'de', brand: 'Samsung', brandSlug: 'samsung', title: 'Lukefeil', description: 'Maskinen registrerer ikke at luken er ordentlig lukket. Kan ikke starte programmet.', causes: ['Klær sitter i veien for luken', 'Lukemekanismen er skadet eller slitt', 'Defekt lukelås (dørbryter)', 'Fremmedlegeme i lukerammen'], solutions: ['Sjekk at ingen klær stikker ut mellom luken og pakningen', 'Lukk luken fast og lytt etter et tydelig klikk', 'Inspiser lukerammen for fremmedlegemer', 'Prøv å slå av maskinen i fem minutter og start på nytt'], callService: 'Hvis luken lukkes ordentlig men feilen vedvarer, er lukelåsen sannsynligvis defekt og må byttes.' },
+  { code: 'UE', slug: 'ue', brand: 'Samsung', brandSlug: 'samsung', title: 'Ubalanse', description: 'Maskinen oppdager ujevn fordeling av tøy i trommelen under sentrifugering.', causes: ['Tøyet har klumpet seg sammen på én side', 'For lite tøy i trommelen', 'Maskinen står ikke helt i vater', 'Tungt enkeltplagg som dyne eller jakke'], solutions: ['Åpne luken og fordel tøyet jevnt', 'Legg til et par håndklær hvis det er for lite tøy', 'Sjekk at maskinen står i vater med vaterpass', 'Del opp store enkeltplagg i separate vask'], callService: 'Hvis ubalansen oppstår med normal last og maskinen står i vater, kan støtdemperne eller fjæringssystemet være slitt.' },
+  { code: 'HE', slug: 'he', brand: 'Samsung', brandSlug: 'samsung', title: 'Varmefeil', description: 'Maskinen klarer ikke å varme opp vannet til riktig temperatur. Vasken kan bli ufullstendig.', causes: ['Defekt varmeelement', 'Kalkavleiringer på varmeelementet', 'Defekt temperatursensor (NTC)', 'Problem med styrekortet'], solutions: ['Kjør en tom vask på 90 grader med eddik eller sitronsyre for å fjerne kalk', 'Sjekk om maskinen varmer ved å kjenne på lukeglasset etter 15 minutter', 'Prøv å nullstille maskinen ved å slå av i ti minutter'], callService: 'Varmeelement eller temperatursensor må vanligvis byttes av en servicetekniker. Koster typisk 1500 til 2500 kroner.' },
+  { code: 'Sud', slug: 'sud', brand: 'Samsung', brandSlug: 'samsung', title: 'For mye skum', description: 'Maskinen har oppdaget for mye skum i trommelen. Programmet pauses til skummet reduseres.', causes: ['For mye vaskemiddel', 'Feil type vaskemiddel (ikke lavtskummende)', 'Vaskemiddelskuffen er tilstoppet'], solutions: ['Vent til maskinen løser problemet selv, den kjører ekstra skylling', 'Bruk mindre vaskemiddel neste gang', 'Bytt til lavtskummende vaskemiddel beregnet for maskin', 'Rengjør vaskemiddelskuffen grundig'], callService: 'Denne feilkoden krever sjelden service. Juster mengden vaskemiddel.' },
+]
+
+const bosch: ErrorCode[] = [
+  { code: 'E18', slug: 'e18', brand: 'Bosch', brandSlug: 'bosch', title: 'Dreneringsfeil', description: 'Vannet pumpes ikke ut innen tidsfristen. Den vanligste feilkoden på Bosch vaskemaskiner.', causes: ['Blokkert pumpefilter', 'Knekket avløpsslange', 'Defekt dreneringspumpe', 'Tilstoppet avløp'], solutions: ['Slå av maskinen og åpne servicelluken nederst til høyre', 'Plasser en beholder under og skru ut filteret forsiktig', 'Fjern eventuelle fremmedlegemer fra filteret', 'Sjekk at avløpsslangen er fri og ikke knekket'], callService: 'Hvis filteret er rent og avløpet er fritt, er dreneringspumpen sannsynligvis defekt. Pumpebytte koster typisk 1500 til 2000 kroner.' },
+  { code: 'F21', slug: 'f21', brand: 'Bosch', brandSlug: 'bosch', title: 'Motorfeil', description: 'Motoren starter ikke eller snurrer ikke som forventet. Trommelen beveger seg ikke.', causes: ['Overbelastet trommel', 'Slitte kullbørster i motoren', 'Defekt motorstyring på hovedkortet', 'Løs kontakt til motoren'], solutions: ['Reduser mengden tøy og prøv igjen', 'Slå av maskinen i ti minutter og start på nytt', 'Lytt etter unormal lyd fra motoren'], callService: 'Motorfeil krever nesten alltid servicetekniker. Kullbørstebytte er relativt rimelig, mens motorbytte er dyrere.' },
+  { code: 'F23', slug: 'f23', brand: 'Bosch', brandSlug: 'bosch', title: 'Lekkasje oppdaget', description: 'Sikkerhetsmekanismen har oppdaget vann i bunnen av maskinen. Aquastop er aktivert.', causes: ['Utett slange eller tilkobling', 'Skadet gummipakning rundt luken', 'Lekkasje fra pumpe eller kar', 'Overflødsskum som renner over'], solutions: ['Sjekk gulvet rundt maskinen for synlig vann', 'Kontroller alle slangetilkoblinger', 'Inspiser gummipakningen rundt luken for skader', 'Tipp maskinen forsiktig bakover og sjekk om det er vann i bunnplaten'], callService: 'Lekkasje kan komme fra mange steder. En servicetekniker kan lokalisere kilden presist. Adressen til nærmeste Bosch serviceverksted finner du på bosch-home.no.' },
+  { code: 'E17', slug: 'e17', brand: 'Bosch', brandSlug: 'bosch', title: 'Vanninntak feil', description: 'Maskinen får ikke nok vann. Programmet kan ikke starte eller stopper midt i.', causes: ['Vanntilførselskranen er stengt', 'Tilstoppet sil i vanntilkoblingen', 'Knekket inntaksslange', 'Defekt magnetventil'], solutions: ['Åpne vanntilførselskranen helt', 'Skru av inntaksslangen og rengjør silen', 'Sjekk at slangen ikke er knekket eller klemt', 'Test vanntrykket på andre kraner i boligen'], callService: 'Magnetventilen kan være defekt hvis alt annet er sjekket. Bytte koster rundt 1000 til 1500 kroner.' },
+  { code: 'F43', slug: 'f43', brand: 'Bosch', brandSlug: 'bosch', title: 'Trommel roterer ikke', description: 'Trommelen er blokkert og kan ikke rotere. Motoren prøver men trommelen sitter fast.', causes: ['Fremmedlegeme mellom trommel og kar', 'BH spiler eller mynter som har falt ned', 'Defekt lager', 'Ødelagt drivrem'], solutions: ['Prøv å dreie trommelen for hånd med maskinen av', 'Lytt etter skrapelyder når du dreier', 'Sjekk om små gjenstander har falt mellom trommel og gummileppe'], callService: 'Gjenstander mellom trommel og kar krever demontering. En servicetekniker kan hente dem ut uten å skade maskinen.' },
+]
+
+const lg: ErrorCode[] = [
+  { code: 'OE', slug: 'oe', brand: 'LG', brandSlug: 'lg', title: 'Dreneringsfeil', description: 'Vannet pumpes ikke ut. Den vanligste feilen på LG vaskemaskiner.', causes: ['Tilstoppet pumpefilter', 'Blokkert avløpsslange', 'Defekt dreneringspumpe', 'Avløpsslangen er for høyt plassert'], solutions: ['Rengjør pumpefilteret nederst på fronten', 'Sjekk at avløpsslangen ikke er høyere enn 100 cm fra gulvet', 'Kontroller at slangen ikke er knekket', 'Kjør bare sentrifugering for å teste dreneringen'], callService: 'Hvis dreneringspumpen er defekt hører du ingen summelyd når maskinen prøver å pumpe. Da må pumpen byttes.' },
+  { code: 'IE', slug: 'ie', brand: 'LG', brandSlug: 'lg', title: 'Vanninntak feil', description: 'Maskinen fyller ikke vann innen tidsfristen. Programmet starter ikke.', causes: ['Vanntilførselskranen er stengt', 'Tilstoppet filter i tilkoblingen', 'Frostskade på slange eller ventil', 'Defekt innløpsventil'], solutions: ['Sjekk at vanntilførselskranen er helt åpen', 'Rengjør silen i slangetilkoblingen ved kranen', 'Om vinteren, sjekk for frostskade på slanger', 'Test om andre kraner i boligen har normalt trykk'], callService: 'Innløpsventilen kan ha gått i stykker, spesielt etter frost. Bytte koster rundt 800 til 1200 kroner.' },
+  { code: 'UE', slug: 'ue', brand: 'LG', brandSlug: 'lg', title: 'Ubalanse', description: 'Tøyet er ujevnt fordelt og maskinen klarer ikke å sentrifugere trygt.', causes: ['Tøyet har klumpet seg', 'Stort enkeltplagg som dyne', 'For lite tøy i trommelen', 'Maskinen står skjevt'], solutions: ['Åpne luken og fordel tøyet jevnt i trommelen', 'Del opp store plagg i separate vask', 'Legg til et par håndklær hvis lasten er for liten', 'Juster føttene slik at maskinen står i vater'], callService: 'Vedvarende ubalanse med normal last kan bety slitte støtdempere. En servicetekniker kan sjekke dette.' },
+  { code: 'dE', slug: 'de-lg', brand: 'LG', brandSlug: 'lg', title: 'Lukefeil', description: 'Luken registreres ikke som lukket. Maskinen starter ikke.', causes: ['Klær klemmer i luken', 'Defekt lukelås', 'Skadet lukehengsle', 'Problem med lukebryter'], solutions: ['Sjekk at ingenting klemmer mellom luken og pakningen', 'Trykk luken godt igjen og lytt etter klikk', 'Slå av maskinen i fem minutter og prøv igjen'], callService: 'Lukelåsen er en vanlig slitedel. Bytte er enkelt for en servicetekniker og koster rundt 500 til 800 kroner.' },
+  { code: 'LE', slug: 'le', brand: 'LG', brandSlug: 'lg', title: 'Motorfeil (låst)', description: 'Motoren er overbelastet eller blokkert. Trommelen kan ikke rotere fritt.', causes: ['Overbelastet trommel', 'Fremmedlegeme mellom trommel og kar', 'Slitt lager', 'Defekt rotor eller stator'], solutions: ['Reduser mengden tøy betydelig', 'Prøv å dreie trommelen for hånd', 'Lytt etter knirkelyder som indikerer lagerslitasje'], callService: 'LG sin Direct Drive motor er generelt pålitelig, men lagerfeil krever profesjonell reparasjon.' },
+]
+
+const electrolux: ErrorCode[] = [
+  { code: 'E20', slug: 'e20', brand: 'Electrolux', brandSlug: 'electrolux', title: 'Dreneringsfeil', description: 'Vannet tømmes ikke ut av maskinen innen forventet tid.', causes: ['Blokkert pumpefilter', 'Knekket avløpsslange', 'Defekt dreneringspumpe', 'Tilstoppet avløpsrør'], solutions: ['Rengjør pumpefilteret på fronten nederst', 'Sjekk avløpsslangen for knekk og blokkeringer', 'Kontroller at avløpsrøret i veggen er fritt'], callService: 'Defekt dreneringspumpe må byttes. Electrolux har et godt servicenettverk i Norge.' },
+  { code: 'E10', slug: 'e10', brand: 'Electrolux', brandSlug: 'electrolux', title: 'Vanninntak feil', description: 'Maskinen får ikke vann innen tidsfristen.', causes: ['Stengt vanntilførselskran', 'Tilstoppet sil i tilkoblingen', 'Defekt innløpsventil', 'Lavt vanntrykk'], solutions: ['Åpne vanntilførselskranen helt', 'Rengjør silen i slangetilkoblingen', 'Test vanntrykket på andre kraner', 'Sjekk at slangen ikke er knekket'], callService: 'Innløpsventilen kan trenge bytte hvis alt annet er sjekket. Kontakt Electrolux kundeservice.' },
+  { code: 'E40', slug: 'e40', brand: 'Electrolux', brandSlug: 'electrolux', title: 'Lukefeil', description: 'Maskinen registrerer ikke at luken er lukket ordentlig.', causes: ['Klær klemmer i luken', 'Defekt lukelås', 'Slitt lukemekanisme'], solutions: ['Fjern klær som kan sitte i klem', 'Lukk luken fast og sjekk at den klikker', 'Slå av maskinen i noen minutter og prøv igjen'], callService: 'Lukelåsen er en rimelig del å bytte for en servicetekniker.' },
+  { code: 'EF0', slug: 'ef0', brand: 'Electrolux', brandSlug: 'electrolux', title: 'For mye skum', description: 'Maskinen har oppdaget overdreven skumdannelse.', causes: ['For mye vaskemiddel', 'Feil type vaskemiddel', 'Tilstoppet vaskemiddelskuff'], solutions: ['Vent til maskinen kjører ferdig med ekstra skylling', 'Bruk mindre vaskemiddel neste gang', 'Rengjør vaskemiddelskuffen'], callService: 'Sjelden behov for service. Juster vaskemiddeldoseringen.' },
+]
+
+const siemens: ErrorCode[] = [
+  { code: 'E18', slug: 'e18-siemens', brand: 'Siemens', brandSlug: 'siemens', title: 'Dreneringsfeil', description: 'Identisk med Bosch E18. Siemens og Bosch deler teknologiplattform gjennom BSH konsernet.', causes: ['Blokkert pumpefilter', 'Knekket avløpsslange', 'Defekt dreneringspumpe'], solutions: ['Åpne servicelluken og rengjør pumpefilteret', 'Sjekk avløpsslangen for blokkeringer', 'Kontroller avløpsrøret'], callService: 'Samme service som Bosch. BSH serviceverksteder håndterer begge merker.' },
+  { code: 'F21', slug: 'f21-siemens', brand: 'Siemens', brandSlug: 'siemens', title: 'Motorfeil', description: 'Motoren fungerer ikke som forventet. Trommelen roterer ikke eller uregelmessig.', causes: ['Slitte kullbørster', 'Overbelastet trommel', 'Defekt motorstyring'], solutions: ['Reduser mengden tøy', 'Slå av i ti minutter og prøv igjen'], callService: 'Kullbørstebytte er en vanlig reparasjon. Koster rundt 1000 til 1500 kroner med arbeid.' },
+  { code: 'F23', slug: 'f23-siemens', brand: 'Siemens', brandSlug: 'siemens', title: 'Aquastop aktivert', description: 'Lekkasjedeteksjon har slått inn. Maskinen stopper for å forhindre vannskade.', causes: ['Utett slange', 'Skadet pakning', 'Lekkasje fra pumpe'], solutions: ['Sjekk for synlig vann rundt maskinen', 'Inspiser alle slangetilkoblinger', 'Kontroller lukepakningen'], callService: 'Lekkasje bør alltid undersøkes av en fagperson for å unngå vannskade.' },
+]
+
+const miele: ErrorCode[] = [
+  { code: 'F20', slug: 'f20', brand: 'Miele', brandSlug: 'miele', title: 'Varmefeil', description: 'Vannet varmes ikke opp til riktig temperatur innen forventet tid.', causes: ['Defekt varmeelement', 'Kalkavleiringer', 'Defekt NTC sensor'], solutions: ['Kjør en rengjøringsvask med avkalkingsmiddel', 'Sjekk om maskinen føles varm etter 15 minutter på 60 graders program'], callService: 'Miele sine varmeelementer er av høy kvalitet men kan likevel gå. Miele service anbefales for bytte.' },
+  { code: 'F11', slug: 'f11', brand: 'Miele', brandSlug: 'miele', title: 'Dreneringsfeil', description: 'Vannet tømmes ikke ut innen forventet tid.', causes: ['Blokkert pumpefilter', 'Tilstoppet avløp', 'Defekt pumpe'], solutions: ['Rengjør pumpefilteret', 'Sjekk avløpsslangen og røret', 'Kontroller at slangen ikke er for høyt plassert'], callService: 'Miele sine dreneringspumper varer lenge men kan til slutt gå. Originale Miele deler anbefales.' },
+  { code: 'F53', slug: 'f53', brand: 'Miele', brandSlug: 'miele', title: 'Motorhastighetsfeil', description: 'Motorhastigheten avviker fra forventet verdi. Kan gi ujevn trommelrotasjon.', causes: ['Overbelastet trommel', 'Slitt drivrem', 'Defekt motorsensor'], solutions: ['Reduser mengden tøy', 'Slå av maskinen og vent ti minutter'], callService: 'Denne feilen krever vanligvis servicetekniker. Miele har egne serviceteknikere over hele Norge.' },
+]
+
+const aeg: ErrorCode[] = [
+  { code: 'E20', slug: 'e20-aeg', brand: 'AEG', brandSlug: 'aeg', title: 'Dreneringsfeil', description: 'Samme system som Electrolux. Vannet tømmes ikke ut.', causes: ['Blokkert pumpefilter', 'Tilstoppet avløp', 'Defekt pumpe'], solutions: ['Rengjør pumpefilteret', 'Sjekk avløpsslangen', 'Kontroller avløpsrøret'], callService: 'AEG bruker Electrolux sitt servicenettverk i Norge.' },
+  { code: 'E10', slug: 'e10-aeg', brand: 'AEG', brandSlug: 'aeg', title: 'Vanninntak feil', description: 'Maskinen fylles ikke med vann.', causes: ['Stengt kran', 'Tilstoppet sil', 'Defekt ventil'], solutions: ['Åpne kranen', 'Rengjør silen i tilkoblingen', 'Test vanntrykket'], callService: 'Kontakt Electrolux/AEG service ved vedvarende problemer.' },
+]
+
+const whirlpool: ErrorCode[] = [
+  { code: 'F05', slug: 'f05', brand: 'Whirlpool', brandSlug: 'whirlpool', title: 'Temperatursensor feil', description: 'NTC temperatursensoren gir ugyldige verdier.', causes: ['Defekt NTC sensor', 'Løs kontakt til sensor', 'Kalkavleiring'], solutions: ['Kjør en avkalkingsvask', 'Slå av og på maskinen'], callService: 'NTC sensor er en rimelig del å bytte for en tekniker.' },
+  { code: 'F06', slug: 'f06', brand: 'Whirlpool', brandSlug: 'whirlpool', title: 'Motorfeil', description: 'Motoren responderer ikke som forventet.', causes: ['Slitte kullbørster', 'Overbelastet trommel', 'Defekt tachogenerator'], solutions: ['Reduser mengden tøy', 'Start maskinen på nytt etter ti minutter'], callService: 'Motorfeil krever servicetekniker. Kullbørstebytte er en vanlig reparasjon.' },
+  { code: 'F08', slug: 'f08', brand: 'Whirlpool', brandSlug: 'whirlpool', title: 'Varmefeil', description: 'Vannet varmes ikke opp til ønsket temperatur.', causes: ['Defekt varmeelement', 'Kalkavleiringer', 'Defekt relé på styringskortet'], solutions: ['Kjør en avkalkingsvask', 'Sjekk om maskinen varmer'], callService: 'Varmeelementet kan trenge bytte. Enkel reparasjon for en servicetekniker.' },
+  { code: 'FDL', slug: 'fdl', brand: 'Whirlpool', brandSlug: 'whirlpool', title: 'Lukefeil', description: 'Lukelåsen fungerer ikke. Maskinen kan ikke starte.', causes: ['Defekt lukelås', 'Klær i veien', 'Slitt lukemekanisme'], solutions: ['Fjern klær fra lukeåpningen', 'Lukk luken fast', 'Slå av maskinen i fem minutter'], callService: 'Lukelåsen er en vanlig slitedel og rimelig å bytte.' },
+]
+
+const asko: ErrorCode[] = [
+  { code: 'F1', slug: 'f1', brand: 'ASKO', brandSlug: 'asko', title: 'Vannfeil', description: 'Problem med vanntilførsel eller vannivå.', causes: ['Stengt vanntilførsel', 'Tilstoppet filter', 'Defekt nivåsensor'], solutions: ['Sjekk vanntilførselskranen', 'Rengjør filteret i tilkoblingen', 'Kontroller vanntrykket'], callService: 'ASKO har egen service i Norge. Kontakt dem for vedvarende vannproblemer.' },
+  { code: 'F2', slug: 'f2', brand: 'ASKO', brandSlug: 'asko', title: 'Dreneringsfeil', description: 'Vannet tømmes ikke ut av maskinen.', causes: ['Blokkert pumpefilter', 'Tilstoppet avløp', 'Defekt pumpe'], solutions: ['Rengjør filteret', 'Sjekk avløpsslangen'], callService: 'ASKO sine komponenter er bygget for å vare, men pumpen kan til slutt gå.' },
+  { code: 'F7', slug: 'f7', brand: 'ASKO', brandSlug: 'asko', title: 'Motorfeil', description: 'Motoren fungerer ikke normalt.', causes: ['Overbelastet trommel', 'Defekt motor eller styring'], solutions: ['Reduser lasten', 'Start maskinen på nytt'], callService: 'ASKO bruker robuste motorer, men defekt motor krever servicetekniker.' },
+]
+
+const grundig: ErrorCode[] = [
+  { code: 'E01', slug: 'e01', brand: 'Grundig', brandSlug: 'grundig', title: 'Lukefeil', description: 'Luken er ikke ordentlig lukket.', causes: ['Klær klemmer i luken', 'Defekt lukelås'], solutions: ['Fjern hindringer og lukk luken ordentlig', 'Slå av og på maskinen'], callService: 'Lukelåsen kan trenge bytte ved gjentatt feil.' },
+  { code: 'E02', slug: 'e02', brand: 'Grundig', brandSlug: 'grundig', title: 'Vanninntak feil', description: 'Maskinen fylles ikke med vann.', causes: ['Stengt kran', 'Tilstoppet sil'], solutions: ['Åpne kranen helt', 'Rengjør silen i slangetilkoblingen'], callService: 'Kontakt forhandleren din ved vedvarende problemer.' },
+  { code: 'E05', slug: 'e05', brand: 'Grundig', brandSlug: 'grundig', title: 'Varmefeil', description: 'Vannet varmes ikke opp.', causes: ['Defekt varmeelement', 'Kalkavleiring'], solutions: ['Kjør avkalkingsprogram', 'Sjekk om maskinen varmer opp'], callService: 'Varmeelement bør byttes av fagperson.' },
+]
+
+export const errorBrands: ErrorBrand[] = [
+  { slug: 'samsung', name: 'Samsung', codes: samsung },
+  { slug: 'bosch', name: 'Bosch', codes: bosch },
+  { slug: 'lg', name: 'LG', codes: lg },
+  { slug: 'electrolux', name: 'Electrolux', codes: electrolux },
+  { slug: 'siemens', name: 'Siemens', codes: siemens },
+  { slug: 'miele', name: 'Miele', codes: miele },
+  { slug: 'aeg', name: 'AEG', codes: aeg },
+  { slug: 'whirlpool', name: 'Whirlpool', codes: whirlpool },
+  { slug: 'asko', name: 'ASKO', codes: asko },
+  { slug: 'grundig', name: 'Grundig', codes: grundig },
+]
+
+export function getErrorBrand(slug: string): ErrorBrand | undefined {
+  return errorBrands.find(b => b.slug === slug)
+}
+
+export function getErrorCode(brandSlug: string, codeSlug: string): ErrorCode | undefined {
+  const brand = getErrorBrand(brandSlug)
+  return brand?.codes.find(c => c.slug === codeSlug)
+}
+
+export function getAllErrorBrandSlugs(): string[] {
+  return errorBrands.map(b => b.slug)
+}
+
+export function getAllErrorCodeParams(): { merke: string; kode: string }[] {
+  return errorBrands.flatMap(b => b.codes.map(c => ({ merke: b.slug, kode: c.slug })))
+}
