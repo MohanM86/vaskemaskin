@@ -146,7 +146,7 @@ export const comparisons: Comparison[] = [
     title: 'Miele vs Samsung vaskemaskin: Premium mot verdi',
     metaTitle: 'Miele vs Samsung vaskemaskin | Premium verdt prisen?',
     metaDescription: 'Miele vs Samsung vaskemaskin: Er Miele sin 20 års holdbarhet verdt tre ganger prisen sammenlignet med Samsung?',
-    intro: 'Miele og Samsung representerer ytterpunktene i vaskemaskinmarkedet. Miele er det dyreste og mest holdbare, Samsung tilbyr mest teknologi for pengene. Hvem vinner for deg?',
+    intro: 'Miele og Samsung representerer to helt ulike filosofier. Miele satser på premium byggekvalitet og tjue års levetid med TwinDos dosering. Samsung tilbyr mest teknologi for pengene med EcoBubble, Steam, AI og smart tilkobling. Prisforskjellen er betydelig, så valget handler om langsiktig investering versus umiddelbar verdi.',
     categories: [
       { name: 'Holdbarhet', brand1Score: '10/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele tester for 20 år. Samsung varer typisk 10 til 12 år. Over 20 år kjøper du to Samsung maskiner.' },
       { name: 'Funksjoner', brand1Score: '8/10', brand2Score: '9/10', winner: 'Samsung', explanation: 'Samsung har EcoBubble, AddWash, AI Energy Mode og SmartThings. Miele har TwinDos og CapDosing men færre smarte funksjoner.' },
@@ -154,7 +154,7 @@ export const comparisons: Comparison[] = [
       { name: 'Byggekvalitet', brand1Score: '10/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele er i en helt egen klasse. Tykkere materialer, bedre pakninger, strengere toleranser.' },
       { name: 'Pris per år', brand1Score: '8/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele til 15 000 over 20 år er 750 kr per år. Samsung til 6 000 over 10 år er 600 kr per år. Forskjellen er liten.' },
     ],
-    verdict: 'Miele er for deg som kjøper én maskin og beholder den i 20 år. Samsung er for deg som vil ha mye teknologi nå og bytter maskin oftere. Regnet per år er forskjellen overraskende liten.',
+    verdict: 'Miele er for deg som kjøper en maskin og beholder den i tjue år. Samsung er det bedre valget for deg som vil ha mest mulig teknologi og funksjoner uten å betale premium pris. Miele vinner på holdbarhet og vaskeresultat over tid. Samsung vinner på innovasjon, smarte funksjoner og verdi for pengene i mellomklassen.',
   },
   {
     slug: 'whirlpool-vs-beko',
@@ -162,14 +162,14 @@ export const comparisons: Comparison[] = [
     title: 'Whirlpool vs Beko vaskemaskin: Budsjettduellen',
     metaTitle: 'Whirlpool vs Beko vaskemaskin | Beste budsjett 2026',
     metaDescription: 'Whirlpool vs Beko vaskemaskin for prisbevisste kjøpere. Hvem gir mest for pengene i budsjettklassen?',
-    intro: 'Whirlpool og Beko konkurrerer i det samme prissegmentet men med forskjellig tilnærming. Her er hva som skiller dem.',
+    intro: 'Whirlpool og Beko er de to sterkeste merkene i budsjettsegmentet under fem tusen kroner. Whirlpool tilbyr 6th Sense sensortilpasning og FreshCare pluss, mens Beko imponerer med ProSmart invertermotor til lavere priser. Begge gir solid grunnkvalitet for hverdagsbruk.',
     categories: [
       { name: 'Funksjoner', brand1Score: '8/10', brand2Score: '6/10', winner: 'Whirlpool', explanation: 'Whirlpool har 6th Sense og FreshCare+ som er merkbart bedre enn Beko sine grunnfunksjoner.' },
       { name: 'Pris', brand1Score: '7/10', brand2Score: '9/10', winner: 'Beko', explanation: 'Beko er typisk noen hundrelapper billigere enn sammenlignbare Whirlpool modeller.' },
       { name: 'Byggekvalitet', brand1Score: '7/10', brand2Score: '6/10', winner: 'Whirlpool', explanation: 'Whirlpool har en liten fordel i byggekvalitet, spesielt på trommelkonstruksjonen.' },
       { name: 'Tilgjengelighet', brand1Score: '8/10', brand2Score: '8/10', winner: 'Likt', explanation: 'Begge er bredt tilgjengelige i norske elektronikkjeder.' },
     ],
-    verdict: 'Whirlpool er det bedre valget med bedre funksjoner og litt høyere kvalitet for en marginal merpris. Beko er greit om budsjettet er absolutt minimum.',
+    verdict: 'Velg Whirlpool hvis du vil ha den mest pålitelige budsjettmaskinen med best sensortilpasning og lengst forventet levetid. Velg Beko hvis du har det strammeste budsjettet og vil ha invertermotor til lavest mulig pris. Begge er gode valg under fem tusen kroner, men Whirlpool gir litt mer for pengene.',
   },
 
 ]
