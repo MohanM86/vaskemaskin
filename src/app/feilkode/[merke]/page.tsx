@@ -32,7 +32,7 @@ export default function FeilkodeBrandPage({ params }: { params: { merke: string 
             <p className="text-lg text-slate-600 mb-8">{brand.codes.length} feilkoder forklart med årsaker og løsninger du kan prøve selv.</p>
 
             <section data-section-id="koder" className="scroll-mt-20 mb-10">
-              <div className="space-y-3">{brand.codes.map(code => (
+              <div className="space-y-3">{brand.codes.map((code: any) => (
                 <Link key={code.slug} href={'/feilkode/' + brand.slug + '/' + code.slug + '/'} className="block p-5 rounded-xl border border-slate-200 hover:border-aqua-300 hover:shadow-sm transition-all">
                   <div className="flex items-center gap-3 mb-2"><span className="font-mono text-lg font-bold text-aqua-600 bg-aqua-50 px-3 py-1 rounded-lg">{code.code}</span><span className="font-serif text-lg font-bold text-slate-900">{code.title}</span></div>
                   <p className="text-sm text-slate-500">{code.description}</p>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import ContextualLinks from './ContextualLinks'
 import { IconClock, IconChevron, IconArrow, IconWasher, IconCheckCircle, IconAlertTriangle, IconLightbulb, IconBookOpen, IconTarget, IconZap, IconStar } from './Icons'
 import type { Article } from '@/data/articles'
 
@@ -287,6 +288,8 @@ export default function ArticleLayout({ article, categoryName, categorySlug, rel
             </nav>
 
             {/* ═══ RELATED ARTICLES ═══ */}
+            <ContextualLinks category={article.category} />
+
             {relatedArticles.length > 0 && (
               <section className="mt-14">
                 <div className="flex items-center gap-3 mb-6">

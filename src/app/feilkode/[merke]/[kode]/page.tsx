@@ -16,7 +16,7 @@ export default function ErrorCodePage({ params }: { params: { merke: string; kod
   const code = getErrorCode(params.merke, params.kode)
   if (!code) notFound()
   const brand = getErrorBrand(params.merke)
-  const otherCodes = brand?.codes.filter(c => c.slug !== params.kode) || []
+  const otherCodes = brand?.codes.filter((c: any) => c.slug !== params.kode) || []
   const faqItems = [
     { question: 'Hva betyr feilkode ' + code.code + ' på ' + code.brand + '?', answer: code.description },
     { question: 'Kan jeg fikse feilkode ' + code.code + ' selv?', answer: code.solutions.join('. ') },
@@ -56,7 +56,7 @@ export default function ErrorCodePage({ params }: { params: { merke: string; kod
 
             <section data-section-id="aarsaker" className="scroll-mt-20 mb-8">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Vanlige årsaker</h2>
-              <div className="space-y-2">{code.causes.map((c, i) => (
+              <div className="space-y-2">{code.causes.map((c: string, i: number) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-100">
                   <span className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center text-xs font-bold text-slate-600 flex-shrink-0">{i + 1}</span>
                   <span className="text-sm text-slate-700">{c}</span>
@@ -66,7 +66,7 @@ export default function ErrorCodePage({ params }: { params: { merke: string; kod
 
             <section data-section-id="losninger" className="scroll-mt-20 mb-8">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Slik løser du problemet</h2>
-              <div className="space-y-2">{code.solutions.map((s, i) => (
+              <div className="space-y-2">{code.solutions.map((s: string, i: number) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-aqua-50 border border-aqua-100">
                   <span className="w-6 h-6 rounded-full bg-aqua-200 flex items-center justify-center text-xs font-bold text-aqua-700 flex-shrink-0">{i + 1}</span>
                   <span className="text-sm text-aqua-900">{s}</span>
@@ -89,7 +89,7 @@ export default function ErrorCodePage({ params }: { params: { merke: string; kod
               <section data-section-id="andre" className="scroll-mt-20">
                 <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Andre {code.brand} feilkoder</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {otherCodes.map(c => (
+                  {otherCodes.map((c: any) => (
                     <Link key={c.slug} href={'/feilkode/' + params.merke + '/' + c.slug + '/'} className="flex items-center gap-2 p-3 rounded-lg border border-slate-200 hover:border-aqua-300 transition-colors">
                       <span className="font-mono text-sm font-bold text-aqua-600">{c.code}</span>
                       <span className="text-xs text-slate-600 line-clamp-1">{c.title}</span>

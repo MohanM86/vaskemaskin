@@ -31,7 +31,7 @@ export default function FeilkodeOverviewPage() {
               <Link key={brand.slug} href={'/feilkode/' + brand.slug + '/'} data-section-id={brand.slug} className="group p-5 rounded-xl border border-slate-200 hover:border-aqua-300 hover:shadow-md transition-all scroll-mt-20">
                 <h2 className="font-serif text-lg font-bold text-slate-900 group-hover:text-aqua-700 transition-colors mb-2">{brand.name}</h2>
                 <p className="text-sm text-slate-500 mb-3">{brand.codes.length} feilkoder forklart</p>
-                <div className="flex flex-wrap gap-1.5">{brand.codes.slice(0, 5).map(c => (<span key={c.slug} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded">{c.code}</span>))}{brand.codes.length > 5 && <span className="text-xs text-slate-400">+{brand.codes.length - 5}</span>}</div>
+                <div className="flex flex-wrap gap-1.5">{brand.codes.slice(0, 5).map((c: any) => (<span key={c.slug} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-0.5 rounded">{c.code}</span>))}{brand.codes.length > 5 && <span className="text-xs text-slate-400">+{brand.codes.length - 5}</span>}</div>
               </Link>
             ))}
           </div>

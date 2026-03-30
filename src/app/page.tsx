@@ -135,7 +135,7 @@ export default function HomePage() {
               {errorBrands.slice(0, 6).map(brand => (
                 <Link key={brand.slug} href={'/feilkode/' + brand.slug + '/'} className="p-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:border-aqua-400 hover:shadow-md hover:bg-white transition-all">
                   <div className="text-sm font-bold text-slate-900 mb-2">{brand.name}</div>
-                  <div className="flex flex-wrap gap-1">{brand.codes.slice(0, 3).map(c => (<span key={c.slug} className="text-[10px] font-mono bg-aqua-100 text-aqua-700 px-1.5 py-0.5 rounded">{c.code}</span>))}<span className="text-[10px] text-slate-400">+{Math.max(0, brand.codes.length - 3)}</span></div>
+                  <div className="flex flex-wrap gap-1">{brand.codes.slice(0, 3).map((c: any) => (<span key={c.slug} className="text-[10px] font-mono bg-aqua-100 text-aqua-700 px-1.5 py-0.5 rounded">{c.code}</span>))}<span className="text-[10px] text-slate-400">+{Math.max(0, brand.codes.length - 3)}</span></div>
                 </Link>
               ))}
             </div>

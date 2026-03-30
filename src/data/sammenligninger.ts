@@ -17,7 +17,7 @@ export const comparisons: Comparison[] = [
     title: 'Bosch vs Samsung vaskemaskin: Hvilken bør du velge?',
     metaTitle: 'Bosch vs Samsung vaskemaskin | Komplett sammenligning 2026',
     metaDescription: 'Bosch vs Samsung vaskemaskin: Vi sammenligner pris, kvalitet, funksjoner og holdbarhet. Finn ut hvilken som passer best for deg.',
-    intro: 'Bosch og Samsung er to av de mest populære vaskemaskinmerkene i Norge, men de representerer to helt forskjellige tilnærminger. Bosch satser på tysk pålitelighet og stille drift, mens Samsung fokuserer på innovasjon og smarte funksjoner.',
+    intro: 'Bosch og Samsung er de to mest solgte vaskemaskintmerkene i Norge og representerer to fundamentalt forskjellige tilnærminger til vasking. Bosch satser på tysk presisjon med solid konstruksjon, stille drift og lang holdbarhet. Samsung satser på koreansk innovasjon med EcoBubble teknologi, AddWash luke og smart Home integrasjon. Bosch bruker i-DOS automatisk dosering på mellom og premium modeller. Samsung bruker EcoBubble som standard på nesten hele sortimentet. I prisklassen fem til åtte tusen kroner er konkurransen sterkest. Bosch Serie 4 møter Samsung sin mellomklasse, og valget kommer ned til om du prioriterer holdbarhet og stillhet eller teknologiske funksjoner og lavere innkjøpspris.',
     categories: [
       { name: 'Byggekvalitet', brand1Score: '9/10', brand2Score: '7/10', winner: 'Bosch', explanation: 'Bosch bruker tykkere materialer og mer robust konstruksjon. EcoSilence motoren er ekstremt holdbar og stillegående.' },
       { name: 'Smarte funksjoner', brand1Score: '7/10', brand2Score: '9/10', winner: 'Samsung', explanation: 'Samsung har EcoBubble, AddWash, AI Energy Mode og SmartThings appstyring. Bosch sin i-DOS er utmerket, men Samsung har bredere funksjonalitet.' },
@@ -34,7 +34,7 @@ export const comparisons: Comparison[] = [
     title: 'Miele vs Bosch vaskemaskin: Er Miele verdt den ekstra prisen?',
     metaTitle: 'Miele vs Bosch vaskemaskin | Er premium verdt det? 2026',
     metaDescription: 'Miele vs Bosch vaskemaskin sammenligning. Er Miele sin 20 års holdbarhet verdt den høyere prisen sammenlignet med Bosch?',
-    intro: 'Miele og Bosch er begge tyske kvalitetsmerker, men Miele posisjonerer seg som det absolutte premiumvalget. Spørsmålet mange norske forbrukere stiller seg er om Miele sin høyere pris rettferdiggjøres av bedre kvalitet og lengre levetid.',
+    intro: 'Miele og Bosch er begge tyske premiummerker men opererer i forskjellige prissjikt. Miele er den udiskutable lederen i toppklassen med maskiner testet for tjue års levetid og priser fra ti tusen kroner og oppover. Bosch tilbyr det beste kvalitetsnivået i mellomklassen med Serie 6 og 8 fra seks til tolv tusen kroner. Miele sin TwinDos toskomponent dosering er teknisk overlegen Bosch sin i-DOS med bedre flekkfjerningsresultat. Bosch kompenserer med Home Connect appen og bredere modellutvalg. Spørsmålet er om Miele sin ekstra kvalitet rettferdiggjør den høyere prisen for din brukssituasjon.',
     categories: [
       { name: 'Byggekvalitet', brand1Score: '10/10', brand2Score: '9/10', winner: 'Miele', explanation: 'Miele tester for 20 års levetid. Bosch er svært god, men Miele bruker enda tykkere materialer og har strengere kvalitetskontroll.' },
       { name: 'Levetid', brand1Score: '10/10', brand2Score: '8/10', winner: 'Miele', explanation: 'Miele varer typisk 15 til 20 år. Bosch varer 10 til 15 år. Over tid kan Miele faktisk bli billigere per år.' },
@@ -50,7 +50,7 @@ export const comparisons: Comparison[] = [
     title: 'Samsung vs LG vaskemaskin: De sørkoreanske rivalene',
     metaTitle: 'Samsung vs LG vaskemaskin | Sørkoreansk teknologi 2026',
     metaDescription: 'Samsung vs LG vaskemaskin: Vi sammenligner EcoBubble vs AI Direct Drive, smarte funksjoner, pris og kvalitet.',
-    intro: 'Samsung og LG er begge sørkoreanske teknologigiganter som konkurrerer hardt i vaskemaskinmarkedet. Begge satser på innovasjon og smarte funksjoner, men med forskjellig tilnærming til vaskeopplevelsen.',
+    intro: 'Samsung og LG er sørkoreanske teknologigiganter som begge satser tungt på innovasjon i vaskemaskinmarkedet. Samsung sin EcoBubble forblandingsteknologi konkurrerer mot LG sin AI Direct Drive som automatisk gjenkjenner stofftype og tilpasser trommelbevegelse. LG sin TurboWash bruker kraftige vannstråler for raskere vask, mens Samsung fokuserer på AddWash luken for å legge til glemte plagg. Begge merker tilbyr WiFi tilkobling og appstyring. LG sine invertermotorer med Direct Drive har ti års garanti som er blant de lengste i bransjen. Samsung kompenserer med EcoBubble som gir bedre vaskeresultat ved lave temperaturer.',
     categories: [
       { name: 'Vasketeknologi', brand1Score: '8/10', brand2Score: '9/10', winner: 'LG', explanation: 'LG sin AI Direct Drive gjenkjenner stofftype automatisk og tilpasser trommelbevegelsen. Samsung sin EcoBubble er effektiv men mindre adaptiv.' },
       { name: 'Hurtigvask', brand1Score: '7/10', brand2Score: '9/10', winner: 'LG', explanation: 'LG sin TurboWash gir full vask på 39 minutter med svært godt resultat. Samsung sin hurtigvask er raskere men med lavere kapasitet.' },
@@ -66,7 +66,7 @@ export const comparisons: Comparison[] = [
     title: 'Electrolux vs AEG vaskemaskin: Søskenrivalene',
     metaTitle: 'Electrolux vs AEG vaskemaskin | Hva er forskjellen? 2026',
     metaDescription: 'Electrolux vs AEG vaskemaskin: Begge eies av samme konsern. Vi forklarer forskjellene og hjelper deg å velge riktig.',
-    intro: 'Electrolux og AEG er søstermerker under Electrolux konsernet. Mange lurer på hva som egentlig skiller dem. Kort sagt posisjonerer AEG seg som det mer premiumorienterte merket med tysk ingeniørtradisjon, mens Electrolux fokuserer på skandinavisk brukervennlighet.',
+    intro: 'Electrolux og AEG tilhører begge Electrolux konsernet og deler teknisk plattform, men AEG posisjoneres som det mer avanserte merket med høyere pris. AEG sin ProSteam dampteknologi og ØKOMix forblandingsteknologi er ikke tilgjengelig på standard Electrolux modeller. Electrolux har SensiCare veiesensor og UltraCare forblanding som er solide men enklere løsninger. Begge bruker AutoDose automatisk dosering på sine mellom og premium modeller. Prisforskjellen er typisk to til tre tusen kroner for tilsvarende kapasitet der AEG koster mer.',
     categories: [
       { name: 'Vasketeknologi', brand1Score: '8/10', brand2Score: '9/10', winner: 'AEG', explanation: 'AEG sin ØKOMix forblander vaskemiddelet bedre enn Electrolux sin standard dosering. ProSteam dampen gir også AEG et forsprang.' },
       { name: 'Brukervennlighet', brand1Score: '9/10', brand2Score: '7/10', winner: 'Electrolux', explanation: 'Electrolux er enklere å betjene med mer intuitive menyer. SensiCare gjør alt automatisk uten at du trenger å tenke.' },
@@ -82,7 +82,7 @@ export const comparisons: Comparison[] = [
     title: 'Miele vs ASKO vaskemaskin: To premium med 20 års levetid',
     metaTitle: 'Miele vs ASKO vaskemaskin | Topp holdbarhet sammenlignet 2026',
     metaDescription: 'Miele vs ASKO: Begge bygger vaskemaskiner for 20 års levetid. Vi sammenligner de to premium alternativene.',
-    intro: 'Miele og ASKO er de to eneste merkene som tester sine vaskemaskiner for 20 års levetid. Begge representerer det ypperste innen holdbarhet, men med forskjellig tilnærming til teknologi og brukeropplevelse.',
+    intro: 'Miele og ASKO er de to ledende premium vaskemaskinmerkene i Skandinavia med sterke røtter i regionen. Miele er tysk med over hundre og tjue års historie og det bredeste utvalget av avanserte funksjoner. ASKO er norsk med røtter fra Drammen og fokuserer på skandinavisk design og miljø. ASKO sin Steel Seal teknologi er unik i markedet med en lukedesign helt uten gummipakning som eliminerer bakterie og muggvekst. Miele sin TwinDos og CapDosing gir det mest avanserte doseringssystemet. Begge tester for tjue års levetid. Valget handler om du vil ha flest funksjoner fra Miele eller den reneste designen og miljøprofilen fra ASKO.',
     categories: [
       { name: 'Holdbarhet', brand1Score: '10/10', brand2Score: '10/10', winner: 'Likt', explanation: 'Begge tester for 20 år og 12 500 timer. Konstruksjonskvaliteten er i toppklasse hos begge.' },
       { name: 'Funksjoner', brand1Score: '9/10', brand2Score: '6/10', winner: 'Miele', explanation: 'Miele har TwinDos, CapDosing, mange spesialprogrammer og smart tilkobling. ASKO fokuserer på enkelhet fremfor funksjoner.' },
@@ -98,7 +98,7 @@ export const comparisons: Comparison[] = [
     title: 'Bosch vs Siemens vaskemaskin: Hva er egentlig forskjellen?',
     metaTitle: 'Bosch vs Siemens vaskemaskin | Samme konsern, ulik profil 2026',
     metaDescription: 'Bosch vs Siemens vaskemaskin: Begge er BSH. Vi forklarer de reelle forskjellene og hjelper deg å velge riktig.',
-    intro: 'Bosch og Siemens deler teknologiplattform gjennom BSH konsernet. Innvendig er maskinene svært like, men det finnes reelle forskjeller i funksjoner, design og posisjonering som kan påvirke ditt valg.',
+    intro: 'Bosch og Siemens er søstermerker under BSH konsernet og deler identisk teknisk plattform. Maskinene bygges i samme fabrikker med samme komponenter, motorer og styresystemer. Forskjellen ligger i design, merkevareposisjonering og noen eksklusive toppmodeller. Siemens posisjonerer seg litt over Bosch i pris og fokuserer mer på smart Home integrasjon med Home Connect og avansert iDos dosering. Bosch har det bredere sortimentet og er typisk fem til femten prosent rimeligere for tilsvarende spesifikasjoner. Begge bruker EcoSilence Drive invertermotor og Aquastop lekkasjesikring.',
     categories: [
       { name: 'Teknologi', brand1Score: '9/10', brand2Score: '9/10', winner: 'Likt', explanation: 'Motorene, pumpene og styrekortene er identiske. i-DOS finnes på begge. Den tekniske plattformen er den samme.' },
       { name: 'Smart tilkobling', brand1Score: '7/10', brand2Score: '9/10', winner: 'Siemens', explanation: 'Siemens sin Home Connect app er mer utviklet og tilbyr nedlastbare programmer og bedre feildiagnostikk.' },

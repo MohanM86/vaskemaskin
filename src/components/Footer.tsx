@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="text-aqua-400"><IconWasher size={24} /></div>
               <span className="font-serif text-lg font-bold text-white">Vaskemaskin<span className="text-aqua-400">.no</span></span>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed">Norges mest komplette ressurs om vaskemaskiner.</p>
+            <p className="text-sm text-slate-400 leading-relaxed">Norges mest komplette vaskemaskinportal.</p>
           </div>
           <div>
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Kategorier</h3>

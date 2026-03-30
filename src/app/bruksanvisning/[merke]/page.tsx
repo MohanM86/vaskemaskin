@@ -62,7 +62,7 @@ export default function ManualPage({ params }: { params: { merke: string } }) {
             {errorBrand && (
               <section data-section-id="feilkoder" className="scroll-mt-20 mt-10">
                 <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Feilkoder for {manual.name}</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">{errorBrand.codes.slice(0, 6).map(c => (
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">{errorBrand.codes.slice(0, 6).map((c: any) => (
                   <Link key={c.slug} href={'/feilkode/' + params.merke + '/' + c.slug + '/'} className="flex items-center gap-2 p-3 rounded-lg border border-slate-200 hover:border-aqua-300 transition-colors">
                     <span className="font-mono text-sm font-bold text-aqua-600">{c.code}</span>
                     <span className="text-xs text-slate-600 line-clamp-1">{c.title}</span>
