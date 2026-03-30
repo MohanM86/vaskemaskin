@@ -2,13 +2,16 @@ import Link from 'next/link'
 import { manuals } from '@/data/bruksanvisning'
 import { Breadcrumbs } from '@/components/UI'
 import PageSidebar from '@/components/PageSidebar'
-import { createMeta } from '@/lib/seo'
+import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
+
 
 export const metadata = createMeta({ title: 'Bruksanvisning vaskemaskin | Alle merker', description: 'Bruksanvisninger for vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Miele og flere. Programmer, symboler og dosering.', path: 'bruksanvisning' })
 
 export default function BruksanvisningPage() {
   const sections = manuals.map(m => ({ id: m.slug, label: m.name }))
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bruksanvisning', url: 'https://vaskemaskin.no/bruksanvisning/' }])) }} />
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
@@ -25,5 +28,6 @@ export default function BruksanvisningPage() {
         <PageSidebar sections={sections} relatedLinks={[{ href: '/feilkode/', label: 'Alle feilkoder' }, { href: '/artikkel/vaskemiddel-guide/', label: 'Vaskemiddelguide' }]} />
       </div>
     </div>
+    </>
   )
 }

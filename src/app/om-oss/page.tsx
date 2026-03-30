@@ -7,7 +7,7 @@ import { articles } from '@/data/articles'
 import { brands } from '@/data/brands'
 import { errorBrands } from '@/data/feilkoder'
 import { terms } from '@/data/ordliste'
-import { createMeta } from '@/lib/seo'
+import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 export const metadata = createMeta({ title: 'Om Vaskemaskin.no | Uavhengig informasjon', description: 'Vaskemaskin.no er Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon uten bindinger til produsenter.', path: 'om-oss' })
 
@@ -23,6 +23,8 @@ export default function OmOssPage() {
   ]
 
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Om oss', url: 'https://vaskemaskin.no/om-oss/' }])) }} />
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
@@ -79,5 +81,6 @@ export default function OmOssPage() {
         ]} ctaTitle="Utforsk innholdet" ctaText="Start med vår komplette kjøpsguide." ctaLink="/artikkel/komplett-kjopsguide-2026/" ctaLinkText="Les guiden" />
       </div>
     </div>
+    </>
   )
 }

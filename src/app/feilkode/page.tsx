@@ -2,7 +2,8 @@ import Link from 'next/link'
 import { errorBrands } from '@/data/feilkoder'
 import { Breadcrumbs } from '@/components/UI'
 import PageSidebar from '@/components/PageSidebar'
-import { createMeta } from '@/lib/seo'
+import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
+
 
 export const metadata = createMeta({ title: 'Feilkoder vaskemaskin | Alle merker og koder', description: 'Komplett oversikt over feilkoder på vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Siemens, Miele, AEG, Whirlpool, ASKO og Grundig.', path: 'feilkode' })
 
@@ -11,6 +12,8 @@ export default function FeilkodeOverviewPage() {
   const sections = errorBrands.map(b => ({ id: b.slug, label: b.name + ' (' + b.codes.length + ')' }))
 
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Feilkoder', url: 'https://vaskemaskin.no/feilkode/' }])) }} />
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
@@ -36,5 +39,6 @@ export default function FeilkodeOverviewPage() {
         <PageSidebar sections={sections} showQuiz={true} ctaTitle="Trenger du ny maskin?" ctaText="Kanskje det lønner seg å bytte?" ctaLink="/artikkel/naar-bytte-vaskemaskin/" ctaLinkText="Les mer" />
       </div>
     </div>
+    </>
   )
 }

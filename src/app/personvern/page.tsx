@@ -1,6 +1,6 @@
 import { Breadcrumbs } from '@/components/UI'
 import PageSidebar from '@/components/PageSidebar'
-import { createMeta } from '@/lib/seo'
+import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 export const metadata = createMeta({ title: 'Personvern | Vaskemaskin.no', description: 'Les om hvordan Vaskemaskin.no behandler personopplysninger og bruker informasjonskapsler.', path: 'personvern' })
 
@@ -14,6 +14,8 @@ export default function PersonvernPage() {
   ]
 
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Personvern', url: 'https://vaskemaskin.no/personvern/' }])) }} />
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
@@ -50,5 +52,6 @@ export default function PersonvernPage() {
         <PageSidebar sections={sections} showQuiz={false} showEnergi={false} relatedLinks={[{ href: '/om-oss/', label: 'Om Vaskemaskin.no' }]} />
       </div>
     </div>
+    </>
   )
 }

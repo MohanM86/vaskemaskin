@@ -2,7 +2,8 @@ import Link from 'next/link'
 import { terms } from '@/data/ordliste'
 import { Breadcrumbs } from '@/components/UI'
 import PageSidebar from '@/components/PageSidebar'
-import { createMeta } from '@/lib/seo'
+import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
+
 
 export const metadata = createMeta({ title: 'Ordliste vaskemaskin | Alle begreper fra A til Å', description: 'Komplett ordliste for vaskemaskiner. ' + terms.length + ' begreper forklart i et enkelt og forståelig språk.', path: 'ordliste' })
 
@@ -12,6 +13,8 @@ export default function OrdlistePage() {
   const sections = letters.map(l => ({ id: l, label: l }))
 
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Ordliste', url: 'https://vaskemaskin.no/ordliste/' }])) }} />
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
@@ -39,5 +42,6 @@ export default function OrdlistePage() {
         <PageSidebar sections={sections} relatedLinks={[{ href: '/artikkel/vaskesymboler-guide/', label: 'Vaskesymboler guide' }, { href: '/artikkel/vasketemperatur-guide/', label: 'Vasketemperatur guide' }]} />
       </div>
     </div>
+    </>
   )
 }
