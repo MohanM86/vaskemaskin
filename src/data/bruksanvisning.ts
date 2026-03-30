@@ -156,6 +156,20 @@ export const manuals: BrandManual[] = [
     ],
     tips: ['Grundig gir mye for pengene i budsjettklassen', 'Dampfunksjonen er enklere men effektiv', 'Grundig produseres av Arcelik som også lager Beko', 'Service håndteres gjennom forhandleren din'],
   },
+
+  {
+    slug: 'hisense',
+    name: 'Hisense',
+    metaTitle: 'Hisense vaskemaskin bruksanvisning | Programmer og tips',
+    metaDescription: 'Bruksanvisning for Hisense vaskemaskiner. Programmer, dosering og vedlikeholdstips.',
+    intro: 'Hisense vaskemaskiner tilbyr god verdi i budsjettsegmentet med solide programmer og invertermotor for stille drift.',
+    sections: [
+      { heading: 'Programmer', content: 'Hisense vaskemaskiner har standardprogrammer som Bomull 60 og 40, Syntetisk, Finvask, Ull, Eco 40-60, Hurtigvask 15 minutter, Babyvask med ekstra skylling og Sportsvask. Invertermotoren gir jevn og stille drift med lang levetid.' },
+      { heading: 'Dosering', content: 'Bruk rom II i vaskemiddelskuffen for hovedvask og blomsterrommet for skyllemiddel. Hisense anbefaler flytende lavtskummende vaskemiddel for best resultat. Ikke overdoser da dette gir skumproblemer.' },
+      { heading: 'Vedlikehold', content: 'Rengjor pumpefilteret via serviceluken regelmessig. Kjor en tom vask pa nitti grader manedlig for a fjerne bakterier og avleiringer. Tork av lukepakningen etter hver vask. La luken sta pa glott mellom vask.' },
+    ],
+    tips: ['Rengjor pumpefilteret regelmessig', 'Kjor manedlig rengjoring pa 90 grader', 'Bruk riktig mengde vaskemiddel', 'La luken sta apent mellom vask'],
+  },
 ]
 
 export function getManualBySlug(slug: string): BrandManual | undefined {

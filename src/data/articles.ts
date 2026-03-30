@@ -183,7 +183,7 @@ export const articles: Article[] = [
     relatedSlugs: ['komplett-kjopsguide-2026', 'spare-strom-vaskemaskin'],
   },
   {
-    slug: 'rengjøre-vaskemaskin',
+    slug: 'rengjore-vaskemaskin',
     title: 'Slik rengjør du vaskemaskinen: Komplett vedlikeholdsguide',
     metaTitle: 'Rengjøre vaskemaskin | Steg for steg vedlikeholdsguide 2026',
     metaDescription: 'Lær å rengjøre vaskemaskinen skikkelig. Fjern kalk, mugg og vond lukt med enkle midler du allerede har hjemme.',
@@ -282,7 +282,7 @@ export const articles: Article[] = [
       { question: 'Koster det mye å få reparert vaskemaskin?', answer: 'En servicetekniker tar typisk 500 til 800 kroner i utrykningskostnad pluss deler. Enkle reparasjoner som pumpebytte koster totalt 1500 til 2500 kroner. Styrekortbytte kan komme opp i 3000 til 5000 kroner.' },
       { question: 'Kan jeg nullstille feilkoden selv?', answer: 'De fleste feilkoder kan nullstilles ved å slå av maskinen og vente noen minutter før du slår den på igjen. Men husk at koden vises av en grunn. Hvis du nullstiller uten å fikse problemet, vil koden sannsynligvis komme tilbake.' },
     ],
-    relatedSlugs: ['rengjøre-vaskemaskin', 'komplett-kjopsguide-2026'],
+    relatedSlugs: ['rengjore-vaskemaskin', 'komplett-kjopsguide-2026'],
   },
   {
     slug: 'beste-toppmater-2026',
@@ -567,7 +567,7 @@ export const articles: Article[] = [
       { question: 'Fungerer gallsåpe på alle flekker?', answer: 'Gallsåpe er spesielt effektiv på fettflekker, proteinflekker og mange organiske flekker. Den er mindre effektiv på fargeflekker som blekk og rustflekker. Den er trygg å bruke på de fleste stoffer.' },
       { question: 'Kan jeg bruke blekmiddel på flekker?', answer: 'Klorblekmiddel fungerer kun på hvite bomullstoffer og kan ødelegge farger og syntetiske materialer. Oksygenbasert blekmiddel er skånsommere og kan brukes på de fleste fargede stoffer.' },
     ],
-    relatedSlugs: ['rengjøre-vaskemaskin', 'vaske-ull-uten-krymping'],
+    relatedSlugs: ['rengjore-vaskemaskin', 'vaske-ull-uten-krymping'],
   },
   {
     slug: 'vaskesymboler-guide',
@@ -641,7 +641,7 @@ export const articles: Article[] = [
     faq: [
       { question: 'Kan maskinvask ødelegge vaskemaskinen?', answer: 'Nei, så lenge du bruker vaskenett og legger inn håndklær for å balansere lasten. Sko er tunge og kan lage mye støy og vibrasjoner uten polstring.' },
     ],
-    relatedSlugs: ['rengjøre-vaskemaskin', 'fjerne-flekker'],
+    relatedSlugs: ['rengjore-vaskemaskin', 'fjerne-flekker'],
   },
   {
     slug: 'vaskemaskin-lukt',
@@ -687,7 +687,7 @@ export const articles: Article[] = [
       { question: 'Hjelper det å bruke mer vaskemiddel?', answer: 'Nei, tvert imot. For mye vaskemiddel skaper avleiringer inne i maskinen der bakterier trives. Bruk anbefalt mengde eller litt mindre.' },
       { question: 'Må jeg kjøpe spesielle rengjøringsprodukter?', answer: 'Nei, hvit eddik og natron fungerer utmerket. Du kan også bruke sitronsyre. Spesielle maskinrenstabletter er praktiske men ikke nødvendige.' },
     ],
-    relatedSlugs: ['rengjøre-vaskemaskin', 'vanlige-feilkoder'],
+    relatedSlugs: ['rengjore-vaskemaskin', 'vanlige-feilkoder'],
   },
   {
     slug: 'vasketemperatur-guide',
@@ -787,7 +787,7 @@ export const articles: Article[] = [
       { question: 'Bør jeg bruke spesialvaskemiddel for svart tøy?', answer: 'Svart vaskemiddel hjelper med å bevare den mørke fargen lenger. Det er flytende og inneholder ikke blekemiddel. For vanlig bruk er et godt flytende colorvaskemiddel tilstrekkelig.' },
       { question: 'Trenger jeg skyllemiddel?', answer: 'Skyllemiddel er valgfritt. Det gjør tøyet mykt og gir fin duft, men er ikke nødvendig for rengjøring. For allergikere og personer med sensitiv hud anbefaler vi å droppe skyllemiddel.' },
     ],
-    relatedSlugs: ['rengjøre-vaskemaskin', 'vasketemperatur-guide', 'spare-strom-vaskemaskin'],
+    relatedSlugs: ['rengjore-vaskemaskin', 'vasketemperatur-guide', 'spare-strom-vaskemaskin'],
   },
   {
     slug: 'installere-vaskemaskin',
@@ -960,10 +960,10 @@ export const articles: Article[] = [
     faq: [
       { question: 'Er det normalt at maskinen bråker under sentrifugering?', answer: 'En viss støy er normalt under sentrifugering. Sjekk støynivået i spesifikasjonene. Under 75 desibel er akseptabelt. Hvis støyen har økt merkbart sammenlignet med da maskinen var ny, kan det tyde på slitasje.' },
     ],
-    relatedSlugs: ['vanlige-feilkoder', 'installere-vaskemaskin', 'rengjøre-vaskemaskin'],
+    relatedSlugs: ['vanlige-feilkoder', 'installere-vaskemaskin', 'rengjore-vaskemaskin'],
   },
   {
-    slug: 'vaske-babyklær',
+    slug: 'vaske-babyklaer',
     title: 'Slik vasker du babyklær i vaskemaskin',
     metaTitle: 'Vaske babyklær | Riktig temperatur og vaskemiddel 2026',
     metaDescription: 'Guide til vask av babyklær. Riktig temperatur, hypoallergenisk vaskemiddel og tips for sensitiv babyhud.',
@@ -1052,7 +1052,7 @@ export const articles: Article[] = [
     faq: [
       { question: 'Bør allergikere bruke tørketrommel?', answer: 'Ja, tørketrommel er faktisk bedre for allergikere enn utendørs tørking fordi klærne ikke eksponeres for pollen. Den høye temperaturen i tørkeren dreper også eventuelle gjenværende støvmidd.' },
     ],
-    relatedSlugs: ['vasketemperatur-guide', 'vaskemiddel-guide', 'vaske-babyklær'],
+    relatedSlugs: ['vasketemperatur-guide', 'vaskemiddel-guide', 'vaske-babyklaer'],
   },
   {
     slug: 'naar-bytte-vaskemaskin',
@@ -1096,7 +1096,7 @@ export const articles: Article[] = [
     relatedSlugs: ['komplett-kjopsguide-2026', 'beste-vaskemaskin-2026', 'vanlige-feilkoder'],
   },
   {
-    slug: 'sportsklær-vask',
+    slug: 'sportsklaer-vask',
     title: 'Slik vasker du sportsklær riktig',
     metaTitle: 'Vaske sportsklær | Fjern lukt og bevar funksjon 2026',
     metaDescription: 'Sportsklær trenger spesiell behandling. Lær å fjerne svetteukt og bevare de tekniske egenskapene i treningsklærne.',

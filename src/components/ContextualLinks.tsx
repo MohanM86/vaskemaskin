@@ -31,7 +31,7 @@ const contextMap: Record<string, { label: string; links: { text: string; href: s
   'vedlikehold': {
     label: 'Vedlikeholdsguider',
     links: [
-      { text: 'Rengjøre vaskemaskinen', href: '/artikkel/rengjøre-vaskemaskin/' },
+      { text: 'Rengjøre vaskemaskinen', href: '/artikkel/rengjore-vaskemaskin/' },
       { text: 'Vanlige feilkoder', href: '/artikkel/vanlige-feilkoder/' },
       { text: 'Når bytte vaskemaskin', href: '/artikkel/naar-bytte-vaskemaskin/' },
       { text: 'Feilkodeoversikt', href: '/feilkode/' },
