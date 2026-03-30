@@ -66,7 +66,7 @@ export default function HomePage() {
       {/* ═══ 02: STATS — Hvit ═══ */}
       <section className="bg-white py-8">
         <div className="container-site">
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 text-center">
             {[
               { n: brands.length, l: 'merker' },
               { n: articles.length + comparisons.length, l: 'artikler' },
@@ -87,11 +87,11 @@ export default function HomePage() {
             <h2 className="section-heading mt-2 mb-3">Kategorier</h2>
             <p className="section-subheading mx-auto">Fra toppmatere og frontmatere til vedlikeholdstips og energiguider</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {categories.map(cat => (
               <Link key={cat.slug} href={'/kategori/' + cat.slug + '/'} className="group flex items-start gap-4 p-5 rounded-xl border border-aqua-200/60 bg-white hover:border-aqua-400 hover:shadow-lg transition-all">
                 <div className="w-12 h-12 rounded-xl bg-aqua-100 flex items-center justify-center text-aqua-700 group-hover:bg-aqua-200 transition-colors flex-shrink-0"><CategoryIcon slug={cat.slug} size={24} /></div>
-                <div><h3 className="font-semibold text-slate-900 group-hover:text-aqua-700 transition-colors">{cat.shortName}</h3><p className="text-sm text-slate-500 mt-1 line-clamp-2">{cat.description}</p></div>
+                <div className="min-w-0"><h3 className="font-semibold text-slate-900 group-hover:text-aqua-700 transition-colors">{cat.shortName}</h3><p className="text-sm text-slate-500 mt-1 line-clamp-2">{cat.description}</p></div>
               </Link>
             ))}
           </div>
@@ -170,7 +170,7 @@ export default function HomePage() {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mt-2 mb-3">Finn hvitevarebutikk nær deg</h2>
             <p className="text-lg text-aqua-200">{stores.length} butikker fordelt på {fylker.length} fylker</p>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-6">
             {sortedFylker.slice(0, 10).map(f => {
               const count = stores.filter(s => s.fylkeSlug === f.slug).length
               return (
@@ -205,7 +205,7 @@ export default function HomePage() {
           {tier2Brands.length > 0 && (
             <div>
               <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Flere merker</h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">{tier2Brands.map(b => (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">{tier2Brands.map(b => (
                 <Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-3 rounded-lg border border-slate-200 hover:border-aqua-300 text-center text-sm text-slate-600 hover:text-aqua-700 transition-colors">{b.name}</Link>
               ))}</div>
             </div>

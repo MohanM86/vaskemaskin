@@ -150,7 +150,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                 <AnimatedBar value={stats.silence} max={10} label="Støynivå" color="#14B8A6" suffix="/10" />
                 <AnimatedBar value={stats.innovation} max={10} label="Innovasjon" color="#2DD4BF" suffix="/10" />
                 <AnimatedBar value={stats.value} max={10} label="Verdi for pengene" color="#5EEAD4" suffix="/10" />
-                <div className="grid grid-cols-3 gap-4 mt-6 pt-5 border-t border-slate-100">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 pt-5 border-t border-slate-100">
                   <div className="text-center"><div className="font-serif text-2xl font-bold text-aqua-600"><AnimatedCounter target={stats.lifespan} suffix=" år" /></div><div className="text-xs text-slate-500 mt-1">Forventet levetid</div></div>
                   <div className="text-center"><div className="font-serif text-2xl font-bold text-aqua-600"><AnimatedCounter target={stats.serviceNetwork} suffix="/10" /></div><div className="text-xs text-slate-500 mt-1">Service i Norge</div></div>
                   <div className="text-center"><div className="font-serif text-2xl font-bold text-aqua-600">{overallScore}</div><div className="text-xs text-slate-500 mt-1">Totalvurdering</div></div>
@@ -165,7 +165,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                   <div className="w-10 h-10 rounded-xl bg-aqua-50 flex items-center justify-center"><IconZap size={20} color="#0D9488" /></div>
                   <h2 className="font-serif text-2xl font-bold text-slate-900">Teknologi</h2>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {tech.map((t, i) => (
                     <div key={i} className="group p-4 rounded-xl border border-slate-200 hover:border-aqua-300 hover:shadow-md transition-all bg-white">
                       <div className="w-8 h-8 rounded-lg bg-aqua-50 flex items-center justify-center mb-3 group-hover:bg-aqua-100 transition-colors"><IconZap size={14} color="#0D9488" /></div>

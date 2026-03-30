@@ -212,7 +212,7 @@ export default function ArticleLayout({ article, categoryName, categorySlug, rel
 
             {/* ═══ READING STATS BAR (animated) ═══ */}
             <div className="my-12 p-6 rounded-2xl bg-slate-50 border border-slate-200">
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="font-serif text-2xl font-bold text-aqua-600"><AnimatedCounter target={article.sections.length} /></div>
                   <div className="text-xs text-slate-500 mt-1">seksjoner</div>

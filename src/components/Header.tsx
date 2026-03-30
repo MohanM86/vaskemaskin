@@ -67,9 +67,9 @@ export default function Header() {
               {activeMenu === 'merker' && (
                 <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[520px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Premium og storselgere</div>
-                  <div className="grid grid-cols-4 gap-2 mb-4">{brands.slice(0, 8).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-sm font-medium text-slate-700 text-center transition-colors">{b.name}</Link>))}</div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">{brands.slice(0, 8).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-sm font-medium text-slate-700 text-center transition-colors">{b.name}</Link>))}</div>
                   <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Flere merker</div>
-                  <div className="grid grid-cols-4 gap-2 mb-4">{brands.slice(8).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-xs text-slate-500 text-center transition-colors">{b.name}</Link>))}</div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">{brands.slice(8).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-xs text-slate-500 text-center transition-colors">{b.name}</Link>))}</div>
                   <div className="border-t border-slate-100 pt-3"><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Sammenlign</div><div className="flex flex-wrap gap-2">{comparisons.slice(0, 4).map(c => (<Link key={c.slug} href={'/sammenligning/' + c.slug + '/'} className="text-xs text-aqua-600 hover:text-aqua-700">{c.brand1} vs {c.brand2}</Link>))}</div></div>
                 </div>
               )}
@@ -110,7 +110,7 @@ export default function Header() {
         <div className="lg:hidden border-t border-slate-100 bg-white max-h-[80vh] overflow-y-auto">
           <div className="container-site py-4 space-y-4">
             <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Kategorier</div><div className="grid grid-cols-2 gap-2">{categories.map(cat => (<Link key={cat.slug} href={'/kategori/' + cat.slug + '/'} className="flex items-center gap-2 p-2 rounded-lg hover:bg-aqua-50 text-sm text-slate-700" onClick={() => setMobileOpen(false)}><CategoryIcon slug={cat.slug} size={16} color="#0D9488" />{cat.shortName}</Link>))}</div></div>
-            <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Merker</div><div className="grid grid-cols-3 gap-2">{brands.slice(0, 12).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-sm text-slate-700 text-center" onClick={() => setMobileOpen(false)}>{b.name}</Link>))}</div></div>
+            <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Merker</div><div className="grid grid-cols-2 sm:grid-cols-3 gap-2">{brands.slice(0, 12).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="p-2 rounded-lg hover:bg-aqua-50 text-sm text-slate-700 text-center" onClick={() => setMobileOpen(false)}>{b.name}</Link>))}</div></div>
             <div className="grid grid-cols-2 gap-2">
               <Link href="/feilkode/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center" onClick={() => setMobileOpen(false)}>Feilkoder</Link>
               <Link href="/bruksanvisning/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center" onClick={() => setMobileOpen(false)}>Bruksanvisning</Link>

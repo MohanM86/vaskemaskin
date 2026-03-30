@@ -69,7 +69,7 @@ export default function EnergiKalkulatorPage() {
 
           <section data-section-id="resultat" className="scroll-mt-20 mb-8">
             <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Ditt resultat</h2>
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
               <div className="p-5 rounded-xl bg-aqua-50 border border-aqua-200 text-center">
                 <div className="text-xs text-aqua-700 font-medium mb-1">Årlig strømkostnad</div>
                 <div className="font-serif text-2xl font-bold text-aqua-600">{kostnadPerAar} kr</div>

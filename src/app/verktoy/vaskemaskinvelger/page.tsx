@@ -70,7 +70,7 @@ export default function VaskemaskinvelgerPage() {
             <div className="max-w-lg">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-2">Hvor mange bor i husstanden?</h2>
               <p className="text-sm text-slate-500 mb-6">Dette avgjør hvilken kapasitet du trenger</p>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {optBtn('1-2', '1 til 2', 'Par eller singel', setHusstand, husstand)}
                 {optBtn('3-4', '3 til 4', 'Liten familie', setHusstand, husstand)}
                 {optBtn('5+', '5 eller flere', 'Stor familie', setHusstand, husstand)}
@@ -98,7 +98,7 @@ export default function VaskemaskinvelgerPage() {
             <div className="max-w-lg">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-2">Hva er budsjettet ditt?</h2>
               <p className="text-sm text-slate-500 mb-6">Høyere pris gir bedre holdbarhet og funksjoner</p>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {optBtn('lav', 'Under 5 000 kr', 'Grunnleggende', setBudsjett, budsjett)}
                 {optBtn('middels', '5-10 000 kr', 'Gode funksjoner', setBudsjett, budsjett)}
                 {optBtn('hoy', 'Over 10 000 kr', 'Premium kvalitet', setBudsjett, budsjett)}
@@ -135,7 +135,7 @@ export default function VaskemaskinvelgerPage() {
 
               <div className="p-5 rounded-xl border border-slate-200 bg-white mb-6">
                 <h3 className="text-sm font-bold text-slate-700 mb-3">Dine valg</h3>
-                <div className="grid grid-cols-3 gap-4 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
                   <div><span className="text-slate-400">Husstand:</span> <span className="font-medium text-slate-800">{husstand} personer</span></div>
                   <div><span className="text-slate-400">Plass:</span> <span className="font-medium text-slate-800">{plass === 'standard' ? '60 cm' : '40 cm'}</span></div>
                   <div><span className="text-slate-400">Budsjett:</span> <span className="font-medium text-slate-800">{budsjett === 'lav' ? 'Under 5K' : budsjett === 'middels' ? '5-10K' : 'Over 10K'}</span></div>
