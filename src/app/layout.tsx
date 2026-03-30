@@ -8,10 +8,10 @@ import { ScrollReveal } from '@/components/UI'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
+    default: 'Vaskemaskin.no | Kjøpsguide, priser og test',
     template: '%s | Vaskemaskin.no',
   },
-  description: 'Norges mest komplette ressurs om vaskemaskiner. Kjøpsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for å velge riktig vaskemaskin.',
+  description: 'Komplett guide til kjøp av vaskemaskin. Sammenlign 18 merker, les tester, sjekk priser og finn riktig maskin for dine behov.',
   metadataBase: new URL('https://vaskemaskin.no'),
   alternates: { canonical: 'https://vaskemaskin.no' },
   icons: {
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'nb_NO',
     siteName: 'Vaskemaskin.no',
-    title: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
+    title: 'Vaskemaskin.no | Kjøpsguide, priser og test',
     description: 'Kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger og 147 butikker.',
     url: 'https://vaskemaskin.no',
-    images: [{ url: 'https://vaskemaskin.no/og-image.svg', width: 1200, height: 630, alt: 'Vaskemaskin.no' }],
+    images: [{ url: 'https://vaskemaskin.no/og-image.png', width: 1200, height: 630, alt: 'Vaskemaskin.no' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
+    title: 'Vaskemaskin.no | Kjøpsguide, priser og test',
     description: 'Kjøpsguider, merkesammenligninger, feilkoder og bruksanvisninger.',
-    images: ['https://vaskemaskin.no/og-image.svg'],
+    images: ['https://vaskemaskin.no/og-image.png'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   other: { 'theme-color': '#0D9488' },

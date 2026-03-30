@@ -4,7 +4,7 @@ import { IconEnergi, IconWasher, IconTrendingUp, IconTarget } from '@/components
 import PageSidebar from '@/components/PageSidebar'
 import { createMeta } from '@/lib/seo'
 
-export const metadata = createMeta({ title: 'Interaktive verktøy | Vaskemaskin.no', description: 'Energikalkulator, vaskemaskinvelger, kapasitetskalkulator og prissammenligning. Interaktive verktøy for å finne og sammenligne vaskemaskiner.', path: 'verktoy' })
+export const metadata = createMeta({ title: 'Interaktive verktøy for vaskemaskin 2026', description: 'Energikalkulator, vaskemaskinvelger, kapasitetskalkulator og prissammenligning. Interaktive verktøy for å finne og sammenligne vaskemaskiner.', path: 'verktoy' })
 
 const tools = [
   { href: '/verktoy/energikalkulator/', icon: IconEnergi, title: 'Energikalkulator', desc: 'Beregn hva vaskemaskinen koster i strøm per år basert på energiklasse, vaskefrekvens og strømpris.', cta: 'Beregn strømkostnad' },

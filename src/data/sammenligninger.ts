@@ -32,7 +32,7 @@ export const comparisons: Comparison[] = [
     slug: 'miele-vs-bosch',
     brand1: 'Miele', brand2: 'Bosch',
     title: 'Miele vs Bosch vaskemaskin: Er Miele verdt den ekstra prisen?',
-    metaTitle: 'Miele vs Bosch vaskemaskin | Er premium verdt det?',
+    metaTitle: 'Miele vs Bosch vaskemaskin | Er premium verdt det? 2026',
     metaDescription: 'Miele vs Bosch vaskemaskin sammenligning. Er Miele sin 20 års holdbarhet verdt den høyere prisen sammenlignet med Bosch?',
     intro: 'Miele og Bosch er begge tyske kvalitetsmerker, men Miele posisjonerer seg som det absolutte premiumvalget. Spørsmålet mange norske forbrukere stiller seg er om Miele sin høyere pris rettferdiggjøres av bedre kvalitet og lengre levetid.',
     categories: [
@@ -64,7 +64,7 @@ export const comparisons: Comparison[] = [
     slug: 'electrolux-vs-aeg',
     brand1: 'Electrolux', brand2: 'AEG',
     title: 'Electrolux vs AEG vaskemaskin: Søskenrivalene',
-    metaTitle: 'Electrolux vs AEG vaskemaskin | Hva er forskjellen?',
+    metaTitle: 'Electrolux vs AEG vaskemaskin | Hva er forskjellen? 2026',
     metaDescription: 'Electrolux vs AEG vaskemaskin: Begge eies av samme konsern. Vi forklarer forskjellene og hjelper deg å velge riktig.',
     intro: 'Electrolux og AEG er søstermerker under Electrolux konsernet. Mange lurer på hva som egentlig skiller dem. Kort sagt posisjonerer AEG seg som det mer premiumorienterte merket med tysk ingeniørtradisjon, mens Electrolux fokuserer på skandinavisk brukervennlighet.',
     categories: [
@@ -80,7 +80,7 @@ export const comparisons: Comparison[] = [
     slug: 'miele-vs-asko',
     brand1: 'Miele', brand2: 'ASKO',
     title: 'Miele vs ASKO vaskemaskin: To premium med 20 års levetid',
-    metaTitle: 'Miele vs ASKO vaskemaskin | Topp holdbarhet sammenlignet',
+    metaTitle: 'Miele vs ASKO vaskemaskin | Topp holdbarhet sammenlignet 2026',
     metaDescription: 'Miele vs ASKO: Begge bygger vaskemaskiner for 20 års levetid. Vi sammenligner de to premium alternativene.',
     intro: 'Miele og ASKO er de to eneste merkene som tester sine vaskemaskiner for 20 års levetid. Begge representerer det ypperste innen holdbarhet, men med forskjellig tilnærming til teknologi og brukeropplevelse.',
     categories: [
@@ -96,7 +96,7 @@ export const comparisons: Comparison[] = [
     slug: 'bosch-vs-siemens',
     brand1: 'Bosch', brand2: 'Siemens',
     title: 'Bosch vs Siemens vaskemaskin: Hva er egentlig forskjellen?',
-    metaTitle: 'Bosch vs Siemens vaskemaskin | Samme konsern, ulik profil',
+    metaTitle: 'Bosch vs Siemens vaskemaskin | Samme konsern, ulik profil 2026',
     metaDescription: 'Bosch vs Siemens vaskemaskin: Begge er BSH. Vi forklarer de reelle forskjellene og hjelper deg å velge riktig.',
     intro: 'Bosch og Siemens deler teknologiplattform gjennom BSH konsernet. Innvendig er maskinene svært like, men det finnes reelle forskjeller i funksjoner, design og posisjonering som kan påvirke ditt valg.',
     categories: [
@@ -112,7 +112,7 @@ export const comparisons: Comparison[] = [
     slug: 'lg-vs-bosch',
     brand1: 'LG', brand2: 'Bosch',
     title: 'LG vs Bosch vaskemaskin: Teknologi mot tradisjon',
-    metaTitle: 'LG vs Bosch vaskemaskin | Innovasjon mot pålitelighet',
+    metaTitle: 'LG vs Bosch vaskemaskin | Innovasjon mot pålitelighet 2026',
     metaDescription: 'LG vs Bosch vaskemaskin: AI Direct Drive mot i-DOS. Sammenligning av teknologi, kvalitet, pris og service.',
     intro: 'LG og Bosch representerer to ulike tilnærminger til vaskemaskiner. LG satser på AI Direct Drive motor med automatisk stoffgjenkjenning og TurboWash hurtigvask på 39 minutter. Bosch satser på i-DOS automatisk dosering, EcoSilence Drive for ekstremt stille drift og tysk pålitelighet. Begge ligger i mellomklassen mellom seks og ti tusen kroner, men prioriteringene er forskjellige.',
     categories: [
@@ -144,7 +144,7 @@ export const comparisons: Comparison[] = [
     slug: 'miele-vs-samsung',
     brand1: 'Miele', brand2: 'Samsung',
     title: 'Miele vs Samsung vaskemaskin: Premium mot verdi',
-    metaTitle: 'Miele vs Samsung vaskemaskin | Premium verdt prisen?',
+    metaTitle: 'Miele vs Samsung vaskemaskin | Premium verdt prisen? 2026',
     metaDescription: 'Miele vs Samsung vaskemaskin: Er Miele sin 20 års holdbarhet verdt tre ganger prisen sammenlignet med Samsung?',
     intro: 'Miele og Samsung representerer to helt ulike filosofier innen vaskemaskiner. Miele er det tyske premiummerket med TwinDos dosering og maskiner testet for tjue års levetid. Samsung er den sørkoreanske teknologiganten med EcoBubble, AI Energy og mest innovasjon per krone. Prisforskjellen er betydelig med Miele fra ti tusen og Samsung fra fire tusen kroner.',
     categories: [

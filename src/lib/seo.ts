@@ -21,7 +21,7 @@ export function createMeta(opts: {
       siteName: SITE_NAME,
       type: 'website',
       locale: 'nb_NO',
-      images: [{ url: 'https://vaskemaskin.no/og-image.svg', width: 1200, height: 630, alt: opts.title }],
+      images: [{ url: 'https://vaskemaskin.no/og-image.png', width: 1200, height: 630, alt: opts.title }],
     },
     twitter: {
       card: 'summary_large_image',

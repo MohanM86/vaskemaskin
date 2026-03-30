@@ -36,7 +36,7 @@ const faqGroups = [
 const allFaqs = faqGroups.flatMap(g => g.items)
 const sections = faqGroups.map(g => ({ id: g.id, label: g.title + ' (' + g.items.length + ')' }))
 
-export const metadata = createMeta({ title: 'Ofte stilte spørsmål | Vaskemaskin.no', description: 'Svar på ' + allFaqs.length + ' vanlige spørsmål om vaskemaskiner.', path: 'faq' })
+export const metadata = createMeta({ title: 'Ofte stilte spørsmål om vaskemaskin 2026', description: 'Svar på ' + allFaqs.length + ' vanlige spørsmål om vaskemaskiner.', path: 'faq' })
 
 export default function FAQPage() {
   return (

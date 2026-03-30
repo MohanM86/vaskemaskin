@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/UI'
 import PageSidebar from '@/components/PageSidebar'
 import { createMeta } from '@/lib/seo'
 
-export const metadata = createMeta({ title: 'Hvitevarebutikker i alle fylker | Vaskemaskin.no', description: 'Finn hvitevarebutikker over hele Norge. ' + stores.length + ' butikker i alle 15 fylker.', path: 'fylker' })
+export const metadata = createMeta({ title: 'Hvitevarebutikker i hele Norge 2026', description: 'Finn hvitevarebutikker over hele Norge. ' + stores.length + ' butikker i alle 15 fylker.', path: 'fylker' })
 
 export default function FylkerPage() {
   const sections = fylker.map(f => ({ id: f.slug, label: f.name }))

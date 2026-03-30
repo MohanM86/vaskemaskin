@@ -5,7 +5,7 @@ import PageSidebar from '@/components/PageSidebar'
 import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 
-export const metadata = createMeta({ title: 'Bruksanvisning vaskemaskin | Alle merker', description: 'Bruksanvisninger for vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Miele og flere. Programmer, symboler og dosering.', path: 'bruksanvisning' })
+export const metadata = createMeta({ title: 'Bruksanvisning vaskemaskin | Alle merker 2026', description: 'Bruksanvisninger for vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Miele og flere. Programmer, symboler og dosering.', path: 'bruksanvisning' })
 
 export default function BruksanvisningPage() {
   const sections = manuals.map(m => ({ id: m.slug, label: m.name }))

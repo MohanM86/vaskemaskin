@@ -185,7 +185,7 @@ export const articles: Article[] = [
   {
     slug: 'rengjøre-vaskemaskin',
     title: 'Slik rengjør du vaskemaskinen: Komplett vedlikeholdsguide',
-    metaTitle: 'Rengjøre vaskemaskin | Steg for steg vedlikeholdsguide',
+    metaTitle: 'Rengjøre vaskemaskin | Steg for steg vedlikeholdsguide 2026',
     metaDescription: 'Lær å rengjøre vaskemaskinen skikkelig. Fjern kalk, mugg og vond lukt med enkle midler du allerede har hjemme.',
     category: 'vedlikehold',
     excerpt: 'Vaskemaskinen din rengjør klærne dine, men hvem rengjør vaskemaskinen? Her er en komplett guide til vedlikehold som forlenger levetiden.',
@@ -236,7 +236,7 @@ export const articles: Article[] = [
   {
     slug: 'vanlige-feilkoder',
     title: 'Vanlige feilkoder på vaskemaskiner og hva de betyr',
-    metaTitle: 'Feilkoder vaskemaskin | Oversikt og løsninger alle merker',
+    metaTitle: 'Feilkoder vaskemaskin | Oversikt og løsninger alle merker 2026',
     metaDescription: 'Oversikt over vanlige feilkoder på vaskemaskiner fra Samsung, Bosch, LG, Electrolux og flere. Finn ut hva koden betyr og hva du kan gjøre selv.',
     category: 'vedlikehold',
     excerpt: 'Når vaskemaskinen viser en feilkode er det ikke alltid grunn til panikk. Mange feil kan du fikse selv på noen få minutter.',
@@ -353,7 +353,7 @@ export const articles: Article[] = [
   {
     slug: 'spare-strom-vaskemaskin',
     title: 'Slik sparer du strøm med vaskemaskinen',
-    metaTitle: 'Spar strøm vaskemaskin | 8 enkle tips som kutter regningen',
+    metaTitle: 'Spar strøm vaskemaskin | 8 enkle tips som kutter regningen 2026',
     metaDescription: 'Åtte praktiske tips for å redusere strømforbruket på vaskemaskinen. Spar hundrevis av kroner i året med små endringer i vaskevanene.',
     category: 'energi-og-miljo',
     excerpt: 'Små endringer i vaskevanene kan spare deg for hundrevis av kroner i året. Her er de mest effektive tipsene.',
@@ -497,7 +497,7 @@ export const articles: Article[] = [
   {
     slug: 'vaske-ull-uten-krymping',
     title: 'Slik vasker du ull uten å krympe det',
-    metaTitle: 'Vaske ull i vaskemaskin | Unngå krymping og skade',
+    metaTitle: 'Vaske ull i vaskemaskin | Unngå krymping og skade 2026',
     metaDescription: 'Lær å vaske ullklær i vaskemaskinen uten krymping. Riktig temperatur, program og vaskemiddel for ull og kashmir.',
     category: 'kjopsguide',
     excerpt: 'Ull trenger spesialbehandling, men med riktig program og temperatur kan du trygt vaske det i maskin.',
@@ -623,7 +623,7 @@ export const articles: Article[] = [
   {
     slug: 'vaske-sko-i-vaskemaskin',
     title: 'Slik vasker du sko i vaskemaskinen',
-    metaTitle: 'Vaske sko i vaskemaskin | Guide for trygge resultater',
+    metaTitle: 'Vaske sko i vaskemaskin | Guide for trygge resultater 2026',
     metaDescription: 'Kan du vaske sko i vaskemaskin? Ja, men ikke alle typer. Les hvilke sko som tåler maskin og hvordan du gjør det riktig.',
     category: 'vedlikehold',
     excerpt: 'Mange sko kan faktisk vaskes i maskin, men det er viktig å vite hvilke typer som tåler det og hvordan du beskytter både sko og maskin.',
@@ -646,7 +646,7 @@ export const articles: Article[] = [
   {
     slug: 'vaskemaskin-lukt',
     title: 'Vaskemaskin lukter vondt: Årsaker og løsninger',
-    metaTitle: 'Vaskemaskin lukter vondt | Fjern vond lukt for godt',
+    metaTitle: 'Vaskemaskin lukter vondt | Fjern vond lukt for godt 2026',
     metaDescription: 'Vond lukt fra vaskemaskinen? Her er de vanligste årsakene og slik fjerner du lukten for godt med enkle midler.',
     category: 'vedlikehold',
     excerpt: 'Vond lukt fra vaskemaskinen er et vanlig problem, men det er heldigvis enkelt å fikse med riktige tiltak.',
@@ -692,7 +692,7 @@ export const articles: Article[] = [
   {
     slug: 'vasketemperatur-guide',
     title: 'Vasketemperatur guide: Riktig temperatur for hvert plagg',
-    metaTitle: 'Vasketemperatur guide | 30, 40, 60 eller 90 grader?',
+    metaTitle: 'Vasketemperatur guide | 30, 40, 60 eller 90 grader? 2026',
     metaDescription: 'Hvilken vasketemperatur bør du velge? Komplett guide til 30, 40, 60 og 90 grader. Hva som passer for bomull, syntetisk, ull og silke.',
     category: 'kjopsguide',
     excerpt: 'Riktig temperatur gir bedre vaskeresultat, sparer strøm og beskytter klærne dine. Her er den komplette guiden.',
@@ -842,7 +842,7 @@ export const articles: Article[] = [
   {
     slug: 'reklamasjon-garanti-vaskemaskin',
     title: 'Reklamasjon og garanti på vaskemaskin: Dine rettigheter',
-    metaTitle: 'Reklamasjon vaskemaskin | 5 års rettigheter forklart',
+    metaTitle: 'Reklamasjon vaskemaskin | 5 års rettigheter forklart 2026',
     metaDescription: 'Du har 5 års reklamasjonsrett på vaskemaskiner i Norge. Les om dine rettigheter, hvordan du klager og hva butikken plikter.',
     category: 'kjopsguide',
     excerpt: 'Mange vet ikke at de har 5 års reklamasjonsrett på vaskemaskiner. Her er alt du trenger å vite om dine rettigheter.',
@@ -942,7 +942,7 @@ export const articles: Article[] = [
   {
     slug: 'vaskemaskin-stoyer',
     title: 'Vaskemaskin bråker og vibrerer: Årsaker og løsninger',
-    metaTitle: 'Vaskemaskin støyer og vibrerer | Slik løser du det',
+    metaTitle: 'Vaskemaskin støyer og vibrerer | Slik løser du det 2026',
     metaDescription: 'Bråker vaskemaskinen din? Les om de vanligste årsakene til støy og vibrasjoner, og hva du kan gjøre for å fikse det.',
     category: 'vedlikehold',
     excerpt: 'Unormal støy og vibrasjoner fra vaskemaskinen kan ha enkle årsaker som du kan fikse selv.',
@@ -965,7 +965,7 @@ export const articles: Article[] = [
   {
     slug: 'vaske-babyklær',
     title: 'Slik vasker du babyklær i vaskemaskin',
-    metaTitle: 'Vaske babyklær | Riktig temperatur og vaskemiddel',
+    metaTitle: 'Vaske babyklær | Riktig temperatur og vaskemiddel 2026',
     metaDescription: 'Guide til vask av babyklær. Riktig temperatur, hypoallergenisk vaskemiddel og tips for sensitiv babyhud.',
     category: 'kjopsguide',
     excerpt: 'Babyhud er mye mer sensitiv enn voksen hud. Her er hva du bør vite om vask av babyklær.',
@@ -988,7 +988,7 @@ export const articles: Article[] = [
   {
     slug: 'vaske-gardiner',
     title: 'Slik vasker du gardiner i vaskemaskin',
-    metaTitle: 'Vaske gardiner i vaskemaskin | Steg for steg guide',
+    metaTitle: 'Vaske gardiner i vaskemaskin | Steg for steg guide 2026',
     metaDescription: 'Lær å vaske gardiner trygt i vaskemaskinen. Hvilke typer tåler maskin, riktig temperatur og tørking.',
     category: 'vedlikehold',
     excerpt: 'De fleste gardiner kan vaskes i maskin, men feil temperatur kan føre til krymping. Her er den trygge guiden.',
@@ -1034,7 +1034,7 @@ export const articles: Article[] = [
   {
     slug: 'allergivask',
     title: 'Vask for allergikere: Fjern allergener fra klær og sengetøy',
-    metaTitle: 'Allergivask vaskemaskin | Fjern støvmidd og pollen',
+    metaTitle: 'Allergivask vaskemaskin | Fjern støvmidd og pollen 2026',
     metaDescription: 'Slik vasker du klær og sengetøy for å fjerne allergener. Temperatur, vaskemiddel og programmer for allergikere.',
     category: 'kjopsguide',
     excerpt: 'Riktig vask kan drastisk redusere allergiproblemer. Her er de viktigste rådene for allergikervask.',
@@ -1057,7 +1057,7 @@ export const articles: Article[] = [
   {
     slug: 'naar-bytte-vaskemaskin',
     title: 'Når bør du bytte vaskemaskin? 7 tegn på at tiden er inne',
-    metaTitle: 'Når bytte vaskemaskin | 7 tegn du bør se etter',
+    metaTitle: 'Når bytte vaskemaskin | 7 tegn du bør se etter 2026',
     metaDescription: 'Usikker på om du bør reparere eller bytte? Her er de 7 tegnene på at det er på tide med ny vaskemaskin.',
     category: 'kjopsguide',
     excerpt: 'Noen ganger er det billigere å kjøpe nytt enn å reparere. Her er tegnene du bør se etter.',
@@ -1098,7 +1098,7 @@ export const articles: Article[] = [
   {
     slug: 'sportsklær-vask',
     title: 'Slik vasker du sportsklær riktig',
-    metaTitle: 'Vaske sportsklær | Fjern lukt og bevar funksjon',
+    metaTitle: 'Vaske sportsklær | Fjern lukt og bevar funksjon 2026',
     metaDescription: 'Sportsklær trenger spesiell behandling. Lær å fjerne svetteukt og bevare de tekniske egenskapene i treningsklærne.',
     category: 'vedlikehold',
     excerpt: 'Sportsklær i syntetiske materialer kan utvikle permanent svetteukt hvis de vaskes feil. Her er løsningen.',

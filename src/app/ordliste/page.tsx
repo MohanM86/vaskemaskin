@@ -5,7 +5,7 @@ import PageSidebar from '@/components/PageSidebar'
 import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 
-export const metadata = createMeta({ title: 'Ordliste vaskemaskin | Alle begreper fra A til Å', description: 'Komplett ordliste for vaskemaskiner. ' + terms.length + ' begreper forklart i et enkelt og forståelig språk.', path: 'ordliste' })
+export const metadata = createMeta({ title: 'Ordliste vaskemaskin | Alle begreper 2026', description: 'Komplett ordliste for vaskemaskiner. ' + terms.length + ' begreper forklart i et enkelt og forståelig språk.', path: 'ordliste' })
 
 export default function OrdlistePage() {
   const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term, 'nb'))

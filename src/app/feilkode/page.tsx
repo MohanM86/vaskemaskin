@@ -5,7 +5,7 @@ import PageSidebar from '@/components/PageSidebar'
 import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 
-export const metadata = createMeta({ title: 'Feilkoder vaskemaskin | Alle merker og koder', description: 'Komplett oversikt over feilkoder på vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Siemens, Miele, AEG, Whirlpool, ASKO og Grundig.', path: 'feilkode' })
+export const metadata = createMeta({ title: 'Feilkoder vaskemaskin | Alle merker 2026', description: 'Komplett oversikt over feilkoder på vaskemaskiner fra Samsung, Bosch, LG, Electrolux, Siemens, Miele, AEG, Whirlpool, ASKO og Grundig.', path: 'feilkode' })
 
 export default function FeilkodeOverviewPage() {
   const totalCodes = errorBrands.reduce((sum, b) => sum + b.codes.length, 0)
