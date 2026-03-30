@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C3532"/>
+      <stop offset="100%" stop-color="#115E59"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="900" cy="350" r="120" stroke="rgba(255,255,255,0.15)" stroke-width="3" fill="none"/>
+  <circle cx="900" cy="350" r="70" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/>
+  <circle cx="900" cy="350" r="25" fill="rgba(255,255,255,0.08)"/>
+  <text x="80" y="220" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="white">Vaskemaskin.no</text>
+  <text x="80" y="290" font-family="system-ui, sans-serif" font-size="28" fill="rgba(204,251,241,0.8)">Norges mest komplette vaskemaskinressurs</text>
+  <text x="80" y="380" font-family="system-ui, sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">Kjøpsguider  ·  Merkesammenligninger  ·  Feilkoder  ·  Bruksanvisninger</text>
+  <text x="80" y="420" font-family="system-ui, sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">451 sider  ·  18 merker  ·  51 feilkoder  ·  147 butikker</text>
+  <rect x="80" y="500" width="140" height="40" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="110" y="526" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="white">it-firma.no</text>
+</svg>

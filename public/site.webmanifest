@@ -1,0 +1,16 @@
+{
+  "name": "Vaskemaskin.no",
+  "short_name": "Vaskemaskin",
+  "description": "Norges mest komplette vaskemaskinressurs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D9488",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

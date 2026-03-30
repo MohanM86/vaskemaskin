@@ -14,8 +14,28 @@ export const metadata: Metadata = {
   description: 'Norges mest komplette ressurs om vaskemaskiner. Kjøpsguider, merkesammenligninger, vedlikeholdstips og alt du trenger for å velge riktig vaskemaskin.',
   metadataBase: new URL('https://vaskemaskin.no'),
   alternates: { canonical: 'https://vaskemaskin.no' },
-  openGraph: { type: 'website', locale: 'nb_NO', siteName: 'Vaskemaskin.no' },
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  manifest: '/site.webmanifest',
+  openGraph: {
+    type: 'website',
+    locale: 'nb_NO',
+    siteName: 'Vaskemaskin.no',
+    title: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
+    description: 'Kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger og 147 butikker.',
+    url: 'https://vaskemaskin.no',
+    images: [{ url: 'https://vaskemaskin.no/og-image.svg', width: 1200, height: 630, alt: 'Vaskemaskin.no' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vaskemaskin.no | Norges komplette vaskemaskinressurs',
+    description: 'Kjøpsguider, merkesammenligninger, feilkoder og bruksanvisninger.',
+    images: ['https://vaskemaskin.no/og-image.svg'],
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  other: { 'theme-color': '#0D9488' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

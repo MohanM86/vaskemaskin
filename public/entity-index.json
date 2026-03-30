@@ -2,8 +2,9 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Vaskemaskin.no",
+  "alternateName": "Vaskemaskin",
   "url": "https://vaskemaskin.no",
-  "description": "Norges mest komplette ressurs om vaskemaskiner. Uavhengig informasjon, kjøpsguider, merkesammenligninger og vedlikeholdstips.",
+  "description": "Norges mest komplette kunnskapsportal om vaskemaskiner. 451 sider med kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste og butikkoversikt.",
   "inLanguage": "nb",
   "publisher": {
     "@type": "Organization",
@@ -12,24 +13,190 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "name": "Vaskemaskinmerker",
+    "name": "Vaskemaskinmerker i Norge",
+    "numberOfItems": 18,
     "itemListElement": [
-      { "@type": "Brand", "name": "Samsung", "url": "https://vaskemaskin.no/merke/samsung/" },
-      { "@type": "Brand", "name": "Bosch", "url": "https://vaskemaskin.no/merke/bosch/" },
-      { "@type": "Brand", "name": "Siemens", "url": "https://vaskemaskin.no/merke/siemens/" },
-      { "@type": "Brand", "name": "LG", "url": "https://vaskemaskin.no/merke/lg/" },
-      { "@type": "Brand", "name": "Electrolux", "url": "https://vaskemaskin.no/merke/electrolux/" },
-      { "@type": "Brand", "name": "Miele", "url": "https://vaskemaskin.no/merke/miele/" },
-      { "@type": "Brand", "name": "AEG", "url": "https://vaskemaskin.no/merke/aeg/" },
-      { "@type": "Brand", "name": "Whirlpool", "url": "https://vaskemaskin.no/merke/whirlpool/" }
+      {
+        "@type": "Brand",
+        "name": "Samsung",
+        "url": "https://vaskemaskin.no/merke/samsung/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Bosch",
+        "url": "https://vaskemaskin.no/merke/bosch/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Siemens",
+        "url": "https://vaskemaskin.no/merke/siemens/"
+      },
+      {
+        "@type": "Brand",
+        "name": "LG",
+        "url": "https://vaskemaskin.no/merke/lg/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Electrolux",
+        "url": "https://vaskemaskin.no/merke/electrolux/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Miele",
+        "url": "https://vaskemaskin.no/merke/miele/"
+      },
+      {
+        "@type": "Brand",
+        "name": "AEG",
+        "url": "https://vaskemaskin.no/merke/aeg/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Whirlpool",
+        "url": "https://vaskemaskin.no/merke/whirlpool/"
+      },
+      {
+        "@type": "Brand",
+        "name": "ASKO",
+        "url": "https://vaskemaskin.no/merke/asko/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Grundig",
+        "url": "https://vaskemaskin.no/merke/grundig/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Beko",
+        "url": "https://vaskemaskin.no/merke/beko/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Hisense",
+        "url": "https://vaskemaskin.no/merke/hisense/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Gorenje",
+        "url": "https://vaskemaskin.no/merke/gorenje/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Candy",
+        "url": "https://vaskemaskin.no/merke/candy/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Haier",
+        "url": "https://vaskemaskin.no/merke/haier/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Hotpoint",
+        "url": "https://vaskemaskin.no/merke/hotpoint/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Indesit",
+        "url": "https://vaskemaskin.no/merke/indesit/"
+      },
+      {
+        "@type": "Brand",
+        "name": "Bauknecht",
+        "url": "https://vaskemaskin.no/merke/bauknecht/"
+      }
     ]
   },
   "hasPart": [
-    { "@type": "WebPage", "name": "Toppmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/toppmatere/" },
-    { "@type": "WebPage", "name": "Frontmaterevaskemaskiner", "url": "https://vaskemaskin.no/kategori/frontmatere/" },
-    { "@type": "WebPage", "name": "Vasketørkere", "url": "https://vaskemaskin.no/kategori/vasketorker/" },
-    { "@type": "WebPage", "name": "Energi og miljø", "url": "https://vaskemaskin.no/kategori/energi-og-miljo/" },
-    { "@type": "WebPage", "name": "Vedlikehold", "url": "https://vaskemaskin.no/kategori/vedlikehold/" },
-    { "@type": "WebPage", "name": "Kjøpsguider", "url": "https://vaskemaskin.no/kategori/kjopsguide/" }
-  ]
+    {
+      "@type": "WebPage",
+      "name": "Komplett kjøpsguide 2026",
+      "url": "https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Beste vaskemaskin 2026",
+      "url": "https://vaskemaskin.no/artikkel/beste-vaskemaskin-2026/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Vaskesymboler guide",
+      "url": "https://vaskemaskin.no/artikkel/vaskesymboler-guide/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Energimerking forklart",
+      "url": "https://vaskemaskin.no/artikkel/energimerking-forklart/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Feilkoder alle merker",
+      "url": "https://vaskemaskin.no/feilkode/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Bruksanvisninger",
+      "url": "https://vaskemaskin.no/bruksanvisning/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Ordliste vaskemaskin",
+      "url": "https://vaskemaskin.no/ordliste/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Energikalkulator",
+      "url": "https://vaskemaskin.no/verktoy/energikalkulator/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Vaskemaskinvelger",
+      "url": "https://vaskemaskin.no/verktoy/vaskemaskinvelger/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Finn hvitevarebutikk",
+      "url": "https://vaskemaskin.no/fylker/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Toppmater vs frontmater",
+      "url": "https://vaskemaskin.no/artikkel/toppmatere-vs-frontmatere/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Fjerne flekker guide",
+      "url": "https://vaskemaskin.no/artikkel/fjerne-flekker/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Vasketemperatur guide",
+      "url": "https://vaskemaskin.no/artikkel/vasketemperatur-guide/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Vaskemiddel guide",
+      "url": "https://vaskemaskin.no/artikkel/vaskemiddel-guide/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Ofte stilte spørsmål",
+      "url": "https://vaskemaskin.no/faq/"
+    }
+  ],
+  "about": {
+    "@type": "Thing",
+    "name": "Vaskemaskiner",
+    "description": "Elektrisk husholdningsapparat for vask av klær og tekstiler"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Norske forbrukere som skal kjøpe, vedlikeholde eller feilsøke vaskemaskin"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://vaskemaskin.no/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 }

@@ -49,13 +49,32 @@ const brandTech: Record<string, string[]> = {
   siemens: ['iQdrive', 'iDos', 'speedPack', 'Home Connect', 'antiStain'],
   grundig: ['FiberCare', 'Steam', 'SteamCure'],
   beko: ['ProSmart', 'AquaFusion', 'SteamCure'],
-  hisense: ['Steam', 'Inverter', 'Smart'],
+  hisense: ['Steam', 'Inverter', 'ConnectLife'],
   gorenje: ['SteamTech', 'IonTech', 'WaveActive'],
   candy: ['simply-Fi', 'MixPower', 'Smart Touch'],
   haier: ['I-Pro', 'Smart hOn', 'Direct Motion'],
   hotpoint: ['Anti Stain', 'Steam Hygiene'],
   indesit: ['Push and Wash', 'Turn and Wash'],
   bauknecht: ['6th Sense', 'ProSilent', 'SteamCare'],
+}
+
+function splitIntoParagraphs(text: string): string[] {
+  // Split long intro text into readable paragraphs
+  const sentences = text.split('. ').filter(s => s.trim().length > 0)
+  const paragraphs: string[] = []
+  let current = ''
+  
+  for (const sentence of sentences) {
+    const s = sentence.endsWith('.') ? sentence : sentence + '.'
+    if (current.length + s.length > 350 && current.length > 100) {
+      paragraphs.push(current.trim())
+      current = s + ' '
+    } else {
+      current += s + ' '
+    }
+  }
+  if (current.trim()) paragraphs.push(current.trim())
+  return paragraphs
 }
 
 export default function BrandPage({ params }: { params: { slug: string } }) {
@@ -68,6 +87,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
   const stats = brandStats[params.slug] || { reliability: 5, silence: 5, innovation: 5, value: 5, lifespan: 8, serviceNetwork: 5 }
   const tech = brandTech[params.slug] || []
   const overallScore = Math.round(((stats.reliability + stats.silence + stats.innovation + stats.value) / 4) * 10) / 10
+  const introParagraphs = splitIntoParagraphs(brand.intro)
 
   const sections = [
     { id: 'intro', label: 'Om ' + brand.name },
@@ -93,6 +113,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               <span className="text-slate-700 font-medium">{brand.name}</span>
             </nav>
 
+            {/* Header */}
             <div className="flex items-start gap-5 mb-8">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-aqua-50 to-aqua-100 flex items-center justify-center text-2xl font-bold text-aqua-700 flex-shrink-0 border border-aqua-200/50">{brand.name.charAt(0)}</div>
               <div className="flex-1">
@@ -109,10 +130,16 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
+            {/* INTRO — split into readable paragraphs */}
             <section data-section-id="intro" className="scroll-mt-20 mb-10">
-              <div className="prose-article"><p>{brand.intro}</p></div>
+              <div className="prose-article space-y-4">
+                {introParagraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
             </section>
 
+            {/* ANIMATED SCORES */}
             <section data-section-id="score" className="scroll-mt-20 mb-10">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-aqua-50 flex items-center justify-center"><IconTrendingUp size={20} color="#0D9488" /></div>
@@ -131,6 +158,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               </div>
             </section>
 
+            {/* TECH CARDS */}
             {tech.length > 0 && (
               <section data-section-id="teknologi" className="scroll-mt-20 mb-10">
                 <div className="flex items-center gap-3 mb-5">
@@ -148,6 +176,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               </section>
             )}
 
+            {/* PROS & CONS */}
             <section data-section-id="pros-cons" className="scroll-mt-20 mb-10">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-aqua-50 flex items-center justify-center"><IconTarget size={20} color="#0D9488" /></div>
@@ -165,6 +194,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               </div>
             </section>
 
+            {/* MODELS */}
             <section data-section-id="models" className="scroll-mt-20 mb-10">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-aqua-50 flex items-center justify-center"><IconStar size={20} color="#0D9488" /></div>
@@ -178,21 +208,32 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
               ))}</div>
             </section>
 
-            {errorBrand && (<section data-section-id="feilkoder" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Feilkoder for {brand.name}</h2><p className="text-sm text-slate-600 mb-4">{errorBrand.codes.length} feilkoder forklart.</p><div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">{errorBrand.codes.slice(0, 6).map(c => (<Link key={c.slug} href={'/feilkode/' + params.slug + '/' + c.slug + '/'} className="flex items-center gap-2 p-3 rounded-lg border border-slate-200 hover:border-aqua-300 transition-colors"><span className="font-mono text-sm font-bold text-aqua-600">{c.code}</span><span className="text-xs text-slate-600 line-clamp-1">{c.title}</span></Link>))}</div><Link href={'/feilkode/' + params.slug + '/'} className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Se alle {brand.name} feilkoder</Link></section>)}
-            {manual && (<section data-section-id="bruksanvisning" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Bruksanvisning {brand.name}</h2><Link href={'/bruksanvisning/' + params.slug + '/'} className="btn-primary inline-flex items-center gap-2">Les bruksanvisningen<IconArrow size={14} color="white" /></Link></section>)}
-            {brandComparisons.length > 0 && (<section data-section-id="sammenlign" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Sammenligninger</h2><div className="space-y-2">{brandComparisons.map(c => (<Link key={c.slug} href={'/sammenligning/' + c.slug + '/'} className="flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-aqua-300 transition-all"><div className="flex items-center gap-3"><span className="font-serif font-bold text-slate-900">{c.brand1}</span><span className="text-xs font-bold text-aqua-600 bg-aqua-50 px-2 py-0.5 rounded">VS</span><span className="font-serif font-bold text-slate-900">{c.brand2}</span></div><IconArrow size={14} color="#94A3B8" /></Link>))}</div></section>)}
+            {/* FEILKODER */}
+            {errorBrand && (<section data-section-id="feilkoder" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Feilkoder for {brand.name}</h2><p className="text-sm text-slate-600 mb-4">{errorBrand.codes.length} feilkoder forklart med årsaker og løsninger.</p><div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">{errorBrand.codes.slice(0, 6).map(c => (<Link key={c.slug} href={'/feilkode/' + params.slug + '/' + c.slug + '/'} className="flex items-center gap-2 p-3 rounded-lg border border-slate-200 hover:border-aqua-300 transition-colors"><span className="font-mono text-sm font-bold text-aqua-600">{c.code}</span><span className="text-xs text-slate-600 line-clamp-1">{c.title}</span></Link>))}</div><Link href={'/feilkode/' + params.slug + '/'} className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Se alle {brand.name} feilkoder <IconArrow size={12} color="#0F766E" /></Link></section>)}
 
+            {/* BRUKSANVISNING */}
+            {manual && (<section data-section-id="bruksanvisning" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Bruksanvisning {brand.name}</h2><p className="text-sm text-slate-600 mb-4">Programmer, symboler, dosering og vedlikeholdstips.</p><Link href={'/bruksanvisning/' + params.slug + '/'} className="btn-primary inline-flex items-center gap-2">Les bruksanvisningen<IconArrow size={14} color="white" /></Link></section>)}
+
+            {/* SAMMENLIGNINGER */}
+            {brandComparisons.length > 0 && (<section data-section-id="sammenlign" className="scroll-mt-20 mb-10"><h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Sammenligninger</h2><div className="space-y-2">{brandComparisons.map(c => (<Link key={c.slug} href={'/sammenligning/' + c.slug + '/'} className="flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-aqua-300 hover:shadow-sm transition-all"><div className="flex items-center gap-3"><span className="font-serif font-bold text-slate-900">{c.brand1}</span><span className="text-xs font-bold text-aqua-600 bg-aqua-50 px-2 py-0.5 rounded">VS</span><span className="font-serif font-bold text-slate-900">{c.brand2}</span></div><IconArrow size={14} color="#94A3B8" /></Link>))}</div></section>)}
+
+            {/* CTA */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-aqua-50 to-aqua-100/50 border border-aqua-200/60 mb-10">
               <h3 className="font-serif text-xl font-bold text-slate-900 mb-2">Vurderer du {brand.name}?</h3>
               <p className="text-sm text-slate-600 mb-4">Les vår komplette kjøpsguide for å finne modellen som passer best.</p>
-              <Link href="/artikkel/komplett-kjopsguide-2026/" className="btn-primary inline-flex items-center gap-2 text-sm">Les kjøpsguiden<IconArrow size={14} color="white" /></Link>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/artikkel/komplett-kjopsguide-2026/" className="btn-primary inline-flex items-center gap-2 text-sm">Les kjøpsguiden<IconArrow size={14} color="white" /></Link>
+                <Link href="/verktoy/vaskemaskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Ta vår quiz <IconArrow size={12} color="#0F766E" /></Link>
+              </div>
             </div>
 
+            {/* ANDRE MERKER */}
             <section data-section-id="andre" className="scroll-mt-20">
               <h2 className="font-serif text-2xl font-bold text-slate-900 mb-5">Andre merker</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">{otherBrands.slice(0, 8).map(b => (<Link key={b.slug} href={'/merke/' + b.slug + '/'} className="flex items-center gap-2 p-3 rounded-lg border border-slate-200 hover:border-aqua-300 transition-all"><div className="w-8 h-8 rounded-md bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">{b.name.charAt(0)}</div><span className="text-sm font-medium text-slate-700">{b.name}</span></Link>))}</div>
             </section>
           </div>
+
           <PageSidebar sections={sections} relatedLinks={[...(errorBrand ? [{ href: '/feilkode/' + params.slug + '/', label: brand.name + ' feilkoder' }] : []), ...(manual ? [{ href: '/bruksanvisning/' + params.slug + '/', label: brand.name + ' bruksanvisning' }] : []), ...brandComparisons.slice(0, 2).map(c => ({ href: '/sammenligning/' + c.slug + '/', label: c.brand1 + ' vs ' + c.brand2 }))]} ctaTitle={'Usikker på ' + brand.name + '?'} ctaText="Prøv vår quiz for å finne riktig merke." />
         </div>
       </div>

@@ -114,7 +114,7 @@ export const comparisons: Comparison[] = [
     title: 'LG vs Bosch vaskemaskin: Teknologi mot tradisjon',
     metaTitle: 'LG vs Bosch vaskemaskin | Innovasjon mot pålitelighet',
     metaDescription: 'LG vs Bosch vaskemaskin: AI Direct Drive mot i-DOS. Sammenligning av teknologi, kvalitet, pris og service.',
-    intro: 'LG representerer sørkoreansk innovasjon med AI og Direct Drive motor, mens Bosch står for tysk pålitelighet og stille drift. Begge er solide valg, men for forskjellige typer kjøpere.',
+    intro: 'LG og Bosch representerer to ulike tilnærminger til vaskemaskiner. LG satser på AI Direct Drive motor med automatisk stoffgjenkjenning og TurboWash hurtigvask på 39 minutter. Bosch satser på i-DOS automatisk dosering, EcoSilence Drive for ekstremt stille drift og tysk pålitelighet. Begge ligger i mellomklassen mellom seks og ti tusen kroner, men prioriteringene er forskjellige.',
     categories: [
       { name: 'Vasketeknologi', brand1Score: '9/10', brand2Score: '8/10', winner: 'LG', explanation: 'LG sin AI Direct Drive gjenkjenner stofftyper automatisk. Bosch sin i-DOS doserer perfekt, men tilpasser ikke trommelbevegelsen.' },
       { name: 'Byggekvalitet', brand1Score: '7/10', brand2Score: '9/10', winner: 'Bosch', explanation: 'Bosch sin tyske konstruksjon er mer robust og har bedre omdømme for langtidsholdbarhet.' },
@@ -122,7 +122,7 @@ export const comparisons: Comparison[] = [
       { name: 'Motorgaranti', brand1Score: '9/10', brand2Score: '7/10', winner: 'LG', explanation: 'LG gir opptil 10 års garanti på Direct Drive motoren. Bosch gir standard 2 år.' },
       { name: 'Pris', brand1Score: '7/10', brand2Score: '7/10', winner: 'Likt', explanation: 'Begge ligger i samme prisleie for sammenlignbare modeller.' },
     ],
-    verdict: 'Velg LG for den mest avanserte vasketeknologien og lang motorgaranti. Velg Bosch for stille drift, tysk holdbarhet og det beste servicenettverket.',
+    verdict: 'Velg LG hvis du verdsetter AI tilpasning, den raskeste hurtigvasken på markedet og lang motorgaranti på ti år. Velg Bosch hvis du prioriterer stille drift, automatisk dosering og det best utbygde servicenettverket i Norge. For de fleste norske familier gir Bosch det tryggeste valget, mens LG gir mest teknologi for pengene.',
   },
   {
     slug: 'samsung-vs-electrolux',
@@ -130,7 +130,7 @@ export const comparisons: Comparison[] = [
     title: 'Samsung vs Electrolux vaskemaskin: Asia mot Skandinavia',
     metaTitle: 'Samsung vs Electrolux vaskemaskin | Sammenligning 2026',
     metaDescription: 'Samsung vs Electrolux vaskemaskin: EcoBubble mot SensiCare. Hvem vinner på pris, kvalitet og nordisk tilpasning?',
-    intro: 'Samsung er den globale innovatøren med smarte funksjoner, mens Electrolux er det skandinaviske kvalitetsmerket som forstår nordiske behov. Her er de reelle forskjellene.',
+    intro: 'Samsung og Electrolux konkurrerer i det samme prissegmentet men med ulike styrker. Samsung tilbyr innovativ teknologi som EcoBubble, AddWash og Hygiene Steam til aggressive priser. Electrolux kontrer med skandinavisk design, SensiCare sensortilpasning og UltraCare vaskemiddeloppløsning. Valget handler om teknologirikdom versus skandinavisk pålitelighet.',
     categories: [
       { name: 'Nordisk tilpasning', brand1Score: '6/10', brand2Score: '9/10', winner: 'Electrolux', explanation: 'Electrolux er svensk og forstår det skandinaviske markedet. Samsung er global og ikke like tilpasset nordiske forhold.' },
       { name: 'Smarte funksjoner', brand1Score: '9/10', brand2Score: '7/10', winner: 'Samsung', explanation: 'Samsung har mer avanserte smartfunksjoner med SmartThings, EcoBubble og AddWash.' },
@@ -138,7 +138,7 @@ export const comparisons: Comparison[] = [
       { name: 'Service i Norge', brand1Score: '7/10', brand2Score: '9/10', winner: 'Electrolux', explanation: 'Electrolux har et vesentlig bedre servicenettverk i Norge og Norden.' },
       { name: 'Pris', brand1Score: '8/10', brand2Score: '7/10', winner: 'Samsung', explanation: 'Samsung har flere modeller i det lavere prissegmentet.' },
     ],
-    verdict: 'Velg Samsung for smarte funksjoner og lavere pris. Velg Electrolux for skandinavisk kvalitet, bedre service og skånsommere tekstilpleie.',
+    verdict: 'Velg Samsung for smarte funksjoner, dampvask og lavere pris i mellomklassen. Velg Electrolux for skandinavisk servicenettverk, SensiCare vanntilpasning og generelt bedre byggekvalitet i samme prisklasse. Allergikere bør velge Samsung for Hygiene Steam. De som prioriterer holdbarhet bør velge Electrolux.',
   },
   {
     slug: 'miele-vs-samsung',
@@ -146,7 +146,7 @@ export const comparisons: Comparison[] = [
     title: 'Miele vs Samsung vaskemaskin: Premium mot verdi',
     metaTitle: 'Miele vs Samsung vaskemaskin | Premium verdt prisen?',
     metaDescription: 'Miele vs Samsung vaskemaskin: Er Miele sin 20 års holdbarhet verdt tre ganger prisen sammenlignet med Samsung?',
-    intro: 'Miele og Samsung representerer to helt ulike filosofier. Miele satser på premium byggekvalitet og tjue års levetid med TwinDos dosering. Samsung tilbyr mest teknologi for pengene med EcoBubble, Steam, AI og smart tilkobling. Prisforskjellen er betydelig, så valget handler om langsiktig investering versus umiddelbar verdi.',
+    intro: 'Miele og Samsung representerer to helt ulike filosofier innen vaskemaskiner. Miele er det tyske premiummerket med TwinDos dosering og maskiner testet for tjue års levetid. Samsung er den sørkoreanske teknologiganten med EcoBubble, AI Energy og mest innovasjon per krone. Prisforskjellen er betydelig med Miele fra ti tusen og Samsung fra fire tusen kroner.',
     categories: [
       { name: 'Holdbarhet', brand1Score: '10/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele tester for 20 år. Samsung varer typisk 10 til 12 år. Over 20 år kjøper du to Samsung maskiner.' },
       { name: 'Funksjoner', brand1Score: '8/10', brand2Score: '9/10', winner: 'Samsung', explanation: 'Samsung har EcoBubble, AddWash, AI Energy Mode og SmartThings. Miele har TwinDos og CapDosing men færre smarte funksjoner.' },
@@ -154,7 +154,7 @@ export const comparisons: Comparison[] = [
       { name: 'Byggekvalitet', brand1Score: '10/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele er i en helt egen klasse. Tykkere materialer, bedre pakninger, strengere toleranser.' },
       { name: 'Pris per år', brand1Score: '8/10', brand2Score: '7/10', winner: 'Miele', explanation: 'Miele til 15 000 over 20 år er 750 kr per år. Samsung til 6 000 over 10 år er 600 kr per år. Forskjellen er liten.' },
     ],
-    verdict: 'Miele er for deg som kjøper en maskin og beholder den i tjue år. Samsung er det bedre valget for deg som vil ha mest mulig teknologi og funksjoner uten å betale premium pris. Miele vinner på holdbarhet og vaskeresultat over tid. Samsung vinner på innovasjon, smarte funksjoner og verdi for pengene i mellomklassen.',
+    verdict: 'Velg Miele hvis du kjøper en maskin du vil beholde i tjue år og verdsetter det beste vaskeresultatet over tid. Velg Samsung hvis du vil ha mest mulig teknologi og smarte funksjoner uten å betale premium pris. Regnestykket per år er overraskende likt: Miele til femten tusen i tjue år koster 750 kroner per år mot Samsung til syv tusen i elleve år som koster 636 kroner per år.',
   },
   {
     slug: 'whirlpool-vs-beko',
@@ -162,14 +162,14 @@ export const comparisons: Comparison[] = [
     title: 'Whirlpool vs Beko vaskemaskin: Budsjettduellen',
     metaTitle: 'Whirlpool vs Beko vaskemaskin | Beste budsjett 2026',
     metaDescription: 'Whirlpool vs Beko vaskemaskin for prisbevisste kjøpere. Hvem gir mest for pengene i budsjettklassen?',
-    intro: 'Whirlpool og Beko er de to sterkeste merkene i budsjettsegmentet under fem tusen kroner. Whirlpool tilbyr 6th Sense sensortilpasning og FreshCare pluss, mens Beko imponerer med ProSmart invertermotor til lavere priser. Begge gir solid grunnkvalitet for hverdagsbruk.',
+    intro: 'Whirlpool og Beko er de to sterkeste merkene i budsjettsegmentet under fem tusen kroner. Whirlpool tilbyr 6th Sense sensortilpasning, FreshCare Plus og ZEN Direct Drive motor. Beko kontrer med ProSmart invertermotor og AquaFusion til enda lavere priser. Begge gir solid grunnkvalitet for hverdagsbruk uten at du trenger å bruke mye penger.',
     categories: [
       { name: 'Funksjoner', brand1Score: '8/10', brand2Score: '6/10', winner: 'Whirlpool', explanation: 'Whirlpool har 6th Sense og FreshCare+ som er merkbart bedre enn Beko sine grunnfunksjoner.' },
       { name: 'Pris', brand1Score: '7/10', brand2Score: '9/10', winner: 'Beko', explanation: 'Beko er typisk noen hundrelapper billigere enn sammenlignbare Whirlpool modeller.' },
       { name: 'Byggekvalitet', brand1Score: '7/10', brand2Score: '6/10', winner: 'Whirlpool', explanation: 'Whirlpool har en liten fordel i byggekvalitet, spesielt på trommelkonstruksjonen.' },
       { name: 'Tilgjengelighet', brand1Score: '8/10', brand2Score: '8/10', winner: 'Likt', explanation: 'Begge er bredt tilgjengelige i norske elektronikkjeder.' },
     ],
-    verdict: 'Velg Whirlpool hvis du vil ha den mest pålitelige budsjettmaskinen med best sensortilpasning og lengst forventet levetid. Velg Beko hvis du har det strammeste budsjettet og vil ha invertermotor til lavest mulig pris. Begge er gode valg under fem tusen kroner, men Whirlpool gir litt mer for pengene.',
+    verdict: 'Velg Whirlpool hvis du vil ha den mest pålitelige budsjettmaskinen med best sensortilpasning, FreshCare for å holde tøyet friskt, og lengst forventet levetid i segmentet. Velg Beko hvis budsjettet er strammest mulig og du vil ha invertermotor til lavest mulig pris. Begge er gode valg under fem tusen kroner, men Whirlpool gir litt mer for pengene og holder typisk et par år lenger.',
   },
 
 ]
