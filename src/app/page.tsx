@@ -256,28 +256,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ 11: VERKTØY — Mørk navy med teal aksent ═══ */}
-      <section className="py-16 sm:py-20 bg-navy-900">
+      {/* ═══ 11: VERKTØY — Mørk teal gradient ═══ */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-aqua-900 to-aqua-950">
         <div className="container-site">
           <div className="text-center mb-10">
             <span className="text-xs font-bold text-aqua-400 uppercase tracking-wider">Interaktivt</span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mt-2 mb-3">Verktøy</h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">Bruk våre interaktive verktøy for å finne den perfekte maskinen</p>
+            <p className="text-lg text-aqua-200/70 max-w-2xl mx-auto">Kalkulatorer og verktøy som hjelper deg å ta riktig beslutning</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <Link href="/verktoy/energikalkulator/" className="group p-6 rounded-xl bg-white/5 border border-slate-700 hover:border-aqua-500 hover:bg-white/10 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-aqua-900/60 flex items-center justify-center text-aqua-400 mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
-              </div>
-              <h3 className="font-serif text-lg font-bold text-white mb-2 group-hover:text-aqua-300 transition-colors">Energikalkulator</h3>
-              <p className="text-sm text-slate-400">Beregn hva maskinen din koster i strøm per år</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            <Link href="/verktoy/energikalkulator/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all">
+              <h3 className="font-serif text-base font-bold text-white mb-1.5 group-hover:text-aqua-300 transition-colors">Energikalkulator</h3>
+              <p className="text-sm text-aqua-200/60">Beregn strømkostnaden per år</p>
             </Link>
-            <Link href="/verktoy/vaskemaskinvelger/" className="group p-6 rounded-xl bg-white/5 border border-slate-700 hover:border-aqua-500 hover:bg-white/10 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-aqua-900/60 flex items-center justify-center text-aqua-400 mb-4">
-                <IconWasher size={24} />
-              </div>
-              <h3 className="font-serif text-lg font-bold text-white mb-2 group-hover:text-aqua-300 transition-colors">Vaskemaskinvelger</h3>
-              <p className="text-sm text-slate-400">3 spørsmål, personlig anbefaling</p>
+            <Link href="/verktoy/vaskemaskinvelger/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all">
+              <h3 className="font-serif text-base font-bold text-white mb-1.5 group-hover:text-aqua-300 transition-colors">Vaskemaskinvelger</h3>
+              <p className="text-sm text-aqua-200/60">3 spørsmål, personlig anbefaling</p>
+            </Link>
+            <Link href="/verktoy/kapasitetskalkulator/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all">
+              <h3 className="font-serif text-base font-bold text-white mb-1.5 group-hover:text-aqua-300 transition-colors">Kapasitetskalkulator</h3>
+              <p className="text-sm text-aqua-200/60">Finn riktig trommelstørrelse</p>
+            </Link>
+            <Link href="/verktoy/sammenlign-pris/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all">
+              <h3 className="font-serif text-base font-bold text-white mb-1.5 group-hover:text-aqua-300 transition-colors">Sammenlign pris per år</h3>
+              <p className="text-sm text-aqua-200/60">Sammenlign to maskiner over tid</p>
+            </Link>
+            <Link href="/verktoy/reparere-eller-bytte/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all">
+              <h3 className="font-serif text-base font-bold text-white mb-1.5 group-hover:text-aqua-300 transition-colors">Reparere eller bytte?</h3>
+              <p className="text-sm text-aqua-200/60">Finn ut hva som lønner seg</p>
+            </Link>
+            <Link href="/verktoy/" className="group p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-aqua-400/50 transition-all flex items-center justify-center">
+              <span className="text-sm font-semibold text-aqua-300 group-hover:text-aqua-200 transition-colors">Se alle verktøy</span>
             </Link>
           </div>
         </div>
@@ -305,14 +314,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ 13: ØKOSYSTEM — Mørk navy ═══ */}
-      <section className="py-12 bg-navy-900">
+      {/* ═══ 13: HVITEVARE ØKOSYSTEM ═══ */}
+      <section className="py-12 bg-aqua-950">
         <div className="container-site">
-          <div className="text-center mb-6"><p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Del av IT-Firma.no nettverket</p></div>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://hvitevare.no" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-slate-700 text-sm text-slate-400 hover:border-aqua-500 hover:text-aqua-300 transition-colors">hvitevare.no</a>
-            <a href="https://komfyr.no" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-slate-700 text-sm text-slate-400 hover:border-aqua-500 hover:text-aqua-300 transition-colors">komfyr.no</a>
-            <a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-slate-700 text-sm text-slate-400 hover:border-aqua-500 hover:text-aqua-300 transition-colors">it-firma.no</a>
+          <div className="text-center mb-6">
+            <p className="text-xs font-bold text-aqua-600 uppercase tracking-wider">Del av hvitevare.no</p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <a href="https://hvitevare.no" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 rounded-lg border border-aqua-500/40 text-base font-semibold text-aqua-300 hover:border-aqua-400 hover:text-aqua-200 transition-colors">hvitevare.no</a>
+            <div className="flex items-center gap-3 text-xs text-aqua-700">
+              <div className="w-8 h-px bg-aqua-800"></div>
+              <span>portaler</span>
+              <div className="w-8 h-px bg-aqua-800"></div>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="px-5 py-2.5 rounded-lg border border-aqua-600/30 text-sm font-medium text-aqua-400">vaskemaskin.no</span>
+              <a href="https://komfyr.no" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 rounded-lg border border-aqua-800/50 text-sm text-aqua-500 hover:border-aqua-600/40 hover:text-aqua-400 transition-colors">komfyr.no</a>
+            </div>
           </div>
         </div>
       </section>
