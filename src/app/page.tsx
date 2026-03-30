@@ -264,7 +264,7 @@ export default function HomePage() {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mt-2 mb-3">Verktøy</h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">Bruk våre interaktive verktøy for å finne den perfekte maskinen</p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link href="/verktoy/energikalkulator/" className="group p-6 rounded-xl bg-white/5 border border-slate-700 hover:border-aqua-500 hover:bg-white/10 transition-all">
               <div className="w-12 h-12 rounded-xl bg-aqua-900/60 flex items-center justify-center text-aqua-400 mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
