@@ -64,7 +64,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══ 02: STATS — Hvit ═══ */}
-      <section className="bg-white py-8 border-b border-slate-100">
+      <section className="bg-white py-8">
         <div className="container-site">
           <div className="grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
             {[
