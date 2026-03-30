@@ -39,24 +39,24 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(heroFaq)) }} />
 
       {/* ═══ 01: HERO — Dyp teal gradient ═══ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-aqua-900 via-aqua-800 to-aqua-700">
+      <section className="relative overflow-hidden bg-gradient-to-br from-aqua-950 via-aqua-900 to-aqua-800">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
         <div className="container-site relative py-20 sm:py-28 lg:py-32">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 text-aqua-100 text-xs font-semibold mb-6 backdrop-blur-sm">
               <IconWasher size={14} />
-              Norges mest komplette vaskemaskinressurs
+              Norges mest komplette vaskemaskinportal
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
-              Alt du trenger å vite om <span className="text-aqua-300">vaskemaskiner</span>
+              Norges guide til <span className="text-aqua-300">vaskemaskiner</span>
             </h1>
             <p className="text-lg sm:text-xl text-aqua-100 leading-relaxed mb-8 max-w-2xl">
-              Kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger og {stores.length} butikker over hele Norge.
+              Sammenlign 18 merker, les dybdetester, finn feilkoder og bruksanvisninger. {stores.length} butikker i hele Norge.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/artikkel/komplett-kjopsguide-2026/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white text-aqua-800 font-bold text-sm hover:bg-aqua-50 transition-all shadow-lg">Les kjøpsguiden<IconArrow size={16} color="#115E59" /></Link>
               <Link href="/feilkode/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 text-white font-semibold text-sm hover:bg-white/25 transition-all backdrop-blur-sm border border-white/20">Finn din feilkode</Link>
-              <Link href="/fylker/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 text-white font-semibold text-sm hover:bg-white/25 transition-all backdrop-blur-sm border border-white/20">Finn butikk</Link>
+              <Link href="/verktoy/vaskemaskinvelger/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 text-white font-semibold text-sm hover:bg-white/25 transition-all backdrop-blur-sm border border-white/20">Finn din maskin</Link>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function HomePage() {
               { n: errorBrands.reduce((s, b) => s + b.codes.length, 0), l: 'feilkoder' },
               { n: stores.length, l: 'butikker' },
               { n: fylker.length, l: 'fylker' },
-              { n: terms.length, l: 'begreper' },
+              { n: articles.length, l: 'guider' },
             ].map((s, i) => (<div key={i}><div className="font-serif text-3xl font-bold text-aqua-600">{s.n}</div><div className="text-xs text-slate-500 mt-1">{s.l}</div></div>))}
           </div>
         </div>
@@ -218,8 +218,8 @@ export default function HomePage() {
         <div className="container-site">
           <div className="text-center mb-10">
             <span className="text-xs font-bold text-aqua-600 uppercase tracking-wider">Kunnskap</span>
-            <h2 className="section-heading mt-2 mb-3">Siste artikler</h2>
-            <p className="section-subheading mx-auto">Grundige guider og oppdaterte anbefalinger</p>
+            <h2 className="section-heading mt-2 mb-3">Populære guider</h2>
+            <p className="section-subheading mx-auto">Dybdeartikler med praktiske råd og anbefalinger</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {featuredArticles.map(article => (
@@ -244,8 +244,8 @@ export default function HomePage() {
             <h2 className="section-heading mt-2 mb-3">Ordliste</h2>
             <p className="section-subheading mx-auto">{terms.length} begreper forklart i et enkelt språk</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
-            {terms.slice(0, 8).map(term => (
+          <div className="grid sm:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
+            {terms.slice(0, 4).map(term => (
               <Link key={term.slug} href={'/ordliste/' + term.slug + '/'} className="p-4 rounded-xl border border-slate-200 hover:border-aqua-400 hover:shadow-md transition-all">
                 <div className="text-sm font-bold text-slate-900 mb-1">{term.term}</div>
                 <div className="text-xs text-slate-500 line-clamp-2">{term.definition}</div>
