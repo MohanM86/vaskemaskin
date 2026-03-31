@@ -54,6 +54,32 @@ const contextMap: Record<string, { label: string; links: { text: string; href: s
       { text: 'LG vaskemaskiner', href: '/merke/lg/' },
     ]
   },
+  'vaskeguide': {
+    label: 'Flere vaskeguider',
+    links: [
+      { text: 'Vaskesymboler forklart', href: '/artikkel/vaskesymboler-guide/' },
+      { text: 'Vasketemperatur guide', href: '/artikkel/vasketemperatur-guide/' },
+      { text: 'Vaskemiddel guide', href: '/artikkel/vaskemiddel-guide/' },
+      { text: 'Flekkfjerning', href: '/artikkel/fjerne-flekker/' },
+    ]
+  },
+  'allergi-og-hygiene': {
+    label: 'Relatert innhold',
+    links: [
+      { text: 'Vaske babyklaer', href: '/artikkel/vaske-babyklaer/' },
+      { text: 'Dampfunksjon forklart', href: '/ordliste/dampfunksjon/' },
+      { text: 'Vasketemperatur guide', href: '/artikkel/vasketemperatur-guide/' },
+    ]
+  },
+  'okonomi': {
+    label: 'Spar penger',
+    links: [
+      { text: 'Energikalkulator', href: '/verktoy/energikalkulator/' },
+      { text: 'Reparere eller bytte?', href: '/verktoy/reparere-eller-bytte/' },
+      { text: 'Energimerking forklart', href: '/artikkel/energimerking-forklart/' },
+      { text: 'Sammenlign pris per ar', href: '/verktoy/sammenlign-pris/' },
+    ]
+  },
 }
 
 export default function ContextualLinks({ category }: { category: string }) {

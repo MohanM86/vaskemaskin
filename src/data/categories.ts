@@ -70,6 +70,36 @@ export const categories: Category[] = [
     intro: 'Å kjøpe ny vaskemaskin er en investering som varer i mange år. Med så mange modeller, merker og funksjoner tilgjengelig kan det være vanskelig å vite hva du faktisk trenger. Denne guiden hjelper deg å navigere markedet.',
     articleSlugs: ['komplett-kjopsguide-2026', 'vaskemaskin-under-5000'],
   },
+  {
+    slug: 'vaskeguide',
+    name: 'Vaskeguider',
+    shortName: 'Vaskeguider',
+    description: 'Praktiske guider for vask av dyner, ull, sko, gardiner og mer.',
+    metaTitle: 'Vaskeguider | Slik vasker du alt riktig i vaskemaskinen',
+    metaDescription: 'Praktiske vaskeguider for alt fra dyner og ull til sko og gardiner. Riktig temperatur, program og vaskemiddel for hvert plagg.',
+    intro: 'Visste du at feil vaskeprogram kan odelegge favorittgenseren din? Disse guidene viser deg noyaktig hvordan du vasker alt fra omfintlig ull til skitne joggesko, med riktig temperatur, program og dosering for hvert materiale.',
+    articleSlugs: ['vaske-dyne-i-vaskemaskin', 'vaske-ull-uten-krymping', 'fjerne-flekker', 'vaskesymboler-guide', 'vaske-sko-i-vaskemaskin', 'vasketemperatur-guide', 'vaskemiddel-guide', 'vaske-gardiner', 'sportsklaer-vask', 'vaske-babyklaer'],
+  },
+  {
+    slug: 'allergi-og-hygiene',
+    name: 'Allergi og hygiene',
+    shortName: 'Allergi og hygiene',
+    description: 'Vask for allergikere, babyklaer og fjerning av bakterier.',
+    metaTitle: 'Allergivask og hygiene | Vaskemaskiner for allergikere',
+    metaDescription: 'Slik vasker du for a fjerne allergener, bakterier og stovmidd. Programmer, temperaturer og tips for allergikere.',
+    intro: 'For allergikere og barnefamilier er riktig vasking mer enn bare rengjoring. Det handler om a fjerne allergener som stovmidd, pollen og dyrehar fra tekstiler. Moderne vaskemaskiner med dampfunksjon og hoytemperaturprogrammer gjor dette enklere enn noen gang.',
+    articleSlugs: ['allergivask', 'vaske-babyklaer'],
+  },
+  {
+    slug: 'okonomi',
+    name: 'Okonomi og tilbud',
+    shortName: 'Okonomi',
+    description: 'Budsjettmaskiner, strombesparing og Black Friday tips.',
+    metaTitle: 'Vaskemaskin okonomi | Spare penger pa kjop og drift',
+    metaDescription: 'Finn de beste vaskemaskinene til lavest pris. Budsjettmodeller, strombesparing og tips for Black Friday.',
+    intro: 'Du trenger ikke bruke en formue pa en god vaskemaskin. Denne kategorien hjelper deg a finne det beste valget for budsjettet ditt, enten du jakter pa budsjettmodeller under fem tusen kroner eller vil vite hvordan du sparer strom med maskinen du allerede har.',
+    articleSlugs: ['vaskemaskin-under-5000', 'spare-strom-vaskemaskin', 'black-friday-vaskemaskin', 'reklamasjon-garanti-vaskemaskin', 'naar-bytte-vaskemaskin'],
+  },
 ]
 
 export function getCategoryBySlug(slug: string): Category | undefined {

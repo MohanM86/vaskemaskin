@@ -125,6 +125,19 @@ export function IconWasher({ size = 32, color = 'currentColor' }: { size?: numbe
   )
 }
 
+
+function IconVaskeguide({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
+}
+
+function IconAllergi({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.93 4.93A10 10 0 1 0 19.07 19.07 10 10 0 0 0 4.93 4.93z" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
+}
+
+function IconOkonomi({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+}
+
 const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }>> = {
   'toppmatere': IconToppmater,
   'frontmatere': IconFrontmater,
@@ -132,6 +145,9 @@ const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }
   'energi-og-miljo': IconEnergi,
   'vedlikehold': IconVedlikehold,
   'kjopsguide': IconKjopsguide,
+  'vaskeguide': IconVaskeguide,
+  'allergi-og-hygiene': IconAllergi,
+  'okonomi': IconOkonomi,
 }
 
 export function CategoryIcon({ slug, size = 24, color = 'currentColor' }: { slug: string; size?: number; color?: string }) {
