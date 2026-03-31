@@ -25,17 +25,10 @@ export default function Header() {
   function enter(menu: string) { if (timeoutRef.current) clearTimeout(timeoutRef.current); setActiveMenu(menu) }
   function leave() { timeoutRef.current = setTimeout(() => setActiveMenu(null), 150) }
 
-  const navBtn = (id: string, label: string) => (
-    <div className="relative" onMouseEnter={() => enter(id)} onMouseLeave={leave}>
-      <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${activeMenu === id ? 'text-aqua-700 bg-aqua-50' : 'text-slate-700 hover:text-aqua-700 hover:bg-slate-50'}`}>
-        {label}<IconChevron size={14} direction={activeMenu === id ? 'up' : 'down'} />
-      </button>
-      <div className="absolute left-0 right-0 h-3" />
-    </div>
-  )
+  const navCls = (id: string) => 'flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ' + (activeMenu === id ? 'text-aqua-700 bg-aqua-50' : 'text-slate-700 hover:text-aqua-700 hover:bg-slate-50')
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100' : 'bg-white'}`}>
+    <header className={'sticky top-0 z-50 transition-all duration-300 ' + (scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100' : 'bg-white')}>
       <div className="container-site">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 group">
@@ -46,7 +39,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-0.5">
             {/* Kategorier */}
             <div className="relative" onMouseEnter={() => enter('kat')} onMouseLeave={leave}>
-              <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${activeMenu === 'kat' ? 'text-aqua-700 bg-aqua-50' : 'text-slate-700 hover:text-aqua-700 hover:bg-slate-50'}`}>Kategorier<IconChevron size={14} direction={activeMenu === 'kat' ? 'up' : 'down'} /></button>
+              <button className={navCls('kat')}>Kategorier<IconChevron size={14} direction={activeMenu === 'kat' ? 'up' : 'down'} /></button>
               <div className="absolute left-0 right-0 h-3" />
               {activeMenu === 'kat' && (
                 <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[560px] bg-white rounded-xl shadow-xl border border-slate-200 p-6 grid grid-cols-2 gap-3">
@@ -62,7 +55,7 @@ export default function Header() {
 
             {/* Merker */}
             <div className="relative" onMouseEnter={() => enter('merker')} onMouseLeave={leave}>
-              <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${activeMenu === 'merker' ? 'text-aqua-700 bg-aqua-50' : 'text-slate-700 hover:text-aqua-700 hover:bg-slate-50'}`}>Merker<IconChevron size={14} direction={activeMenu === 'merker' ? 'up' : 'down'} /></button>
+              <button className={navCls('merker')}>Merker<IconChevron size={14} direction={activeMenu === 'merker' ? 'up' : 'down'} /></button>
               <div className="absolute left-0 right-0 h-3" />
               {activeMenu === 'merker' && (
                 <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[520px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
@@ -77,17 +70,48 @@ export default function Header() {
 
             {/* Guider */}
             <div className="relative" onMouseEnter={() => enter('guider')} onMouseLeave={leave}>
-              <button className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${activeMenu === 'guider' ? 'text-aqua-700 bg-aqua-50' : 'text-slate-700 hover:text-aqua-700 hover:bg-slate-50'}`}>Guider<IconChevron size={14} direction={activeMenu === 'guider' ? 'up' : 'down'} /></button>
+              <button className={navCls('guider')}>Guider<IconChevron size={14} direction={activeMenu === 'guider' ? 'up' : 'down'} /></button>
               <div className="absolute left-0 right-0 h-3" />
               {activeMenu === 'guider' && (
                 <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[480px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
                   <div className="grid grid-cols-2 gap-4">
-                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjøpsguider</div>{articles.filter(a => a.category === 'kjopsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
+                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjopsguider</div>{articles.filter(a => a.category === 'kjopsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
                     <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Vedlikehold</div>{articles.filter(a => a.category === 'vedlikehold').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
                   </div>
                   <div className="border-t border-slate-100 mt-3 pt-3 flex gap-4">
                     <Link href="/bruksanvisning/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Bruksanvisninger</Link>
-                    <Link href="/ordliste/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Ordliste A til Å</Link>
+                    <Link href="/ordliste/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Ordliste A til A</Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Bedrift */}
+            <div className="relative" onMouseEnter={() => enter('bedrift')} onMouseLeave={leave}>
+              <button className={navCls('bedrift')}>Bedrift<IconChevron size={14} direction={activeMenu === 'bedrift' ? 'up' : 'down'} /></button>
+              <div className="absolute left-0 right-0 h-3" />
+              {activeMenu === 'bedrift' && (
+                <div className="absolute top-[calc(100%+12px)] right-0 w-[480px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Bransjer</div>
+                      <Link href="/bedrift/hotell/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hotell</Link>
+                      <Link href="/bedrift/sykehus/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Sykehus</Link>
+                      <Link href="/bedrift/barnehage/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Barnehage</Link>
+                      <Link href="/bedrift/borettslag/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Borettslag</Link>
+                      <Link href="/bedrift/vaskeri/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Vaskeri</Link>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Ressurser</div>
+                      <Link href="/bedrift/prisguide/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Prisguide bedrift</Link>
+                      <Link href="/bedrift/hygienestandarder/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hygienestandarder</Link>
+                      <Link href="/bedrift/verktoy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktoy</Link>
+                      <Link href="/bedrift/verktoy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
+                      <Link href="/bedrift/verktoy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
+                    </div>
+                  </div>
+                  <div className="border-t border-slate-100 mt-3 pt-3">
+                    <Link href="/bedrift/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Se hele bedriftsseksjonen</Link>
                   </div>
                 </div>
               )}
@@ -100,7 +124,7 @@ export default function Header() {
             <Link href="/fylker/" className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-aqua-700 hover:bg-slate-50 rounded-lg transition-colors">Finn butikk</Link>
           </nav>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Åpne meny'}>
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Apne meny'}>
             {mobileOpen ? <IconClose size={24} /> : <IconMenu size={24} />}
           </button>
         </div>
@@ -116,6 +140,7 @@ export default function Header() {
               <Link href="/bruksanvisning/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center" onClick={() => setMobileOpen(false)}>Bruksanvisning</Link>
               <Link href="/fylker/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center" onClick={() => setMobileOpen(false)}>Finn butikk</Link>
               <Link href="/ordliste/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center" onClick={() => setMobileOpen(false)}>Ordliste</Link>
+              <Link href="/bedrift/" className="p-3 rounded-lg bg-aqua-50 text-sm font-semibold text-aqua-700 text-center col-span-2" onClick={() => setMobileOpen(false)}>Bedrift og industri</Link>
             </div>
           </div>
         </div>

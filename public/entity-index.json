@@ -4,7 +4,7 @@
   "name": "Vaskemaskin.no",
   "alternateName": "Vaskemaskin",
   "url": "https://vaskemaskin.no",
-  "description": "Norges mest komplette kunnskapsportal om vaskemaskiner. 451 sider med kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste og butikkoversikt.",
+  "description": "Norges mest komplette kunnskapsportal om vaskemaskiner. Over 480 sider med kjopsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste, butikkoversikt og profesjonelle losninger for bedrift og industri.",
   "inLanguage": "nb",
   "publisher": {
     "@type": "Organization",
@@ -111,7 +111,7 @@
   "hasPart": [
     {
       "@type": "WebPage",
-      "name": "Komplett kjøpsguide 2026",
+      "name": "Komplett kjopsguide 2026",
       "url": "https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/"
     },
     {
@@ -161,38 +161,48 @@
     },
     {
       "@type": "WebPage",
-      "name": "Toppmater vs frontmater",
-      "url": "https://vaskemaskin.no/artikkel/toppmatere-vs-frontmatere/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Fjerne flekker guide",
-      "url": "https://vaskemaskin.no/artikkel/fjerne-flekker/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Vasketemperatur guide",
-      "url": "https://vaskemaskin.no/artikkel/vasketemperatur-guide/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Vaskemiddel guide",
-      "url": "https://vaskemaskin.no/artikkel/vaskemiddel-guide/"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Ofte stilte spørsmål",
+      "name": "Ofte stilte sporsmal",
       "url": "https://vaskemaskin.no/faq/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Bedrift og industri",
+      "url": "https://vaskemaskin.no/bedrift/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Prisguide industrivaskemaskiner",
+      "url": "https://vaskemaskin.no/bedrift/prisguide/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Hygienestandarder",
+      "url": "https://vaskemaskin.no/bedrift/hygienestandarder/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "ROI kalkulator vaskeri",
+      "url": "https://vaskemaskin.no/bedrift/verktoy/vaskeri-roi/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Kapasitetsplanlegger bedrift",
+      "url": "https://vaskemaskin.no/bedrift/verktoy/kapasitetsplanlegger/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Maskinvelger bedrift",
+      "url": "https://vaskemaskin.no/bedrift/verktoy/maskinvelger/"
     }
   ],
   "about": {
     "@type": "Thing",
     "name": "Vaskemaskiner",
-    "description": "Elektrisk husholdningsapparat for vask av klær og tekstiler"
+    "description": "Elektrisk husholdningsapparat for vask av klaer og tekstiler, inkludert profesjonelle losninger for bedrift og industri"
   },
   "audience": {
     "@type": "Audience",
-    "audienceType": "Norske forbrukere som skal kjøpe, vedlikeholde eller feilsøke vaskemaskin"
+    "audienceType": "Norske forbrukere og bedrifter som skal kjope, vedlikeholde eller feilsoke vaskemaskin"
   },
   "potentialAction": {
     "@type": "SearchAction",

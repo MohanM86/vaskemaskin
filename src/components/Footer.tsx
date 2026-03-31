@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="container-site py-14">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-6">
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="text-aqua-400"><IconWasher size={24} /></div>
@@ -24,22 +24,32 @@ export default function Footer() {
             <ul className="space-y-2">{brands.slice(0, 10).map(b => (<li key={b.slug}><Link href={'/merke/' + b.slug + '/'} className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">{b.name}</Link></li>))}</ul>
           </div>
           <div>
-            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Verktøy</h3>
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Verktoy</h3>
             <ul className="space-y-2">
               <li><Link href="/feilkode/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Feilkoder</Link></li>
               <li><Link href="/bruksanvisning/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bruksanvisninger</Link></li>
-              <li><Link href="/ordliste/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Ordliste A til Å</Link></li>
+              <li><Link href="/ordliste/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Ordliste A til A</Link></li>
               <li><Link href="/fylker/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Finn butikk</Link></li>
               <li><Link href="/butikker/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Alle butikker</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Populært</h3>
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Bedrift</h3>
             <ul className="space-y-2">
-              <li><Link href="/artikkel/komplett-kjopsguide-2026/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Kjøpsguide 2026</Link></li>
+              <li><Link href="/bedrift/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bedriftsoversikt</Link></li>
+              <li><Link href="/bedrift/prisguide/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Prisguide</Link></li>
+              <li><Link href="/bedrift/hygienestandarder/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Hygienestandarder</Link></li>
+              <li><Link href="/bedrift/verktoy/vaskeri-roi/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">ROI kalkulator</Link></li>
+              <li><Link href="/bedrift/verktoy/maskinvelger/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Maskinvelger</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Populart</h3>
+            <ul className="space-y-2">
+              <li><Link href="/artikkel/komplett-kjopsguide-2026/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Kjopsguide 2026</Link></li>
               <li><Link href="/sammenligning/bosch-vs-samsung/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bosch vs Samsung</Link></li>
               <li><Link href="/artikkel/energimerking-forklart/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Energimerking</Link></li>
-              <li><Link href="/artikkel/rengjore-vaskemaskin/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Rengjøring</Link></li>
+              <li><Link href="/artikkel/rengjore-vaskemaskin/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Rengjoring</Link></li>
             </ul>
           </div>
           <div>

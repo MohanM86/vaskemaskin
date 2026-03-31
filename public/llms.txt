@@ -1,42 +1,58 @@
 # Vaskemaskin.no
 
-> Norges mest komplette kunnskapsportal om vaskemaskiner. 451 sider med uavhengig informasjon, kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste og butikkoversikt for hele Norge.
+> Norges mest komplette kunnskapsportal om vaskemaskiner. Over 480 sider med uavhengig informasjon, kjopsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste, butikkoversikt og profesjonelle losninger for bedrift og industri.
 
 ## Om nettstedet
 
-Vaskemaskin.no er en norskspråklig kunnskapsportal driftet av IT-Firma.no. Alt innhold er redaksjonelt uavhengig uten bindinger til produsenter eller forhandlere. Nettstedet dekker 18 vaskemaskinmerker, 29 dybdeartikler, 10 merkesammenligninger, 51 feilkoder, 10 bruksanvisninger, 35 ordlistebegreper, 147 butikker og 103 kommuner.
+Vaskemaskin.no er en norskspraklig kunnskapsportal driftet av IT-Firma.no. Alt innhold er redaksjonelt uavhengig uten bindinger til produsenter eller forhandlere. Nettstedet dekker 18 vaskemaskinmerker, 29 dybdeartikler, 10 merkesammenligninger, 51 feilkoder, 10 bruksanvisninger, 35 ordlistebegreper, 147 butikker og 103 kommuner. I tillegg har nettstedet en dedikert bedriftsseksjon med 28 sider om profesjonelle vaskemaskiner.
 
-## Kjøpsguider og artikler
+## Kjopsguider og artikler
 
-- Komplett kjøpsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/
-- Toppmater eller frontmater: Hvilken type passer for deg?: https://vaskemaskin.no/artikkel/toppmatere-vs-frontmatere/
-- Energimerking på vaskemaskiner: Alt du må vite: https://vaskemaskin.no/artikkel/energimerking-forklart/
-- Slik rengjør du vaskemaskinen: Komplett vedlikeholdsguide: https://vaskemaskin.no/artikkel/rengjøre-vaskemaskin/
-- Vanlige feilkoder på vaskemaskiner og hva de betyr: https://vaskemaskin.no/artikkel/vanlige-feilkoder/
-- Beste toppmaterevaskemaskiner i 2026: https://vaskemaskin.no/artikkel/beste-toppmater-2026/
-- Er en vasketørker verdt det? Fordeler og ulemper: https://vaskemaskin.no/artikkel/vasketorker-verdt-det/
-- Slik sparer du strøm med vaskemaskinen: https://vaskemaskin.no/artikkel/spare-strom-vaskemaskin/
-- Slik velger du riktig frontmater vaskemaskin: https://vaskemaskin.no/artikkel/velge-frontmater/
-- Beste vaskemaskiner under 5000 kroner i 2026: https://vaskemaskin.no/artikkel/vaskemaskin-under-5000/
-- Slik vasker du dyne i vaskemaskin: https://vaskemaskin.no/artikkel/vaske-dyne-i-vaskemaskin/
-- Slik vasker du ull uten å krympe det: https://vaskemaskin.no/artikkel/vaske-ull-uten-krymping/
-- Flekkfjerning: Slik fjerner du alle typer flekker: https://vaskemaskin.no/artikkel/fjerne-flekker/
-- Vaskesymboler på klær: Komplett guide med alle symboler: https://vaskemaskin.no/artikkel/vaskesymboler-guide/
-- Slik vasker du sko i vaskemaskinen: https://vaskemaskin.no/artikkel/vaske-sko-i-vaskemaskin/
-- Vaskemaskin lukter vondt: Årsaker og løsninger: https://vaskemaskin.no/artikkel/vaskemaskin-lukt/
-- Vasketemperatur guide: Riktig temperatur for hvert plagg: https://vaskemaskin.no/artikkel/vasketemperatur-guide/
-- Pulver, flytende eller kapsler: Hvilken type vaskemiddel bør du velge?: https://vaskemaskin.no/artikkel/vaskemiddel-guide/
-- Slik installerer du vaskemaskin selv: Komplett guide: https://vaskemaskin.no/artikkel/installere-vaskemaskin/
-- Reklamasjon og garanti på vaskemaskin: Dine rettigheter: https://vaskemaskin.no/artikkel/reklamasjon-garanti-vaskemaskin/
-- Beste vaskemaskin 2026: Topp 5 i hver kategori: https://vaskemaskin.no/artikkel/beste-vaskemaskin-2026/
-- Vaskemaskin bråker og vibrerer: Årsaker og løsninger: https://vaskemaskin.no/artikkel/vaskemaskin-stoyer/
-- Slik vasker du babyklær i vaskemaskin: https://vaskemaskin.no/artikkel/vaske-babyklær/
-- Slik vasker du gardiner i vaskemaskin: https://vaskemaskin.no/artikkel/vaske-gardiner/
-- Vaskemaskin på hytta: Hva du må tenke på: https://vaskemaskin.no/artikkel/vaskemaskin-paa-hytta/
-- Vask for allergikere: Fjern allergener fra klær og sengetøy: https://vaskemaskin.no/artikkel/allergivask/
-- Når bør du bytte vaskemaskin? 7 tegn på at tiden er inne: https://vaskemaskin.no/artikkel/naar-bytte-vaskemaskin/
-- Slik vasker du sportsklær riktig: https://vaskemaskin.no/artikkel/sportsklær-vask/
-- Black Friday vaskemaskin: Slik finner du de ekte tilbudene: https://vaskemaskin.no/artikkel/black-friday-vaskemaskin/
+- Komplett kjopsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/
+- Beste vaskemaskin 2026: https://vaskemaskin.no/artikkel/beste-vaskemaskin-2026/
+- Vaskesymboler guide: https://vaskemaskin.no/artikkel/vaskesymboler-guide/
+- Energimerking forklart: https://vaskemaskin.no/artikkel/energimerking-forklart/
+- Feilkoder alle merker: https://vaskemaskin.no/feilkode/
+- Bruksanvisninger: https://vaskemaskin.no/bruksanvisning/
+- Ordliste vaskemaskin: https://vaskemaskin.no/ordliste/
+
+## Bedrift og industri
+
+Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedrifter og institusjoner.
+
+### Bransjeguider
+- Vaskemaskiner for hotell: https://vaskemaskin.no/bedrift/hotell/
+- Vaskemaskiner for barnehage: https://vaskemaskin.no/bedrift/barnehage/
+- Vaskemaskiner for sykehus: https://vaskemaskin.no/bedrift/sykehus/
+- Vaskemaskiner for borettslag: https://vaskemaskin.no/bedrift/borettslag/
+- Vaskemaskiner for vaskeri: https://vaskemaskin.no/bedrift/vaskeri/
+- Vaskemaskiner for ridesenter: https://vaskemaskin.no/bedrift/ridesenter/
+- Vaskemaskiner for frisor: https://vaskemaskin.no/bedrift/frisor/
+- Vaskemaskiner for offshore: https://vaskemaskin.no/bedrift/offshore/
+
+### Maskintyper
+- Barrieremaskin: https://vaskemaskin.no/bedrift/maskintyper/barrieremaskin/
+- Moppemaskin: https://vaskemaskin.no/bedrift/maskintyper/moppemaskin/
+- Torkeskap: https://vaskemaskin.no/bedrift/maskintyper/torkeskap/
+- Industrimaskin: https://vaskemaskin.no/bedrift/maskintyper/industrimaskin/
+- Tunnelmaskin: https://vaskemaskin.no/bedrift/maskintyper/tunnelmaskin/
+
+### Leverandorer
+- Miele Professional: https://vaskemaskin.no/bedrift/leverandorer/miele-professional/
+- Electrolux Professional: https://vaskemaskin.no/bedrift/leverandorer/electrolux-professional/
+- Primus: https://vaskemaskin.no/bedrift/leverandorer/primus/
+- LG Commercial: https://vaskemaskin.no/bedrift/leverandorer/lg-commercial/
+- Schulthess: https://vaskemaskin.no/bedrift/leverandorer/schulthess/
+- Girbau: https://vaskemaskin.no/bedrift/leverandorer/girbau/
+- Jensen Group: https://vaskemaskin.no/bedrift/leverandorer/jensen-group/
+- Podab: https://vaskemaskin.no/bedrift/leverandorer/podab/
+
+### Bedriftsressurser
+- Prisguide industrivaskemaskiner: https://vaskemaskin.no/bedrift/prisguide/
+- Hygienestandarder: https://vaskemaskin.no/bedrift/hygienestandarder/
+- ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktoy/vaskeri-roi/
+- Kapasitetsplanlegger: https://vaskemaskin.no/bedrift/verktoy/kapasitetsplanlegger/
+- Maskinvelger for bedrift: https://vaskemaskin.no/bedrift/verktoy/maskinvelger/
 
 ## Merkeoversikter
 
@@ -49,101 +65,21 @@ Vaskemaskin.no er en norskspråklig kunnskapsportal driftet av IT-Firma.no. Alt 
 - AEG vaskemaskiner: https://vaskemaskin.no/merke/aeg/
 - Whirlpool vaskemaskiner: https://vaskemaskin.no/merke/whirlpool/
 - ASKO vaskemaskiner: https://vaskemaskin.no/merke/asko/
-- Grundig vaskemaskiner: https://vaskemaskin.no/merke/grundig/
-- Beko vaskemaskiner: https://vaskemaskin.no/merke/beko/
-- Hisense vaskemaskiner: https://vaskemaskin.no/merke/hisense/
-- Gorenje vaskemaskiner: https://vaskemaskin.no/merke/gorenje/
-- Candy vaskemaskiner: https://vaskemaskin.no/merke/candy/
-- Haier vaskemaskiner: https://vaskemaskin.no/merke/haier/
-- Hotpoint vaskemaskiner: https://vaskemaskin.no/merke/hotpoint/
-- Indesit vaskemaskiner: https://vaskemaskin.no/merke/indesit/
-- Bauknecht vaskemaskiner: https://vaskemaskin.no/merke/bauknecht/
 
-## Merkesammenligninger
-
-- Bosch vs Samsung: https://vaskemaskin.no/sammenligning/bosch-vs-samsung/
-- Miele vs Bosch: https://vaskemaskin.no/sammenligning/miele-vs-bosch/
-- Samsung vs Lg: https://vaskemaskin.no/sammenligning/samsung-vs-lg/
-- Electrolux vs Aeg: https://vaskemaskin.no/sammenligning/electrolux-vs-aeg/
-- Miele vs Asko: https://vaskemaskin.no/sammenligning/miele-vs-asko/
-- Bosch vs Siemens: https://vaskemaskin.no/sammenligning/bosch-vs-siemens/
-- Lg vs Bosch: https://vaskemaskin.no/sammenligning/lg-vs-bosch/
-- Samsung vs Electrolux: https://vaskemaskin.no/sammenligning/samsung-vs-electrolux/
-- Miele vs Samsung: https://vaskemaskin.no/sammenligning/miele-vs-samsung/
-- Whirlpool vs Beko: https://vaskemaskin.no/sammenligning/whirlpool-vs-beko/
-
-## Feilkoder per merke
-
-- Samsung feilkoder: https://vaskemaskin.no/feilkode/5e/
-- Bosch feilkoder: https://vaskemaskin.no/feilkode/bosch/
-- LG feilkoder: https://vaskemaskin.no/feilkode/lg/
-- Electrolux feilkoder: https://vaskemaskin.no/feilkode/electrolux/
-- Siemens feilkoder: https://vaskemaskin.no/feilkode/siemens/
-- Miele feilkoder: https://vaskemaskin.no/feilkode/miele/
-- AEG feilkoder: https://vaskemaskin.no/feilkode/aeg/
-- Whirlpool feilkoder: https://vaskemaskin.no/feilkode/whirlpool/
-- ASKO feilkoder: https://vaskemaskin.no/feilkode/asko/
-- Grundig feilkoder: https://vaskemaskin.no/feilkode/grundig/
-
-## Bruksanvisninger
-
-- Samsung bruksanvisning: https://vaskemaskin.no/bruksanvisning/samsung/
-- Bosch bruksanvisning: https://vaskemaskin.no/bruksanvisning/bosch/
-- Lg bruksanvisning: https://vaskemaskin.no/bruksanvisning/lg/
-- Electrolux bruksanvisning: https://vaskemaskin.no/bruksanvisning/electrolux/
-- Miele bruksanvisning: https://vaskemaskin.no/bruksanvisning/miele/
-- Siemens bruksanvisning: https://vaskemaskin.no/bruksanvisning/siemens/
-- Aeg bruksanvisning: https://vaskemaskin.no/bruksanvisning/aeg/
-- Whirlpool bruksanvisning: https://vaskemaskin.no/bruksanvisning/whirlpool/
-- Asko bruksanvisning: https://vaskemaskin.no/bruksanvisning/asko/
-- Grundig bruksanvisning: https://vaskemaskin.no/bruksanvisning/grundig/
-
-## Ordliste
-
-- Sentrifugering: https://vaskemaskin.no/ordliste/energimerking/
-- Energimerking: https://vaskemaskin.no/ordliste/i-dos/
-- i-DOS: https://vaskemaskin.no/ordliste/twidos/
-- TwinDos: https://vaskemaskin.no/ordliste/eco-program/
-- Eco program: https://vaskemaskin.no/ordliste/ecobubble/
-- EcoBubble: https://vaskemaskin.no/ordliste/addwash/
-- AddWash: https://vaskemaskin.no/ordliste/aquastop/
-- Aquastop: https://vaskemaskin.no/ordliste/restvanninnhold/
-- Restvanninnhold: https://vaskemaskin.no/ordliste/stromforbruk/
-- Strømforbruk: https://vaskemaskin.no/ordliste/vannforbruk/
-- Vannforbruk: https://vaskemaskin.no/ordliste/stoyniva/
-- Støynivå: https://vaskemaskin.no/ordliste/invertermotor/
-- Invertermotor: https://vaskemaskin.no/ordliste/vaskemiddel/
-- Vaskemiddel: https://vaskemaskin.no/ordliste/kapasitet/
-- Kapasitet: https://vaskemaskin.no/ordliste/dampfunksjon/
-- Se alle 34 begreper: https://vaskemaskin.no/ordliste/
-
-## Interaktive verktøy
+## Interaktive verktoy
 
 - Energikalkulator: https://vaskemaskin.no/verktoy/energikalkulator/
 - Vaskemaskinvelger quiz: https://vaskemaskin.no/verktoy/vaskemaskinvelger/
 
-## Finn butikk
+## Ofte stilte sporsmal
 
-- Hvitevarebutikker i Oslo: https://vaskemaskin.no/fylke/oslo/
-- Hvitevarebutikker i Akershus: https://vaskemaskin.no/fylke/akershus/
-- Hvitevarebutikker i Østfold: https://vaskemaskin.no/fylke/oestfold/
-- Hvitevarebutikker i Buskerud: https://vaskemaskin.no/fylke/buskerud/
-- Hvitevarebutikker i Vestfold: https://vaskemaskin.no/fylke/vestfold/
-- Se alle 15 fylker: https://vaskemaskin.no/fylker/
+Hvilken vaskemaskin er best i 2026? For de fleste familier er en frontmater med atte kilo kapasitet og energiklasse B eller C det beste valget.
 
-## Ofte stilte spørsmål
-
-Hvilken vaskemaskin er best i 2026? For de fleste familier er en frontmater med åtte kilo kapasitet og energiklasse B eller C det beste valget. Bosch Serie 6, Samsung WW90 og Electrolux 700-serien er solide anbefalinger.
-
-Hvor lenge varer en vaskemaskin? Budsjettmerker varer seks til åtte år, mellomklassen ti til femten år, og premium som Miele og ASKO tester for tjue år.
-
-Hva koster en god vaskemaskin? Mellom fem og ti tusen kroner for de fleste. Under fem tusen er budsjettsegmentet, over ti tusen er premium.
-
-Toppmater eller frontmater? Frontmater for de fleste (større kapasitet, stabling mulig). Toppmater bare hvis du har under 40 cm bredde tilgjengelig.
+Hvor lenge varer en vaskemaskin? Budsjettmerker varer seks til atte ar, mellomklassen ti til femten ar, og premium som Miele og ASKO tester for tjue ar.
 
 ## Kontakt
 
 Vaskemaskin.no er en tjeneste fra IT-Firma.no.
 Nettsted: https://it-firma.no
 Domene: vaskemaskin.no
-Språk: Norsk (bokmål)
+Sprak: Norsk (bokmal)
