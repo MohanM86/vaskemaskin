@@ -24,6 +24,25 @@ module.exports = {
           950: '#0A1F33',
         },
       },
+      animation: {
+        'spin-slow': 'spin-slow 3.5s linear infinite',
+        'spin-reverse': 'spin-reverse 10s linear infinite',
+        'fade-in': 'fade-in 0.8s ease-out',
+      },
+      keyframes: {
+        'spin-slow': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+        'spin-reverse': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-360deg)' },
+        },
+        'fade-in': {
+          from: { opacity: '0', transform: 'translateY(16px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],

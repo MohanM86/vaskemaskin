@@ -38,46 +38,88 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(heroFaq)) }} />
 
-      {/* ═══ 01: HERO — Dyp teal gradient ═══ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-aqua-950 via-aqua-900 to-aqua-800">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+      {/* ═══ 01: HERO — Slate gradient med animert vaskemaskin ═══ */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+        <div className="absolute top-[-80px] right-[-60px] w-[340px] h-[340px] rounded-full bg-aqua-600/[0.08] animate-pulse" />
         <div className="container-site relative py-20 sm:py-28 lg:py-32">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 text-aqua-100 text-xs font-semibold mb-6 backdrop-blur-sm">
-              <IconWasher size={14} />
-              Norges mest komplette vaskemaskinportal
+          <div className="flex items-center gap-8 lg:gap-12">
+            <div className="max-w-2xl flex-1 relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.08] text-white/70 text-xs font-semibold mb-6">
+                <IconWasher size={14} />
+                Norges mest komplette vaskemaskinportal
+              </div>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+                Norges guide til <span className="text-aqua-400">vaskemaskiner</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-white/55 leading-relaxed mb-8 max-w-2xl">
+                Sammenlign {brands.length} merker, les dybdetester, finn feilkoder og bruksanvisninger. {stores.length} butikker i hele Norge.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/artikkel/komplett-kjopsguide-2026/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-aqua-600 text-white font-bold text-sm hover:bg-aqua-500 transition-all shadow-lg">Les kjøpsguiden<IconArrow size={16} color="white" /></Link>
+                <Link href="/feilkode/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/[0.06] text-white/80 font-semibold text-sm hover:bg-white/[0.12] transition-all border border-white/[0.12]">Finn din feilkode</Link>
+                <Link href="/verktoy/vaskemaskinvelger/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/[0.06] text-white/80 font-semibold text-sm hover:bg-white/[0.12] transition-all border border-white/[0.12]">Finn din maskin</Link>
+              </div>
+              <div className="flex gap-8 pt-8 mt-2">
+                {[
+                  { n: '480+', l: 'sider' },
+                  { n: String(brands.length), l: 'merker' },
+                  { n: String(errorBrands.reduce((s, b) => s + b.codes.length, 0)), l: 'feilkoder' },
+                  { n: String(stores.length), l: 'butikker' },
+                ].map((s, i) => (<div key={i} className="text-center"><div className="font-serif text-2xl font-bold text-aqua-400">{s.n}</div><div className="text-xs text-white/35 mt-1">{s.l}</div></div>))}
+              </div>
             </div>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
-              Norges guide til <span className="text-aqua-300">vaskemaskiner</span>
-            </h1>
-            <p className="text-lg sm:text-xl text-aqua-100 leading-relaxed mb-8 max-w-2xl">
-              Sammenlign 18 merker, les dybdetester, finn feilkoder og bruksanvisninger. {stores.length} butikker i hele Norge.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link href="/artikkel/komplett-kjopsguide-2026/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white text-aqua-800 font-bold text-sm hover:bg-aqua-50 transition-all shadow-lg">Les kjøpsguiden<IconArrow size={16} color="#115E59" /></Link>
-              <Link href="/feilkode/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 text-white font-semibold text-sm hover:bg-white/25 transition-all backdrop-blur-sm border border-white/20">Finn din feilkode</Link>
-              <Link href="/verktoy/vaskemaskinvelger/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 text-white font-semibold text-sm hover:bg-white/25 transition-all backdrop-blur-sm border border-white/20">Finn din maskin</Link>
+            <div className="hidden lg:block w-[320px] h-[360px] flex-shrink-0">
+              <svg viewBox="0 0 320 360" width="320" height="360" fill="none" className="animate-fade-in">
+                <rect x="40" y="10" width="240" height="340" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5"/>
+                <rect x="54" y="24" width="212" height="48" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" strokeWidth="0.5"/>
+                <circle cx="80" cy="48" r="7" fill="rgba(45,212,191,0.25)" stroke="rgba(45,212,191,0.4)" strokeWidth="0.5"/>
+                <circle cx="80" cy="48" r="2.5" fill="rgba(45,212,191,0.6)"/>
+                <circle cx="100" cy="48" r="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5"/>
+                <circle cx="116" cy="48" r="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5"/>
+                <rect x="168" y="39" width="88" height="18" rx="4" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
+                <text x="212" y="52" textAnchor="middle" fill="rgba(45,212,191,0.6)" fontSize="9" fontWeight="500" fontFamily="monospace">1400 RPM</text>
+                <rect x="54" y="24" width="50" height="10" rx="3" fill="rgba(45,212,191,0.15)" stroke="rgba(45,212,191,0.25)" strokeWidth="0.5"/>
+                <text x="79" y="32" textAnchor="middle" fill="rgba(45,212,191,0.5)" fontSize="7" fontFamily="monospace">ECO 40</text>
+                <line x1="40" y1="80" x2="280" y2="80" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5"/>
+                <circle cx="160" cy="205" r="112" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5"/>
+                <circle cx="160" cy="205" r="102" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.05)" strokeWidth="0.5"/>
+                <g className="animate-spin-slow origin-center" style={{ transformOrigin: '160px 205px' }}>
+                  <circle cx="160" cy="205" r="92" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5"/>
+                  <circle cx="160" cy="205" r="72" fill="none" stroke="rgba(255,255,255,0.025)" strokeWidth="0.5"/>
+                  <circle cx="160" cy="205" r="52" fill="none" stroke="rgba(255,255,255,0.02)" strokeWidth="0.5"/>
+                  <line x1="160" y1="113" x2="160" y2="297" stroke="rgba(255,255,255,0.02)" strokeWidth="0.5"/>
+                  <line x1="68" y1="205" x2="252" y2="205" stroke="rgba(255,255,255,0.02)" strokeWidth="0.5"/>
+                  <line x1="95" y1="140" x2="225" y2="270" stroke="rgba(255,255,255,0.02)" strokeWidth="0.5"/>
+                  <line x1="225" y1="140" x2="95" y2="270" stroke="rgba(255,255,255,0.02)" strokeWidth="0.5"/>
+                  <rect x="138" y="128" width="28" height="20" rx="5" fill="rgba(45,212,191,0.1)" stroke="rgba(45,212,191,0.18)" strokeWidth="0.5" transform="rotate(15,152,138)"/>
+                  <rect x="210" y="165" width="22" height="30" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5" transform="rotate(-25,221,180)"/>
+                  <rect x="220" y="225" width="26" height="18" rx="4" fill="rgba(45,212,191,0.08)" stroke="rgba(45,212,191,0.14)" strokeWidth="0.5" transform="rotate(40,233,234)"/>
+                  <rect x="185" y="268" width="18" height="24" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" strokeWidth="0.5" transform="rotate(-10,194,280)"/>
+                  <rect x="108" y="262" width="30" height="16" rx="4" fill="rgba(45,212,191,0.07)" stroke="rgba(45,212,191,0.12)" strokeWidth="0.5" transform="rotate(55,123,270)"/>
+                  <rect x="80" y="210" width="20" height="26" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" strokeWidth="0.5" transform="rotate(-35,90,223)"/>
+                  <rect x="88" y="155" width="24" height="18" rx="4" fill="rgba(45,212,191,0.06)" stroke="rgba(45,212,191,0.1)" strokeWidth="0.5" transform="rotate(20,100,164)"/>
+                  <rect x="150" y="245" width="16" height="22" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)" strokeWidth="0.5" transform="rotate(-50,158,256)"/>
+                </g>
+                <g className="animate-spin-reverse origin-center" style={{ transformOrigin: '160px 205px' }}>
+                  <circle cx="160" cy="125" r="4" fill="rgba(45,212,191,0.2)"/>
+                  <circle cx="230" cy="180" r="3" fill="rgba(45,212,191,0.15)"/>
+                  <circle cx="215" cy="265" r="5" fill="rgba(45,212,191,0.18)"/>
+                  <circle cx="105" cy="255" r="3.5" fill="rgba(45,212,191,0.12)"/>
+                  <circle cx="95" cy="175" r="4.5" fill="rgba(45,212,191,0.16)"/>
+                </g>
+                <circle cx="160" cy="205" r="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                <circle cx="160" cy="205" r="6" fill="rgba(45,212,191,0.3)" stroke="rgba(45,212,191,0.5)" strokeWidth="0.5"/>
+                <rect x="56" y="320" width="28" height="14" rx="3" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
+                <rect x="236" y="320" width="28" height="14" rx="3" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
+              </svg>
             </div>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0"><svg viewBox="0 0 1440 60" fill="none" className="w-full block" style={{ marginBottom: "-1px" }}><path d="M0 60V30C240 0 480 0 720 30C960 60 1200 60 1440 30V60H0Z" fill="white" /></svg></div>
       </section>
 
-      {/* ═══ 02: STATS — Hvit ═══ */}
-      <section className="bg-white py-8">
-        <div className="container-site">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 text-center">
-            {[
-              { n: brands.length, l: 'merker' },
-              { n: articles.length + comparisons.length, l: 'artikler' },
-              { n: errorBrands.reduce((s, b) => s + b.codes.length, 0), l: 'feilkoder' },
-              { n: stores.length, l: 'butikker' },
-              { n: fylker.length, l: 'fylker' },
-              { n: articles.length, l: 'guider' },
-            ].map((s, i) => (<div key={i}><div className="font-serif text-3xl font-bold text-aqua-600">{s.n}</div><div className="text-xs text-slate-500 mt-1">{s.l}</div></div>))}
-          </div>
-        </div>
-      </section>
+      {/* Stats now integrated in hero above */}
 
       {/* ═══ 03: KATEGORIER — Lys aqua ═══ */}
       <section className="py-16 sm:py-20 bg-aqua-50">
