@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/leverandorer/schulthess',
 })
 
-const faqItems = []
+const faqItems: { question: string; answer: string }[] = []
 
 export default function Page() {
   const sections = [
