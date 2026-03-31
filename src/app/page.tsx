@@ -41,7 +41,6 @@ export default function HomePage() {
       {/* ═══ 01: HERO — Slate gradient med animert vaskemaskin ═══ */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-        <div className="absolute top-[-80px] right-[-60px] w-[340px] h-[340px] rounded-full bg-aqua-600/[0.08] animate-pulse" />
         <div className="container-site relative py-20 sm:py-28 lg:py-32">
           <div className="flex items-center gap-8 lg:gap-12">
             <div className="max-w-2xl flex-1 relative z-10">
@@ -69,8 +68,8 @@ export default function HomePage() {
                 ].map((s, i) => (<div key={i} className="text-center"><div className="font-serif text-2xl font-bold text-aqua-400">{s.n}</div><div className="text-xs text-white/35 mt-1">{s.l}</div></div>))}
               </div>
             </div>
-            <div className="hidden lg:block w-[320px] h-[360px] flex-shrink-0">
-              <svg viewBox="0 0 320 360" width="320" height="360" fill="none" className="animate-fade-in">
+            <div className="hidden lg:block w-[400px] h-[440px] flex-shrink-0">
+              <svg viewBox="0 0 320 360" width="400" height="440" fill="none" className="animate-fade-in">
                 <rect x="40" y="10" width="240" height="340" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5"/>
                 <rect x="54" y="24" width="212" height="48" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" strokeWidth="0.5"/>
                 <circle cx="80" cy="48" r="7" fill="rgba(45,212,191,0.25)" stroke="rgba(45,212,191,0.4)" strokeWidth="0.5"/>
@@ -116,7 +115,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0"><svg viewBox="0 0 1440 60" fill="none" className="w-full block" style={{ marginBottom: "-1px" }}><path d="M0 60V30C240 0 480 0 720 30C960 60 1200 60 1440 30V60H0Z" fill="white" /></svg></div>
+        
       </section>
 
       {/* Stats now integrated in hero above */}
