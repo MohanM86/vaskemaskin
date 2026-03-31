@@ -112,41 +112,42 @@ export default function ArticleLayout({ article, categoryName, categorySlug, rel
         </div>
       </div>
 
+      {/* Dark hero */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <nav className="mb-6 text-sm text-slate-400">
+            <ol className="flex flex-wrap items-center gap-1.5">
+              <li className="flex items-center gap-1.5"><Link href="/" className="hover:text-aqua-300 transition-colors">Hjem</Link></li>
+              {categoryName && categorySlug && <li className="flex items-center gap-1.5"><span className="text-slate-500">/</span><Link href={'/kategori/' + categorySlug + '/'} className="hover:text-aqua-300 transition-colors">{categoryName}</Link></li>}
+              <li className="flex items-center gap-1.5"><span className="text-slate-500">/</span><span className="text-slate-300 font-medium line-clamp-1">{article.title}</span></li>
+            </ol>
+          </nav>
+          {categoryName && categorySlug && (
+            <Link href={'/kategori/' + categorySlug + '/'} className="inline-block text-xs font-semibold text-aqua-300 bg-white/10 px-3 py-1.5 rounded-full mb-4 hover:bg-white/20 transition-colors">{categoryName}</Link>
+          )}
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-5 text-white">{article.title}</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">{article.excerpt}</p>
+        </div>
+      </section>
+
       <article className="container-site py-8 lg:py-12" ref={articleRef}>
         <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
 
           {/* Main content */}
           <div className="min-w-0">
-            {/* Breadcrumbs */}
-            <nav className="mb-6 text-sm text-slate-500">
-              <ol className="flex flex-wrap items-center gap-1.5">
-                <li className="flex items-center gap-1.5"><Link href="/" className="hover:text-aqua-700 transition-colors">Hjem</Link></li>
-                {categoryName && categorySlug && <li className="flex items-center gap-1.5"><span className="text-slate-300">/</span><Link href={'/kategori/' + categorySlug + '/'} className="hover:text-aqua-700 transition-colors">{categoryName}</Link></li>}
-                <li className="flex items-center gap-1.5"><span className="text-slate-300">/</span><span className="text-slate-700 font-medium line-clamp-1">{article.title}</span></li>
-              </ol>
-            </nav>
-
-            {/* Article header */}
-            <header className="mb-10">
-              {categoryName && categorySlug && (
-                <Link href={'/kategori/' + categorySlug + '/'} className="inline-block text-xs font-semibold text-aqua-600 bg-aqua-50 px-3 py-1.5 rounded-full mb-4 hover:bg-aqua-100 transition-colors">{categoryName}</Link>
-              )}
-              <h1 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-slate-900 leading-tight mb-5">{article.title}</h1>
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">{article.excerpt}</p>
-
-              {/* Meta bar with visual indicators */}
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pb-6 border-b border-slate-200">
-                <span className="flex items-center gap-1.5 text-sm text-slate-500">
-                  <IconClock size={14} />
-                  {readMin} min lesetid
-                </span>
-                <span className="flex items-center gap-1.5 text-sm text-slate-500">
-                  <IconBookOpen size={14} />
-                  {article.sections.length} seksjoner
-                </span>
-                <span className="text-sm text-slate-500 font-medium">Oppdatert {updatedFormatted}</span>
-              </div>
-            </header>
+            {/* Meta bar */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pb-6 mb-10 border-b border-slate-200">
+              <span className="flex items-center gap-1.5 text-sm text-slate-500">
+                <IconClock size={14} />
+                {readMin} min lesetid
+              </span>
+              <span className="flex items-center gap-1.5 text-sm text-slate-500">
+                <IconBookOpen size={14} />
+                {article.sections.length} seksjoner
+              </span>
+              <span className="text-sm text-slate-500 font-medium">Oppdatert {updatedFormatted}</span>
+            </div>
 
             {/* ═══ KEY TAKEAWAYS with animated icons ═══ */}
             <div className="mb-10 p-6 rounded-2xl bg-gradient-to-br from-aqua-50 to-aqua-100/50 border border-aqua-200/60">
