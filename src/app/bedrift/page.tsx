@@ -43,7 +43,7 @@ export default function BedriftPage() {
   const sections = [
     { id: 'bransjer', label: 'Bransjeguider (8)' },
     { id: 'maskintyper', label: 'Maskintyper (5)' },
-    { id: 'leverandører', label: 'Leverandører (8)' },
+    { id: 'leverandoerer', label: 'Leverandører (8)' },
     { id: 'ressurser', label: 'Hygiene og pris' },
   ]
 
@@ -64,7 +64,7 @@ export default function BedriftPage() {
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift' }]} />
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl text-white">Profesjonelle vaskemaskiner for bedrift og industri</h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-10">
-            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forsta hygienekravene, sammenlign leverandører og få oversikt over hva det koster.
+            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forstå hygienekravene, sammenlign leverandører og få oversikt over hva det koster.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#bransjer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-aqua-500 text-white font-bold text-sm hover:bg-aqua-400 transition-colors">Velg din bransje</a>
@@ -119,11 +119,11 @@ export default function BedriftPage() {
             </section>
 
             {/* LEVERANDORER */}
-            <section data-section-id="leverandører" className="scroll-mt-20 mb-16">
+            <section data-section-id="leverandoerer" className="scroll-mt-20 mb-16">
               <h2 className="font-serif text-3xl font-bold text-slate-900 mb-3">Leverandører i Norge</h2>
               <p className="text-lg text-slate-600 max-w-2xl mb-8">Sammenlign de største leverandørene av profesjonelle vaskemaskiner.</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {leverandører.map(l => (
+                {leverandoerer.map(l => (
                   <Link key={l.href} href={l.href} className="group bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md hover:border-aqua-300 transition-all">
                     <span className="font-bold text-slate-900 group-hover:text-aqua-600 transition-colors text-sm">{l.name}</span>
                   </Link>
