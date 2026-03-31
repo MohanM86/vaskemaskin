@@ -19,13 +19,20 @@ const tools = [
 export default function BedriftVerktoyPage() {
   const sections = [{ id: 'verktoy', label: 'Verktøy for bedrift' }]
   return (
+    <>
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+<h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Verktøy for bedrift</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Interaktive kalkulatorer og velgere som hjelper deg å ta riktig beslutning om profesjonelle vaskemaskiner.</p>
+        </div>
+      </section>
+
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Verktøy' }]} />
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Verktøy for bedrift</h1>
-          <p className="text-lg text-slate-600 mb-10">Interaktive kalkulatorer og velgere som hjelper deg å ta riktig beslutning om profesjonelle vaskemaskiner.</p>
-          <div data-section-id="verktoy" className="scroll-mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<div data-section-id="verktoy" className="scroll-mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {tools.map((tool, i) => (
               <Link key={i} href={tool.href} className="group p-6 rounded-xl border border-slate-200 hover:border-aqua-300 hover:shadow-md transition-all">
                 <div className="w-14 h-14 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600 mb-4 group-hover:bg-aqua-100 transition-colors"><tool.icon size={28} /></div>
@@ -44,5 +51,6 @@ export default function BedriftVerktoyPage() {
         ]} />
       </div>
     </div>
+    </>
   )
 }

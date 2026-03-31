@@ -7,6 +7,7 @@ import { comparisons } from '@/data/sammenligninger'
 import { IconArrow, IconCheckCircle, IconAlertTriangle, IconStar, IconZap, IconTarget, IconTrendingUp } from '@/components/Icons'
 import { AnimatedBar, AnimatedCounter } from '@/components/BrandVisuals'
 import PageSidebar from '@/components/PageSidebar'
+import { Breadcrumbs } from '@/components/UI'
 import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 export function generateStaticParams() { return getAllBrandSlugs().map(slug => ({ slug })) }
@@ -104,33 +105,20 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: brand.name, url: 'https://vaskemaskin.no/merke/' + brand.slug + '/' }])) }} />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: brand.name }]} />
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">{brand.name} vaskemaskiner</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">{brand.description}</p>
+        </div>
+      </section>
+
       <div className="container-site py-10">
         <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
           <div className="min-w-0">
-            <nav className="mb-6 text-sm text-slate-500">
-              <Link href="/" className="hover:text-aqua-700">Hjem</Link>
-              <span className="text-slate-300 mx-1.5">/</span>
-              <span className="text-slate-700 font-medium">{brand.name}</span>
-            </nav>
-
-            {/* Header */}
-            <div className="flex items-start gap-5 mb-8">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-aqua-50 to-aqua-100 flex items-center justify-center text-2xl font-bold text-aqua-700 flex-shrink-0 border border-aqua-200/50">{brand.name.charAt(0)}</div>
-              <div className="flex-1">
-                <h1 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900">{brand.name} vaskemaskiner</h1>
-                <div className="flex flex-wrap items-center gap-3 mt-2 text-sm text-slate-500">
-                  <span>{brand.country}</span><span className="text-slate-300">|</span>
-                  <span>Grunnlagt {brand.founded}</span><span className="text-slate-300">|</span>
-                  <span className="text-aqua-600 font-medium">{brand.priceRange}</span>
-                </div>
-              </div>
-              <div className="hidden sm:flex flex-col items-center p-3 rounded-xl bg-aqua-50 border border-aqua-200/50">
-                <div className="font-serif text-2xl font-bold text-aqua-600">{overallScore}</div>
-                <div className="text-[10px] text-aqua-700 font-medium">/10</div>
-              </div>
-            </div>
-
-            {/* INTRO — split into readable paragraphs */}
+{/* INTRO — split into readable paragraphs */}
             <section data-section-id="intro" className="scroll-mt-20 mb-10">
               <div className="prose-article space-y-4">
                 {introParagraphs.map((p, i) => (

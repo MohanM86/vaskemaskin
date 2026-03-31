@@ -48,15 +48,22 @@ export default function TermPage({ params }: { params: { slug: string } }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'DefinedTerm', name: term.term, description: term.definition, inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'Vaskemaskin ordliste', url: 'https://vaskemaskin.no/ordliste/' } }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Ordliste', url: 'https://vaskemaskin.no/ordliste/' }, { name: term.term, url: 'https://vaskemaskin.no/ordliste/' + term.slug + '/' }])) }} />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Ordliste', href: '/ordliste/' }, { label: term.term }]} />
+          <h1 className="font-serif text-2xl sm:text-3xl font-bold leading-tight text-white">{term.term}</h1>
+        </div>
+      </section>
+
       <div className="container-site py-10">
         <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
           <div className="min-w-0">
-            <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Ordliste', href: '/ordliste/' }, { label: term.term }]} />
 
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600"><IconBookOpen size={24} /></div>
               <div>
-                <h1 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">{term.term}</h1>
                 <p className="text-sm text-slate-500">Ordliste for vaskemaskiner</p>
               </div>
             </div>

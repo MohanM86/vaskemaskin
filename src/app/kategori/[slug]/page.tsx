@@ -29,15 +29,19 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: cat.name, url: 'https://vaskemaskin.no/kategori/' + cat.slug + '/' }])) }} />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: cat.name }]} />
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">{cat.name}</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">{cat.description}</p>
+        </div>
+      </section>
+
       <div className="container-site py-10">
         <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
           <div className="min-w-0">
-            <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: cat.name }]} />
-            <div className="flex items-start gap-4 mb-8">
-              <div className="w-14 h-14 rounded-2xl bg-aqua-50 flex items-center justify-center text-aqua-600 flex-shrink-0"><CategoryIcon slug={cat.slug} size={28} /></div>
-              <div><h1 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900">{cat.name}</h1><p className="text-lg text-slate-600 mt-2 max-w-2xl">{cat.description}</p></div>
-            </div>
-
             <section data-section-id="intro" className="scroll-mt-20 mb-12">
               <div className="prose-article"><p>{cat.intro}</p></div>
             </section>

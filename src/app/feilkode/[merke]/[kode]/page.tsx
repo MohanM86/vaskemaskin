@@ -35,15 +35,22 @@ export default function ErrorCodePage({ params }: { params: { merke: string; kod
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(faqItems)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Feilkoder', url: 'https://vaskemaskin.no/feilkode/' }, { name: code.brand, url: 'https://vaskemaskin.no/feilkode/' + params.merke + '/' }, { name: 'Kode ' + code.code, url: 'https://vaskemaskin.no/feilkode/' + params.merke + '/' + params.kode + '/' }])) }} />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Feilkoder', href: '/feilkode/' }, { label: code.brand, href: '/feilkode/' + params.merke + '/' }, { label: 'Kode ' + code.code }]} />
+          <h1 className="font-serif text-2xl sm:text-3xl font-bold leading-tight text-white">{code.brand} feilkode {code.code}</h1>
+        </div>
+      </section>
+
       <div className="container-site py-10">
         <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
           <div className="min-w-0">
-            <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Feilkoder', href: '/feilkode/' }, { label: code.brand, href: '/feilkode/' + params.merke + '/' }, { label: 'Kode ' + code.code }]} />
 
             <div className="flex items-center gap-4 mb-6">
               <span className="font-mono text-2xl font-bold text-aqua-600 bg-aqua-50 px-4 py-2 rounded-xl">{code.code}</span>
               <div>
-                <h1 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">{code.brand} feilkode {code.code}</h1>
                 <p className="text-base text-slate-500 mt-1">{code.title}</p>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Breadcrumbs } from '@/components/UI'
 import { IconWasher, IconArrow } from '@/components/Icons'
 import PageSidebar from '@/components/PageSidebar'
 
@@ -134,20 +135,19 @@ export default function MaskinvelgerPage() {
   const sections = [{ id: 'quiz', label: step === 'resultat' ? 'Din anbefaling' : 'Steg ' + (stepIndex + 1) + ' av 4' }]
 
   return (
+    <>
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Maskinvelger' }]} />
+<p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Finn riktig bedriftsmaskin for din bransje</p>
+        </div>
+      </section>
+
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-          <nav className="mb-6 text-sm text-slate-500">
-            <Link href="/" className="hover:text-aqua-700">Hjem</Link>
-            <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/" className="hover:text-aqua-700">Bedrift</Link>
-            <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/verktoy/" className="hover:text-aqua-700">Verktøy</Link>
-            <span className="text-slate-300 mx-1.5">/</span>
-            <span className="text-slate-700 font-medium">Maskinvelger</span>
-          </nav>
-
-          <div className="flex items-center gap-3 mb-6">
+<div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600"><IconWasher size={24} /></div>
             <div>
               <h1 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">Finn riktig bedriftsmaskin</h1>
@@ -165,8 +165,7 @@ export default function MaskinvelgerPage() {
           {step === 'bransje' && (
             <div className="max-w-lg">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-2">Hvilken bransje er du i?</h2>
-              <p className="text-sm text-slate-500 mb-6">Dette påvirker maskintype og hygienekrav</p>
-              <div className="grid grid-cols-2 gap-3">
+<div className="grid grid-cols-2 gap-3">
                 {optBtn('hotell', 'Hotell og overnatting', 'Sengetøy, håndklær, uniformer', setBransje, bransje)}
                 {optBtn('barnehage', 'Barnehage', 'Sengetøy, barneklær, kluter', setBransje, bransje)}
                 {optBtn('sykehus', 'Sykehus/helse', 'Barrieremaskin påkrevd', setBransje, bransje)}
@@ -288,5 +287,6 @@ export default function MaskinvelgerPage() {
         ]} showQuiz={false} ctaTitle="Beregn lønnsomhet" ctaText="Lønner eget vaskeri seg for deg?" ctaLink="/bedrift/verktoy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
       </div>
     </div>
+    </>
   )
 }

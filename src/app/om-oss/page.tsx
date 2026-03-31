@@ -25,11 +25,18 @@ export default function OmOssPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Om oss', url: 'https://vaskemaskin.no/om-oss/' }])) }} />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Om oss' }]} />
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white mb-8">Om Vaskemaskin.no</h1>
+        </div>
+      </section>
+
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Om oss' }]} />
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mb-8">Om Vaskemaskin.no</h1>
 
           <section data-section-id="hvem" className="scroll-mt-20 mb-10">
             <h2 className="font-serif text-2xl font-bold text-slate-900 mb-4">Hvem vi er</h2>

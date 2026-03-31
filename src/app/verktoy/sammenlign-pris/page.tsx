@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Breadcrumbs } from '@/components/UI'
 import { IconArrow, IconTarget } from '@/components/Icons'
 import PageSidebar from '@/components/PageSidebar'
 
@@ -57,22 +58,19 @@ export default function SammenlignPrisPage() {
   }
 
   return (
+    <>
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10"><div className="absolute top-0 right-0 w-96 h-96 bg-aqua-500 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" /></div>
+        <div className="container-site py-16 md:py-24 relative z-10">
+          <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Verktøy', href: '/verktoy/' }, { label: 'Sammenlign pris per år' }]} />
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Sammenlign pris per år</h1>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Se hvilken maskin som er billigst over tid</p>
+        </div>
+      </section>
+
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-          <nav className="mb-6 text-sm text-slate-500">
-            <Link href="/" className="hover:text-aqua-700">Hjem</Link>
-            <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/verktoy/" className="hover:text-aqua-700">Verktøy</Link>
-            <span className="text-slate-300 mx-1.5">/</span>
-            <span className="text-slate-700 font-medium">Sammenlign pris per år</span>
-          </nav>
-
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600"><IconTarget size={24} /></div>
-            <div>
-              <h1 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">Sammenlign pris per år</h1>
-              <p className="text-sm text-slate-500">Se hvilken maskin som er billigst over tid</p>
             </div>
           </div>
 
@@ -138,5 +136,6 @@ export default function SammenlignPrisPage() {
         ]} ctaTitle="Finn riktig maskin" ctaText="Quiz med personlig anbefaling." ctaLink="/verktoy/vaskemaskinvelger/" ctaLinkText="Ta quizen" />
       </div>
     </div>
+    </>
   )
 }
