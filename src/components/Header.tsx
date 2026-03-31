@@ -9,6 +9,7 @@ import { errorBrands } from '@/data/feilkoder'
 import { comparisons } from '@/data/sammenligninger'
 import { manuals } from '@/data/bruksanvisning'
 import { CategoryIcon, IconWasher, IconMenu, IconClose, IconChevron } from './Icons'
+import SearchModal from './SearchModal'
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -73,14 +74,31 @@ export default function Header() {
               <button className={navCls('guider')}>Guider<IconChevron size={14} direction={activeMenu === 'guider' ? 'up' : 'down'} /></button>
               <div className="absolute left-0 right-0 h-3" />
               {activeMenu === 'guider' && (
-                <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[480px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjøpsguider</div>{articles.filter(a => a.category === 'kjøpsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
-                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Vedlikehold</div>{articles.filter(a => a.category === 'vedlikehold').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
+                <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[700px] bg-white rounded-xl shadow-xl border border-slate-200 p-6">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjøpsguider</div>
+                      {articles.filter(a => a.category === 'kjopsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-4 mb-3">Økonomi</div>
+                      {articles.filter(a => a.category === 'okonomi').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Vaskeguider</div>
+                      {articles.filter(a => a.category === 'vaskeguide').slice(0, 5).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}
+                      <Link href="/artikkel/" className="block py-1.5 text-xs font-semibold text-aqua-600 hover:text-aqua-700 mt-1">Se alle vaskeguider</Link>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Vedlikehold</div>
+                      {articles.filter(a => a.category === 'vedlikehold').slice(0, 4).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-4 mb-3">Maskintyper</div>
+                      {articles.filter(a => a.category === 'toppmatere' || a.category === 'frontmatere' || a.category === 'vasketorker').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}
+                    </div>
                   </div>
-                  <div className="border-t border-slate-100 mt-3 pt-3 flex gap-4">
+                  <div className="border-t border-slate-100 mt-4 pt-3 flex gap-6">
                     <Link href="/bruksanvisning/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Bruksanvisninger</Link>
                     <Link href="/ordliste/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Ordliste A til Å</Link>
+                    <Link href="/verktoy/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Interaktive verktøy</Link>
+                    <Link href="/artikkel/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Alle artikler</Link>
                   </div>
                 </div>
               )}
@@ -122,11 +140,17 @@ export default function Header() {
 
             {/* Finn butikk */}
             <Link href="/fylker/" className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-aqua-700 hover:bg-slate-50 rounded-lg transition-colors">Finn butikk</Link>
+
+            {/* Sok */}
+            <SearchModal />
           </nav>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Åpne meny'}>
-            {mobileOpen ? <IconClose size={24} /> : <IconMenu size={24} />}
-          </button>
+          <div className="flex items-center gap-2 lg:hidden">
+            <SearchModal />
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Åpne meny'}>
+              {mobileOpen ? <IconClose size={24} /> : <IconMenu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
