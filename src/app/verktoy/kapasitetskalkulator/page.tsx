@@ -55,8 +55,6 @@ export default function KapasitetskalkulatorPage() {
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-            </div>
-          </div>
 
           <p className="text-slate-600 mb-8 leading-relaxed">For stor maskin sløser strøm og vann. For liten maskin gir dårlig vaskeresultat og hyppigere vask. Denne kalkulatoren hjelper deg å finne den perfekte størrelsen.</p>
 

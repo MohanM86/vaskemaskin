@@ -71,8 +71,6 @@ export default function SammenlignPrisPage() {
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-            </div>
-          </div>
 
           <p className="text-slate-600 mb-8 leading-relaxed">En dyrere maskin kan være billigere over tid fordi den varer lenger og bruker mindre strøm. Sammenlign to maskiner og se den reelle kostnaden per år.</p>
 

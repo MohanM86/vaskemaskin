@@ -48,8 +48,6 @@ export default function ReparereEllerByttePage() {
     <div className="container-site py-10">
       <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
         <div className="min-w-0">
-            </div>
-          </div>
 
           <p className="text-slate-600 mb-8 leading-relaxed">Når vaskemaskinen feiler står du overfor et vanskelig valg. Denne kalkulatoren hjelper deg å ta riktig beslutning basert på maskinens alder, reparasjonskostnad og prisen på en ny maskin.</p>
 
