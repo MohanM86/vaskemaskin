@@ -5,7 +5,7 @@ import { createMeta, jsonLdBreadcrumb } from '@/lib/seo'
 
 export const metadata = createMeta({
   title: 'Vaskemaskin for bedrift og industri | Komplett guide',
-  description: 'Alt om profesjonelle vaskemaskiner for bedrifter. Bransjeguider for hotell, sykehus, barnehage, borettslag og mer. Maskintyper, leverandorer, hygienekrav og priser.',
+  description: 'Alt om profesjonelle vaskemaskiner for bedrifter. Bransjeguider for hotell, sykehus, barnehage, borettslag og mer. Maskintyper, leverandører, hygienekrav og priser.',
   path: 'bedrift',
 })
 
@@ -14,21 +14,21 @@ const bransjer = [
   { title: 'Barnehage', href: '/bedrift/barnehage/', desc: 'Hygienisk vask av sengetøy, klær og tekstiler for barn. Allergivennlige programmer og lav temperatur.', tag: null },
   { title: 'Sykehus og helsevesen', href: '/bedrift/sykehus/', desc: 'Smittevern, termisk desinfeksjon og barrierevasking. Strenge krav til hygiene og sporbarhet.', tag: 'Strengeste krav' },
   { title: 'Borettslag og sameie', href: '/bedrift/borettslag/', desc: 'Fellesvaskerier med betalingsløsninger, slitesterke maskiner og lavt vedlikehold.', tag: null },
-  { title: 'Profesjonelt vaskeri', href: '/bedrift/vaskeri/', desc: 'Kommersielle vaskerier med høy gjennomstromning, tunnelvaskemaskiner og automatiserte systemer.', tag: 'Høy kapasitet' },
-  { title: 'Ridesenter og stall', href: '/bedrift/ridesenter/', desc: 'Vask av dekken, saler og annet rideutstyr. Robuste maskiner som handterer hestehår og gjorme.', tag: null },
-  { title: 'Frisor og skonnshetssalong', href: '/bedrift/frisor/', desc: 'Handklær, kapper og tekstiler med høy vaskefrekvens. Kompakte maskiner for begrensede lokaler.', tag: null },
-  { title: 'Offshore og maritim', href: '/bedrift/offshore/', desc: 'Spesialmaskiner for plattformer og skip. Vibrasjonsdempet, sjovannsresistent og kompakt design.', tag: 'Spesialist' },
+  { title: 'Profesjonelt vaskeri', href: '/bedrift/vaskeri/', desc: 'Kommersielle vaskerier med høy gjennomstrømning, tunnelvaskemaskiner og automatiserte systemer.', tag: 'Høy kapasitet' },
+  { title: 'Ridesenter og stall', href: '/bedrift/ridesenter/', desc: 'Vask av dekken, saler og annet rideutstyr. Robuste maskiner som handterer hestehår og gjørme.', tag: null },
+  { title: 'Frisør og skjønnhetssalong', href: '/bedrift/frisor/', desc: 'Handklær, kapper og tekstiler med høy vaskefrekvens. Kompakte maskiner for begrensede lokaler.', tag: null },
+  { title: 'Offshore og maritim', href: '/bedrift/offshore/', desc: 'Spesialmaskiner for plattformer og skip. Vibrasjonsdempet, sjøvannsresistent og kompakt design.', tag: 'Spesialist' },
 ]
 
 const maskintyper = [
-  { title: 'Barrieremaskin', href: '/bedrift/maskintyper/barrieremaskin/', desc: 'Tosidig maskin med ren og uren sone. Pakrevd i helsevesenet for smittevern.' },
+  { title: 'Barrieremaskin', href: '/bedrift/maskintyper/barrieremaskin/', desc: 'Tosidig maskin med ren og uren sone. Påkrevd i helsevesenet for smittevern.' },
   { title: 'Moppemaskin', href: '/bedrift/maskintyper/moppemaskin/', desc: 'Spesialmaskin for vask av mopper og kluter. Termisk desinfeksjon for renholdsselskaper.' },
   { title: 'Tørkeskap', href: '/bedrift/maskintyper/tørkeskap/', desc: 'Skånsom torking av uniformer, arbeidstøy og dresser. Alternativ til tørketrommel.' },
   { title: 'Industrivaskemaskin', href: '/bedrift/maskintyper/industrimaskin/', desc: 'Storkapasitetsmaskiner fra 20 til 120 kg. For vaskerier og institusjoner med stort volum.' },
   { title: 'Tunnelvaskemaskin', href: '/bedrift/maskintyper/tunnelmaskin/', desc: 'Kontinuerlig gjennomstrommingsmaskin for storvaskerier. Opptil 5000 kg per time.' },
 ]
 
-const leverandorer = [
+const leverandoerer = [
   { name: 'Miele Professional', href: '/bedrift/leverandorer/miele-professional/' },
   { name: 'Electrolux Professional', href: '/bedrift/leverandorer/electrolux-professional/' },
   { name: 'Primus (Alliance)', href: '/bedrift/leverandorer/primus/' },
@@ -43,7 +43,7 @@ export default function BedriftPage() {
   const sections = [
     { id: 'bransjer', label: 'Bransjeguider (8)' },
     { id: 'maskintyper', label: 'Maskintyper (5)' },
-    { id: 'leverandorer', label: 'Leverandorer (8)' },
+    { id: 'leverandører', label: 'Leverandører (8)' },
     { id: 'ressurser', label: 'Hygiene og pris' },
   ]
 
@@ -64,7 +64,7 @@ export default function BedriftPage() {
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift' }]} />
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl text-white">Profesjonelle vaskemaskiner for bedrift og industri</h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-10">
-            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forsta hygienekravene, sammenlign leverandorer og få oversikt over hva det koster.
+            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forsta hygienekravene, sammenlign leverandører og få oversikt over hva det koster.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#bransjer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-aqua-500 text-white font-bold text-sm hover:bg-aqua-400 transition-colors">Velg din bransje</a>
@@ -79,7 +79,7 @@ export default function BedriftPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div><div className="font-serif text-3xl font-bold">8</div><div className="text-sm text-aqua-100">Bransjeguider</div></div>
             <div><div className="font-serif text-3xl font-bold">5</div><div className="text-sm text-aqua-100">Maskintyper</div></div>
-            <div><div className="font-serif text-3xl font-bold">8</div><div className="text-sm text-aqua-100">Leverandorer</div></div>
+            <div><div className="font-serif text-3xl font-bold">8</div><div className="text-sm text-aqua-100">Leverandører</div></div>
             <div><div className="font-serif text-3xl font-bold">100+</div><div className="text-sm text-aqua-100">Modeller dekket</div></div>
           </div>
         </div>
@@ -119,11 +119,11 @@ export default function BedriftPage() {
             </section>
 
             {/* LEVERANDORER */}
-            <section data-section-id="leverandorer" className="scroll-mt-20 mb-16">
-              <h2 className="font-serif text-3xl font-bold text-slate-900 mb-3">Leverandorer i Norge</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mb-8">Sammenlign de største leverandorene av profesjonelle vaskemaskiner.</p>
+            <section data-section-id="leverandører" className="scroll-mt-20 mb-16">
+              <h2 className="font-serif text-3xl font-bold text-slate-900 mb-3">Leverandører i Norge</h2>
+              <p className="text-lg text-slate-600 max-w-2xl mb-8">Sammenlign de største leverandørene av profesjonelle vaskemaskiner.</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {leverandorer.map(l => (
+                {leverandører.map(l => (
                   <Link key={l.href} href={l.href} className="group bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md hover:border-aqua-300 transition-all">
                     <span className="font-bold text-slate-900 group-hover:text-aqua-600 transition-colors text-sm">{l.name}</span>
                   </Link>

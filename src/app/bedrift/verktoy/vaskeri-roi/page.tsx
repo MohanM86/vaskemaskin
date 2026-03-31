@@ -92,7 +92,7 @@ export default function VaskeriROIPage() {
             <span className="text-slate-300 mx-1.5">/</span>
             <Link href="/bedrift/" className="hover:text-aqua-700">Bedrift</Link>
             <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/verktøy/" className="hover:text-aqua-700">Verktøy</Link>
+            <Link href="/bedrift/verktoy/" className="hover:text-aqua-700">Verktøy</Link>
             <span className="text-slate-300 mx-1.5">/</span>
             <span className="text-slate-700 font-medium">Vaskeri ROI</span>
           </nav>
@@ -104,7 +104,7 @@ export default function VaskeriROIPage() {
               <p className="text-sm text-slate-500">Eget vaskeri vs. outsourcing: hva lønner seg?</p>
             </div>
           </div>
-          <p className="text-slate-600 mb-8 leading-relaxed">Beregn om det lønner seg aa investere i eget vaskeri eller fortsette med ekstern vaskerileverandor. Juster tallene til din situasjon og se resultatet umiddelbart.</p>
+          <p className="text-slate-600 mb-8 leading-relaxed">Beregn om det lønner seg å investere i eget vaskeri eller fortsette med ekstern vaskerileverandør. Juster tallene til din situasjon og se resultatet umiddelbart.</p>
 
           {/* ═══ INPUTS ═══ */}
           <section data-section-id="input" className="scroll-mt-20">
@@ -145,14 +145,14 @@ export default function VaskeriROIPage() {
                 </div>
 
                 <div className="mb-5">
-                  <label className="text-sm font-semibold text-slate-700 mb-2 block">Årlig lonnskostnad per ansatt: <span className="text-aqua-600 font-bold">{fmt(lonnskostnad)} kr</span></label>
+                  <label className="text-sm font-semibold text-slate-700 mb-2 block">Årlig lønnskostnad per ansatt: <span className="text-aqua-600 font-bold">{fmt(lonnskostnad)} kr</span></label>
                   <input type="range" min="300000" max="700000" step="25000" value={lonnskostnad} onChange={e => setLonnskostnad(Number(e.target.value))} className="w-full accent-aqua-600" />
                   <div className="flex justify-between text-xs text-slate-400 mt-1"><span>300 000</span><span>500 000</span><span>700 000</span></div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="text-sm font-semibold text-slate-700 mb-2 block">Maskinens levetid: <span className="text-aqua-600 font-bold">{levetidAar} aar</span></label>
+                    <label className="text-sm font-semibold text-slate-700 mb-2 block">Maskinens levetid: <span className="text-aqua-600 font-bold">{levetidAar} år</span></label>
                     <input type="range" min="5" max="20" value={levetidAar} onChange={e => setLevetidAar(Number(e.target.value))} className="w-full accent-aqua-600" />
                   </div>
                   <div>
@@ -171,16 +171,16 @@ export default function VaskeriROIPage() {
             {/* Main comparison */}
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className={'p-5 rounded-xl border-2 text-center ' + (!calc.lønner ? 'border-aqua-400 bg-aqua-50' : 'border-slate-200')}>
-                <div className="text-xs text-slate-500 mb-1">Outsourcing per aar</div>
+                <div className="text-xs text-slate-500 mb-1">Outsourcing per år</div>
                 <div className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">{fmt(calc.outsourcingAar)}</div>
-                <div className="text-sm text-slate-500">kr per aar</div>
+                <div className="text-sm text-slate-500">kr per år</div>
                 <div className="text-xs text-slate-400 mt-2">{outsourcingPris} kr/kg</div>
               </div>
               <div className={'p-5 rounded-xl border-2 text-center ' + (calc.lønner ? 'border-aqua-400 bg-aqua-50' : 'border-slate-200')}>
                 {calc.lønner && <span className="inline-block text-[10px] font-bold text-white bg-aqua-600 px-2 py-0.5 rounded-full mb-2">BILLIGST</span>}
-                <div className="text-xs text-slate-500 mb-1">Eget vaskeri per aar</div>
+                <div className="text-xs text-slate-500 mb-1">Eget vaskeri per år</div>
                 <div className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">{fmt(calc.egetTotaltAar)}</div>
-                <div className="text-sm text-slate-500">kr per aar</div>
+                <div className="text-sm text-slate-500">kr per år</div>
                 <div className="text-xs text-slate-400 mt-2">{calc.egetPerKg} kr/kg</div>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function VaskeriROIPage() {
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
                 <div className="text-xs text-slate-500 mb-1">Breakeven</div>
                 <div className="font-serif text-2xl font-bold text-slate-800">
-                  {calc.breakevenAar < 20 ? calc.breakevenAar + ' aar' : 'Aldri'}
+                  {calc.breakevenAar < 20 ? calc.breakevenAar + ' år' : 'Aldri'}
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
@@ -213,7 +213,7 @@ export default function VaskeriROIPage() {
               <p className={'text-sm ' + (calc.lønner ? 'text-aqua-700' : 'text-amber-700')}>
                 {calc.lønner
                   ? 'Med ditt volum på ' + fmt(calc.kgPerAar) + ' kg per år sparer du ' + fmt(calc.besparelseAar) + ' kr årlig (' + calc.besparelseProsent + ' prosent) med eget vaskeri. Investeringen er tilbakebetalt etter ' + calc.breakevenAar + ' år.'
-                  : 'Med gjeldende volum og priser er outsourcing rimeligere. Prøv aa øke volumet, redusere investeringen eller forhandle på outsourcingprisen for aa se om regnestykket endrer seg.'
+                  : 'Med gjeldende volum og priser er outsourcing rimeligere. Prøv å øke volumet, redusere investeringen eller forhandle på outsourcingprisen for å se om regnestykket endrer seg.'
                 }
               </p>
             </div>
@@ -226,7 +226,7 @@ export default function VaskeriROIPage() {
               {[
                 { label: 'Personal', value: calc.personalAar, color: '#0D9488' },
                 { label: 'Avskrivning maskiner', value: calc.avskrivningAar, color: '#14B8A6' },
-                { label: 'Drift (strom, vann, kjemikalier)', value: calc.driftAar, color: '#2DD4BF' },
+                { label: 'Drift (strøm, vann, kjemikalier)', value: calc.driftAar, color: '#2DD4BF' },
                 { label: 'Vedlikehold og service', value: calc.vedlikeholdAar, color: '#5EEAD4' },
               ].map((item, i) => {
                 const pct = Math.round((item.value / calc.egetTotaltAar) * 100)
@@ -243,7 +243,7 @@ export default function VaskeriROIPage() {
                 )
               })}
               <div className="border-t border-slate-100 pt-3 mt-4 flex justify-between text-sm font-bold text-slate-900">
-                <span>Totalt per aar</span>
+                <span>Totalt per år</span>
                 <span>{fmt(calc.egetTotaltAar)} kr</span>
               </div>
             </div>
@@ -251,7 +251,7 @@ export default function VaskeriROIPage() {
 
           {/* ═══ 10 YEAR VIEW ═══ */}
           <section data-section-id="tidslinje" className="scroll-mt-20 mb-8">
-            <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Kostnad over 10 aar</h2>
+            <h2 className="font-serif text-xl font-bold text-slate-900 mb-4">Kostnad over 10 år</h2>
             <div className="p-6 rounded-xl border border-slate-200 bg-white">
               <div className="space-y-4">
                 {[1,2,3,4,5,6,7,8,9,10].map(aar => {
@@ -292,7 +292,7 @@ export default function VaskeriROIPage() {
             <div className="space-y-3">
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Lokalkostnader er ikke inkludert</div>
-                <p className="text-xs text-slate-500">Kalkulatoren inkluderer ikke husleie eller ombygging av lokaler for vaskeri. Dette kan utgjore 50 000 til 300 000 kr avhengig av behovet.</p>
+                <p className="text-xs text-slate-500">Kalkulatoren inkluderer ikke husleie eller ombygging av lokaler for vaskeri. Dette kan utgjøre 50 000 til 300 000 kr avhengig av behovet.</p>
               </div>
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Outsourcing inkluderer transport</div>
@@ -307,9 +307,9 @@ export default function VaskeriROIPage() {
             <div className="mt-8 p-5 rounded-xl bg-aqua-50 border border-aqua-200">
               <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Neste steg</h3>
               <div className="flex flex-wrap gap-3">
-                <Link href="/bedrift/verktøy/kapasitetsplanlegger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Planlegg maskinpark <IconArrow size={12} color="#0F766E" /></Link>
+                <Link href="/bedrift/verktoy/kapasitetsplanlegger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Planlegg maskinpark <IconArrow size={12} color="#0F766E" /></Link>
                 <Link href="/bedrift/prisguide/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Se prisguide <IconArrow size={12} color="#0F766E" /></Link>
-                <Link href="/bedrift/verktøy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
+                <Link href="/bedrift/verktoy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
               </div>
             </div>
           </section>
@@ -319,8 +319,8 @@ export default function VaskeriROIPage() {
           { href: '/bedrift/hotell/', label: 'Hotellvaskeri guide' },
           { href: '/bedrift/vaskeri/', label: 'Profesjonelt vaskeri' },
           { href: '/bedrift/prisguide/', label: 'Prisguide bedrift' },
-          { href: '/bedrift/verktøy/kapasitetsplanlegger/', label: 'Kapasitetsplanlegger' },
-        ]} ctaTitle="Finn riktig maskin" ctaText="Svar på 5 spørsmål for skreddersydd anbefaling." ctaLink="/bedrift/verktøy/maskinvelger/" ctaLinkText="Start velgeren" />
+          { href: '/bedrift/verktoy/kapasitetsplanlegger/', label: 'Kapasitetsplanlegger' },
+        ]} ctaTitle="Finn riktig maskin" ctaText="Svar på 5 spørsmål for skreddersydd anbefaling." ctaLink="/bedrift/verktoy/maskinvelger/" ctaLinkText="Start velgeren" />
       </div>
     </div>
   )

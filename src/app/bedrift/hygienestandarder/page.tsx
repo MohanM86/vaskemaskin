@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/hygienestandarder',
 })
 
-const faqItems = [{"question": "Er EN 14065 pakrevd?", "answer": "Ikke formelt pakrevd av norsk lov, men effektivt pakrevd for sykehusvaskerier og anbefalt for alle profesjonelle vaskerier."}, {"question": "Hvilken temperatur dreper bakterier?", "answer": "60 grader dreper de fleste bakterier. 85 grader er standard for helsetekstiler. 90 grader for kjent smittefare."}]
+const faqItems = [{"question": "Er EN 14065 påkrevd?", "answer": "Ikke formelt påkrevd av norsk lov, men effektivt påkrevd for sykehusvaskerier og anbefalt for alle profesjonelle vaskerier."}, {"question": "Hvilken temperatur dreper bakterier?", "answer": "60 grader dreper de fleste bakterier. 85 grader er standard for helsetekstiler. 90 grader for kjent smittefare."}]
 
 export default function Page() {
   const sections = [
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Hygienestandarder' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Hygienestandarder for profesjonell tekstilvask</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">EN 14065, RABC, termisk desinfeksjon og norske forskrifter. Alt du trenger aa vite om kravene til hygienisk tekstilvask for din bransje.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">EN 14065, RABC, termisk desinfeksjon og norske forskrifter. Alt du trenger å vite om kravene til hygienisk tekstilvask for din bransje.</p>
         </div>
       </section>
 
@@ -42,15 +42,15 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>EN 14065 RABC standarden</h2>
-              <p>EN 14065 er den europeiske standarden for styring av bioforurensning i profesjonell tekstilvask. RABC står for Risk Analysis and Biocontamination Control og palegger vaskerier aa gjennomfore systematisk risikoanalyse av hele prosessen fra innsamling til levering av rene tekstiler. Standarden er frivillig men effektivt pakrevd for sykehusvaskerier og anbefalt for alle profesjonelle vaskerier.</p>
+              <p>EN 14065 er den europeiske standarden for styring av bioforurensning i profesjonell tekstilvask. RABC står for Risk Analysis and Biocontamination Control og pålegger vaskerier å gjennomføre systematisk risikoanalyse av hele prosessen fra innsamling til levering av rene tekstiler. Standarden er frivillig men effektivt påkrevd for sykehusvaskerier og anbefalt for alle profesjonelle vaskerier.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Termisk desinfeksjon</h2>
-              <p>Termisk desinfeksjon betyr aa bruke varme for aa drepe mikroorganismer. De vanligste kravene er: 60 grader i 10 minutter for generell hygienisk vask, 70 grader i 10 minutter for tydelig forurenset toy, 85 grader i 10 minutter for helsetekstiler (sykehuskrav), 90 grader i 10 minutter for kjent smittefare. Temperaturen maa dokumenteres og logges.</p>
+              <p>Termisk desinfeksjon betyr å bruke varme for å drepe mikroorganismer. De vanligste kravene er: 60 grader i 10 minutter for generell hygienisk vask, 70 grader i 10 minutter for tydelig forurenset tøy, 85 grader i 10 minutter for helsetekstiler (sykehuskrav), 90 grader i 10 minutter for kjent smittefare. Temperaturen må dokumenteres og logges.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Norske forskrifter</h2>
-              <p>Forskrift om smittevern i helsetjenesten stiller krav til barrierevasking i sykehus. Forskrift om miljorettet helsevern i barnehager og skoler stiller krav til hygienisk handtering av tekstiler. Mattilsynets veileder for innkvarteringssteder anbefaler 60 grader for sengetøy og håndklær.</p>
+              <p>Forskrift om smittevern i helsetjenesten stiller krav til barrierevasking i sykehus. Forskrift om miljørettet helsevern i barnehager og skoler stiller krav til hygienisk håndtering av tekstiler. Mattilsynets veileder for innkvarteringssteder anbefaler 60 grader for sengetøy og håndklær.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>NS INSTA 800 for renhold</h2>
@@ -62,7 +62,7 @@ export default function Page() {
             </section>
             <section data-section-id="s5" className="scroll-mt-20 mb-10">
               <h2>Dokumentasjon og revisjon</h2>
-              <p>Profesjonelle vaskerier maa dokumentere temperaturlogger for hver vask, kjemikalieforbruk og dosering, mikrobiologiske kontroller, vedlikeholdsprotokoll for maskiner, og opplaering av personell. Revisjon gjennomfores årlig av sertifiseringsorgan.</p>
+              <p>Profesjonelle vaskerier må dokumentere temperaturlogger for hver vask, kjemikalieforbruk og dosering, mikrobiologiske kontroller, vedlikeholdsprotokoll for maskiner, og opplæring av personell. Revisjon gjennomføres årlig av sertifiseringsorgan.</p>
             </section>
             </div>
 

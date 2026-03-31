@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/vaskeri',
 })
 
-const faqItems = [{"question": "Når lønner tunnelmaskin seg?", "answer": "Typisk ved volumer over 2000 kg per dag. Mellom 1000 og 2000 kg avhenger det av tekstiltyper og kundeportefolje."}, {"question": "Hva koster det aa starte et vaskeri?", "answer": "1 til 3 millioner kr for et lite vaskeri med enkeltstående maskiner, 5 til 15 millioner for fullautomatisert vaskeri med tunnel."}, {"question": "Hva er typisk margin for et vaskeri?", "answer": "10 til 20 prosent på faste avtaler med hoteller og helseinstitusjoner. Privatmarkedet gir høyere margin per kilo men lavere volum."}, {"question": "Trenger vaskeri utslippstillatelse?", "answer": "Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen i henhold til Forurensingsforskriften."}]
+const faqItems = [{"question": "Når lønner tunnelmaskin seg?", "answer": "Typisk ved volumer over 2000 kg per dag. Mellom 1000 og 2000 kg avhenger det av tekstiltyper og kundeportefølje."}, {"question": "Hva koster det å starte et vaskeri?", "answer": "1 til 3 millioner kr for et lite vaskeri med enkeltstående maskiner, 5 til 15 millioner for fullautomatisert vaskeri med tunnel."}, {"question": "Hva er typisk margin for et vaskeri?", "answer": "10 til 20 prosent på faste avtaler med hoteller og helseinstitusjoner. Privatmarkedet gir høyere margin per kilo men lavere volum."}, {"question": "Trenger vaskeri utslippstillatelse?", "answer": "Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen i henhold til Forurensingsforskriften."}]
 
 export default function Page() {
   const sections = [
@@ -31,7 +31,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Vaskeri' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for profesjonelt vaskeri</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Profesjonelle vaskerier krever maskiner med høy gjennomstromning og lav driftskostnad per kilo.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Profesjonelle vaskerier krever maskiner med høy gjennomstrømning og lav driftskostnad per kilo.</p>
         </div>
       </section>
 
@@ -41,22 +41,22 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Maskinpark for kommersielle vaskerier</h2>
-              <p>Valg av maskinpark avhenger av daglig volum og tekstiltyper. Under 1000 kg per dag: enkeltstående maskiner på 20 til 60 kg gir fleksibilitet til aa kjore ulike programmer parallelt. Over 2000 kg per dag: tunnelvaskemaskin er eneste økonomiske løsning. Mellom 1000 og 2000 kg er det en glidende overgang der kombinasjoner av enkeltstående og batch washers ofte er optimalt.</p>
+              <p>Valg av maskinpark avhenger av daglig volum og tekstiltyper. Under 1000 kg per dag: enkeltstående maskiner på 20 til 60 kg gir fleksibilitet til å kjøre ulike programmer parallelt. Over 2000 kg per dag: tunnelvaskemaskin er eneste økonomiske løsning. Mellom 1000 og 2000 kg er det en glidende overgang der kombinasjoner av enkeltstående og batch washers ofte er optimalt.</p>
               <p>Hardmount maskiner med bunnforankring gir høyere G faktor og lavere restfuktighet enn softmount. For vaskerier over 500 kg per dag er hardmount standard. På grunn av vibrasjonene krever de sterkere gulv og fundamentering.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Tunnelvaskemaskiner i storvaskeri</h2>
-              <p>Tunnelmaskin er et kontinuerlig system med flere kammere der tekstilene beveger seg fremover gjennom forbehandling, vask, skylling og sluttbehandling. Gjennomstromning kan naa opptil 5000 kg per time. Investering fra 1,5 til 10 millioner kr, men dramatisk lavere kostnad per kilo: 2 til 4 kr mot 5 til 8 kr for enkeltstående maskiner.</p>
+              <p>Tunnelmaskin er et kontinuerlig system med flere kammere der tekstilene beveger seg fremover gjennom forbehandling, vask, skylling og sluttbehandling. Gjennomstrømning kan nå opptil 5000 kg per time. Investering fra 1,5 til 10 millioner kr, men dramatisk lavere kostnad per kilo: 2 til 4 kr mot 5 til 8 kr for enkeltstående maskiner.</p>
               <p>Tunnelmaskinen kobles til sentralpresse og tørkelinje for helautomatisk drift. Arbeidskostnaden per kilo reduseres med 60 til 80 prosent sammenlignet med manuell drift av enkeltstående maskiner.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Vannbehandling og gjenvinning</h2>
-              <p>Vanngjenvinning reduserer forbruket med 30 til 50 prosent. Brukt skyllevann filtreres og gjenbrukes i forvask på neste batch. Varmegjenvinning via varmevekslere sparer ytterligere 20 til 30 prosent på energi ved aa forvarne innkommende kaldt vann med varmen fra avlopsvannet.</p>
-              <p>Norske krav til avlopsvann fra vaskerier reguleres av Forurensingsforskriften. Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen. Vanngjenvinning reduserer både kostnader og miljofotavtrykk.</p>
+              <p>Vanngjenvinning reduserer forbruket med 30 til 50 prosent. Brukt skyllevann filtreres og gjenbrukes i forvask på neste batch. Varmegjenvinning via varmevekslere sparer ytterligere 20 til 30 prosent på energi ved å forvarme innkommende kaldt vann med varmen fra avløpsvannet.</p>
+              <p>Norske krav til avløpsvann fra vaskerier reguleres av Forurensingsforskriften. Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen. Vanngjenvinning reduserer både kostnader og miljøfotavtrykk.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Automasjon og effektivisering</h2>
-              <p>Automatisk sortering via RFID skanner tekstilene ved ankomst og sender dem til riktig vaskeprogram. Robotisert folding håndterer flattoy og håndklær med minimal manuell innsats. Transportbånd mellom stasjonene eliminerer lofting og bæring.</p>
+              <p>Automatisk sortering via RFID skanner tekstilene ved ankomst og sender dem til riktig vaskeprogram. Robotisert folding håndterer flattøy og håndklær med minimal manuell innsats. Transportbånd mellom stasjonene eliminerer lofting og bæring.</p>
               <p>Kjemikaliedosering styres av sensorer som måler vannets hardhet, temperatur og pH verdier i sanntid. Dette sikrer optimalt resultat med minimal kjemikaliebruk og reduserer slitasje på tekstilene.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
@@ -94,8 +94,8 @@ export default function Page() {
 
       <section className="bg-gradient-to-r from-aqua-600 to-aqua-700 text-white">
         <div className="container-site py-12 text-center">
-          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til aa velge?</h2>
-          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandorene tilgjengelige i Norge.</p>
+          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til å velge?</h2>
+          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandørene tilgjengelige i Norge.</p>
           <Link href="/bedrift/prisguide/" className="inline-block bg-white text-aqua-700 font-bold px-8 py-4 rounded-xl hover:bg-aqua-50 transition-colors shadow-lg">Se prisguide</Link>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function Page() {
               </Link>
               <Link href="/bedrift/leverandorer/jensen-group/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Jensen Group</h3>
-                <p className="text-sm text-slate-600">Storleverandor av vaskerisystemer.</p>
+                <p className="text-sm text-slate-600">Storleverandør av vaskerisystemer.</p>
               </Link>
               <Link href="/bedrift/hygienestandarder/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Hygienestandarder</h3>

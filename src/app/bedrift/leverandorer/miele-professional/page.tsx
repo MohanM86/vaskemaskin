@@ -22,7 +22,7 @@ export default function Page() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandorer', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Miele Professional', url: 'https://vaskemaskin.no/bedrift/leverandorer/miele-professional/' }])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandører', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Miele Professional', url: 'https://vaskemaskin.no/bedrift/leverandorer/miele-professional/' }])) }} />
       {faqItems.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(faqItems)) }} />}
 
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -44,11 +44,11 @@ export default function Page() {
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Produktserier</h2>
-              <p>Little Giants (6,5 til 8 kg) for små lokaler som frisorer og klinikker. Performance (8 til 16 kg) for barnehager, hoteller og borettslag. Benchmark (20 til 32 kg) for større vaskerier og institusjoner. Alle serier har automatisk dosering, programmering og nettverksoppkobling.</p>
+              <p>Little Giants (6,5 til 8 kg) for små lokaler som frisører og klinikker. Performance (8 til 16 kg) for barnehager, hoteller og borettslag. Benchmark (20 til 32 kg) for større vaskerier og institusjoner. Alle serier har automatisk dosering, programmering og nettverksoppkobling.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>Bygd for aa vare. Høyeste kvalitet på materialer og komponenter. Eget servicenettverk i Norge med korte responstider. Bredt utvalg av programmer og tilbehor. Automatisk dosering som standard på de fleste modeller.</p>
+              <p>Bygd for å vare. Høyeste kvalitet på materialer og komponenter. Eget servicenettverk i Norge med korte responstider. Bredt utvalg av programmer og tilbehør. Automatisk dosering som standard på de fleste modeller.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Svakheter</h2>

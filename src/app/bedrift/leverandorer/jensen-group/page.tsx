@@ -22,7 +22,7 @@ export default function Page() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandorer', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Jensen Group', url: 'https://vaskemaskin.no/bedrift/leverandorer/jensen-group/' }])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandører', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Jensen Group', url: 'https://vaskemaskin.no/bedrift/leverandorer/jensen-group/' }])) }} />
       {faqItems.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(faqItems)) }} />}
 
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -40,7 +40,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Jensen Group</h2>
-              <p>Jensen Group ble grunnlagt i 1937 i Danmark og er verdens ledende produsent av tunnelyaskemaskiner og automatiserte vaskeriløsninger. Selskapet leverer komplette systemer fra vask til folding for de største vaskerioperasjonene i verden.</p>
+              <p>Jensen Group ble grunnlagt i 1937 i Danmark og er verdens ledende produsent av tunnelvaskemaskiner og automatiserte vaskeriløsninger. Selskapet leverer komplette systemer fra vask til folding for de største vaskerioperasjonene i verden.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Tunnelsystemer</h2>

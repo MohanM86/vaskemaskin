@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/prisguide',
 })
 
-const faqItems = [{"question": "Hva koster en profesjonell vaskemaskin?", "answer": "Fra 20 000 kr for en liten 6 kg modell til over 10 millioner kr for en tunnelvaskemaskin. De fleste bedrifter trenger maskiner i sjiktet 30 000 til 150 000 kr."}, {"question": "Lønner det seg aa lease?", "answer": "For de fleste bedrifter ja. Leasing gir forutsigbare kostnader, inkluderer ofte service, og eliminerer store engangsinvesteringer."}, {"question": "Hva er driftskostnaden per vask?", "answer": "Typisk 3 til 8 kr per vask for små maskiner (strom, vann, vaskemiddel) og 10 til 25 kr for store industrimaskiner."}]
+const faqItems = [{"question": "Hva koster en profesjonell vaskemaskin?", "answer": "Fra 20 000 kr for en liten 6 kg modell til over 10 millioner kr for en tunnelvaskemaskin. De fleste bedrifter trenger maskiner i sjiktet 30 000 til 150 000 kr."}, {"question": "Lønner det seg å lease?", "answer": "For de fleste bedrifter ja. Leasing gir forutsigbare kostnader, inkluderer ofte service, og eliminerer store engangsinvesteringer."}, {"question": "Hva er driftskostnaden per vask?", "answer": "Typisk 3 til 8 kr per vask for små maskiner (strøm, vann, vaskemiddel) og 10 til 25 kr for store industrimaskiner."}]
 
 export default function Page() {
   const sections = [
@@ -44,7 +44,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Priser for små profesjonelle maskiner (6 til 10 kg)</h2>
-              <p>Små profesjonelle maskiner fra 6 til 10 kg kapasitet koster typisk 20 000 til 65 000 kr avhengig av merke og funksjoner. Electrolux myPRO starter rundt 20 000 kr og er det rimeligste alternativet. Miele Little Giants ligger på 30 000 til 55 000 kr. Podab StreamLine er et godt mellomvalg på 30 000 til 40 000 kr. Disse maskinene passer for frisorer, små barnehager, klinikker og borettslag med faerre enn 20 leiligheter.</p>
+              <p>Små profesjonelle maskiner fra 6 til 10 kg kapasitet koster typisk 20 000 til 65 000 kr avhengig av merke og funksjoner. Electrolux myPRO starter rundt 20 000 kr og er det rimeligste alternativet. Miele Little Giants ligger på 30 000 til 55 000 kr. Podab StreamLine er et godt mellomvalg på 30 000 til 40 000 kr. Disse maskinene passer for frisører, små barnehager, klinikker og borettslag med færre enn 20 leiligheter.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Priser for mellomstore maskiner (10 til 20 kg)</h2>
@@ -56,11 +56,11 @@ export default function Page() {
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Priser for barrieremaskiner</h2>
-              <p>Barrieremaskiner koster fra 200 000 kr for 14 kg modeller til over 1 million kr for 100+ kg modeller. Electrolux, Miele og Girbau er de største leverandorene. Installasjonskostnaden kommer i tillegg og kan utgjore 20 til 40 prosent av maskinprisen for veggtilpasning og rorarbeid.</p>
+              <p>Barrieremaskiner koster fra 200 000 kr for 14 kg modeller til over 1 million kr for 100+ kg modeller. Electrolux, Miele og Girbau er de største leverandørene. Installasjonskostnaden kommer i tillegg og kan utgjøre 20 til 40 prosent av maskinprisen for veggtilpasning og rørarbeid.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Priser for tunnelvaskemaskiner</h2>
-              <p>Tunnelvaskemaskiner starter på ca. 1,5 millioner kr for små systemer og kan koste over 10 millioner kr for store installasjoner. Jensen Group og Girbau er de ledende leverandorene. Totalinvesteringen inkludert tørker, folder og automasjon kan være 5 til 20 millioner kr.</p>
+              <p>Tunnelvaskemaskiner starter på ca. 1,5 millioner kr for små systemer og kan koste over 10 millioner kr for store installasjoner. Jensen Group og Girbau er de ledende leverandørene. Totalinvesteringen inkludert tørker, folder og automasjon kan være 5 til 20 millioner kr.</p>
             </section>
             <section data-section-id="s5" className="scroll-mt-20 mb-10">
               <h2>Priser for tørkeskap</h2>
@@ -68,11 +68,11 @@ export default function Page() {
             </section>
             <section data-section-id="s6" className="scroll-mt-20 mb-10">
               <h2>Leasing og finansiering</h2>
-              <p>De fleste leverandorer tilbyr leasing over 3 til 7 år. Månedlige kostnader for en 8 kg profesjonell maskin ligger på 700 til 1200 kr per måned med service inkludert. For et komplett fellesvaskeri med 4 maskiner og 4 tromler kan månedskostnaden være 5 000 til 10 000 kr.</p>
+              <p>De fleste leverandører tilbyr leasing over 3 til 7 år. Månedlige kostnader for en 8 kg profesjonell maskin ligger på 700 til 1200 kr per måned med service inkludert. For et komplett fellesvaskeri med 4 maskiner og 4 tromler kan månedskostnaden være 5 000 til 10 000 kr.</p>
             </section>
             <section data-section-id="s7" className="scroll-mt-20 mb-10">
               <h2>Driftskostnader</h2>
-              <p>Strom, vann og vaskemiddel koster typisk 3 til 8 kr per vask for små maskiner og 10 til 25 kr per vask for store industrimaskiner. Serviceavtale koster 3 000 til 15 000 kr per maskin per år avhengig av størrelse og avtale. Total driftskostnad per kilo vasket tekstil: 2 til 5 kr for eget vaskeri mot 12 til 25 kr for outsourcing.</p>
+              <p>Strøm, vann og vaskemiddel koster typisk 3 til 8 kr per vask for små maskiner og 10 til 25 kr per vask for store industrimaskiner. Serviceavtale koster 3 000 til 15 000 kr per maskin per år avhengig av størrelse og avtale. Total driftskostnad per kilo vasket tekstil: 2 til 5 kr for eget vaskeri mot 12 til 25 kr for outsourcing.</p>
             </section>
             </div>
 
@@ -88,7 +88,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/", label: "Leverandorer" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/", label: "Leverandører" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

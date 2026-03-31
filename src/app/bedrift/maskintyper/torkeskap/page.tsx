@@ -6,23 +6,23 @@ import Link from 'next/link'
 export const metadata = createMeta({
   title: 'Tørkeskap | Skånsom torking av uniformer og arbeidstøy | vaskemaskin.no',
   description: 'Alt om tørkeskap for uniformer, dresser og arbeidstøy som alternativ til tørketrommel.',
-  path: 'bedrift/maskintyper/tørkeskap',
+  path: 'bedrift/maskintyper/torkeskap',
 })
 
-const faqItems = [{"question": "Er tørkeskap bedre enn tørketrommel?", "answer": "For uniformer og finere arbeidstøy ja, fordi klærne beholder formen og får minimalt med krøller. For vanlig toy er tørketrommel raskere."}]
+const faqItems = [{"question": "Er tørkeskap bedre enn tørketrommel?", "answer": "For uniformer og finere arbeidstøy ja, fordi klærne beholder formen og får minimalt med krøller. For vanlig tøy er tørketrommel raskere."}]
 
 export default function Page() {
   const sections = [
     { id: 's0', label: 'Hva er et tørkeskap' },
     { id: 's1', label: 'Fordeler fremfor tørketrommel' },
     { id: 's2', label: 'Bruksområder' },
-    { id: 's3', label: 'Leverandorer' },
+    { id: 's3', label: 'Leverandører' },
     ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Maskintyper', url: 'https://vaskemaskin.no/bedrift/maskintyper/' }, { name: 'Tørkeskap', url: 'https://vaskemaskin.no/bedrift/maskintyper/tørkeskap/' }])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Maskintyper', url: 'https://vaskemaskin.no/bedrift/maskintyper/' }, { name: 'Tørkeskap', url: 'https://vaskemaskin.no/bedrift/maskintyper/torkeskap/' }])) }} />
       {faqItems.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(faqItems)) }} />}
 
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -40,7 +40,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Hva er et tørkeskap</h2>
-              <p>Et tørkeskap er et frittstående skap med oppvarmet luft som tørker klær hengende på bøyler. Klærne beholder formen og får minimalt med krøller, noe som gjor tørkeskap ideelt for uniformer, dresser, skjorter og arbeidstøy som maa se presentabelt ut.</p>
+              <p>Et tørkeskap er et frittstående skap med oppvarmet luft som tørker klær hengende på bøyler. Klærne beholder formen og får minimalt med krøller, noe som gjør tørkeskap ideelt for uniformer, dresser, skjorter og arbeidstøy som må se presentabelt ut.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Fordeler fremfor tørketrommel</h2>
@@ -51,7 +51,7 @@ export default function Page() {
               <p>Hoteller for uniformer, sykehus for arbeidstøy, brannvesen for flammeresistente klær, forsvar, politi, cruise og maritim sektor, og bedrifter med strenge krav til arbeidstøyets utseende.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
-              <h2>Leverandorer</h2>
+              <h2>Leverandører</h2>
               <p>Podab er markedsleder i Skandinavia med sin FlexDry serie. Electrolux Professional og Miele Professional har også tørkeskap i sortimentet. Nimo er et annet nordisk alternativ.</p>
             </section>
             </div>

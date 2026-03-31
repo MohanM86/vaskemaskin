@@ -40,7 +40,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Hva er en moppemaskin</h2>
-              <p>En moppemaskin er konstruert for aa håndtere de spesielle utfordringene med vask av mopper og rengjøringskluter: grove tekstiler med mye skitt, behov for termisk desinfeksjon, og høye krav til dokumentasjon av vaskeprosessen.</p>
+              <p>En moppemaskin er konstruert for å håndtere de spesielle utfordringene med vask av mopper og rengjøringskluter: grove tekstiler med mye skitt, behov for termisk desinfeksjon, og høye krav til dokumentasjon av vaskeprosessen.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Termisk desinfeksjon</h2>
@@ -48,7 +48,7 @@ export default function Page() {
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Forskjell fra vanlige maskiner</h2>
-              <p>Moppemaskiner har større pumpefilter for aa håndtere mye lo og smuss, automatisk kjemikaliedosering tilpasset rengjøringstekstiler, programmering for ulike moppe og kluttyper, og mulighet for aa kjore opptil 10 vask per dag uten overbelastning.</p>
+              <p>Moppemaskiner har større pumpefilter for å håndtere mye lo og smuss, automatisk kjemikaliedosering tilpasset rengjøringstekstiler, programmering for ulike moppe og kluttyper, og mulighet for å kjøre opptil 10 vask per dag uten overbelastning.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Anbefalte modeller</h2>

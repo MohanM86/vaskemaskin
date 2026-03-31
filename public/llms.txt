@@ -8,7 +8,7 @@ Vaskemaskin.no er en norskspraklig kunnskapsportal driftet av IT-Firma.no. Alt i
 
 ## Kjøpsguider og artikler
 
-- Komplett kjøpsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjøpsguide-2026/
+- Komplett kjøpsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/
 - Beste vaskemaskin 2026: https://vaskemaskin.no/artikkel/beste-vaskemaskin-2026/
 - Vaskesymboler guide: https://vaskemaskin.no/artikkel/vaskesymboler-guide/
 - Energimerking forklart: https://vaskemaskin.no/artikkel/energimerking-forklart/
@@ -33,7 +33,7 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 ### Maskintyper
 - Barrieremaskin: https://vaskemaskin.no/bedrift/maskintyper/barrieremaskin/
 - Moppemaskin: https://vaskemaskin.no/bedrift/maskintyper/moppemaskin/
-- Tørkeskap: https://vaskemaskin.no/bedrift/maskintyper/tørkeskap/
+- Tørkeskap: https://vaskemaskin.no/bedrift/maskintyper/torkeskap/
 - Industrimaskin: https://vaskemaskin.no/bedrift/maskintyper/industrimaskin/
 - Tunnelmaskin: https://vaskemaskin.no/bedrift/maskintyper/tunnelmaskin/
 
@@ -50,9 +50,9 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 ### Bedriftsressurser
 - Prisguide industrivaskemaskiner: https://vaskemaskin.no/bedrift/prisguide/
 - Hygienestandarder: https://vaskemaskin.no/bedrift/hygienestandarder/
-- ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktøy/vaskeri-roi/
-- Kapasitetsplanlegger: https://vaskemaskin.no/bedrift/verktøy/kapasitetsplanlegger/
-- Maskinvelger for bedrift: https://vaskemaskin.no/bedrift/verktøy/maskinvelger/
+- ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktoy/vaskeri-roi/
+- Kapasitetsplanlegger: https://vaskemaskin.no/bedrift/verktoy/kapasitetsplanlegger/
+- Maskinvelger for bedrift: https://vaskemaskin.no/bedrift/verktoy/maskinvelger/
 
 ## Merkeoversikter
 
@@ -68,8 +68,8 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 
 ## Interaktive verktøy
 
-- Energikalkulator: https://vaskemaskin.no/verktøy/energikalkulator/
-- Vaskemaskinvelger quiz: https://vaskemaskin.no/verktøy/vaskemaskinvelger/
+- Energikalkulator: https://vaskemaskin.no/verktoy/energikalkulator/
+- Vaskemaskinvelger quiz: https://vaskemaskin.no/verktoy/vaskemaskinvelger/
 
 ## Ofte stilte spørsmål
 

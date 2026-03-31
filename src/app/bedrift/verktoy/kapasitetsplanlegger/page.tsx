@@ -14,7 +14,7 @@ const bransjeData: Record<Bransje, { label: string; kgPerEnhet: number; enhetNav
   borettslag: { label: 'Borettslag', kgPerEnhet: 0.3, enhetNavn: 'leilighet', defaultEnheter: 60, vaskerTimer: 12, maskinKg: 8, desc: '1 maskin per 15 til 20 leiligheter' },
   vaskeri: { label: 'Vaskeri', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 500, vaskerTimer: 10, maskinKg: 32, desc: 'Direkte kg input' },
   ridesenter: { label: 'Ridesenter', kgPerEnhet: 3, enhetNavn: 'hest', defaultEnheter: 25, vaskerTimer: 4, maskinKg: 14, desc: '3 kg utstyr per hest per uke' },
-  frisor: { label: 'Frisor', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg håndklær per stol per dag' },
+  frisør: { label: 'Frisør', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg håndklær per stol per dag' },
   offshore: { label: 'Offshore', kgPerEnhet: 2, enhetNavn: 'køy', defaultEnheter: 50, vaskerTimer: 8, maskinKg: 14, desc: '2 kg per køy per døgn' },
   annet: { label: 'Annet', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 100, vaskerTimer: 8, maskinKg: 14, desc: 'Legg inn daglig volum direkte' },
 }
@@ -82,7 +82,7 @@ export default function KapasitetsplanleggerPage() {
             <span className="text-slate-300 mx-1.5">/</span>
             <Link href="/bedrift/" className="hover:text-aqua-700">Bedrift</Link>
             <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/verktøy/" className="hover:text-aqua-700">Verktøy</Link>
+            <Link href="/bedrift/verktoy/" className="hover:text-aqua-700">Verktøy</Link>
             <span className="text-slate-300 mx-1.5">/</span>
             <span className="text-slate-700 font-medium">Kapasitetsplanlegger</span>
           </nav>
@@ -167,8 +167,8 @@ export default function KapasitetsplanleggerPage() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <Link href="/bedrift/verktøy/vaskeri-roi/" className="btn-primary inline-flex items-center gap-2 text-sm">Beregn ROI <IconArrow size={12} color="white" /></Link>
-              <Link href="/bedrift/verktøy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
+              <Link href="/bedrift/verktoy/vaskeri-roi/" className="btn-primary inline-flex items-center gap-2 text-sm">Beregn ROI <IconArrow size={12} color="white" /></Link>
+              <Link href="/bedrift/verktoy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
             </div>
           </section>
 
@@ -178,11 +178,11 @@ export default function KapasitetsplanleggerPage() {
             <div className="space-y-3">
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Syklustid: 55 minutter gjennomsnitt</div>
-                <p className="text-xs text-slate-500">Profesjonelle maskiner kjorer typisk 45 til 65 minutter per syklus avhengig av program og temperatur.</p>
+                <p className="text-xs text-slate-500">Profesjonelle maskiner kjører typisk 45 til 65 minutter per syklus avhengig av program og temperatur.</p>
               </div>
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Vaskeritid: {bd.vaskerTimer} timer per dag</div>
-                <p className="text-xs text-slate-500">Basert på typisk drift for {bd.label.toLowerCase()}. Juster med bufferen for aa kompensere for kortere eller lengre driftstid.</p>
+                <p className="text-xs text-slate-500">Basert på typisk drift for {bd.label.toLowerCase()}. Juster med bufferen for å kompensere for kortere eller lengre driftstid.</p>
               </div>
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Kapasitet per maskin per dag: {fmt(calc.kapasitetPerMaskin)} kg</div>
@@ -201,11 +201,11 @@ export default function KapasitetsplanleggerPage() {
         </div>
 
         <PageSidebar sections={sections} relatedLinks={[
-          { href: '/bedrift/verktøy/vaskeri-roi/', label: 'ROI kalkulator' },
-          { href: '/bedrift/verktøy/maskinvelger/', label: 'Maskinvelger' },
+          { href: '/bedrift/verktoy/vaskeri-roi/', label: 'ROI kalkulator' },
+          { href: '/bedrift/verktoy/maskinvelger/', label: 'Maskinvelger' },
           { href: '/bedrift/prisguide/', label: 'Prisguide' },
           { href: '/bedrift/' + bransje + '/', label: bd.label + ' guide' },
-        ]} ctaTitle="Beregn lønnsomhet" ctaText="Lønner eget vaskeri seg?" ctaLink="/bedrift/verktøy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
+        ]} ctaTitle="Beregn lønnsomhet" ctaText="Lønner eget vaskeri seg?" ctaLink="/bedrift/verktoy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
       </div>
     </div>
   )

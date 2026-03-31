@@ -21,7 +21,7 @@ export default function Page() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandorer', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Schulthess', url: 'https://vaskemaskin.no/bedrift/leverandorer/schulthess/' }])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb([{ name: 'Hjem', url: 'https://vaskemaskin.no/' }, { name: 'Bedrift', url: 'https://vaskemaskin.no/bedrift/' }, { name: 'Leverandører', url: 'https://vaskemaskin.no/bedrift/leverandorer/' }, { name: 'Schulthess', url: 'https://vaskemaskin.no/bedrift/leverandorer/schulthess/' }])) }} />
       {faqItems.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq(faqItems)) }} />}
 
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
@@ -39,7 +39,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Schulthess</h2>
-              <p>Schulthess ble grunnlagt i 1845 i Zuerich og er et av de eldste navnene i vaskemaskinbransjen. Merket er kjent for sveitsisk presisjon og holdbarhet. Spesielt sterkt på borettslag, hotell og maritime løsninger.</p>
+              <p>Schulthess ble grunnlagt i 1845 i Zürich og er et av de eldste navnene i vaskemaskinbransjen. Merket er kjent for sveitsisk presisjon og holdbarhet. Spesielt sterkt på borettslag, hotell og maritime løsninger.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>

@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/borettslag',
 })
 
-const faqItems = [{"question": "Hvor mange maskiner trenger borettslaget?", "answer": "En maskin per 15 til 20 leiligheter er tommelregelen. Et borettslag med 60 leiligheter trenger 3 til 4 maskiner pluss tørketromler."}, {"question": "Leie eller kjope vaskemaskiner?", "answer": "Leasing over 5 til 7 år med service inkludert er oftest mest lønnsomt for borettslag. Månedlig kostnad er 5 000 til 10 000 kr for et komplett vaskeri."}, {"question": "Hva er en god vaskepris for beboerne?", "answer": "20 til 40 kr per vask dekker strom, vann, vaskemiddel og service. Med digital betaling administreres dette automatisk."}, {"question": "Hvordan velge leverandor til fellesvaskeri?", "answer": "Innhent 3 tilbud, sammenlign totalkostnad over 10 år, og sjekk referanser fra andre borettslag."}]
+const faqItems = [{"question": "Hvor mange maskiner trenger borettslaget?", "answer": "En maskin per 15 til 20 leiligheter er tommelregelen. Et borettslag med 60 leiligheter trenger 3 til 4 maskiner pluss tørketromler."}, {"question": "Leie eller kjøpe vaskemaskiner?", "answer": "Leasing over 5 til 7 år med service inkludert er oftest mest lønnsomt for borettslag. Månedlig kostnad er 5 000 til 10 000 kr for et komplett vaskeri."}, {"question": "Hva er en god vaskepris for beboerne?", "answer": "20 til 40 kr per vask dekker strøm, vann, vaskemiddel og service. Med digital betaling administreres dette automatisk."}, {"question": "Hvordan velge leverandør til fellesvaskeri?", "answer": "Innhent 3 tilbud, sammenlign totalkostnad over 10 år, og sjekk referanser fra andre borettslag."}]
 
 export default function Page() {
   const sections = [
@@ -41,30 +41,30 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Krav til fellesvaskerimaskiner</h2>
-              <p>Maskiner i fellesvaskerier utsettes for langt hardere bruk enn husholdningsmaskiner. Beboerne har ulik erfaring og vaner, og maskinene kjores mange ganger daglig av forskjellige brukere. Profesjonelle maskiner fra Miele, Electrolux eller Podab er bygget for denne bruken med førsterket konstruksjon, enkle betjeningspaneler og lang levetid.</p>
-              <p>Husholdningsmaskiner i fellesvaskerier varer typisk 2 til 4 år, mens profesjonelle maskiner holder 15 til 20 år med riktig vedlikehold. Den høyere innkjopsprisen betaler seg mange ganger tilbake i form av lavere utskiftningskostnader og faerre driftsstopp.</p>
+              <p>Maskiner i fellesvaskerier utsettes for langt hardere bruk enn husholdningsmaskiner. Beboerne har ulik erfaring og vaner, og maskinene kjøres mange ganger daglig av forskjellige brukere. Profesjonelle maskiner fra Miele, Electrolux eller Podab er bygget for denne bruken med forsterket konstruksjon, enkle betjeningspaneler og lang levetid.</p>
+              <p>Husholdningsmaskiner i fellesvaskerier varer typisk 2 til 4 år, mens profesjonelle maskiner holder 15 til 20 år med riktig vedlikehold. Den høyere innkjøpsprisen betaler seg mange ganger tilbake i form av lavere utskiftningskostnader og færre driftsstopp.</p>
               <p>Velg maskiner med vanskeliggjort misbruk: låsbare vaskemiddelskuffer, automatisk dosering, og programmer som ikke kan endres av brukeren. Dette forhindrer skader og sikrer at maskinene brukes riktig.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Betalingsløsninger for fellesvaskeri</h2>
-              <p>Moderne fellesvaskerier bruker digitale betalingsløsninger som gjor administrasjonen enkel: Miele AppWash lar beboerne betale og booke via mobilappen. Electrolux Pay per Use gir automatisk avregning. Podab SmartWash tilbyr kort og appbetaling. Priser settes typisk til 20 til 40 kr per vask.</p>
-              <p>Digitale løsninger eliminerer behovet for myntsystemer og fysiske nøkkeler. Styret får oversikt over bruk, inntekter og maskinenes status i sanntid. Eventuelle feil rapporteres automatisk til serviceleverandoren.</p>
-              <p>Inntektene fra vaskeribetaling dekker vanligvis strom, vann, vaskemiddel og serviceavtale. Med riktig prissetting kan fellesvaskeriet gå i null eller generere et lite overskudd til vedlikeholdsfondet.</p>
+              <p>Moderne fellesvaskerier bruker digitale betalingsløsninger som gjør administrasjonen enkel: Miele AppWash lar beboerne betale og booke via mobilappen. Electrolux Pay per Use gir automatisk avregning. Podab SmartWash tilbyr kort og appbetaling. Priser settes typisk til 20 til 40 kr per vask.</p>
+              <p>Digitale løsninger eliminerer behovet for myntsystemer og fysiske nøkler. Styret får oversikt over bruk, inntekter og maskinenes status i sanntid. Eventuelle feil rapporteres automatisk til serviceleverandøren.</p>
+              <p>Inntektene fra vaskeribetaling dekker vanligvis strøm, vann, vaskemiddel og serviceavtale. Med riktig prissetting kan fellesvaskeriet gå i null eller generere et lite overskudd til vedlikeholdsfondet.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Kapasitetsplanlegging</h2>
               <p>En maskin per 15 til 20 leiligheter er tommelregelen. Et borettslag med 60 leiligheter trenger 3 til 4 maskiner pluss tilsvarende antall tørketromler. Planlegg med buffer for service slik at minst en maskin alltid er tilgjengelig.</p>
-              <p>Vurder også tørkeskap for ømfintlige klær og arbeidstøy. Et tørkeskap tar liten plass og er svært populaert blant beboerne. Strykejernstasjon og bretteflate er andre fasiliteter som oker beboertilfredsheten.</p>
+              <p>Vurder også tørkeskap for ømfintlige klær og arbeidstøy. Et tørkeskap tar liten plass og er svært populært blant beboerne. Strykejernstasjon og bretteflate er andre fasiliteter som øker beboertilfredsheten.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Vedlikehold og service</h2>
               <p>Serviceavtale koster 3 000 til 8 000 kr per maskin per år og inkluderer forebyggende vedlikehold 2 til 4 ganger per år. Ved driftsstopp gir avtalen prioritert utrykning, vanligvis innen 24 til 48 timer.</p>
-              <p>Renhold er beboernes ansvar. Heng opp klare instruksjoner for bruk og rengjøring av lofilt og vaskemiddelskuff. Maskiner med selvrengjørende programmer gjor vedlikeholdet enklere.</p>
+              <p>Renhold er beboernes ansvar. Heng opp klare instruksjoner for bruk og rengjøring av lofilt og vaskemiddelskuff. Maskiner med selvrengjørende programmer gjør vedlikeholdet enklere.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Investering og finansiering</h2>
               <p>Komplett vaskeri med 4 maskiner og 4 tromler koster 400 000 til 800 000 kr. Leasing over 5 til 7 år med service inkludert er den vanligste finansieringsmodellen for borettslag. Månedlig kostnad blir typisk 5 000 til 10 000 kr.</p>
-              <p>Styret bor innhente minst 3 tilbud og sammenligne totalkostnad over 10 år inkludert service, reservedeler og eventuelle oppgraderinger. Referanser fra andre borettslag er verdifulle for aa vurdere leverandorens palitelighet og responstid.</p>
+              <p>Styret bør innhente minst 3 tilbud og sammenligne totalkostnad over 10 år inkludert service, reservedeler og eventuelle oppgraderinger. Referanser fra andre borettslag er verdifulle for å vurdere leverandørens pålitelighet og responstid.</p>
             </section>
             </div>
 
@@ -96,8 +96,8 @@ export default function Page() {
 
       <section className="bg-gradient-to-r from-aqua-600 to-aqua-700 text-white">
         <div className="container-site py-12 text-center">
-          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til aa velge?</h2>
-          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandorene tilgjengelige i Norge.</p>
+          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til å velge?</h2>
+          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandørene tilgjengelige i Norge.</p>
           <Link href="/bedrift/prisguide/" className="inline-block bg-white text-aqua-700 font-bold px-8 py-4 rounded-xl hover:bg-aqua-50 transition-colors shadow-lg">Se prisguide</Link>
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function Page() {
               </Link>
               <Link href="/bedrift/leverandorer/electrolux-professional/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Electrolux Professional</h3>
-                <p className="text-sm text-slate-600">Stor leverandor til borettslag.</p>
+                <p className="text-sm text-slate-600">Stor leverandør til borettslag.</p>
               </Link>
           </div>
         </div>

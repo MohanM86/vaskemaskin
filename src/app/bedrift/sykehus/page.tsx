@@ -9,11 +9,11 @@ export const metadata = createMeta({
   path: 'bedrift/sykehus',
 })
 
-const faqItems = [{"question": "Maa sykehus bruke barrieremaskin?", "answer": "Ja, barrieremaskin med ren og uren sone er lovpakrevd for helseinstitusjoner i henhold til Forskrift om smittevern i helsetjenesten."}, {"question": "Hva er RABC?", "answer": "Europeisk standard EN 14065 for hygienisk handtering av tekstiler med systematisk risikoanalyse, dokumenterte kontrollpunkter og mikrobiologisk kontroll."}, {"question": "Hva koster barrieremaskin for sykehus?", "answer": "En barrieremaskin på 36 kg koster 400 000 til 700 000 kr. Et komplett sykehusvaskerisystem med tunnel koster 3 til 10 millioner kr."}, {"question": "Hva er termisk desinfeksjon?", "answer": "Vask ved minimum 85 grader i 10 minutter. Temperaturen logges automatisk for aa dokumentere at kravet er oppfylt."}]
+const faqItems = [{"question": "Må sykehus bruke barrieremaskin?", "answer": "Ja, barrieremaskin med ren og uren sone er lovpåkrevd for helseinstitusjoner i henhold til Forskrift om smittevern i helsetjenesten."}, {"question": "Hva er RABC?", "answer": "Europeisk standard EN 14065 for hygienisk håndtering av tekstiler med systematisk risikoanalyse, dokumenterte kontrollpunkter og mikrobiologisk kontroll."}, {"question": "Hva koster barrieremaskin for sykehus?", "answer": "En barrieremaskin på 36 kg koster 400 000 til 700 000 kr. Et komplett sykehusvaskerisystem med tunnel koster 3 til 10 millioner kr."}, {"question": "Hva er termisk desinfeksjon?", "answer": "Vask ved minimum 85 grader i 10 minutter. Temperaturen logges automatisk for å dokumentere at kravet er oppfylt."}]
 
 export default function Page() {
   const sections = [
-    { id: 's0', label: 'Barrierevasking er lovpakrevd' },
+    { id: 's0', label: 'Barrierevasking er lovpåkrevd' },
     { id: 's1', label: 'Termisk desinfeksjon' },
     { id: 's2', label: 'RABC standarden EN 14065' },
     { id: 's3', label: 'Sporbarhet med RFID' },
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Sykehus' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for sykehus og helsevesen</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Helsevesenet har de strengeste kravene til tekstilvask i Norge. Feil vaskerutiner kan fore til smittespredning og alvorlige infeksjoner.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Helsevesenet har de strengeste kravene til tekstilvask i Norge. Feil vaskerutiner kan føre til smittespredning og alvorlige infeksjoner.</p>
         </div>
       </section>
 
@@ -41,35 +41,35 @@ export default function Page() {
           <div className="min-w-0">
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
-              <h2>Barrierevasking er lovpakrevd</h2>
-              <p>I sykehusvaskerier er barrieremaskin standard. Maskinen har en uren side og en ren side med vegg mellom sonene for aa hindre kryssmitte mellom skitten og ren tekstil. Dette er regulert i Forskrift om smittevern i helsetjenesten og er et absolutt krav for alle helseinstitusjoner.</p>
-              <p>Barrieremaskinen fungerer slik: skitten tekstil lastes inn fra den urene sonen. Etter fullfort vaskesyklus med termisk desinfeksjon åpnes luka på den rene siden der personalet tar ut de ferdige tekstilene uten kontakt med den urene sonen. Denne fysiske adskillelsen er avgjørende for smittevernet.</p>
-              <p>Veggen mellom sonene maa være tett og vanntett. Barrieremaskinen er boltet fast i veggen. Installasjon krever planlegging av roropplegg, avlop og ventilasjon på begge sider.</p>
+              <h2>Barrierevasking er lovpåkrevd</h2>
+              <p>I sykehusvaskerier er barrieremaskin standard. Maskinen har en uren side og en ren side med vegg mellom sonene for å hindre kryssmitte mellom skitten og ren tekstil. Dette er regulert i Forskrift om smittevern i helsetjenesten og er et absolutt krav for alle helseinstitusjoner.</p>
+              <p>Barrieremaskinen fungerer slik: skitten tekstil lastes inn fra den urene sonen. Etter fullført vaskesyklus med termisk desinfeksjon åpnes luka på den rene siden der personalet tar ut de ferdige tekstilene uten kontakt med den urene sonen. Denne fysiske adskillelsen er avgjørende for smittevernet.</p>
+              <p>Veggen mellom sonene må være tett og vanntett. Barrieremaskinen er boltet fast i veggen. Installasjon krever planlegging av røropplegg, avløp og ventilasjon på begge sider.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Termisk desinfeksjon</h2>
-              <p>Alle tekstiler i kontakt med pasienter maa gjennomgå termisk desinfeksjon: minimum 85 grader i 10 minutter. Noen programmer krever 90 grader i 5 minutter. Temperaturen maa dokumenteres og logges for hver vask med automatisk registrering.</p>
-              <p>Kjemøtermal desinfeksjon ved lavere temperaturer er et alternativ for varmefølsomme tekstiler, men krever godkjente desinfeksjonsmidler og validering. De fleste sykehus velger termisk desinfeksjon fordi det er enklere aa dokumentere og ikke avhenger av kjemikaliekonsentrasjoner.</p>
+              <p>Alle tekstiler i kontakt med pasienter må gjennomgå termisk desinfeksjon: minimum 85 grader i 10 minutter. Noen programmer krever 90 grader i 5 minutter. Temperaturen må dokumenteres og logges for hver vask med automatisk registrering.</p>
+              <p>Kjemotermisk desinfeksjon ved lavere temperaturer er et alternativ for varmefølsomme tekstiler, men krever godkjente desinfeksjonsmidler og validering. De fleste sykehus velger termisk desinfeksjon fordi det er enklere å dokumentere og ikke avhenger av kjemikaliekonsentrasjoner.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>RABC standarden EN 14065</h2>
-              <p>Risk Analysis and Biocontamination Control er den europeiske standarden for hygienisk handtering av tekstiler. Den krever systematisk risikoanalyse av hele vaskeprosessen fra innsamling til distribusjon, definerte kontrollpunkter, dokumentasjon av alle trinn, og regelmessige mikrobiologiske kontroller.</p>
-              <p>RABC sertifisering er ikke lovpakrevd, men de fleste helseforetakene i Norge krever det i sine anbudsutlysninger. Sertifiseringen gjennomføres av akkrediterte tredjeparter og fornyes årlig. Systemet er krevende aa implementere, men gir full sporbarhet og kvalitetssikring.</p>
+              <p>Risk Analysis and Biocontamination Control er den europeiske standarden for hygienisk håndtering av tekstiler. Den krever systematisk risikoanalyse av hele vaskeprosessen fra innsamling til distribusjon, definerte kontrollpunkter, dokumentasjon av alle trinn, og regelmessige mikrobiologiske kontroller.</p>
+              <p>RABC sertifisering er ikke lovpåkrevd, men de fleste helseforetakene i Norge krever det i sine anbudsutlysninger. Sertifiseringen gjennomføres av akkrediterte tredjeparter og fornyes årlig. Systemet er krevende å implementere, men gir full sporbarhet og kvalitetssikring.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Sporbarhet med RFID</h2>
-              <p>Moderne sykehusvaskerier bruker RFID brikker i tekstilene for aa spore hver gjenstand gjennom vaskeprosessen. Systemet dokumenterer automatisk at kravene er oppfylt: riktig temperatur, riktig tid, riktig program. Ved avvik genereres automatisk varsler.</p>
-              <p>RFID gjor det også mulig aa holde oversikt over tekstilenes alder og antall vaskegangar. Sengetøy og arbeidstøy har begrenset levetid, og RFID sikrer at utslitte tekstiler fases ut for de utgjor en smitterisiko. Investeringen i RFID er typisk 5 til 15 kr per tekstilenhet.</p>
+              <p>Moderne sykehusvaskerier bruker RFID brikker i tekstilene for å spore hver gjenstand gjennom vaskeprosessen. Systemet dokumenterer automatisk at kravene er oppfylt: riktig temperatur, riktig tid, riktig program. Ved avvik genereres automatisk varsler.</p>
+              <p>RFID gjør det også mulig å holde oversikt over tekstilenes alder og antall vaskeganger. Sengetøy og arbeidstøy har begrenset levetid, og RFID sikrer at utslitte tekstiler fases ut for de utgjør en smitterisiko. Investeringen i RFID er typisk 5 til 15 kr per tekstilenhet.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Kapasitet for sykehusvaskerier</h2>
               <p>Et sykehus genererer 3 til 5 kg tekstiler per seng per døgn. 200 senger betyr kapasitet for 600 til 1000 kg daglig. De fleste bruker sentralvaskeri med tunnelmaskiner for dette volumet. Mindre sykehjem og klinikker kan klare seg med 2 til 4 barrieremaskiner på 24 til 36 kg.</p>
-              <p>Intensivavdelinger genererer 2 til 3 ganger mer tekstil per seng enn vanlige avdelinger. Operasjonsstuer krever spesiell handtering av kirurgisk tekstil med strengere desinfeksjonskrav. Planlegg kapasitet med minst 30 prosent buffer for sesongvariasjoner og utbrudd.</p>
+              <p>Intensivavdelinger genererer 2 til 3 ganger mer tekstil per seng enn vanlige avdelinger. Operasjonsstuer krever spesiell håndtering av kirurgisk tekstil med strengere desinfeksjonskrav. Planlegg kapasitet med minst 30 prosent buffer for sesongvariasjoner og utbrudd.</p>
             </section>
             <section data-section-id="s5" className="scroll-mt-20 mb-10">
               <h2>Vaskemidler og kjemikalier</h2>
-              <p>Sykehusvaskerier bruker spesialiserte systemer med automatisk dosering og desinfiserende tilsatsstoffer. Alle kjemikalier maa være godkjent for helseinstitusjoner og dokumentert i henhold til RABC standarden.</p>
-              <p>Doseringssystemet maa integreres med vaskemaskinen og logge noyaktig forbruk per vask. Dette sikrer konsistent resultat og reduserer risikoen for under eller overdosering. Leverandorene tilbyr vanligvis fullserviceavtaler på kjemikalier med automatisk påfylling.</p>
+              <p>Sykehusvaskerier bruker spesialiserte systemer med automatisk dosering og desinfiserende tilsatsstoffer. Alle kjemikalier må være godkjent for helseinstitusjoner og dokumentert i henhold til RABC standarden.</p>
+              <p>Doseringssystemet må integreres med vaskemaskinen og logge noyaktig forbruk per vask. Dette sikrer konsistent resultat og reduserer risikoen for under eller overdosering. Leverandørene tilbyr vanligvis fullserviceavtaler på kjemikalier med automatisk påfylling.</p>
             </section>
             </div>
 
@@ -101,8 +101,8 @@ export default function Page() {
 
       <section className="bg-gradient-to-r from-aqua-600 to-aqua-700 text-white">
         <div className="container-site py-12 text-center">
-          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til aa velge?</h2>
-          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandorene tilgjengelige i Norge.</p>
+          <h2 className="font-serif text-3xl font-bold mb-4">Trenger du hjelp til å velge?</h2>
+          <p className="text-aqua-100 text-lg mb-8 max-w-2xl mx-auto">Se prisguiden eller utforsk leverandørene tilgjengelige i Norge.</p>
           <Link href="/bedrift/prisguide/" className="inline-block bg-white text-aqua-700 font-bold px-8 py-4 rounded-xl hover:bg-aqua-50 transition-colors shadow-lg">Se prisguide</Link>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function Page() {
               </Link>
               <Link href="/bedrift/leverandorer/jensen-group/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Jensen Group</h3>
-                <p className="text-sm text-slate-600">Storleverandor til sykehus.</p>
+                <p className="text-sm text-slate-600">Storleverandør til sykehus.</p>
               </Link>
           </div>
         </div>

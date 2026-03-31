@@ -105,9 +105,9 @@ export default function Header() {
                       <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Ressurser</div>
                       <Link href="/bedrift/prisguide/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Prisguide bedrift</Link>
                       <Link href="/bedrift/hygienestandarder/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hygienestandarder</Link>
-                      <Link href="/bedrift/verktøy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktøy</Link>
-                      <Link href="/bedrift/verktøy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
-                      <Link href="/bedrift/verktøy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
+                      <Link href="/bedrift/verktoy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktøy</Link>
+                      <Link href="/bedrift/verktoy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
+                      <Link href="/bedrift/verktoy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
                     </div>
                   </div>
                   <div className="border-t border-slate-100 mt-3 pt-3">

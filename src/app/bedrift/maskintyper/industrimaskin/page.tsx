@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/maskintyper/industrimaskin',
 })
 
-const faqItems = [{"question": "Softmount eller hardmount?", "answer": "Under 32 kg: softmount er enklest. Over 32 kg: hardmount gir bedre ytelse men krever betongfundament."}, {"question": "Hva er G faktor?", "answer": "G faktor måleer sentrifugekraften. Høyere G faktor gir lavere restfuktighet og kortere tørketid."}]
+const faqItems = [{"question": "Softmount eller hardmount?", "answer": "Under 32 kg: softmount er enklest. Over 32 kg: hardmount gir bedre ytelse men krever betongfundament."}, {"question": "Hva er G faktor?", "answer": "G faktor måler sentrifugekraften. Høyere G faktor gir lavere restfuktighet og kortere tørketid."}]
 
 export default function Page() {
   const sections = [
@@ -17,7 +17,7 @@ export default function Page() {
     { id: 's1', label: 'Softmount vs. hardmount' },
     { id: 's2', label: 'G faktor og restfuktighet' },
     { id: 's3', label: 'Automasjon og programmering' },
-    { id: 's4', label: 'Leverandorer i Norge' },
+    { id: 's4', label: 'Leverandører i Norge' },
     ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
@@ -45,19 +45,19 @@ export default function Page() {
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Softmount vs. hardmount</h2>
-              <p>Softmount maskiner står fritt på gulvet med innebygde stotdempere. De er enklere aa installere men vibrerer mer. Hardmount maskiner boltes fast i gulvet og krever betongfundament, men gir høyere sentrifugehastighet og lavere restfuktighet. Over 32 kg er hardmount standard.</p>
+              <p>Softmount maskiner står fritt på gulvet med innebygde støtdempere. De er enklere å installere men vibrerer mer. Hardmount maskiner boltes fast i gulvet og krever betongfundament, men gir høyere sentrifugehastighet og lavere restfuktighet. Over 32 kg er hardmount standard.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>G faktor og restfuktighet</h2>
-              <p>G faktoren angir sentrifugekraften og påvirker restfuktigheten direkte. G 200 til 300 er lavhastighet med 55 til 60 prosent restfuktighet. G 300 til 450 er standard med 48 til 52 prosent. G 450 til 600 er hoyhastighet med 42 til 48 prosent. Lavere restfuktighet betyr kortere tørketid og lavere energikostnader.</p>
+              <p>G faktoren angir sentrifugekraften og påvirker restfuktigheten direkte. G 200 til 300 er lavhastighet med 55 til 60 prosent restfuktighet. G 300 til 450 er standard med 48 til 52 prosent. G 450 til 600 er høyhastighet med 42 til 48 prosent. Lavere restfuktighet betyr kortere tørketid og lavere energikostnader.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Automasjon og programmering</h2>
               <p>Moderne industrimaskiner har programmerbare styresystemer med 50 til 200 programmer, automatisk kjemikaliedosering, RFID sporbarhet, og tilkobling til sentralstyring for drift av flere maskiner fra en kontrollplass.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
-              <h2>Leverandorer i Norge</h2>
-              <p>Electrolux Professional, Miele Professional, Jensen Group, Girbau og Primus er de største leverandorene. Electrolux har det bredeste utvalget med modeller i alle kapasitetsklasser.</p>
+              <h2>Leverandører i Norge</h2>
+              <p>Electrolux Professional, Miele Professional, Jensen Group, Girbau og Primus er de største leverandørene. Electrolux har det bredeste utvalget med modeller i alle kapasitetsklasser.</p>
             </section>
             </div>
 
