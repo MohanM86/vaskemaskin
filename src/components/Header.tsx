@@ -109,8 +109,8 @@ export default function Header() {
               <button className={navCls('bedrift')}>Bedrift<IconChevron size={14} direction={activeMenu === 'bedrift' ? 'up' : 'down'} /></button>
               <div className="absolute left-0 right-0 h-3" />
               {activeMenu === 'bedrift' && (
-                <div className="absolute top-[calc(100%+12px)] right-0 w-[480px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
-                  <div className="grid grid-cols-2 gap-4">
+                <div className="absolute top-[calc(100%+12px)] right-0 w-[700px] bg-white rounded-xl shadow-xl border border-slate-200 p-6">
+                  <div className="grid grid-cols-3 gap-6">
                     <div>
                       <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Bransjer</div>
                       <Link href="/bedrift/hotell/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hotell</Link>
@@ -118,18 +118,38 @@ export default function Header() {
                       <Link href="/bedrift/barnehage/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Barnehage</Link>
                       <Link href="/bedrift/borettslag/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Borettslag</Link>
                       <Link href="/bedrift/vaskeri/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Vaskeri</Link>
+                      <Link href="/bedrift/ridesenter/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Ridesenter</Link>
+                      <Link href="/bedrift/frisor/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Frisør</Link>
+                      <Link href="/bedrift/offshore/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Offshore</Link>
                     </div>
                     <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Ressurser</div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Maskintyper</div>
+                      <Link href="/bedrift/maskintyper/barrieremaskin/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Barrieremaskin</Link>
+                      <Link href="/bedrift/maskintyper/tunnelmaskin/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Tunnelmaskin</Link>
+                      <Link href="/bedrift/maskintyper/industrimaskin/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Industrimaskin</Link>
+                      <Link href="/bedrift/maskintyper/moppemaskin/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Moppemaskin</Link>
+                      <Link href="/bedrift/maskintyper/torkeskap/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Tørkeskap</Link>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-4 mb-3">Ressurser</div>
                       <Link href="/bedrift/prisguide/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Prisguide bedrift</Link>
                       <Link href="/bedrift/hygienestandarder/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hygienestandarder</Link>
-                      <Link href="/bedrift/verktoy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktøy</Link>
-                      <Link href="/bedrift/verktoy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
-                      <Link href="/bedrift/verktoy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Leverandører</div>
+                      <Link href="/bedrift/leverandorer/miele-professional/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Miele Professional</Link>
+                      <Link href="/bedrift/leverandorer/electrolux-professional/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Electrolux Professional</Link>
+                      <Link href="/bedrift/leverandorer/jensen-group/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Jensen Group</Link>
+                      <Link href="/bedrift/leverandorer/podab/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Podab</Link>
+                      <Link href="/bedrift/leverandorer/girbau/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Girbau</Link>
+                      <Link href="/bedrift/leverandorer/primus/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Primus (Alliance)</Link>
+                      <Link href="/bedrift/leverandorer/lg-commercial/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">LG Commercial</Link>
+                      <Link href="/bedrift/leverandorer/schulthess/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Schulthess</Link>
                     </div>
                   </div>
-                  <div className="border-t border-slate-100 mt-3 pt-3">
-                    <Link href="/bedrift/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Se hele bedriftsseksjonen</Link>
+                  <div className="border-t border-slate-100 mt-4 pt-3 flex gap-6">
+                    <Link href="/bedrift/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Bedriftsoversikt</Link>
+                    <Link href="/bedrift/verktoy/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Bedriftsverktøy</Link>
+                    <Link href="/bedrift/verktoy/vaskeri-roi/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">ROI kalkulator</Link>
+                    <Link href="/bedrift/verktoy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Maskinvelger</Link>
                   </div>
                 </div>
               )}

@@ -166,9 +166,9 @@ export const manuals: BrandManual[] = [
     sections: [
       { heading: 'Programmer', content: 'Hisense vaskemaskiner har standardprogrammer som Bomull 60 og 40, Syntetisk, Finvask, Ull, Eco 40-60, Hurtigvask 15 minutter, Babyvask med ekstra skylling og Sportsvask. Invertermotoren gir jevn og stille drift med lang levetid.' },
       { heading: 'Dosering', content: 'Bruk rom II i vaskemiddelskuffen for hovedvask og blomsterrommet for skyllemiddel. Hisense anbefaler flytende lavtskummende vaskemiddel for best resultat. Ikke overdoser da dette gir skumproblemer.' },
-      { heading: 'Vedlikehold', content: 'Rengjor pumpefilteret via serviceluken regelmessig. Kjor en tom vask pa nitti grader manedlig for a fjerne bakterier og avleiringer. Tork av lukepakningen etter hver vask. La luken sta pa glott mellom vask.' },
+      { heading: 'Vedlikehold', content: 'Rengjor pumpefilteret via serviceluken regelmessig. Kjor en tom vask på nitti grader manedlig for å fjerne bakterier og avleiringer. Tork av lukepakningen etter hver vask. La luken sta på glott mellom vask.' },
     ],
-    tips: ['Rengjor pumpefilteret regelmessig', 'Kjor manedlig rengjoring pa 90 grader', 'Bruk riktig mengde vaskemiddel', 'La luken sta apent mellom vask'],
+    tips: ['Rengjor pumpefilteret regelmessig', 'Kjor manedlig rengjøring på 90 grader', 'Bruk riktig mengde vaskemiddel', 'La luken sta apent mellom vask'],
   },
 ]
 

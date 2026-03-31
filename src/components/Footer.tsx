@@ -47,6 +47,7 @@ export default function Footer() {
             <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-4">Informasjon</h3>
             <ul className="space-y-2">
               <li><Link href="/artikkel/komplett-kjopsguide-2026/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Kjøpsguide 2026</Link></li>
+              <li><Link href="/faq/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Vanlige spørsmål</Link></li>
               <li><Link href="/sammenligning/bosch-vs-samsung/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Bosch vs Samsung</Link></li>
               <li><Link href="/artikkel/energimerking-forklart/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Energimerking</Link></li>
               <li><Link href="/om-oss/" className="text-sm text-slate-400 hover:text-aqua-400 transition-colors">Om oss</Link></li>

@@ -66,7 +66,7 @@ const contextMap: Record<string, { label: string; links: { text: string; href: s
   'allergi-og-hygiene': {
     label: 'Relatert innhold',
     links: [
-      { text: 'Vaske babyklaer', href: '/artikkel/vaske-babyklaer/' },
+      { text: 'Vaske babyklær', href: '/artikkel/vaske-babyklaer/' },
       { text: 'Dampfunksjon forklart', href: '/ordliste/dampfunksjon/' },
       { text: 'Vasketemperatur guide', href: '/artikkel/vasketemperatur-guide/' },
     ]

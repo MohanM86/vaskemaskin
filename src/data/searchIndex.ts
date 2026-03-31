@@ -38,17 +38,17 @@ const bedriftPages: SearchItem[] = [
   { title: 'Primus Alliance', href: '/bedrift/leverandorer/primus/', type: 'bedrift', keywords: 'primus alliance robust myntvaskeri', desc: 'Industrielle vaskemaskiner' },
   { title: 'LG Commercial', href: '/bedrift/leverandorer/lg-commercial/', type: 'bedrift', keywords: 'lg commercial AI Direct Drive', desc: 'Profesjonelle maskiner med AI motor' },
   { title: 'Schulthess', href: '/bedrift/leverandorer/schulthess/', type: 'bedrift', keywords: 'schulthess sveitsisk premium kvalitet', desc: 'Sveitsisk presisjon' },
-  { title: 'Vaskeri ROI kalkulator', href: '/bedrift/verktoy/vaskeri-roi/', type: 'verktoy', keywords: 'ROI kalkulator lonnsom outsourcing', desc: 'Beregn lonnsomheten av eget vaskeri' },
+  { title: 'Vaskeri ROI kalkulator', href: '/bedrift/verktoy/vaskeri-roi/', type: 'verktoy', keywords: 'ROI kalkulator lonnsom outsourcing', desc: 'Beregn lønnsomheten av eget vaskeri' },
   { title: 'Kapasitetsplanlegger', href: '/bedrift/verktoy/kapasitetsplanlegger/', type: 'verktoy', keywords: 'kapasitet planlegger antall maskiner', desc: 'Finn riktig antall maskiner' },
   { title: 'Bedriftsmaskinvelger', href: '/bedrift/verktoy/maskinvelger/', type: 'verktoy', keywords: 'maskinvelger quiz anbefaling bedrift', desc: 'Svar paa 4 sporsmaal og faa anbefaling' },
 ]
 
 const verktoyPages: SearchItem[] = [
-  { title: 'Energikalkulator', href: '/verktoy/energikalkulator/', type: 'verktoy', keywords: 'energi kalkulator strom kwh', desc: 'Beregn stromkostnad for vaskemaskinen' },
+  { title: 'Energikalkulator', href: '/verktoy/energikalkulator/', type: 'verktoy', keywords: 'energi kalkulator strøm kwh', desc: 'Beregn stromkostnad for vaskemaskinen' },
   { title: 'Vaskemaskinvelger', href: '/verktoy/vaskemaskinvelger/', type: 'verktoy', keywords: 'velger quiz anbefaling test', desc: 'Finn riktig vaskemaskin for deg' },
   { title: 'Kapasitetskalkulator', href: '/verktoy/kapasitetskalkulator/', type: 'verktoy', keywords: 'kapasitet kilo familie storrelse', desc: 'Hvor stor maskin trenger du?' },
   { title: 'Sammenlign pris', href: '/verktoy/sammenlign-pris/', type: 'verktoy', keywords: 'sammenlign pris tilbud', desc: 'Sammenlign priser paa vaskemaskiner' },
-  { title: 'Reparere eller bytte?', href: '/verktoy/reparere-eller-bytte/', type: 'verktoy', keywords: 'reparere bytte gammel ny lonnsom', desc: 'Loenner det seg aa reparere?' },
+  { title: 'Reparere eller bytte?', href: '/verktoy/reparere-eller-bytte/', type: 'verktoy', keywords: 'reparere bytte gammel ny lonnsom', desc: 'Lønner det seg aa reparere?' },
 ]
 
 export function buildSearchIndex(): SearchItem[] {
