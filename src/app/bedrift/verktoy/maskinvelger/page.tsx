@@ -30,22 +30,22 @@ export default function MaskinvelgerPage() {
     const isHelse = bransje === 'sykehus'
     const isHotel = bransje === 'hotell'
     const isBorettslag = bransje === 'borettslag'
-    const isSmaa = volum === 'lav'
+    const isSmå = volum === 'lav'
     const isMedium = volum === 'middels'
-    const isHoy = volum === 'hoy'
-    const isMegetHoy = volum === 'meget-hoy'
+    const isHøy = volum === 'hoy'
+    const isMegetHøy = volum === 'meget-hoy'
     const strengtKrav = hygiene === 'streng'
     const lavBudsjett = budsjett === 'lav'
 
     if (isHelse || strengtKrav) {
       return {
         maskintype: 'Barrieremaskin',
-        kapasitet: isMegetHoy ? '36 til 60 kg' : isHoy ? '24 til 36 kg' : '16 til 24 kg',
+        kapasitet: isMegetHøy ? '36 til 60 kg' : isHøy ? '24 til 36 kg' : '16 til 24 kg',
         leverandorer: 'Electrolux Professional, Miele Professional, Girbau',
-        antall: isMegetHoy ? '4 til 8 maskiner eller tunnelsystem' : isHoy ? '2 til 4 maskiner' : '1 til 2 maskiner',
+        antall: isMegetHøy ? '4 til 8 maskiner eller tunnelsystem' : isHøy ? '2 til 4 maskiner' : '1 til 2 maskiner',
         prisrange: '200 000 til 700 000 kr per maskin',
         hygienekrav: 'RABC/EN 14065, termisk desinfeksjon 85 grader, full sporbarhet',
-        grunn: 'Helsevesenet krever barrieremaskin med ren og uren sone for aa forhindre kryssmitte. Termisk desinfeksjon paa minimum 85 grader er paakrevd.',
+        grunn: 'Helsevesenet krever barrieremaskin med ren og uren sone for aa forhindre kryssmitte. Termisk desinfeksjon på minimum 85 grader er påkrevd.',
         maskinLink: '/bedrift/maskintyper/barrieremaskin/',
         bransjeLink: '/bedrift/sykehus/',
       }
@@ -56,10 +56,10 @@ export default function MaskinvelgerPage() {
         maskintype: 'Tunnelvaskemaskin',
         kapasitet: '500 til 3000+ kg per time',
         leverandorer: 'Jensen Group, Girbau, Electrolux Professional',
-        antall: '1 tunnelsystem med tilhorende utstyr',
+        antall: '1 tunnelsystem med tilhørende utstyr',
         prisrange: '1,5 til 10 mill. kr komplett',
-        hygienekrav: isHotel ? 'Svanemerket, 60 grader sengetoy' : 'EN 14065 anbefalt',
-        grunn: 'Med over 2000 kg daglig volum gir tunnelmaskin dramatisk lavere kostnad per kilo og hoyere gjennomstromning enn enkeltstaaende maskiner.',
+        hygienekrav: isHotel ? 'Svanemerket, 60 grader sengetøy' : 'EN 14065 anbefalt',
+        grunn: 'Med over 2000 kg daglig volum gir tunnelmaskin dramatisk lavere kostnad per kilo og høyere gjennomstromning enn enkeltstående maskiner.',
         maskinLink: '/bedrift/maskintyper/tunnelmaskin/',
         bransjeLink: '/bedrift/vaskeri/',
       }
@@ -67,19 +67,19 @@ export default function MaskinvelgerPage() {
 
     if (isBorettslag) {
       return {
-        maskintype: 'Kompakt profesjonell med betalingslosning',
+        maskintype: 'Kompakt profesjonell med betalingsløsning',
         kapasitet: '8 til 10 kg',
         leverandorer: lavBudsjett ? 'Podab, Primus' : 'Miele Professional (AppWash), Electrolux Professional (Pay per Use)',
         antall: '1 per 15 til 20 leiligheter',
         prisrange: lavBudsjett ? '30 000 til 45 000 kr per maskin' : '40 000 til 65 000 kr per maskin',
         hygienekrav: 'Standard 60 grader program tilstrekkelig',
-        grunn: 'Borettslag trenger robuste maskiner med betalingslosning og lavt vedlikehold. AppWash og Pay per Use gjor administrasjonen enkel.',
+        grunn: 'Borettslag trenger robuste maskiner med betalingsløsning og lavt vedlikehold. AppWash og Pay per Use gjor administrasjonen enkel.',
         maskinLink: '/bedrift/maskintyper/industrimaskin/',
         bransjeLink: '/bedrift/borettslag/',
       }
     }
 
-    if (isSmaa) {
+    if (isSmå) {
       return {
         maskintype: 'Kompakt profesjonell vaskemaskin',
         kapasitet: '6,5 til 10 kg',
@@ -87,7 +87,7 @@ export default function MaskinvelgerPage() {
         antall: '1 til 2 maskiner',
         prisrange: lavBudsjett ? '20 000 til 35 000 kr' : '30 000 til 55 000 kr',
         hygienekrav: strengtKrav ? '85 grader desinfeksjon' : '60 grader standard',
-        grunn: 'Med lavt volum er kompakte profesjonelle maskiner det rette valget. De gir profesjonell kvalitet uten unodvendig stor investering.',
+        grunn: 'Med lavt volum er kompakte profesjonelle maskiner det rette valget. De gir profesjonell kvalitet uten unødvendig stor investering.',
         maskinLink: '/bedrift/leverandorer/miele-professional/',
         bransjeLink: bransje ? '/bedrift/' + bransje + '/' : '/bedrift/',
       }
@@ -142,7 +142,7 @@ export default function MaskinvelgerPage() {
             <span className="text-slate-300 mx-1.5">/</span>
             <Link href="/bedrift/" className="hover:text-aqua-700">Bedrift</Link>
             <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/verktoy/" className="hover:text-aqua-700">Verktoy</Link>
+            <Link href="/bedrift/verktøy/" className="hover:text-aqua-700">Verktøy</Link>
             <span className="text-slate-300 mx-1.5">/</span>
             <span className="text-slate-700 font-medium">Maskinvelger</span>
           </nav>
@@ -151,7 +151,7 @@ export default function MaskinvelgerPage() {
             <div className="w-12 h-12 rounded-xl bg-aqua-50 flex items-center justify-center text-aqua-600"><IconWasher size={24} /></div>
             <div>
               <h1 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">Finn riktig bedriftsmaskin</h1>
-              <p className="text-sm text-slate-500">Svar paa 4 sporsmal for skreddersydd anbefaling</p>
+              <p className="text-sm text-slate-500">Svar på 4 spørsmål for skreddersydd anbefaling</p>
             </div>
           </div>
 
@@ -165,14 +165,14 @@ export default function MaskinvelgerPage() {
           {step === 'bransje' && (
             <div className="max-w-lg">
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-2">Hvilken bransje er du i?</h2>
-              <p className="text-sm text-slate-500 mb-6">Dette pavirker maskintype og hygienekrav</p>
+              <p className="text-sm text-slate-500 mb-6">Dette påvirker maskintype og hygienekrav</p>
               <div className="grid grid-cols-2 gap-3">
-                {optBtn('hotell', 'Hotell og overnatting', 'Sengetoy, haandklær, uniformer', setBransje, bransje)}
-                {optBtn('barnehage', 'Barnehage', 'Sengetoy, barneklær, kluter', setBransje, bransje)}
+                {optBtn('hotell', 'Hotell og overnatting', 'Sengetøy, håndklær, uniformer', setBransje, bransje)}
+                {optBtn('barnehage', 'Barnehage', 'Sengetøy, barneklær, kluter', setBransje, bransje)}
                 {optBtn('sykehus', 'Sykehus/helse', 'Barrieremaskin pakrevd', setBransje, bransje)}
                 {optBtn('borettslag', 'Borettslag/sameie', 'Fellesvaskeri', setBransje, bransje)}
                 {optBtn('vaskeri', 'Profesjonelt vaskeri', 'Kommersielt vaskeri', setBransje, bransje)}
-                {optBtn('frisor', 'Frisor/salong', 'Haandklær, kapper', setBransje, bransje)}
+                {optBtn('frisor', 'Frisor/salong', 'Håndklær, kapper', setBransje, bransje)}
                 {optBtn('ridesenter', 'Ridesenter/stall', 'Dekken, rideutstyr', setBransje, bransje)}
                 {optBtn('annet', 'Annet', 'Industri, offshore, osv.', setBransje, bransje)}
               </div>
@@ -185,7 +185,7 @@ export default function MaskinvelgerPage() {
               <h2 className="font-serif text-xl font-bold text-slate-900 mb-2">Hvor stort er det daglige vaskevolumet?</h2>
               <p className="text-sm text-slate-500 mb-6">Avgjor maskinkapasitet og antall</p>
               <div className="grid grid-cols-2 gap-3">
-                {optBtn('lav', 'Under 50 kg/dag', 'Liten bedrift, faa ansatte', setVolum, volum)}
+                {optBtn('lav', 'Under 50 kg/dag', 'Liten bedrift, få ansatte', setVolum, volum)}
                 {optBtn('middels', '50 til 300 kg/dag', 'Mellomstort behov', setVolum, volum)}
                 {optBtn('hoy', '300 til 1000 kg/dag', 'Stort daglig volum', setVolum, volum)}
                 {optBtn('meget-hoy', 'Over 1000 kg/dag', 'Industrielt volum', setVolum, volum)}
@@ -231,10 +231,10 @@ export default function MaskinvelgerPage() {
 
           {step === 'resultat' && (
             <div>
-              <h2 className="font-serif text-2xl font-bold text-slate-900 mb-6">Vaar anbefaling</h2>
+              <h2 className="font-serif text-2xl font-bold text-slate-900 mb-6">Vår anbefaling</h2>
 
               <div className="p-6 rounded-xl border-2 border-aqua-300 bg-aqua-50 mb-6">
-                <div className="text-xs font-bold text-aqua-600 uppercase tracking-wider mb-2">Anbefalt losning</div>
+                <div className="text-xs font-bold text-aqua-600 uppercase tracking-wider mb-2">Anbefalt løsning</div>
                 <div className="font-serif text-2xl font-bold text-slate-900 mb-5">{result.maskintype}</div>
 
                 <div className="grid grid-cols-2 gap-4 mb-5">
@@ -268,24 +268,24 @@ export default function MaskinvelgerPage() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="/bedrift/verktoy/vaskeri-roi/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Beregn ROI <IconArrow size={12} color="#0F766E" /></Link>
-                <Link href="/bedrift/verktoy/kapasitetsplanlegger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Planlegg kapasitet <IconArrow size={12} color="#0F766E" /></Link>
+                <Link href="/bedrift/verktøy/vaskeri-roi/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Beregn ROI <IconArrow size={12} color="#0F766E" /></Link>
+                <Link href="/bedrift/verktøy/kapasitetsplanlegger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Planlegg kapasitet <IconArrow size={12} color="#0F766E" /></Link>
                 <Link href="/bedrift/prisguide/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Se prisguide <IconArrow size={12} color="#0F766E" /></Link>
               </div>
 
               <div className="mt-6">
-                <button onClick={() => { setStep('bransje'); setBransje(''); setVolum(''); setHygiene(''); setBudsjett('') }} className="text-sm text-slate-500 hover:text-slate-700">Start paa nytt</button>
+                <button onClick={() => { setStep('bransje'); setBransje(''); setVolum(''); setHygiene(''); setBudsjett('') }} className="text-sm text-slate-500 hover:text-slate-700">Start på nytt</button>
               </div>
             </div>
           )}
         </div>
 
         <PageSidebar sections={sections} relatedLinks={[
-          { href: '/bedrift/verktoy/vaskeri-roi/', label: 'ROI kalkulator' },
-          { href: '/bedrift/verktoy/kapasitetsplanlegger/', label: 'Kapasitetsplanlegger' },
+          { href: '/bedrift/verktøy/vaskeri-roi/', label: 'ROI kalkulator' },
+          { href: '/bedrift/verktøy/kapasitetsplanlegger/', label: 'Kapasitetsplanlegger' },
           { href: '/bedrift/prisguide/', label: 'Prisguide bedrift' },
           { href: '/bedrift/hygienestandarder/', label: 'Hygienestandarder' },
-        ]} showQuiz={false} ctaTitle="Beregn loennsomhet" ctaText="Loenner eget vaskeri seg for deg?" ctaLink="/bedrift/verktoy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
+        ]} showQuiz={false} ctaTitle="Beregn lønnsomhet" ctaText="Lønner eget vaskeri seg for deg?" ctaLink="/bedrift/verktøy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
       </div>
     </div>
   )

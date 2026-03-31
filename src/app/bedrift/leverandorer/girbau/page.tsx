@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata = createMeta({
   title: 'Girbau | Spansk kvalitet for industrien | vaskemaskin.no',
-  description: 'Alt om Girbau profesjonelle vaskemaskiner for industri og storkjoekken.',
+  description: 'Alt om Girbau profesjonelle vaskemaskiner for industri og storkjøkken.',
   path: 'bedrift/leverandorer/girbau',
 })
 
@@ -16,7 +16,7 @@ export default function Page() {
     { id: 's0', label: 'Om Girbau' },
     { id: 's1', label: 'Styrker' },
     { id: 's2', label: 'Produkter' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -29,7 +29,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Girbau' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Girbau | Spansk kvalitet for industrien</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Girbau er en spansk produsent av profesjonelle vaskemaskiner med fokus paa store kapasiteter og industrielle losninger.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Girbau er en spansk produsent av profesjonelle vaskemaskiner med fokus på store kapasiteter og industrielle løsninger.</p>
         </div>
       </section>
 
@@ -39,11 +39,11 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Girbau</h2>
-              <p>Girbau ble grunnlagt i 1960 i Vic, Spania og er en av Europas storste produsenter av profesjonelle vaskemaskiner. Merket er spesielt sterkt paa store kapasiteter fra 20 til 120 kg og barrieremaskiner for helsevesenet.</p>
+              <p>Girbau ble grunnlagt i 1960 i Vic, Spania og er en av Europas største produsenter av profesjonelle vaskemaskiner. Merket er spesielt sterkt på store kapasiteter fra 20 til 120 kg og barrieremaskiner for helsevesenet.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>Bredt utvalg av store maskiner. Konkurransedyktige priser for industrielle losninger. Gode barrieremaskiner for sykehus. Tilgjengelig gjennom norske distributorer.</p>
+              <p>Bredt utvalg av store maskiner. Konkurransedyktige priser for industrielle løsninger. Gode barrieremaskiner for sykehus. Tilgjengelig gjennom norske distributorer.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Produkter</h2>
@@ -53,7 +53,7 @@ export default function Page() {
 
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/sykehus/", label: "Sykehus" }, { href: "/bedrift/maskintyper/industrimaskin/", label: "Industrimaskin" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/sykehus/", label: "Sykehus" }, { href: "/bedrift/maskintyper/industrimaskin/", label: "Industrimaskin" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

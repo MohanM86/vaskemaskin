@@ -75,12 +75,12 @@ export default function Header() {
               {activeMenu === 'guider' && (
                 <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[480px] bg-white rounded-xl shadow-xl border border-slate-200 p-5">
                   <div className="grid grid-cols-2 gap-4">
-                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjopsguider</div>{articles.filter(a => a.category === 'kjopsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
+                    <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Kjøpsguider</div>{articles.filter(a => a.category === 'kjøpsguide').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
                     <div><div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Vedlikehold</div>{articles.filter(a => a.category === 'vedlikehold').slice(0, 3).map(a => (<Link key={a.slug} href={'/artikkel/' + a.slug + '/'} className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">{a.title}</Link>))}</div>
                   </div>
                   <div className="border-t border-slate-100 mt-3 pt-3 flex gap-4">
                     <Link href="/bruksanvisning/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Bruksanvisninger</Link>
-                    <Link href="/ordliste/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Ordliste A til A</Link>
+                    <Link href="/ordliste/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700">Ordliste A til Å</Link>
                   </div>
                 </div>
               )}
@@ -105,9 +105,9 @@ export default function Header() {
                       <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Ressurser</div>
                       <Link href="/bedrift/prisguide/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Prisguide bedrift</Link>
                       <Link href="/bedrift/hygienestandarder/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Hygienestandarder</Link>
-                      <Link href="/bedrift/verktoy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktoy</Link>
-                      <Link href="/bedrift/verktoy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
-                      <Link href="/bedrift/verktoy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
+                      <Link href="/bedrift/verktøy/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Bedriftsverktøy</Link>
+                      <Link href="/bedrift/verktøy/vaskeri-roi/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">ROI kalkulator</Link>
+                      <Link href="/bedrift/verktøy/maskinvelger/" className="block py-1.5 text-sm text-slate-700 hover:text-aqua-700 transition-colors">Maskinvelger</Link>
                     </div>
                   </div>
                   <div className="border-t border-slate-100 mt-3 pt-3">
@@ -124,7 +124,7 @@ export default function Header() {
             <Link href="/fylker/" className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-aqua-700 hover:bg-slate-50 rounded-lg transition-colors">Finn butikk</Link>
           </nav>
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Apne meny'}>
+          <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-slate-700" aria-label={mobileOpen ? 'Lukk meny' : 'Åpne meny'}>
             {mobileOpen ? <IconClose size={24} /> : <IconMenu size={24} />}
           </button>
         </div>

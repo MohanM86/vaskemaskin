@@ -9,15 +9,15 @@ export const metadata = createMeta({
   path: 'bedrift/frisor',
 })
 
-const faqItems = [{"question": "Trenger frisorer profesjonelle maskiner?", "answer": "Med 30 til 60 haandklær daglig pluss kapper og kluter trenger salonger maskiner med kort syklustid og hoy kapasitet. Husholdningsmaskiner holder ikke tritt med volumet."}, {"question": "Hvilken temperatur for frisorsalonger?", "answer": "Minimum 60 grader for haandklær som brukes paa kunder. Kapper vaskes ved 40 til 60 grader avhengig av materiale."}, {"question": "Hva koster vaskemaskin for salong?", "answer": "20 000 til 40 000 kr for en kompakt profesjonell maskin. Leasing fra 500 til 1 000 kr per maaned."}, {"question": "Passer stablelosning i min salong?", "answer": "Stablelosninger tar 60 x 70 cm gulvplass og passer de fleste salonger. Sjekk takhoyden: du trenger minimum 190 cm for standard stabel."}]
+const faqItems = [{"question": "Trenger frisorer profesjonelle maskiner?", "answer": "Med 30 til 60 håndklær daglig pluss kapper og kluter trenger salonger maskiner med kort syklustid og høy kapasitet. Husholdningsmaskiner holder ikke tritt med volumet."}, {"question": "Hvilken temperatur for frisorsalonger?", "answer": "Minimum 60 grader for håndklær som brukes på kunder. Kapper vaskes ved 40 til 60 grader avhengig av materiale."}, {"question": "Hva koster vaskemaskin for salong?", "answer": "20 000 til 40 000 kr for en kompakt profesjonell maskin. Leasing fra 500 til 1 000 kr per måned."}, {"question": "Passer stableløsning i min salong?", "answer": "Stableløsninger tar 60 x 70 cm gulvplass og passer de fleste salonger. Sjekk takhoyden: du trenger minimum 190 cm for standard stabel."}]
 
 export default function Page() {
   const sections = [
     { id: 's0', label: 'Vaskebehov i frisorsalonger' },
-    { id: 's1', label: 'Kompakte losninger for smaa lokaler' },
+    { id: 's1', label: 'Kompakte løsninger for små lokaler' },
     { id: 's2', label: 'Hygienekrav for frisorsalonger' },
     { id: 's3', label: 'Raske sykluser og effektiv drift' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -30,7 +30,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Frisor' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for frisor og skonnshetssalong</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">En travel frisorsalong vasker 30 til 60 haandklær per dag. Kompakte maskiner med korte syklustider er nodvendig for smidig drift.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">En travel frisorsalong vasker 30 til 60 håndklær per dag. Kompakte maskiner med korte syklustider er nødvendig for smidig drift.</p>
         </div>
       </section>
 
@@ -40,24 +40,24 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Vaskebehov i frisorsalonger</h2>
-              <p>En salong med 4 stoler bruker typisk 30 til 60 haandklær per dag pluss kapper, peleriner og vaskekluter. Ukentlig volum er 50 til 100 kg, noe som krever hoy vaskefrekvens og korte syklustider for aa sikre at det alltid er rene haandklær tilgjengelig.</p>
-              <p>Haandklærne utsettes for fargestoffer, blekemidler og stylingprodukter som setter krevende flekker. Profesjonelle maskiner med forbehandlingsprogram og hoey temperatur fjerner disse flekken bedre enn husholdningsmaskiner, og forlenger haandklærnes levetid.</p>
+              <p>En salong med 4 stoler bruker typisk 30 til 60 håndklær per dag pluss kapper, peleriner og vaskekluter. Ukentlig volum er 50 til 100 kg, noe som krever høy vaskefrekvens og korte syklustider for aa sikre at det alltid er rene håndklær tilgjengelig.</p>
+              <p>Håndklærne utsettes for fargestoffer, blekemidler og stylingprodukter som setter krevende flekker. Profesjonelle maskiner med forbehandlingsprogram og høy temperatur fjerner disse flekken bedre enn husholdningsmaskiner, og forlenger håndklærnes levetid.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
-              <h2>Kompakte losninger for smaa lokaler</h2>
-              <p>De fleste salonger har begrenset plass til vaskerom. Stablelosninger med vaskemaskin og torketrommel tar bare 60 x 70 cm gulvplass. Miele Little Giants og Electrolux myPRO er designet spesielt for smaa lokaler med hoy ytelse.</p>
-              <p>Plasser maskinen saa nær arbeidsplassene som mulig for aa minimere tid brukt paa transport av haandklær. God ventilasjon i vaskerommet er viktig for aa unngaa fuktproblemer, spesielt i eldre bygaarder med begrenset luftsirkulasjon.</p>
-              <p>Lydnivaa er viktig i salonger. Profesjonelle maskiner er typisk noe stoyere enn husholdningsmaskiner, men modeller som Miele Little Giant holder seg under 55 dB under vask, noe som er akseptabelt selv i aapne lokaler.</p>
+              <h2>Kompakte løsninger for små lokaler</h2>
+              <p>De fleste salonger har begrenset plass til vaskerom. Stableløsninger med vaskemaskin og tørketrommel tar bare 60 x 70 cm gulvplass. Miele Little Giants og Electrolux myPRO er designet spesielt for små lokaler med høy ytelse.</p>
+              <p>Plasser maskinen så nær arbeidsplassene som mulig for aa minimere tid brukt på transport av håndklær. God ventilasjon i vaskerommet er viktig for aa unngå fuktproblemer, spesielt i eldre bygårder med begrenset luftsirkulasjon.</p>
+              <p>Lydnivå er viktig i salonger. Profesjonelle maskiner er typisk noe stoyere enn husholdningsmaskiner, men modeller som Miele Little Giant holder seg under 55 dB under vask, noe som er akseptabelt selv i åpne lokaler.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Hygienekrav for frisorsalonger</h2>
-              <p>Haandklær som brukes paa kunder vaskes ved minimum 60 grader for aa sikre hygienisk resultat. Kapper vaskes ved 40 til 60 grader avhengig av materiale. Bruk hvite haandklær saa du kan kontrollere renhet visuelt og vaske ved hoy temperatur uten at fargene falmer.</p>
-              <p>Miljokravene forsterkes. Flere kommuner stiller krav til avlopshhandtering fra salonger paa grunn av kjemikalier i haarfarge og behandlingsprodukter. Profesjonelle maskiner med optimalt vannforbruk bidrar til aa overholde disse kravene.</p>
+              <p>Håndklær som brukes på kunder vaskes ved minimum 60 grader for aa sikre hygienisk resultat. Kapper vaskes ved 40 til 60 grader avhengig av materiale. Bruk hvite håndklær så du kan kontrollere renhet visuelt og vaske ved høy temperatur uten at fargene falmer.</p>
+              <p>Miljokravene førsterkes. Flere kommuner stiller krav til avlopshhandtering fra salonger på grunn av kjemikalier i hårfarge og behandlingsprodukter. Profesjonelle maskiner med optimalt vannforbruk bidrar til aa overholde disse kravene.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Raske sykluser og effektiv drift</h2>
-              <p>Med 3 til 6 vask daglig er korte syklustider paa 45 til 50 minutter avgjorende for aa holde haandklaeforsyningen gaaende. Hurtigprogram paa 30 minutter er spesielt nyttig i perioder med hoyt trykk. Torketrommel med sensorstyrt torking gjor at du slipper aa overvake torkeprosessen.</p>
-              <p>Automatisk dosering av vaskemiddel gir riktig mengde hver gang og forhindrer overdosering som forer til rester i haandklærne. Med flytende vaskemiddel og mykner i egne beholdere slipper personalet aa maale og haandtere kjemikalier.</p>
+              <p>Med 3 til 6 vask daglig er korte syklustider på 45 til 50 minutter avgjørende for aa holde håndklaeforsyningen gående. Hurtigprogram på 30 minutter er spesielt nyttig i perioder med hoyt trykk. Tørketrommel med sensorstyrt torking gjor at du slipper aa overvake tørkeprosessen.</p>
+              <p>Automatisk dosering av vaskemiddel gir riktig mengde hver gang og forhindrer overdosering som fører til rester i håndklærne. Med flytende vaskemiddel og mykner i egne beholdere slipper personalet aa måle og håndtere kjemikalier.</p>
             </section>
             </div>
 
@@ -104,7 +104,7 @@ export default function Page() {
               </Link>
               <Link href="/bedrift/leverandorer/miele-professional/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Miele Professional</h3>
-                <p className="text-sm text-slate-600">Little Giants for smaa lokaler.</p>
+                <p className="text-sm text-slate-600">Little Giants for små lokaler.</p>
               </Link>
               <Link href="/bedrift/prisguide/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Prisguide</h3>

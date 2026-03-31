@@ -16,7 +16,7 @@ export default function Page() {
     { id: 's0', label: 'Om Primus' },
     { id: 's1', label: 'Styrker' },
     { id: 's2', label: 'Utvalg i Norge' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -29,7 +29,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Primus' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Primus (Alliance) | Industrielle vaskemaskiner</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Primus er et merke under Alliance Laundry Systems, verdens storste produsent av kommersielle vaskemaskiner.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Primus er et merke under Alliance Laundry Systems, verdens største produsent av kommersielle vaskemaskiner.</p>
         </div>
       </section>
 
@@ -39,15 +39,15 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Primus</h2>
-              <p>Primus tilhorer Alliance Laundry Systems som er verdens storste produsent av kommersielle vaskemaskiner. Primus er spesielt sterkt paa myntvaskerier og fellesvaskerier med robuste maskiner og avanserte betalingssystemer.</p>
+              <p>Primus tilhorer Alliance Laundry Systems som er verdens største produsent av kommersielle vaskemaskiner. Primus er spesielt sterkt på myntvaskerier og fellesvaskerier med robuste maskiner og avanserte betalingssystemer.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>Meget robuste maskiner beregnet for hoy bruksfrekvens. Gode betalingslosninger for myntvaskeri og selvbetjening. Konkurransedyktige priser i mellomsjiktet. Bred kapasitetsrekke fra 7 til 60 kg.</p>
+              <p>Meget robuste maskiner beregnet for høy bruksfrekvens. Gode betalingsløsninger for myntvaskeri og selvbetjening. Konkurransedyktige priser i mellomsjiktet. Bred kapasitetsrekke fra 7 til 60 kg.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Utvalg i Norge</h2>
-              <p>FX serien fra 7 til 32 kg for generell profesjonell bruk. RX serien fra 16 til 60 kg for storre installasjoner. Betalingslosninger med kort, brikke og app.</p>
+              <p>FX serien fra 7 til 32 kg for generell profesjonell bruk. RX serien fra 16 til 60 kg for større installasjoner. Betalingsløsninger med kort, brikke og app.</p>
             </section>
             </div>
 
@@ -63,7 +63,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/vaskeri/", label: "Vaskeri" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/vaskeri/", label: "Vaskeri" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

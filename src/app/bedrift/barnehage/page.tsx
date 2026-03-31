@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/barnehage',
 })
 
-const faqItems = [{"question": "Maa barnehager ha profesjonelle maskiner?", "answer": "Kommunale barnehager har krav om profesjonelle maskiner i driftsavtalene. Private barnehager bor foelge samme retningslinjer for aa sikre hygienisk vask og lang levetid."}, {"question": "Hvor ofte vaskes sengetoy i barnehagen?", "answer": "Ukentlig paa minimum 60 grader. Ved sykdomsutbrudd vaskes alt umiddelbart paa 85 grader eller med desinfiserende vaskemiddel."}, {"question": "Hva koster det aa kjope vaskemaskin til barnehage?", "answer": "En profesjonell maskin paa 8 kg koster 25 000 til 55 000 kr. Leasing med service er tilgjengelig fra 800 til 1 500 kr per maaned."}, {"question": "Hvilken maskin er best for barnehage?", "answer": "Miele PW 5082 og Electrolux myPRO er de mest populaere valgene. Begge har allergiprogrammer og kompakte maal som passer smaa vaskerom."}]
+const faqItems = [{"question": "Maa barnehager ha profesjonelle maskiner?", "answer": "Kommunale barnehager har krav om profesjonelle maskiner i driftsavtalene. Private barnehager bor følge samme retningslinjer for aa sikre hygienisk vask og lang levetid."}, {"question": "Hvor ofte vaskes sengetøy i barnehagen?", "answer": "Ukentlig på minimum 60 grader. Ved sykdomsutbrudd vaskes alt umiddelbart på 85 grader eller med desinfiserende vaskemiddel."}, {"question": "Hva koster det aa kjope vaskemaskin til barnehage?", "answer": "En profesjonell maskin på 8 kg koster 25 000 til 55 000 kr. Leasing med service er tilgjengelig fra 800 til 1 500 kr per måned."}, {"question": "Hvilken maskin er best for barnehage?", "answer": "Miele PW 5082 og Electrolux myPRO er de mest populære valgene. Begge har allergiprogrammer og kompakte mål som passer små vaskerom."}]
 
 export default function Page() {
   const sections = [
@@ -18,7 +18,7 @@ export default function Page() {
     { id: 's2', label: 'Smittevern og hygiene' },
     { id: 's3', label: 'Kapasitet og plassering' },
     { id: 's4', label: 'Driftskostnader og budsjett' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -31,7 +31,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Barnehage' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for barnehage</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Barnehager vasker alt fra sengetoy til skitne klær. Gode vaskemaskiner er en forutsetning for god hygiene og redusert sykefravaer.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Barnehager vasker alt fra sengetøy til skitne klær. Gode vaskemaskiner er en forutsetning for god hygiene og redusert sykefravaer.</p>
         </div>
       </section>
 
@@ -41,29 +41,29 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Hvorfor profesjonelle maskiner i barnehager</h2>
-              <p>Husholdningsmaskiner sliter med vaskevolumet i en barnehage og mangler programmer for hygienisk vask. En profesjonell maskin taaler 5 til 10 vask per dag og leverer dokumenterbart hygienisk resultat. Kommunale barnehager har som regel krav om profesjonelle maskiner i sine driftsavtaler.</p>
-              <p>En typisk barnehage med 4 avdelinger vasker 15 til 30 kg tekstiler per dag: sengetoy fra soveavdelingene, kluter og haandklær fra kjokken og bad, samt skiftetoy og laken. I perioder med mye sykdom kan volumet oke betydelig.</p>
-              <p>Profesjonelle maskiner har dessuten kortere syklustider og lavere driftskostnader per vask enn husholdningsmaskiner. En profesjonell maskin varer typisk 15 til 20 aar mot 8 til 10 aar for en forbrukermodell, noe som gjor totalokonomien bedre.</p>
+              <p>Husholdningsmaskiner sliter med vaskevolumet i en barnehage og mangler programmer for hygienisk vask. En profesjonell maskin tåler 5 til 10 vask per dag og leverer dokumenterbart hygienisk resultat. Kommunale barnehager har som regel krav om profesjonelle maskiner i sine driftsavtaler.</p>
+              <p>En typisk barnehage med 4 avdelinger vasker 15 til 30 kg tekstiler per dag: sengetøy fra soveavdelingene, kluter og håndklær fra kjokken og bad, samt skiftetoy og laken. I perioder med mye sykdom kan volumet oke betydelig.</p>
+              <p>Profesjonelle maskiner har dessuten kortere syklustider og lavere driftskostnader per vask enn husholdningsmaskiner. En profesjonell maskin varer typisk 15 til 20 år mot 8 til 10 år for en forbrukermodell, noe som gjor totaløkonomien bedre.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Allergivennlig vask i barnehager</h2>
-              <p>Opptil 20 prosent av norske barn har allergi eller overfoelsom hud. Profesjonelle maskiner har ekstra skylleprogrammer som fjerner opptil 99 prosent av vaskemiddelrestene fra tekstilene. Dette er spesielt viktig for sengetoy og klær som er i direkte kontakt med barnas hud.</p>
+              <p>Opptil 20 prosent av norske barn har allergi eller overfølsom hud. Profesjonelle maskiner har ekstra skylleprogrammer som fjerner opptil 99 prosent av vaskemiddelrestene fra tekstilene. Dette er spesielt viktig for sengetøy og klær som er i direkte kontakt med barnas hud.</p>
               <p>Bruk alltid parfymefrie og allergimerkede vaskemidler. Autonatisk doseringssystem sikrer riktig mengde og forhindrer overdosering som kan irritere sensitiv hud. Miele og Electrolux tilbyr begge spesialprogrammer for allergivennlig vask som er testet og sertifisert.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Smittevern og hygiene</h2>
-              <p>Sengetoy vaskes ved minimum 60 grader ukentlig. Ved utbrudd av omgangssyke, haandfotmunn eller andre smittsomme sykdommer anbefaler FHI vask ved 85 grader eller bruk av desinfiserende vaskemiddel. Kluter fra stell og kjokken bor vaskes daglig ved 60 grader.</p>
-              <p>Husk at vask ved 40 grader ikke dreper bakterier effektivt. Selv om lavtemperaturvask sparer energi, er det ikke egnet for barnehager der smittevern er avgjorende. Profesjonelle maskiner med dokumenterte vaskeprogrammer gjor det enkelt aa bevise at hygienekravene er oppfylt.</p>
+              <p>Sengetøy vaskes ved minimum 60 grader ukentlig. Ved utbrudd av omgangssyke, hånd, fot og munn eller andre smittsomme sykdommer anbefaler FHI vask ved 85 grader eller bruk av desinfiserende vaskemiddel. Kluter fra stell og kjokken bor vaskes daglig ved 60 grader.</p>
+              <p>Husk at vask ved 40 grader ikke dreper bakterier effektivt. Selv om lavtemperaturvask sparer energi, er det ikke egnet for barnehager der smittevern er avgjørende. Profesjonelle maskiner med dokumenterte vaskeprogrammer gjor det enkelt aa bevise at hygienekravene er oppfylt.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Kapasitet og plassering</h2>
-              <p>De fleste barnehager klarer seg med 1 til 2 maskiner paa 8 til 14 kg. Kompakte stablelosninger er ideelt for smaa vaskerom. En stabel med vaskemaskin og torketrommel tar bare 60 x 70 cm gulvplass og haandterer behovet til en barnehage med opptil 6 avdelinger.</p>
-              <p>Plasser maskinen nær avdelingene for aa minimere transport av skittentoy. Sorg for god ventilasjon i vaskerommet for aa unngaa fukt og muggproblemer. Gulvet bor ha sluk og vaere vanntett.</p>
+              <p>De fleste barnehager klarer seg med 1 til 2 maskiner på 8 til 14 kg. Kompakte stableløsninger er ideelt for små vaskerom. En stabel med vaskemaskin og tørketrommel tar bare 60 x 70 cm gulvplass og håndterer behovet til en barnehage med opptil 6 avdelinger.</p>
+              <p>Plasser maskinen nær avdelingene for aa minimere transport av skittentoy. Sorg for god ventilasjon i vaskerommet for aa unngå fukt og muggproblemer. Gulvet bor ha sluk og være vanntett.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Driftskostnader og budsjett</h2>
-              <p>Strom og vann koster 3 til 6 kr per vask. Aarskostnad inkludert vaskemiddel og service ligger paa 15 000 til 25 000 kr for en typisk barnehage. En profesjonell maskin paa 8 kg koster 25 000 til 55 000 kr avhengig av merke og funksjoner.</p>
-              <p>Serviceavtale anbefales og koster typisk 2 000 til 5 000 kr per aar. Denne dekker forebyggende vedlikehold og gir prioritert respons ved feil. De fleste leverandorer tilbyr leasing med service inkludert fra 800 til 1 500 kr per maaned.</p>
+              <p>Strom og vann koster 3 til 6 kr per vask. Årskostnad inkludert vaskemiddel og service ligger på 15 000 til 25 000 kr for en typisk barnehage. En profesjonell maskin på 8 kg koster 25 000 til 55 000 kr avhengig av merke og funksjoner.</p>
+              <p>Serviceavtale anbefales og koster typisk 2 000 til 5 000 kr per år. Denne dekker forebyggende vedlikehold og gir prioritert respons ved feil. De fleste leverandorer tilbyr leasing med service inkludert fra 800 til 1 500 kr per måned.</p>
             </section>
             </div>
 

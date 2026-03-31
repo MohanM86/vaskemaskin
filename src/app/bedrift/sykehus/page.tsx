@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/sykehus',
 })
 
-const faqItems = [{"question": "Maa sykehus bruke barrieremaskin?", "answer": "Ja, barrieremaskin med ren og uren sone er lovpakrevd for helseinstitusjoner i henhold til Forskrift om smittevern i helsetjenesten."}, {"question": "Hva er RABC?", "answer": "Europeisk standard EN 14065 for hygienisk handtering av tekstiler med systematisk risikoanalyse, dokumenterte kontrollpunkter og mikrobiologisk kontroll."}, {"question": "Hva koster barrieremaskin for sykehus?", "answer": "En barrieremaskin paa 36 kg koster 400 000 til 700 000 kr. Et komplett sykehusvaskerisystem med tunnel koster 3 til 10 millioner kr."}, {"question": "Hva er termisk desinfeksjon?", "answer": "Vask ved minimum 85 grader i 10 minutter. Temperaturen logges automatisk for aa dokumentere at kravet er oppfylt."}]
+const faqItems = [{"question": "Maa sykehus bruke barrieremaskin?", "answer": "Ja, barrieremaskin med ren og uren sone er lovpakrevd for helseinstitusjoner i henhold til Forskrift om smittevern i helsetjenesten."}, {"question": "Hva er RABC?", "answer": "Europeisk standard EN 14065 for hygienisk handtering av tekstiler med systematisk risikoanalyse, dokumenterte kontrollpunkter og mikrobiologisk kontroll."}, {"question": "Hva koster barrieremaskin for sykehus?", "answer": "En barrieremaskin på 36 kg koster 400 000 til 700 000 kr. Et komplett sykehusvaskerisystem med tunnel koster 3 til 10 millioner kr."}, {"question": "Hva er termisk desinfeksjon?", "answer": "Vask ved minimum 85 grader i 10 minutter. Temperaturen logges automatisk for aa dokumentere at kravet er oppfylt."}]
 
 export default function Page() {
   const sections = [
@@ -19,7 +19,7 @@ export default function Page() {
     { id: 's3', label: 'Sporbarhet med RFID' },
     { id: 's4', label: 'Kapasitet for sykehusvaskerier' },
     { id: 's5', label: 'Vaskemidler og kjemikalier' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -43,33 +43,33 @@ export default function Page() {
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Barrierevasking er lovpakrevd</h2>
               <p>I sykehusvaskerier er barrieremaskin standard. Maskinen har en uren side og en ren side med vegg mellom sonene for aa hindre kryssmitte mellom skitten og ren tekstil. Dette er regulert i Forskrift om smittevern i helsetjenesten og er et absolutt krav for alle helseinstitusjoner.</p>
-              <p>Barrieremaskinen fungerer slik: skitten tekstil lastes inn fra den urene sonen. Etter fullfort vaskesyklus med termisk desinfeksjon aapnes luka paa den rene siden der personalet tar ut de ferdige tekstilene uten kontakt med den urene sonen. Denne fysiske adskillelsen er avgjorende for smittevernet.</p>
-              <p>Veggen mellom sonene maa vaere tett og vanntett. Barrieremaskinen er boltet fast i veggen. Installasjon krever planlegging av roropplegg, avlop og ventilasjon paa begge sider.</p>
+              <p>Barrieremaskinen fungerer slik: skitten tekstil lastes inn fra den urene sonen. Etter fullfort vaskesyklus med termisk desinfeksjon åpnes luka på den rene siden der personalet tar ut de ferdige tekstilene uten kontakt med den urene sonen. Denne fysiske adskillelsen er avgjørende for smittevernet.</p>
+              <p>Veggen mellom sonene maa være tett og vanntett. Barrieremaskinen er boltet fast i veggen. Installasjon krever planlegging av roropplegg, avlop og ventilasjon på begge sider.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Termisk desinfeksjon</h2>
-              <p>Alle tekstiler i kontakt med pasienter maa gjennomgaa termisk desinfeksjon: minimum 85 grader i 10 minutter. Noen programmer krever 90 grader i 5 minutter. Temperaturen maa dokumenteres og logges for hver vask med automatisk registrering.</p>
-              <p>Kjemotermal desinfeksjon ved lavere temperaturer er et alternativ for varmefoelsomme tekstiler, men krever godkjente desinfeksjonsmidler og validering. De fleste sykehus velger termisk desinfeksjon fordi det er enklere aa dokumentere og ikke avhenger av kjemikaliekonsentrasjoner.</p>
+              <p>Alle tekstiler i kontakt med pasienter maa gjennomgå termisk desinfeksjon: minimum 85 grader i 10 minutter. Noen programmer krever 90 grader i 5 minutter. Temperaturen maa dokumenteres og logges for hver vask med automatisk registrering.</p>
+              <p>Kjemøtermal desinfeksjon ved lavere temperaturer er et alternativ for varmefølsomme tekstiler, men krever godkjente desinfeksjonsmidler og validering. De fleste sykehus velger termisk desinfeksjon fordi det er enklere aa dokumentere og ikke avhenger av kjemikaliekonsentrasjoner.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>RABC standarden EN 14065</h2>
               <p>Risk Analysis and Biocontamination Control er den europeiske standarden for hygienisk handtering av tekstiler. Den krever systematisk risikoanalyse av hele vaskeprosessen fra innsamling til distribusjon, definerte kontrollpunkter, dokumentasjon av alle trinn, og regelmessige mikrobiologiske kontroller.</p>
-              <p>RABC sertifisering er ikke lovpakrevd, men de fleste helseforetakene i Norge krever det i sine anbudsutlysninger. Sertifiseringen gjennomfoeres av akkrediterte tredjeparter og fornyes aarlig. Systemet er krevende aa implementere, men gir full sporbarhet og kvalitetssikring.</p>
+              <p>RABC sertifisering er ikke lovpakrevd, men de fleste helseforetakene i Norge krever det i sine anbudsutlysninger. Sertifiseringen gjennomføres av akkrediterte tredjeparter og fornyes årlig. Systemet er krevende aa implementere, men gir full sporbarhet og kvalitetssikring.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Sporbarhet med RFID</h2>
               <p>Moderne sykehusvaskerier bruker RFID brikker i tekstilene for aa spore hver gjenstand gjennom vaskeprosessen. Systemet dokumenterer automatisk at kravene er oppfylt: riktig temperatur, riktig tid, riktig program. Ved avvik genereres automatisk varsler.</p>
-              <p>RFID gjor det ogsaa mulig aa holde oversikt over tekstilenes alder og antall vaskegangar. Sengetoy og arbeidstoy har begrenset levetid, og RFID sikrer at utslitte tekstiler fases ut for de utgjor en smitterisiko. Investeringen i RFID er typisk 5 til 15 kr per tekstilenhet.</p>
+              <p>RFID gjor det også mulig aa holde oversikt over tekstilenes alder og antall vaskegangar. Sengetøy og arbeidstøy har begrenset levetid, og RFID sikrer at utslitte tekstiler fases ut for de utgjor en smitterisiko. Investeringen i RFID er typisk 5 til 15 kr per tekstilenhet.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Kapasitet for sykehusvaskerier</h2>
-              <p>Et sykehus genererer 3 til 5 kg tekstiler per seng per dogn. 200 senger betyr kapasitet for 600 til 1000 kg daglig. De fleste bruker sentralvaskeri med tunnelmaskiner for dette volumet. Mindre sykehjem og klinikker kan klare seg med 2 til 4 barrieremaskiner paa 24 til 36 kg.</p>
+              <p>Et sykehus genererer 3 til 5 kg tekstiler per seng per døgn. 200 senger betyr kapasitet for 600 til 1000 kg daglig. De fleste bruker sentralvaskeri med tunnelmaskiner for dette volumet. Mindre sykehjem og klinikker kan klare seg med 2 til 4 barrieremaskiner på 24 til 36 kg.</p>
               <p>Intensivavdelinger genererer 2 til 3 ganger mer tekstil per seng enn vanlige avdelinger. Operasjonsstuer krever spesiell handtering av kirurgisk tekstil med strengere desinfeksjonskrav. Planlegg kapasitet med minst 30 prosent buffer for sesongvariasjoner og utbrudd.</p>
             </section>
             <section data-section-id="s5" className="scroll-mt-20 mb-10">
               <h2>Vaskemidler og kjemikalier</h2>
-              <p>Sykehusvaskerier bruker spesialiserte systemer med automatisk dosering og desinfiserende tilsatsstoffer. Alle kjemikalier maa vaere godkjent for helseinstitusjoner og dokumentert i henhold til RABC standarden.</p>
-              <p>Doseringssystemet maa integreres med vaskemaskinen og logge noyaktig forbruk per vask. Dette sikrer konsistent resultat og reduserer risikoen for under eller overdosering. Leverandorene tilbyr vanligvis fullserviceavtaler paa kjemikalier med automatisk paafylling.</p>
+              <p>Sykehusvaskerier bruker spesialiserte systemer med automatisk dosering og desinfiserende tilsatsstoffer. Alle kjemikalier maa være godkjent for helseinstitusjoner og dokumentert i henhold til RABC standarden.</p>
+              <p>Doseringssystemet maa integreres med vaskemaskinen og logge noyaktig forbruk per vask. Dette sikrer konsistent resultat og reduserer risikoen for under eller overdosering. Leverandorene tilbyr vanligvis fullserviceavtaler på kjemikalier med automatisk påfylling.</p>
             </section>
             </div>
 

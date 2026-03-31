@@ -10,20 +10,20 @@ export const metadata = createMeta({
 })
 
 const bransjer = [
-  { title: 'Hotell og overnatting', href: '/bedrift/hotell/', desc: 'Sengetoy, handklær og uniformer. Hoykapasitetslosninger for hotellvaskerier med 24/7 drift.', tag: 'Populær' },
-  { title: 'Barnehage', href: '/bedrift/barnehage/', desc: 'Hygienisk vask av sengetoy, klær og tekstiler for barn. Allergivennlige programmer og lav temperatur.', tag: null },
+  { title: 'Hotell og overnatting', href: '/bedrift/hotell/', desc: 'Sengetøy, handklær og uniformer. Høykapasitetsløsninger for hotellvaskerier med 24/7 drift.', tag: 'Populær' },
+  { title: 'Barnehage', href: '/bedrift/barnehage/', desc: 'Hygienisk vask av sengetøy, klær og tekstiler for barn. Allergivennlige programmer og lav temperatur.', tag: null },
   { title: 'Sykehus og helsevesen', href: '/bedrift/sykehus/', desc: 'Smittevern, termisk desinfeksjon og barrierevasking. Strenge krav til hygiene og sporbarhet.', tag: 'Strengeste krav' },
-  { title: 'Borettslag og sameie', href: '/bedrift/borettslag/', desc: 'Fellesvaskerier med betalingslosninger, slitesterke maskiner og lavt vedlikehold.', tag: null },
-  { title: 'Profesjonelt vaskeri', href: '/bedrift/vaskeri/', desc: 'Kommersielle vaskerier med hoy gjennomstromning, tunnelvaskemaskiner og automatiserte systemer.', tag: 'Hoy kapasitet' },
-  { title: 'Ridesenter og stall', href: '/bedrift/ridesenter/', desc: 'Vask av dekken, saler og annet rideutstyr. Robuste maskiner som handterer hestehaar og gjorme.', tag: null },
-  { title: 'Frisor og skonnshetssalong', href: '/bedrift/frisor/', desc: 'Handklær, kapper og tekstiler med hoy vaskefrekvens. Kompakte maskiner for begrensede lokaler.', tag: null },
+  { title: 'Borettslag og sameie', href: '/bedrift/borettslag/', desc: 'Fellesvaskerier med betalingsløsninger, slitesterke maskiner og lavt vedlikehold.', tag: null },
+  { title: 'Profesjonelt vaskeri', href: '/bedrift/vaskeri/', desc: 'Kommersielle vaskerier med høy gjennomstromning, tunnelvaskemaskiner og automatiserte systemer.', tag: 'Høy kapasitet' },
+  { title: 'Ridesenter og stall', href: '/bedrift/ridesenter/', desc: 'Vask av dekken, saler og annet rideutstyr. Robuste maskiner som handterer hestehår og gjorme.', tag: null },
+  { title: 'Frisor og skonnshetssalong', href: '/bedrift/frisor/', desc: 'Handklær, kapper og tekstiler med høy vaskefrekvens. Kompakte maskiner for begrensede lokaler.', tag: null },
   { title: 'Offshore og maritim', href: '/bedrift/offshore/', desc: 'Spesialmaskiner for plattformer og skip. Vibrasjonsdempet, sjovannsresistent og kompakt design.', tag: 'Spesialist' },
 ]
 
 const maskintyper = [
   { title: 'Barrieremaskin', href: '/bedrift/maskintyper/barrieremaskin/', desc: 'Tosidig maskin med ren og uren sone. Pakrevd i helsevesenet for smittevern.' },
   { title: 'Moppemaskin', href: '/bedrift/maskintyper/moppemaskin/', desc: 'Spesialmaskin for vask av mopper og kluter. Termisk desinfeksjon for renholdsselskaper.' },
-  { title: 'Torkeskap', href: '/bedrift/maskintyper/torkeskap/', desc: 'Skaansom torking av uniformer, arbeidstoy og dresser. Alternativ til torketrommel.' },
+  { title: 'Tørkeskap', href: '/bedrift/maskintyper/tørkeskap/', desc: 'Skånsom torking av uniformer, arbeidstøy og dresser. Alternativ til tørketrommel.' },
   { title: 'Industrivaskemaskin', href: '/bedrift/maskintyper/industrimaskin/', desc: 'Storkapasitetsmaskiner fra 20 til 120 kg. For vaskerier og institusjoner med stort volum.' },
   { title: 'Tunnelvaskemaskin', href: '/bedrift/maskintyper/tunnelmaskin/', desc: 'Kontinuerlig gjennomstrommingsmaskin for storvaskerier. Opptil 5000 kg per time.' },
 ]
@@ -64,7 +64,7 @@ export default function BedriftPage() {
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift' }]} />
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl text-white">Profesjonelle vaskemaskiner for bedrift og industri</h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-10">
-            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forsta hygienekravene, sammenlign leverandorer og faa oversikt over hva det koster.
+            Fra hotellvaskerier til offshore plattformer. Finn riktig vaskemaskin for din bransje, forsta hygienekravene, sammenlign leverandorer og få oversikt over hva det koster.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#bransjer" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-aqua-500 text-white font-bold text-sm hover:bg-aqua-400 transition-colors">Velg din bransje</a>
@@ -121,7 +121,7 @@ export default function BedriftPage() {
             {/* LEVERANDORER */}
             <section data-section-id="leverandorer" className="scroll-mt-20 mb-16">
               <h2 className="font-serif text-3xl font-bold text-slate-900 mb-3">Leverandorer i Norge</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mb-8">Sammenlign de storste leverandorene av profesjonelle vaskemaskiner.</p>
+              <p className="text-lg text-slate-600 max-w-2xl mb-8">Sammenlign de største leverandorene av profesjonelle vaskemaskiner.</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {leverandorer.map(l => (
                   <Link key={l.href} href={l.href} className="group bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md hover:border-aqua-300 transition-all">
@@ -151,7 +151,7 @@ export default function BedriftPage() {
             { href: '/bedrift/hygienestandarder/', label: 'Hygienestandarder' },
             { href: '/bedrift/prisguide/', label: 'Prisguide bedrift' },
             { href: '/bedrift/maskintyper/barrieremaskin/', label: 'Barrieremaskin forklart' },
-            { href: '/artikkel/komplett-kjopsguide-2026/', label: 'Kjopsguide forbruker' },
+            { href: '/artikkel/komplett-kjøpsguide-2026/', label: 'Kjøpsguide forbruker' },
           ]} ctaTitle="Trenger du hjelp?" ctaText="Bruk bransjeguidene for skreddersydde anbefalinger." ctaLink="/bedrift/prisguide/" ctaLinkText="Se prisguide" />
         </div>
       </div>

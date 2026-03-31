@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/leverandorer/electrolux-professional',
 })
 
-const faqItems = [{"question": "Hva er forskjellen paa myPRO og Line 6000?", "answer": "myPRO er for smaa bedrifter med 1 til 3 vask per dag. Line 6000 er for mellomstore brukere med 3 til 10 vask daglig og har flere programmer og hoyere holdbarhet."}]
+const faqItems = [{"question": "Hva er forskjellen på myPRO og Line 6000?", "answer": "myPRO er for små bedrifter med 1 til 3 vask per dag. Line 6000 er for mellomstore brukere med 3 til 10 vask daglig og har flere programmer og høyere holdbarhet."}]
 
 export default function Page() {
   const sections = [
@@ -17,7 +17,7 @@ export default function Page() {
     { id: 's1', label: 'Produktserier' },
     { id: 's2', label: 'Styrker' },
     { id: 's3', label: 'Svakheter' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -40,19 +40,19 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Electrolux Professional</h2>
-              <p>Electrolux Professional er den profesjonelle divisjonen av svenske Electrolux og den storste leverandoren av profesjonelle vaskemaskiner i Norden. Sortimentet dekker alt fra smaa 6 kg maskiner for frisorer til 110 kg barrieremaskiner for sykehus. Eget servicenettverk i hele Norge.</p>
+              <p>Electrolux Professional er den profesjonelle divisjonen av svenske Electrolux og den største leverandoren av profesjonelle vaskemaskiner i Norden. Sortimentet dekker alt fra små 6 kg maskiner for frisorer til 110 kg barrieremaskiner for sykehus. Eget servicenettverk i hele Norge.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Produktserier</h2>
-              <p>myPRO (6 til 8 kg) for smaa bedrifter. Line 6000 (8 til 20 kg) for mellomstore brukere. Line 5000 (20 til 65 kg) for storre vaskerier. Barrieremaskiner fra 16 til 110 kg for helsevesen. Marine serien for offshore og maritim.</p>
+              <p>myPRO (6 til 8 kg) for små bedrifter. Line 6000 (8 til 20 kg) for mellomstore brukere. Line 5000 (20 til 65 kg) for større vaskerier. Barrieremaskiner fra 16 til 110 kg for helsevesen. Marine serien for offshore og maritim.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>Bredeste utvalget i Norden. Godt servicenettverk. Konkurransedyktige priser. Pay per Use betalingslosning for borettslag. Marine sertifisering for offshore.</p>
+              <p>Bredeste utvalget i Norden. Godt servicenettverk. Konkurransedyktige priser. Pay per Use betalingsløsning for borettslag. Marine sertifisering for offshore.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Svakheter</h2>
-              <p>Byggekvaliteten noe under Miele paa de minste modellene. Kjemikaliesystemet er mindre avansert enn Miele TwinDos.</p>
+              <p>Byggekvaliteten noe under Miele på de minste modellene. Kjemikaliesystemet er mindre avansert enn Miele TwinDos.</p>
             </section>
             </div>
 
@@ -62,13 +62,13 @@ export default function Page() {
                   <th className="px-4 py-3 text-left font-semibold">Serie</th><th className="px-4 py-3 text-left font-semibold">Kapasitet</th><th className="px-4 py-3 text-left font-semibold">Segment</th><th className="px-4 py-3 text-left font-semibold">Ca. pris</th>
                 </tr></thead>
                 <tbody>
-                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">myPRO</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">6 til 8 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Smaa bedrifter</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 000 til 40 000 kr</td></tr><tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Line 6000</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">8 til 20 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Mellomstore</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">40 000 til 120 000 kr</td></tr><tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Line 5000</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 til 65 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Vaskerier</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">100 000 til 400 000 kr</td></tr><tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Barrier</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">16 til 110 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Helsevesen</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">200 000 til 1 mill. kr</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">myPRO</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">6 til 8 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Små bedrifter</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 000 til 40 000 kr</td></tr><tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Line 6000</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">8 til 20 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Mellomstore</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">40 000 til 120 000 kr</td></tr><tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Line 5000</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 til 65 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Vaskerier</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">100 000 til 400 000 kr</td></tr><tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Barrier</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">16 til 110 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Helsevesen</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">200 000 til 1 mill. kr</td></tr>
                 </tbody>
               </table>
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/sykehus/", label: "Sykehus" }, { href: "/bedrift/offshore/", label: "Offshore" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/sykehus/", label: "Sykehus" }, { href: "/bedrift/offshore/", label: "Offshore" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

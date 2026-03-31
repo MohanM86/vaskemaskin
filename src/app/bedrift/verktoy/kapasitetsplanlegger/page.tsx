@@ -8,14 +8,14 @@ import PageSidebar from '@/components/PageSidebar'
 type Bransje = 'hotell' | 'barnehage' | 'sykehus' | 'borettslag' | 'vaskeri' | 'ridesenter' | 'frisor' | 'offshore' | 'annet'
 
 const bransjeData: Record<Bransje, { label: string; kgPerEnhet: number; enhetNavn: string; defaultEnheter: number; vaskerTimer: number; maskinKg: number; desc: string }> = {
-  hotell: { label: 'Hotell', kgPerEnhet: 6, enhetNavn: 'rom', defaultEnheter: 80, vaskerTimer: 8, maskinKg: 20, desc: '6 kg tekstiler per rom per dogn' },
+  hotell: { label: 'Hotell', kgPerEnhet: 6, enhetNavn: 'rom', defaultEnheter: 80, vaskerTimer: 8, maskinKg: 20, desc: '6 kg tekstiler per rom per døgn' },
   barnehage: { label: 'Barnehage', kgPerEnhet: 5, enhetNavn: 'avdeling', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 10, desc: '5 kg per avdeling per dag' },
-  sykehus: { label: 'Sykehus', kgPerEnhet: 4, enhetNavn: 'seng', defaultEnheter: 100, vaskerTimer: 16, maskinKg: 36, desc: '4 kg per seng per dogn' },
+  sykehus: { label: 'Sykehus', kgPerEnhet: 4, enhetNavn: 'seng', defaultEnheter: 100, vaskerTimer: 16, maskinKg: 36, desc: '4 kg per seng per døgn' },
   borettslag: { label: 'Borettslag', kgPerEnhet: 0.3, enhetNavn: 'leilighet', defaultEnheter: 60, vaskerTimer: 12, maskinKg: 8, desc: '1 maskin per 15 til 20 leiligheter' },
   vaskeri: { label: 'Vaskeri', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 500, vaskerTimer: 10, maskinKg: 32, desc: 'Direkte kg input' },
   ridesenter: { label: 'Ridesenter', kgPerEnhet: 3, enhetNavn: 'hest', defaultEnheter: 25, vaskerTimer: 4, maskinKg: 14, desc: '3 kg utstyr per hest per uke' },
-  frisor: { label: 'Frisor', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg haandklær per stol per dag' },
-  offshore: { label: 'Offshore', kgPerEnhet: 2, enhetNavn: 'koey', defaultEnheter: 50, vaskerTimer: 8, maskinKg: 14, desc: '2 kg per koey per dogn' },
+  frisor: { label: 'Frisor', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg håndklær per stol per dag' },
+  offshore: { label: 'Offshore', kgPerEnhet: 2, enhetNavn: 'køy', defaultEnheter: 50, vaskerTimer: 8, maskinKg: 14, desc: '2 kg per køy per døgn' },
   annet: { label: 'Annet', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 100, vaskerTimer: 8, maskinKg: 14, desc: 'Legg inn daglig volum direkte' },
 }
 
@@ -30,7 +30,7 @@ export default function KapasitetsplanleggerPage() {
     const dagligKg = bransje === 'borettslag'
       ? enheter * bd.kgPerEnhet * 7 / 5 // spredt over uken
       : bransje === 'ridesenter'
-      ? enheter * bd.kgPerEnhet / 5 // ukentlig fordelt paa 5 dager
+      ? enheter * bd.kgPerEnhet / 5 // ukentlig fordelt på 5 dager
       : enheter * bd.kgPerEnhet
 
     const dagligMedBuffer = dagligKg * (1 + buffer / 100)
@@ -39,12 +39,12 @@ export default function KapasitetsplanleggerPage() {
     const sykluserPerDag = sykluserPerTime * bd.vaskerTimer
     const kapasitetPerMaskin = sykluserPerDag * bd.maskinKg
     const antallMaskiner = Math.ceil(dagligMedBuffer / kapasitetPerMaskin)
-    const antallTorketromler = Math.ceil(antallMaskiner * 0.8)
+    const antallTørketromler = Math.ceil(antallMaskiner * 0.8)
 
     // Estimert investering
     const prisPerMaskin = bd.maskinKg <= 10 ? 40000 : bd.maskinKg <= 20 ? 90000 : bd.maskinKg <= 40 ? 180000 : 350000
-    const prisPerTorker = bd.maskinKg <= 10 ? 30000 : bd.maskinKg <= 20 ? 70000 : bd.maskinKg <= 40 ? 140000 : 250000
-    const totalInvestering = antallMaskiner * prisPerMaskin + antallTorketromler * prisPerTorker
+    const prisPerTørker = bd.maskinKg <= 10 ? 30000 : bd.maskinKg <= 20 ? 70000 : bd.maskinKg <= 40 ? 140000 : 250000
+    const totalInvestering = antallMaskiner * prisPerMaskin + antallTørketromler * prisPerTørker
 
     // Anbefalt maskintype
     let maskintype = ''
@@ -57,7 +57,7 @@ export default function KapasitetsplanleggerPage() {
       dagligKg: Math.round(dagligKg),
       dagligMedBuffer: Math.round(dagligMedBuffer),
       antallMaskiner,
-      antallTorketromler,
+      antallTørketromler,
       anbefaltKg: bd.maskinKg,
       maskintype,
       totalInvestering,
@@ -82,7 +82,7 @@ export default function KapasitetsplanleggerPage() {
             <span className="text-slate-300 mx-1.5">/</span>
             <Link href="/bedrift/" className="hover:text-aqua-700">Bedrift</Link>
             <span className="text-slate-300 mx-1.5">/</span>
-            <Link href="/bedrift/verktoy/" className="hover:text-aqua-700">Verktoy</Link>
+            <Link href="/bedrift/verktøy/" className="hover:text-aqua-700">Verktøy</Link>
             <span className="text-slate-300 mx-1.5">/</span>
             <span className="text-slate-700 font-medium">Kapasitetsplanlegger</span>
           </nav>
@@ -139,8 +139,8 @@ export default function KapasitetsplanleggerPage() {
                   <div className="text-xs text-slate-600 mt-1">vaskemaskiner</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-serif text-3xl font-bold text-aqua-600">{calc.antallTorketromler}</div>
-                  <div className="text-xs text-slate-600 mt-1">torketromler</div>
+                  <div className="font-serif text-3xl font-bold text-aqua-600">{calc.antallTørketromler}</div>
+                  <div className="text-xs text-slate-600 mt-1">tørketromler</div>
                 </div>
                 <div className="text-center">
                   <div className="font-serif text-3xl font-bold text-aqua-600">{calc.anbefaltKg}</div>
@@ -162,13 +162,13 @@ export default function KapasitetsplanleggerPage() {
               <div className="p-5 rounded-xl bg-white border border-slate-200">
                 <div className="text-xs text-slate-500 mb-1">Estimert totalinvestering</div>
                 <div className="font-serif text-2xl font-bold text-slate-900">{fmt(calc.totalInvestering)} kr</div>
-                <div className="text-xs text-slate-400 mt-1">Maskiner og torketromler</div>
+                <div className="text-xs text-slate-400 mt-1">Maskiner og tørketromler</div>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <Link href="/bedrift/verktoy/vaskeri-roi/" className="btn-primary inline-flex items-center gap-2 text-sm">Beregn ROI <IconArrow size={12} color="white" /></Link>
-              <Link href="/bedrift/verktoy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
+              <Link href="/bedrift/verktøy/vaskeri-roi/" className="btn-primary inline-flex items-center gap-2 text-sm">Beregn ROI <IconArrow size={12} color="white" /></Link>
+              <Link href="/bedrift/verktøy/maskinvelger/" className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">Finn riktig maskin <IconArrow size={12} color="#0F766E" /></Link>
             </div>
           </section>
 
@@ -182,7 +182,7 @@ export default function KapasitetsplanleggerPage() {
               </div>
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Vaskeritid: {bd.vaskerTimer} timer per dag</div>
-                <p className="text-xs text-slate-500">Basert paa typisk drift for {bd.label.toLowerCase()}. Juster med bufferen for aa kompensere for kortere eller lengre driftstid.</p>
+                <p className="text-xs text-slate-500">Basert på typisk drift for {bd.label.toLowerCase()}. Juster med bufferen for aa kompensere for kortere eller lengre driftstid.</p>
               </div>
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-100">
                 <div className="text-sm font-semibold text-slate-800 mb-1">Kapasitet per maskin per dag: {fmt(calc.kapasitetPerMaskin)} kg</div>
@@ -192,7 +192,7 @@ export default function KapasitetsplanleggerPage() {
 
             <div className="mt-8 p-5 rounded-xl bg-aqua-50 border border-aqua-200">
               <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Les bransjeguiden</h3>
-              <p className="text-xs text-slate-600 mb-3">Faa detaljerte anbefalinger for din bransje.</p>
+              <p className="text-xs text-slate-600 mb-3">Få detaljerte anbefalinger for din bransje.</p>
               <Link href={'/bedrift/' + bransje + '/'} className="text-sm font-semibold text-aqua-600 hover:text-aqua-700 flex items-center gap-1">
                 {bd.label} bransjeguide <IconArrow size={12} color="#0F766E" />
               </Link>
@@ -201,11 +201,11 @@ export default function KapasitetsplanleggerPage() {
         </div>
 
         <PageSidebar sections={sections} relatedLinks={[
-          { href: '/bedrift/verktoy/vaskeri-roi/', label: 'ROI kalkulator' },
-          { href: '/bedrift/verktoy/maskinvelger/', label: 'Maskinvelger' },
+          { href: '/bedrift/verktøy/vaskeri-roi/', label: 'ROI kalkulator' },
+          { href: '/bedrift/verktøy/maskinvelger/', label: 'Maskinvelger' },
           { href: '/bedrift/prisguide/', label: 'Prisguide' },
           { href: '/bedrift/' + bransje + '/', label: bd.label + ' guide' },
-        ]} ctaTitle="Beregn loennsomhet" ctaText="Loenner eget vaskeri seg?" ctaLink="/bedrift/verktoy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
+        ]} ctaTitle="Beregn lønnsomhet" ctaText="Lønner eget vaskeri seg?" ctaLink="/bedrift/verktøy/vaskeri-roi/" ctaLinkText="ROI kalkulator" />
       </div>
     </div>
   )

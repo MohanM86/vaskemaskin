@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/leverandorer/miele-professional',
 })
 
-const faqItems = [{"question": "Er Miele Professional verdt den hoye prisen?", "answer": "Ja, regnet per aar er Miele ofte billigere enn rimeligere alternativer fordi maskinene varer vesentlig lenger."}]
+const faqItems = [{"question": "Er Miele Professional verdt den høye prisen?", "answer": "Ja, regnet per år er Miele ofte billigere enn rimeligere alternativer fordi maskinene varer vesentlig lenger."}]
 
 export default function Page() {
   const sections = [
@@ -17,7 +17,7 @@ export default function Page() {
     { id: 's1', label: 'Produktserier' },
     { id: 's2', label: 'Styrker' },
     { id: 's3', label: 'Svakheter' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -40,19 +40,19 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om Miele Professional</h2>
-              <p>Miele Professional er den profesjonelle divisjonen av tyske Miele og tilbyr vaskemaskiner fra 6,5 til 32 kg kapasitet. Alle maskiner testes for 30 000 sykluser som tilsvarer ca. 15 aar med 8 vask per dag. Miele Professional har egen serviceorganisasjon med teknikere i alle storbyene i Norge.</p>
+              <p>Miele Professional er den profesjonelle divisjonen av tyske Miele og tilbyr vaskemaskiner fra 6,5 til 32 kg kapasitet. Alle maskiner testes for 30 000 sykluser som tilsvarer ca. 15 år med 8 vask per dag. Miele Professional har egen serviceorganisasjon med teknikere i alle storbyene i Norge.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Produktserier</h2>
-              <p>Little Giants (6,5 til 8 kg) for smaa lokaler som frisorer og klinikker. Performance (8 til 16 kg) for barnehager, hoteller og borettslag. Benchmark (20 til 32 kg) for storre vaskerier og institusjoner. Alle serier har automatisk dosering, programmering og nettverksoppkobling.</p>
+              <p>Little Giants (6,5 til 8 kg) for små lokaler som frisorer og klinikker. Performance (8 til 16 kg) for barnehager, hoteller og borettslag. Benchmark (20 til 32 kg) for større vaskerier og institusjoner. Alle serier har automatisk dosering, programmering og nettverksoppkobling.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>Bygd for aa vare. Hoyeste kvalitet paa materialer og komponenter. Eget servicenettverk i Norge med korte responstider. Bredt utvalg av programmer og tilbehor. Automatisk dosering som standard paa de fleste modeller.</p>
+              <p>Bygd for aa vare. Høyeste kvalitet på materialer og komponenter. Eget servicenettverk i Norge med korte responstider. Bredt utvalg av programmer og tilbehor. Automatisk dosering som standard på de fleste modeller.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Svakheter</h2>
-              <p>Hoyeste priser i markedet. Krever Miele egne kjemikalier for optimal ytelse med TwinDos. Begrenset utvalg over 32 kg kapasitet der Electrolux og Jensen er sterkere.</p>
+              <p>Høyeste priser i markedet. Krever Miele egne kjemikalier for optimal ytelse med TwinDos. Begrenset utvalg over 32 kg kapasitet der Electrolux og Jensen er sterkere.</p>
             </section>
             </div>
 
@@ -68,7 +68,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/barnehage/", label: "Barnehage" }, { href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/barnehage/", label: "Barnehage" }, { href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

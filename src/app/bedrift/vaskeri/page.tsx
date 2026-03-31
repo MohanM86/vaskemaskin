@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata = createMeta({
   title: 'Vaskemaskin for profesjonelt vaskeri | vaskemaskin.no',
-  description: 'Alt om vaskemaskiner for kommersielle vaskerier. Tunnelmaskiner, enkeltstaaende, automasjon og loennsomhet.',
+  description: 'Alt om vaskemaskiner for kommersielle vaskerier. Tunnelmaskiner, enkeltstående, automasjon og lønnsomhet.',
   path: 'bedrift/vaskeri',
 })
 
-const faqItems = [{"question": "Naar loenner tunnelmaskin seg?", "answer": "Typisk ved volumer over 2000 kg per dag. Mellom 1000 og 2000 kg avhenger det av tekstiltyper og kundeportefolje."}, {"question": "Hva koster det aa starte et vaskeri?", "answer": "1 til 3 millioner kr for et lite vaskeri med enkeltstaaende maskiner, 5 til 15 millioner for fullautomatisert vaskeri med tunnel."}, {"question": "Hva er typisk margin for et vaskeri?", "answer": "10 til 20 prosent paa faste avtaler med hoteller og helseinstitusjoner. Privatmarkedet gir hoeyere margin per kilo men lavere volum."}, {"question": "Trenger vaskeri utslippstillatelse?", "answer": "Vaskerier over en viss storrelse trenger utslippstillatelse fra kommunen i henhold til Forurensingsforskriften."}]
+const faqItems = [{"question": "Når lønner tunnelmaskin seg?", "answer": "Typisk ved volumer over 2000 kg per dag. Mellom 1000 og 2000 kg avhenger det av tekstiltyper og kundeportefolje."}, {"question": "Hva koster det aa starte et vaskeri?", "answer": "1 til 3 millioner kr for et lite vaskeri med enkeltstående maskiner, 5 til 15 millioner for fullautomatisert vaskeri med tunnel."}, {"question": "Hva er typisk margin for et vaskeri?", "answer": "10 til 20 prosent på faste avtaler med hoteller og helseinstitusjoner. Privatmarkedet gir høyere margin per kilo men lavere volum."}, {"question": "Trenger vaskeri utslippstillatelse?", "answer": "Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen i henhold til Forurensingsforskriften."}]
 
 export default function Page() {
   const sections = [
@@ -17,8 +17,8 @@ export default function Page() {
     { id: 's1', label: 'Tunnelvaskemaskiner i storvaskeri' },
     { id: 's2', label: 'Vannbehandling og gjenvinning' },
     { id: 's3', label: 'Automasjon og effektivisering' },
-    { id: 's4', label: 'Loennsomhet og forretningsmodell' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    { id: 's4', label: 'Lønnsomhet og forretningsmodell' },
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -31,7 +31,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Vaskeri' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for profesjonelt vaskeri</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Profesjonelle vaskerier krever maskiner med hoy gjennomstromning og lav driftskostnad per kilo.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Profesjonelle vaskerier krever maskiner med høy gjennomstromning og lav driftskostnad per kilo.</p>
         </div>
       </section>
 
@@ -41,28 +41,28 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Maskinpark for kommersielle vaskerier</h2>
-              <p>Valg av maskinpark avhenger av daglig volum og tekstiltyper. Under 1000 kg per dag: enkeltstaaende maskiner paa 20 til 60 kg gir fleksibilitet til aa kjore ulike programmer parallelt. Over 2000 kg per dag: tunnelvaskemaskin er eneste oekonomiske losning. Mellom 1000 og 2000 kg er det en glidende overgang der kombinasjoner av enkeltstaaende og batch washers ofte er optimalt.</p>
-              <p>Hardmount maskiner med bunnforankring gir hoeyere G faktor og lavere restfuktighet enn softmount. For vaskerier over 500 kg per dag er hardmount standard. Paa grunn av vibrasjonene krever de sterkere gulv og fundamentering.</p>
+              <p>Valg av maskinpark avhenger av daglig volum og tekstiltyper. Under 1000 kg per dag: enkeltstående maskiner på 20 til 60 kg gir fleksibilitet til aa kjore ulike programmer parallelt. Over 2000 kg per dag: tunnelvaskemaskin er eneste økonomiske løsning. Mellom 1000 og 2000 kg er det en glidende overgang der kombinasjoner av enkeltstående og batch washers ofte er optimalt.</p>
+              <p>Hardmount maskiner med bunnforankring gir høyere G faktor og lavere restfuktighet enn softmount. For vaskerier over 500 kg per dag er hardmount standard. På grunn av vibrasjonene krever de sterkere gulv og fundamentering.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Tunnelvaskemaskiner i storvaskeri</h2>
-              <p>Tunnelmaskin er et kontinuerlig system med flere kammere der tekstilene beveger seg fremover gjennom forbehandling, vask, skylling og sluttbehandling. Gjennomstromning kan naa opptil 5000 kg per time. Investering fra 1,5 til 10 millioner kr, men dramatisk lavere kostnad per kilo: 2 til 4 kr mot 5 til 8 kr for enkeltstaaende maskiner.</p>
-              <p>Tunnelmaskinen kobles til sentralpresse og torkelinje for helautomatisk drift. Arbeidskostnaden per kilo reduseres med 60 til 80 prosent sammenlignet med manuell drift av enkeltstaaende maskiner.</p>
+              <p>Tunnelmaskin er et kontinuerlig system med flere kammere der tekstilene beveger seg fremover gjennom forbehandling, vask, skylling og sluttbehandling. Gjennomstromning kan naa opptil 5000 kg per time. Investering fra 1,5 til 10 millioner kr, men dramatisk lavere kostnad per kilo: 2 til 4 kr mot 5 til 8 kr for enkeltstående maskiner.</p>
+              <p>Tunnelmaskinen kobles til sentralpresse og tørkelinje for helautomatisk drift. Arbeidskostnaden per kilo reduseres med 60 til 80 prosent sammenlignet med manuell drift av enkeltstående maskiner.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Vannbehandling og gjenvinning</h2>
-              <p>Vanngjenvinning reduserer forbruket med 30 til 50 prosent. Brukt skyllevann filtreres og gjenbrukes i forvask paa neste batch. Varmegjenvinning via varmevekslere sparer ytterligere 20 til 30 prosent paa energi ved aa forvarne innkommende kaldt vann med varmen fra avlopsvannet.</p>
-              <p>Norske krav til avlopsvann fra vaskerier reguleres av Forurensingsforskriften. Vaskerier over en viss storrelse trenger utslippstillatelse fra kommunen. Vanngjenvinning reduserer baade kostnader og miljofotavtrykk.</p>
+              <p>Vanngjenvinning reduserer forbruket med 30 til 50 prosent. Brukt skyllevann filtreres og gjenbrukes i forvask på neste batch. Varmegjenvinning via varmevekslere sparer ytterligere 20 til 30 prosent på energi ved aa forvarne innkommende kaldt vann med varmen fra avlopsvannet.</p>
+              <p>Norske krav til avlopsvann fra vaskerier reguleres av Forurensingsforskriften. Vaskerier over en viss størrelse trenger utslippstillatelse fra kommunen. Vanngjenvinning reduserer både kostnader og miljofotavtrykk.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Automasjon og effektivisering</h2>
-              <p>Automatisk sortering via RFID skanner tekstilene ved ankomst og sender dem til riktig vaskeprogram. Robotisert folding haandterer flattoy og haandklær med minimal manuell innsats. Transportbaand mellom stasjonene eliminerer lofting og baering.</p>
-              <p>Kjemikaliedosering styres av sensorer som maaler vannets hardhet, temperatur og pH verdier i sanntid. Dette sikrer optimalt resultat med minimal kjemikaliebruk og reduserer slitasje paa tekstilene.</p>
+              <p>Automatisk sortering via RFID skanner tekstilene ved ankomst og sender dem til riktig vaskeprogram. Robotisert folding håndterer flattoy og håndklær med minimal manuell innsats. Transportbånd mellom stasjonene eliminerer lofting og bæring.</p>
+              <p>Kjemikaliedosering styres av sensorer som måler vannets hardhet, temperatur og pH verdier i sanntid. Dette sikrer optimalt resultat med minimal kjemikaliebruk og reduserer slitasje på tekstilene.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
-              <h2>Loennsomhet og forretningsmodell</h2>
-              <p>Et vaskeri med 2000 kg daglig kapasitet kan oppnaa omsetning paa 3 til 5 millioner kr per aar med marginer paa 10 til 20 prosent. De viktigste inntektskildene er faste avtaler med hoteller, helseinstitusjoner, restauranter og industribedrifter.</p>
-              <p>Oppstartkostnader varierer fra 1 til 3 millioner kr for et lite vaskeri med enkeltstaaende maskiner til 5 til 15 millioner kr for et fullautomatisert vaskeri med tunnelmaskin. Breakeven ligger typisk paa 2 til 4 aar for godt drevne vaskerier med solide kundeavtaler.</p>
+              <h2>Lønnsomhet og forretningsmodell</h2>
+              <p>Et vaskeri med 2000 kg daglig kapasitet kan oppnå omsetning på 3 til 5 millioner kr per år med marginer på 10 til 20 prosent. De viktigste inntektskildene er faste avtaler med hoteller, helseinstitusjoner, restauranter og industribedrifter.</p>
+              <p>Oppstartkostnader varierer fra 1 til 3 millioner kr for et lite vaskeri med enkeltstående maskiner til 5 til 15 millioner kr for et fullautomatisert vaskeri med tunnelmaskin. Breakeven ligger typisk på 2 til 4 år for godt drevne vaskerier med solide kundeavtaler.</p>
             </section>
             </div>
 
@@ -75,8 +75,8 @@ export default function Page() {
                   <th className="px-4 py-3 text-left font-semibold">Ca. pris</th>
                 </tr></thead>
                 <tbody>
-                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Enkeltstaaende 20 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 kg/syklus</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">12 til 15 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">80 000 til 130 000 kr</td></tr>
-<tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Enkeltstaaende 60 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">60 kg/syklus</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">10 til 13 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">250 000 til 400 000 kr</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Enkeltstående 20 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">20 kg/syklus</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">12 til 15 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">80 000 til 130 000 kr</td></tr>
+<tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Enkeltstående 60 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">60 kg/syklus</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">10 til 13 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">250 000 til 400 000 kr</td></tr>
 <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Tunnelmaskin mellomstor</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">1000 kg/time</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">7 til 9 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">1,5 til 3 mill. kr</td></tr>
 <tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Tunnelmaskin stor</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">2000+ kg/time</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">6 til 8 L/kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">5 til 10 mill. kr</td></tr>
                 </tbody>

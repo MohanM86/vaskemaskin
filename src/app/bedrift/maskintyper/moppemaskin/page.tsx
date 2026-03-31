@@ -17,7 +17,7 @@ export default function Page() {
     { id: 's1', label: 'Termisk desinfeksjon' },
     { id: 's2', label: 'Forskjell fra vanlige maskiner' },
     { id: 's3', label: 'Anbefalte modeller' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -30,7 +30,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Moppemaskin' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Moppemaskin | Spesialmaskin for mopper og kluter</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">En moppemaskin er en spesialvaskemaskin designet for vask og termisk desinfeksjon av mopper, kluter og andre rengjoringstekstiler.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">En moppemaskin er en spesialvaskemaskin designet for vask og termisk desinfeksjon av mopper, kluter og andre rengjøringstekstiler.</p>
         </div>
       </section>
 
@@ -40,7 +40,7 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Hva er en moppemaskin</h2>
-              <p>En moppemaskin er konstruert for aa haandtere de spesielle utfordringene med vask av mopper og rengjoringskluter: grove tekstiler med mye skitt, behov for termisk desinfeksjon, og hoeye krav til dokumentasjon av vaskeprosessen.</p>
+              <p>En moppemaskin er konstruert for aa håndtere de spesielle utfordringene med vask av mopper og rengjøringskluter: grove tekstiler med mye skitt, behov for termisk desinfeksjon, og høye krav til dokumentasjon av vaskeprosessen.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Termisk desinfeksjon</h2>
@@ -48,11 +48,11 @@ export default function Page() {
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Forskjell fra vanlige maskiner</h2>
-              <p>Moppemaskiner har storre pumpefilter for aa haandtere mye lo og smuss, automatisk kjemikaliedosering tilpasset rengjoringstekstiler, programmering for ulike moppe og kluttyper, og mulighet for aa kjore opptil 10 vask per dag uten overbelastning.</p>
+              <p>Moppemaskiner har større pumpefilter for aa håndtere mye lo og smuss, automatisk kjemikaliedosering tilpasset rengjøringstekstiler, programmering for ulike moppe og kluttyper, og mulighet for aa kjore opptil 10 vask per dag uten overbelastning.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Anbefalte modeller</h2>
-              <p>Miele Professional PWM 300 og Electrolux Professional WH6 6 er populaere valg for renholdsfirmaer. Podab har ogsaa gode losninger for mindre renholdsoperasjoner.</p>
+              <p>Miele Professional PWM 300 og Electrolux Professional WH6 6 er populære valg for renholdsfirmaer. Podab har også gode løsninger for mindre renholdsoperasjoner.</p>
             </section>
             </div>
 
@@ -68,7 +68,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hygienestandarder/", label: "Hygienestandarder" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/leverandorer/miele-professional/", label: "Miele Professional" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/hygienestandarder/", label: "Hygienestandarder" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/leverandorer/miele-professional/", label: "Miele Professional" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

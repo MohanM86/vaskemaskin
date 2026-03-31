@@ -5,19 +5,19 @@ import Link from 'next/link'
 
 export const metadata = createMeta({
   title: 'Vaskemaskin for ridesenter og stall | vaskemaskin.no',
-  description: 'Guide til vaskemaskiner for ridesentre med tunge, skitne tekstiler fulle av hestehaar og gjorme.',
+  description: 'Guide til vaskemaskiner for ridesentre med tunge, skitne tekstiler fulle av hestehår og gjorme.',
   path: 'bedrift/ridesenter',
 })
 
-const faqItems = [{"question": "Kan man vaske saldekken i vanlig vaskemaskin?", "answer": "Det anbefales ikke. Hestehaar og gjorme oedelegger pumpe og pakninger paa husholdningsmaskiner raskt. Bruk profesjonell maskin med minimum 10 kg kapasitet og forsterket filter."}, {"question": "Hvordan haandtere hestehaar i vasken?", "answer": "Ryst grundig for vask, bruk vaskenett for smaaplagg, rengjor filter etter hver vask, og installer haarfanger i avlopet."}, {"question": "Hvor ofte bor maskinen rengjores?", "answer": "Filter etter hver vask, trommel og pakninger maanedlig, dyprens med maskinrens hver 3. maaned."}, {"question": "Hvilken temperatur for hesteutstyr?", "answer": "Dekken vaskes ved 30 til 40 grader for aa unngaa krymping. Bandager og haandklær kan vaskes ved 60 grader."}]
+const faqItems = [{"question": "Kan man vaske saldekken i vanlig vaskemaskin?", "answer": "Det anbefales ikke. Hestehår og gjorme ødelegger pumpe og pakninger på husholdningsmaskiner raskt. Bruk profesjonell maskin med minimum 10 kg kapasitet og førsterket filter."}, {"question": "Hvordan håndtere hestehår i vasken?", "answer": "Ryst grundig for vask, bruk vaskenett for småplagg, rengjor filter etter hver vask, og installer hårfanger i avlopet."}, {"question": "Hvor ofte bor maskinen rengjores?", "answer": "Filter etter hver vask, trommel og pakninger månedlig, dyprens med maskinrens hver 3. måned."}, {"question": "Hvilken temperatur for hesteutstyr?", "answer": "Dekken vaskes ved 30 til 40 grader for aa unngå krymping. Bandager og håndklær kan vaskes ved 60 grader."}]
 
 export default function Page() {
   const sections = [
     { id: 's0', label: 'Hva vasker et ridesenter' },
     { id: 's1', label: 'Krav til vaskemaskinen' },
-    { id: 's2', label: 'Hestehaar er den storste utfordringen' },
+    { id: 's2', label: 'Hestehår er den største utfordringen' },
     { id: 's3', label: 'Anbefalte maskiner for ridesentre' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -30,7 +30,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'Ridesenter' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">Vaskemaskin for ridesenter og stall</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Ridesentre har spesielle vaskebehov med tunge, skitne tekstiler fulle av hestehaar og gjorme.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">Ridesentre har spesielle vaskebehov med tunge, skitne tekstiler fulle av hestehår og gjorme.</p>
         </div>
       </section>
 
@@ -40,23 +40,23 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Hva vasker et ridesenter</h2>
-              <p>Saldekken, treningsdekken, bandager, rideklær, haandklær og stallkluter. Et ridesenter med 30 hester genererer typisk 100 til 200 kg vasketoy per uke. Om vinteren oeker volumet fordi hestene bruker dekken daglig og tekstilene blir skitne raskere.</p>
-              <p>Vekten paa dekkene varierer kraftig: et lett treningsdekken veier 1 til 2 kg, mens et vintertermodekken kan veie 3 til 5 kg. Bandager, gamasjer og sadelunderlag legger til ytterligere vekt. Det er viktig aa sortere etter tekstiltype og skittenhetsgrad.</p>
+              <p>Saldekken, treningsdekken, bandager, rideklær, håndklær og stallkluter. Et ridesenter med 30 hester genererer typisk 100 til 200 kg vasketoy per uke. Om vinteren øker volumet fordi hestene bruker dekken daglig og tekstilene blir skitne raskere.</p>
+              <p>Vekten på dekkene varierer kraftig: et lett treningsdekken veier 1 til 2 kg, mens et vintertermodekken kan veie 3 til 5 kg. Bandager, gamasjer og sadelunderlag legger til ytterligere vekt. Det er viktig aa sortere etter tekstiltype og skittenhetsgrad.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Krav til vaskemaskinen</h2>
-              <p>Vaskemaskinen maa ha forsterket pumpefilter for hestehaar, stor dreneringskapasitet for gjorme og sand, robust trommel som taaler ubalanserte laster fra store dekken, og forblotleggingsprogram for aa lose opp inngrodd skitt for selve vasken starter. Minimum 10 kg kapasitet er nodvendig, og 14 til 18 kg anbefales for effektiv drift.</p>
-              <p>Hoy sentrifugalhastighet er mindre viktig enn robust konstruksjon. Dekken taaler godt en lavere sentrifugehastighet, og dette reduserer slitasje paa baade tekstil og maskin. Velg maskiner med manuell programmering slik at du kan tilpasse vasketid og temperatur etter behov.</p>
+              <p>Vaskemaskinen maa ha førsterket pumpefilter for hestehår, stor dreneringskapasitet for gjorme og sand, robust trommel som tåler ubalanserte laster fra store dekken, og forblotleggingsprogram for aa lose opp inngrodd skitt for selve vasken starter. Minimum 10 kg kapasitet er nødvendig, og 14 til 18 kg anbefales for effektiv drift.</p>
+              <p>Høy sentrifugalhastighet er mindre viktig enn robust konstruksjon. Dekken tåler godt en lavere sentrifugehastighet, og dette reduserer slitasje på både tekstil og maskin. Velg maskiner med manuell programmering slik at du kan tilpasse vasketid og temperatur etter behov.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
-              <h2>Hestehaar er den storste utfordringen</h2>
-              <p>Haarene tetter pumpefilter, setter seg i pakninger og blokkerer avlop. Ryst dekken og klær grundig for vask. Bruk vaskenett for smaaplagg som bandager. Rengjor filter etter hver vask, og planlegg maanedlig dyprens av trommel og pakninger.</p>
-              <p>Noen ridesentre installerer en haarfanger i avlopet mellom maskin og sluk. Dette er en enkel og billig losning som forlenger maskinens levetid betydelig. Industriell lofilt foran torkeroeret er ogsaa viktig for aa forhindre tilstopping.</p>
+              <h2>Hestehår er den største utfordringen</h2>
+              <p>Hårene tetter pumpefilter, setter seg i pakninger og blokkerer avlop. Ryst dekken og klær grundig for vask. Bruk vaskenett for småplagg som bandager. Rengjor filter etter hver vask, og planlegg månedlig dyprens av trommel og pakninger.</p>
+              <p>Noen ridesentre installerer en hårfanger i avlopet mellom maskin og sluk. Dette er en enkel og billig løsning som forlenger maskinens levetid betydelig. Industriell lofilt foran tørkerøret er også viktig for aa forhindre tilstopping.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Anbefalte maskiner for ridesentre</h2>
-              <p>Miele PW 6080 (8 kg) er et godt valg for smaadekken og daglig vask. Electrolux Line 6000 14 kg haandterer store saddeldekken og vinterdekkener effektivt. Primus FX 180 (18 kg) er det beste valget for ridesentre med mange hester og hoyt volum.</p>
-              <p>Unngaa husholdningsmaskiner selv for smaa staller. Hestehaar og gjorme oedeledgger pumpe og pakninger paa forbrukermaskiner i lopet av noen maaneder. Profesjonelle maskiner med forsterket filter og drenering haandterer dette uten problemer i 15 til 20 aar.</p>
+              <p>Miele PW 6080 (8 kg) er et godt valg for smådekken og daglig vask. Electrolux Line 6000 14 kg håndterer store saddeldekken og vinterdekkener effektivt. Primus FX 180 (18 kg) er det beste valget for ridesentre med mange hester og hoyt volum.</p>
+              <p>Unngå husholdningsmaskiner selv for små staller. Hestehår og gjorme ødelegger pumpe og pakninger på forbrukermaskiner i lopet av noen måneder. Profesjonelle maskiner med førsterket filter og drenering håndterer dette uten problemer i 15 til 20 år.</p>
             </section>
             </div>
 
@@ -69,7 +69,7 @@ export default function Page() {
                   <th className="px-4 py-3 text-left font-semibold">Ca. pris</th>
                 </tr></thead>
                 <tbody>
-                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Miele PW 6080</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">8 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Smaadekken, bandager</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">40 000 til 55 000 kr</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Miele PW 6080</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">8 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Smådekken, bandager</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">40 000 til 55 000 kr</td></tr>
 <tr className="bg-slate-50"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Electrolux Line 6000</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">14 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Store dekken, rideklær</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">55 000 til 80 000 kr</td></tr>
 <tr className="bg-white"><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Primus FX 180</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">18 kg</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">Alle typer, hoyt volum</td><td className="px-4 py-3 text-slate-700 border-t border-slate-100">80 000 til 120 000 kr</td></tr>
                 </tbody>
@@ -107,7 +107,7 @@ export default function Page() {
               </Link>
               <Link href="/bedrift/leverandorer/miele-professional/" className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-md hover:border-aqua-300 transition-all group">
                 <h3 className="font-serif font-bold text-slate-900 group-hover:text-aqua-600 transition-colors mb-2">Miele Professional</h3>
-                <p className="text-sm text-slate-600">Populaert valg for ridesentre.</p>
+                <p className="text-sm text-slate-600">Populært valg for ridesentre.</p>
               </Link>
           </div>
         </div>

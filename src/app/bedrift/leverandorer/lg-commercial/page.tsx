@@ -16,7 +16,7 @@ export default function Page() {
     { id: 's0', label: 'Om LG Commercial' },
     { id: 's1', label: 'Styrker' },
     { id: 's2', label: 'Begrenset utvalg' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -29,7 +29,7 @@ export default function Page() {
         <div className="container-site py-16 md:py-24 relative z-10">
           <Breadcrumbs items={[{ label: 'Hjem', href: '/' }, { label: 'Bedrift', href: '/bedrift/' }, { label: 'LG Commercial' }]} />
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">LG Commercial | Profesjonelle vaskemaskiner</h1>
-          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">LG Commercial tilbyr profesjonelle vaskemaskiner med AI Direct Drive motor og 10 aars motorgaranti.</p>
+          <p className="text-lg text-slate-300 max-w-3xl leading-relaxed">LG Commercial tilbyr profesjonelle vaskemaskiner med AI Direct Drive motor og 10 års motorgaranti.</p>
         </div>
       </section>
 
@@ -39,21 +39,21 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Om LG Commercial</h2>
-              <p>LG Commercial er den profesjonelle divisjonen av soerkoreanske LG. Merket er spesielt sterkt paa myntvaskerier og fellesvaskerier med robuste maskiner og smart teknologi. AI Direct Drive motoren gjenkjenner stofftype automatisk.</p>
+              <p>LG Commercial er den profesjonelle divisjonen av sørkoreanske LG. Merket er spesielt sterkt på myntvaskerier og fellesvaskerier med robuste maskiner og smart teknologi. AI Direct Drive motoren gjenkjenner stofftype automatisk.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Styrker</h2>
-              <p>10 aars motorgaranti paa Direct Drive. AI stoffgjenkjenning. Konkurransedyktige priser. Godt egnet for myntvaskeri og selvbetjening.</p>
+              <p>10 års motorgaranti på Direct Drive. AI stoffgjenkjenning. Konkurransedyktige priser. Godt egnet for myntvaskeri og selvbetjening.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Begrenset utvalg</h2>
-              <p>LG har et smalere sortiment enn Miele og Electrolux i det profesjonelle segmentet. Servicenettverket i Norge er ogsaa mer begrenset for profesjonelle modeller.</p>
+              <p>LG har et smalere sortiment enn Miele og Electrolux i det profesjonelle segmentet. Servicenettverket i Norge er også mer begrenset for profesjonelle modeller.</p>
             </section>
             </div>
 
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/maskintyper/industrimaskin/", label: "Industrimaskin" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/borettslag/", label: "Borettslag" }, { href: "/bedrift/prisguide/", label: "Prisguide" }, { href: "/bedrift/maskintyper/industrimaskin/", label: "Industrimaskin" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

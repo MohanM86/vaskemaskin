@@ -5,20 +5,20 @@ import Link from 'next/link'
 
 export const metadata = createMeta({
   title: 'Tunnelvaskemaskin | Kontinuerlig vask for storvaskerier | vaskemaskin.no',
-  description: 'Alt om tunnelvaskemaskiner med kapasitet paa opptil 5000 kg per time.',
+  description: 'Alt om tunnelvaskemaskiner med kapasitet på opptil 5000 kg per time.',
   path: 'bedrift/maskintyper/tunnelmaskin',
 })
 
-const faqItems = [{"question": "Naar loenner tunnelmaskin seg?", "answer": "Ved daglig volum over 2000 til 3000 kg er tunnelmaskin mer loennssomt enn enkeltstaaende maskiner."}, {"question": "Hvor mye plass kreves?", "answer": "Et tunnelsystem med tilhorende utstyr krever typisk 200 til 500 kvadratmeter gulvplass."}]
+const faqItems = [{"question": "Når lønner tunnelmaskin seg?", "answer": "Ved daglig volum over 2000 til 3000 kg er tunnelmaskin mer lønnsomt enn enkeltstående maskiner."}, {"question": "Hvor mye plass kreves?", "answer": "Et tunnelsystem med tilhørende utstyr krever typisk 200 til 500 kvadratmeter gulvplass."}]
 
 export default function Page() {
   const sections = [
     { id: 's0', label: 'Hvordan fungerer en tunnelmaskin' },
     { id: 's1', label: 'Kapasitet og gjennomstromning' },
     { id: 's2', label: 'Vannforbruk og energi' },
-    { id: 's3', label: 'Investering og loennsomhet' },
+    { id: 's3', label: 'Investering og lønnsomhet' },
     { id: 's4', label: 'Leverandorer' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -45,19 +45,19 @@ export default function Page() {
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Kapasitet og gjennomstromning</h2>
-              <p>Smaa tunnelmaskiner haandterer 500 til 1000 kg per time. Mellomstore systemer 1000 til 3000 kg per time. Store installasjoner kan haandtere over 5000 kg per time med flere parallelle linjer. Gjennomstromningen er dramatisk hoyere enn enkeltstaaende maskiner.</p>
+              <p>Små tunnelmaskiner håndterer 500 til 1000 kg per time. Mellomstore systemer 1000 til 3000 kg per time. Store installasjoner kan håndtere over 5000 kg per time med flere parallelle linjer. Gjennomstromningen er dramatisk høyere enn enkeltstående maskiner.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Vannforbruk og energi</h2>
-              <p>Tunnelmaskiner er ekstremt vanneffektive med 5 til 8 liter per kilo mot 10 til 15 liter for enkeltstaaende maskiner. Motstroms skylling resirkulerer vann fra rene til urene kammere. Varmegjenvinning kan spare 30 til 50 prosent energi.</p>
+              <p>Tunnelmaskiner er ekstremt vanneffektive med 5 til 8 liter per kilo mot 10 til 15 liter for enkeltstående maskiner. Motstroms skylling resirkulerer vann fra rene til urene kammere. Varmegjenvinning kan spare 30 til 50 prosent energi.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
-              <h2>Investering og loennsomhet</h2>
-              <p>Investeringen spenner fra 1,5 millioner for smaa systemer til over 10 millioner for store installasjoner. Kostnaden per kilo vasket tekstil er 40 til 60 prosent lavere enn med enkeltstaaende maskiner. Breakeven mot enkeltstaaende maskiner naas typisk ved 2000 til 3000 kg daglig volum.</p>
+              <h2>Investering og lønnsomhet</h2>
+              <p>Investeringen spenner fra 1,5 millioner for små systemer til over 10 millioner for store installasjoner. Kostnaden per kilo vasket tekstil er 40 til 60 prosent lavere enn med enkeltstående maskiner. Breakeven mot enkeltstående maskiner nås typisk ved 2000 til 3000 kg daglig volum.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Leverandorer</h2>
-              <p>Jensen Group er verdensledende paa tunnelsystemer. Girbau, Electrolux Professional og Kannegiesser er ogsaa store aktorer. I Norge er Jensen og Electrolux mest brukt.</p>
+              <p>Jensen Group er verdensledende på tunnelsystemer. Girbau, Electrolux Professional og Kannegiesser er også store aktorer. I Norge er Jensen og Electrolux mest brukt.</p>
             </section>
             </div>
 
@@ -73,7 +73,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/vaskeri/", label: "Vaskeri" }, { href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/leverandorer/jensen-group/", label: "Jensen Group" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/vaskeri/", label: "Vaskeri" }, { href: "/bedrift/hotell/", label: "Hotell" }, { href: "/bedrift/leverandorer/jensen-group/", label: "Jensen Group" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

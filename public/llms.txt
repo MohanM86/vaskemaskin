@@ -1,14 +1,14 @@
 # Vaskemaskin.no
 
-> Norges mest komplette kunnskapsportal om vaskemaskiner. Over 480 sider med uavhengig informasjon, kjopsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste, butikkoversikt og profesjonelle losninger for bedrift og industri.
+> Norges mest komplette kunnskapsportal om vaskemaskiner. Over 480 sider med uavhengig informasjon, kjøpsguider, merkesammenligninger, feilkoder, bruksanvisninger, ordliste, butikkoversikt og profesjonelle løsninger for bedrift og industri.
 
 ## Om nettstedet
 
 Vaskemaskin.no er en norskspraklig kunnskapsportal driftet av IT-Firma.no. Alt innhold er redaksjonelt uavhengig uten bindinger til produsenter eller forhandlere. Nettstedet dekker 18 vaskemaskinmerker, 29 dybdeartikler, 10 merkesammenligninger, 51 feilkoder, 10 bruksanvisninger, 35 ordlistebegreper, 147 butikker og 103 kommuner. I tillegg har nettstedet en dedikert bedriftsseksjon med 28 sider om profesjonelle vaskemaskiner.
 
-## Kjopsguider og artikler
+## Kjøpsguider og artikler
 
-- Komplett kjopsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjopsguide-2026/
+- Komplett kjøpsguide: Slik velger du vaskemaskin i 2026: https://vaskemaskin.no/artikkel/komplett-kjøpsguide-2026/
 - Beste vaskemaskin 2026: https://vaskemaskin.no/artikkel/beste-vaskemaskin-2026/
 - Vaskesymboler guide: https://vaskemaskin.no/artikkel/vaskesymboler-guide/
 - Energimerking forklart: https://vaskemaskin.no/artikkel/energimerking-forklart/
@@ -33,7 +33,7 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 ### Maskintyper
 - Barrieremaskin: https://vaskemaskin.no/bedrift/maskintyper/barrieremaskin/
 - Moppemaskin: https://vaskemaskin.no/bedrift/maskintyper/moppemaskin/
-- Torkeskap: https://vaskemaskin.no/bedrift/maskintyper/torkeskap/
+- Tørkeskap: https://vaskemaskin.no/bedrift/maskintyper/tørkeskap/
 - Industrimaskin: https://vaskemaskin.no/bedrift/maskintyper/industrimaskin/
 - Tunnelmaskin: https://vaskemaskin.no/bedrift/maskintyper/tunnelmaskin/
 
@@ -50,9 +50,9 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 ### Bedriftsressurser
 - Prisguide industrivaskemaskiner: https://vaskemaskin.no/bedrift/prisguide/
 - Hygienestandarder: https://vaskemaskin.no/bedrift/hygienestandarder/
-- ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktoy/vaskeri-roi/
-- Kapasitetsplanlegger: https://vaskemaskin.no/bedrift/verktoy/kapasitetsplanlegger/
-- Maskinvelger for bedrift: https://vaskemaskin.no/bedrift/verktoy/maskinvelger/
+- ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktøy/vaskeri-roi/
+- Kapasitetsplanlegger: https://vaskemaskin.no/bedrift/verktøy/kapasitetsplanlegger/
+- Maskinvelger for bedrift: https://vaskemaskin.no/bedrift/verktøy/maskinvelger/
 
 ## Merkeoversikter
 
@@ -66,12 +66,12 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 - Whirlpool vaskemaskiner: https://vaskemaskin.no/merke/whirlpool/
 - ASKO vaskemaskiner: https://vaskemaskin.no/merke/asko/
 
-## Interaktive verktoy
+## Interaktive verktøy
 
-- Energikalkulator: https://vaskemaskin.no/verktoy/energikalkulator/
-- Vaskemaskinvelger quiz: https://vaskemaskin.no/verktoy/vaskemaskinvelger/
+- Energikalkulator: https://vaskemaskin.no/verktøy/energikalkulator/
+- Vaskemaskinvelger quiz: https://vaskemaskin.no/verktøy/vaskemaskinvelger/
 
-## Ofte stilte sporsmal
+## Ofte stilte spørsmål
 
 Hvilken vaskemaskin er best i 2026? For de fleste familier er en frontmater med atte kilo kapasitet og energiklasse B eller C det beste valget.
 

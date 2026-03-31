@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/maskintyper/industrimaskin',
 })
 
-const faqItems = [{"question": "Softmount eller hardmount?", "answer": "Under 32 kg: softmount er enklest. Over 32 kg: hardmount gir bedre ytelse men krever betongfundament."}, {"question": "Hva er G faktor?", "answer": "G faktor maaleer sentrifugekraften. Hoyere G faktor gir lavere restfuktighet og kortere torketid."}]
+const faqItems = [{"question": "Softmount eller hardmount?", "answer": "Under 32 kg: softmount er enklest. Over 32 kg: hardmount gir bedre ytelse men krever betongfundament."}, {"question": "Hva er G faktor?", "answer": "G faktor måleer sentrifugekraften. Høyere G faktor gir lavere restfuktighet og kortere tørketid."}]
 
 export default function Page() {
   const sections = [
@@ -18,7 +18,7 @@ export default function Page() {
     { id: 's2', label: 'G faktor og restfuktighet' },
     { id: 's3', label: 'Automasjon og programmering' },
     { id: 's4', label: 'Leverandorer i Norge' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -41,15 +41,15 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Kapasitetsklasser</h2>
-              <p>Industrivaskemaskiner deles inn i mellomstore (20 til 40 kg), store (40 til 80 kg) og ekstra store (80 til 120 kg). Valget avhenger av daglig volum, type tekstiler og tilgjengelig plass. Storre maskiner gir lavere kostnad per kilo men krever mer plass og sterkere gulv.</p>
+              <p>Industrivaskemaskiner deles inn i mellomstore (20 til 40 kg), store (40 til 80 kg) og ekstra store (80 til 120 kg). Valget avhenger av daglig volum, type tekstiler og tilgjengelig plass. Større maskiner gir lavere kostnad per kilo men krever mer plass og sterkere gulv.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Softmount vs. hardmount</h2>
-              <p>Softmount maskiner staar fritt paa gulvet med innebygde stotdempere. De er enklere aa installere men vibrerer mer. Hardmount maskiner boltes fast i gulvet og krever betongfundament, men gir hoyere sentrifugehastighet og lavere restfuktighet. Over 32 kg er hardmount standard.</p>
+              <p>Softmount maskiner står fritt på gulvet med innebygde stotdempere. De er enklere aa installere men vibrerer mer. Hardmount maskiner boltes fast i gulvet og krever betongfundament, men gir høyere sentrifugehastighet og lavere restfuktighet. Over 32 kg er hardmount standard.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>G faktor og restfuktighet</h2>
-              <p>G faktoren angir sentrifugekraften og paavirker restfuktigheten direkte. G 200 til 300 er lavhastighet med 55 til 60 prosent restfuktighet. G 300 til 450 er standard med 48 til 52 prosent. G 450 til 600 er hoyhastighet med 42 til 48 prosent. Lavere restfuktighet betyr kortere torketid og lavere energikostnader.</p>
+              <p>G faktoren angir sentrifugekraften og påvirker restfuktigheten direkte. G 200 til 300 er lavhastighet med 55 til 60 prosent restfuktighet. G 300 til 450 er standard med 48 til 52 prosent. G 450 til 600 er hoyhastighet med 42 til 48 prosent. Lavere restfuktighet betyr kortere tørketid og lavere energikostnader.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Automasjon og programmering</h2>
@@ -57,7 +57,7 @@ export default function Page() {
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Leverandorer i Norge</h2>
-              <p>Electrolux Professional, Miele Professional, Jensen Group, Girbau og Primus er de storste leverandorene. Electrolux har det bredeste utvalget med modeller i alle kapasitetsklasser.</p>
+              <p>Electrolux Professional, Miele Professional, Jensen Group, Girbau og Primus er de største leverandorene. Electrolux har det bredeste utvalget med modeller i alle kapasitetsklasser.</p>
             </section>
             </div>
 
@@ -73,7 +73,7 @@ export default function Page() {
             </div>
             {faqItems.length > 0 && <section data-section-id="faq" className="scroll-mt-20 mb-10"><FAQSection items={faqItems} /></section>}
           </div>
-          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/vaskeri/", label: "Vaskeri" }, { href: "/bedrift/maskintyper/tunnelmaskin/", label: "Tunnelvaskemaskin" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftslosninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
+          <PageSidebar sections={sections} relatedLinks={[{ href: "/bedrift/vaskeri/", label: "Vaskeri" }, { href: "/bedrift/maskintyper/tunnelmaskin/", label: "Tunnelvaskemaskin" }, { href: "/bedrift/prisguide/", label: "Prisguide" }]} ctaTitle="Tilbake til oversikt" ctaText="Se alle bedriftsløsninger." ctaLink="/bedrift/" ctaLinkText="Bedriftsoversikt" />
         </div>
       </div>
     </>

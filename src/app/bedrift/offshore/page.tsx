@@ -9,7 +9,7 @@ export const metadata = createMeta({
   path: 'bedrift/offshore',
 })
 
-const faqItems = [{"question": "Kan vanlige maskiner brukes offshore?", "answer": "Nei, de ruster og taaler ikke vibrasjonene. Spesialsertifiserte maskiner med DNV godkjenning er pakrevd for alle plattformer og skip."}, {"question": "Hva koster offshore vaskemaskiner?", "answer": "50 til 100 prosent mer enn landbaserte modeller, typisk 70 000 til 150 000 kr per maskin."}, {"question": "Hvilke leverandorer leverer offshore maskiner?", "answer": "Electrolux Marine, Miele Marine, Schulthess og Podab har egne maritime serier med DNV sertifisering."}, {"question": "Hvor lang er leveringstiden?", "answer": "8 til 16 uker for maritime modeller paa grunn av begrenset produksjon og spesialtilpasninger."}]
+const faqItems = [{"question": "Kan vanlige maskiner brukes offshore?", "answer": "Nei, de ruster og tåler ikke vibrasjonene. Spesialsertifiserte maskiner med DNV godkjenning er pakrevd for alle plattformer og skip."}, {"question": "Hva koster offshore vaskemaskiner?", "answer": "50 til 100 prosent mer enn landbaserte modeller, typisk 70 000 til 150 000 kr per maskin."}, {"question": "Hvilke leverandorer leverer offshore maskiner?", "answer": "Electrolux Marine, Miele Marine, Schulthess og Podab har egne maritime serier med DNV sertifisering."}, {"question": "Hvor lang er leveringstiden?", "answer": "8 til 16 uker for maritime modeller på grunn av begrenset produksjon og spesialtilpasninger."}]
 
 export default function Page() {
   const sections = [
@@ -18,7 +18,7 @@ export default function Page() {
     { id: 's2', label: 'Korrosjonsbeskyttelse' },
     { id: 's3', label: 'Leverandorer og priser for offshore' },
     { id: 's4', label: 'Vannforsyning og avlop' },
-    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Sporsmal og svar' }] : []),
+    ...(faqItems.length > 0 ? [{ id: 'faq', label: 'Spørsmål og svar' }] : []),
   ]
 
   return (
@@ -41,28 +41,28 @@ export default function Page() {
             <div className="prose-article">
             <section data-section-id="s0" className="scroll-mt-20 mb-10">
               <h2>Spesielle krav til offshore maskiner</h2>
-              <p>Konstante vibrasjoner fra motorer og bolger, saltholdig luft som korroderer alle metalloverflater, begrenset plass i vaaskerommet, ujevn sjoegang som forskyveer tyngdepunktet, og 24/7 tilgjengelighet uten enkel tilgang til servicepersonell. Disse forholdene gjor at standard landbaserte maskiner havarerer i lopet av maaneder.</p>
-              <p>Offshore maskiner maa sertifiseres etter DNV (Det Norske Veritas) standarder for aa godkjennes for bruk paa plattformer og skip. Sertifiseringen dekker vibrasjon, brannfare, elektrisk sikkerhet og stabilitet. Maskiner uten DNV godkjenning er ikke tillatt.</p>
+              <p>Konstante vibrasjoner fra motorer og bolger, saltholdig luft som korroderer alle metalloverflater, begrenset plass i vaskerommet, ujevn sjøgang som forskyveer tyngdepunktet, og 24/7 tilgjengelighet uten enkel tilgang til servicepersonell. Disse forholdene gjor at standard landbaserte maskiner havarerer i lopet av måneder.</p>
+              <p>Offshore maskiner maa sertifiseres etter DNV (Det Norske Veritas) standarder for aa godkjennes for bruk på plattformer og skip. Sertifiseringen dekker vibrasjon, brannfare, elektrisk sikkerhet og stabilitet. Maskiner uten DNV godkjenning er ikke tillatt.</p>
             </section>
             <section data-section-id="s1" className="scroll-mt-20 mb-10">
               <h2>Vibrasjonsdempet konstruksjon</h2>
-              <p>Ekstra kraftige stotdempere, forsterkede lagre og spesielle festesystemer absorberer vibrasjonene fra plattformen slik at de ikke pavirker maskinens funksjon. Maskinen boltes fast i dekket med marine grade festemidler i rustfritt staal.</p>
-              <p>Sentrifugehastigheten reduseres noe sammenlignet med landbaserte modeller for aa kompensere for sjoegang. Dette gir hoeyere restfuktighet, men er nodvendig for stabil drift. Balansekontrollsystemer avbryter syklusen automatisk dersom vibrasjonen overskrider grenseverdier.</p>
+              <p>Ekstra kraftige stotdempere, førsterkede lagre og spesielle festesystemer absorberer vibrasjonene fra plattformen slik at de ikke påvirker maskinens funksjon. Maskinen boltes fast i dekket med marine grade festemidler i rustfritt stål.</p>
+              <p>Sentrifugehastigheten reduseres noe sammenlignet med landbaserte modeller for aa kompensere for sjøgang. Dette gir høyere restfuktighet, men er nødvendig for stabil drift. Balansekontrollsystemer avbryter syklusen automatisk dersom vibrasjonen overskrider grenseverdier.</p>
             </section>
             <section data-section-id="s2" className="scroll-mt-20 mb-10">
               <h2>Korrosjonsbeskyttelse</h2>
-              <p>Alle utvendige overflater er i rustfritt staal minimum AISI 304, og eksponerte komponenter bruker AISI 316 marine grade. Indre komponenter forsegles mot saltluft med spesielle pakninger og overflatebehandlinger. Elektronikken beskyttes med hermetisk forseglede kretskort og kontakter.</p>
-              <p>Standardmaskiner med pulverlakkerte overflater ruster i lopet av 6 til 12 maaneder i marine miljo. Selv maskiner i vanlig rustfritt staal kan faa korrosjonsskader paa boelter og lagre dersom de ikke er spesifikt designet for maritimt bruk.</p>
+              <p>Alle utvendige overflater er i rustfritt stål minimum AISI 304, og eksponerte komponenter bruker AISI 316 marine grade. Indre komponenter forsegles mot saltluft med spesielle pakninger og overflatebehandlinger. Elektronikken beskyttes med hermetisk forseglede kretskort og kontakter.</p>
+              <p>Standardmaskiner med pulverlakkerte overflater ruster i lopet av 6 til 12 måneder i marine miljo. Selv maskiner i vanlig rustfritt stål kan få korrosjonsskader på bølter og lagre dersom de ikke er spesifikt designet for maritimt bruk.</p>
             </section>
             <section data-section-id="s3" className="scroll-mt-20 mb-10">
               <h2>Leverandorer og priser for offshore</h2>
-              <p>Electrolux Professional Marine serien er den mest utbredte paa norske plattformer. Miele Professional Marine tilbyr kompakte losninger med lav stoey. Podab og Schulthess har egne maritime serier. Priser er 50 til 100 prosent over landbaserte modeller, typisk 70 000 til 150 000 kr per maskin.</p>
-              <p>Leveringstid for offshore maskiner er ofte 8 til 16 uker paa grunn av begrenset produksjon og spesialtilpasninger. Bestill i god tid for offshore plattformer og planlegg service i forbindelse med planlagte vedlikeholdsstopp.</p>
+              <p>Electrolux Professional Marine serien er den mest utbredte på norske plattformer. Miele Professional Marine tilbyr kompakte løsninger med lav støy. Podab og Schulthess har egne maritime serier. Priser er 50 til 100 prosent over landbaserte modeller, typisk 70 000 til 150 000 kr per maskin.</p>
+              <p>Leveringstid for offshore maskiner er ofte 8 til 16 uker på grunn av begrenset produksjon og spesialtilpasninger. Bestill i god tid for offshore plattformer og planlegg service i forbindelse med planlagte vedlikeholdsstopp.</p>
             </section>
             <section data-section-id="s4" className="scroll-mt-20 mb-10">
               <h2>Vannforsyning og avlop</h2>
               <p>Begrenset ferskvannstilgang krever maskiner med lavt vannforbruk. Noen installasjoner bruker avsaltet sjovann som supplementerer ferskvannstanken. Avlop maa handteres etter MARPOL reglene som regulerer utslipp fra skip og plattformer.</p>
-              <p>Grovfiltrering av avlopsvann er pakrevd for aa fjerne fiberrester og partikler for utslipp. Paa noen plattformer ledes avlopsvannet til et behandlingsanlegg om bord for vann og oljesepareres for utslipp.</p>
+              <p>Grovfiltrering av avlopsvann er pakrevd for aa fjerne fiberrester og partikler for utslipp. På noen plattformer ledes avlopsvannet til et behandlingsanlegg om bord for vann og oljesepareres for utslipp.</p>
             </section>
             </div>
 
