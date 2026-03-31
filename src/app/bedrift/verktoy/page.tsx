@@ -16,7 +16,7 @@ const tools = [
   { href: '/bedrift/verktøy/maskinvelger/', icon: IconWasher, title: 'Bedriftsmaskinvelger', desc: 'Svar på 5 spørsmål om bransje, volum og krav. Få skreddersydd anbefaling med maskintype, kapasitet og leverandor.', cta: 'Finn riktig maskin' },
 ]
 
-export default function BedriftVerktøyPage() {
+export default function BedriftVerktoyPage() {
   const sections = [{ id: 'verktøy', label: 'Verktøy for bedrift' }]
   return (
     <div className="container-site py-10">

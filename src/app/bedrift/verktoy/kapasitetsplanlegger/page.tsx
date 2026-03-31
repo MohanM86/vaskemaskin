@@ -39,12 +39,12 @@ export default function KapasitetsplanleggerPage() {
     const sykluserPerDag = sykluserPerTime * bd.vaskerTimer
     const kapasitetPerMaskin = sykluserPerDag * bd.maskinKg
     const antallMaskiner = Math.ceil(dagligMedBuffer / kapasitetPerMaskin)
-    const antallTørketromler = Math.ceil(antallMaskiner * 0.8)
+    const antallTorketromler = Math.ceil(antallMaskiner * 0.8)
 
     // Estimert investering
     const prisPerMaskin = bd.maskinKg <= 10 ? 40000 : bd.maskinKg <= 20 ? 90000 : bd.maskinKg <= 40 ? 180000 : 350000
-    const prisPerTørker = bd.maskinKg <= 10 ? 30000 : bd.maskinKg <= 20 ? 70000 : bd.maskinKg <= 40 ? 140000 : 250000
-    const totalInvestering = antallMaskiner * prisPerMaskin + antallTørketromler * prisPerTørker
+    const prisPerTorker = bd.maskinKg <= 10 ? 30000 : bd.maskinKg <= 20 ? 70000 : bd.maskinKg <= 40 ? 140000 : 250000
+    const totalInvestering = antallMaskiner * prisPerMaskin + antallTorketromler * prisPerTorker
 
     // Anbefalt maskintype
     let maskintype = ''
@@ -57,7 +57,7 @@ export default function KapasitetsplanleggerPage() {
       dagligKg: Math.round(dagligKg),
       dagligMedBuffer: Math.round(dagligMedBuffer),
       antallMaskiner,
-      antallTørketromler,
+      antallTorketromler,
       anbefaltKg: bd.maskinKg,
       maskintype,
       totalInvestering,
@@ -139,7 +139,7 @@ export default function KapasitetsplanleggerPage() {
                   <div className="text-xs text-slate-600 mt-1">vaskemaskiner</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-serif text-3xl font-bold text-aqua-600">{calc.antallTørketromler}</div>
+                  <div className="font-serif text-3xl font-bold text-aqua-600">{calc.antallTorketromler}</div>
                   <div className="text-xs text-slate-600 mt-1">tørketromler</div>
                 </div>
                 <div className="text-center">

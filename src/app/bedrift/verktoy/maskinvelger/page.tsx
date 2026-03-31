@@ -30,19 +30,19 @@ export default function MaskinvelgerPage() {
     const isHelse = bransje === 'sykehus'
     const isHotel = bransje === 'hotell'
     const isBorettslag = bransje === 'borettslag'
-    const isSmå = volum === 'lav'
+    const isSmall = volum === 'lav'
     const isMedium = volum === 'middels'
-    const isHøy = volum === 'hoy'
-    const isMegetHøy = volum === 'meget-hoy'
+    const isHoy = volum === 'hoy'
+    const isMegetHoy = volum === 'meget-hoy'
     const strengtKrav = hygiene === 'streng'
     const lavBudsjett = budsjett === 'lav'
 
     if (isHelse || strengtKrav) {
       return {
         maskintype: 'Barrieremaskin',
-        kapasitet: isMegetHøy ? '36 til 60 kg' : isHøy ? '24 til 36 kg' : '16 til 24 kg',
+        kapasitet: isMegetHoy ? '36 til 60 kg' : isHoy ? '24 til 36 kg' : '16 til 24 kg',
         leverandorer: 'Electrolux Professional, Miele Professional, Girbau',
-        antall: isMegetHøy ? '4 til 8 maskiner eller tunnelsystem' : isHøy ? '2 til 4 maskiner' : '1 til 2 maskiner',
+        antall: isMegetHoy ? '4 til 8 maskiner eller tunnelsystem' : isHoy ? '2 til 4 maskiner' : '1 til 2 maskiner',
         prisrange: '200 000 til 700 000 kr per maskin',
         hygienekrav: 'RABC/EN 14065, termisk desinfeksjon 85 grader, full sporbarhet',
         grunn: 'Helsevesenet krever barrieremaskin med ren og uren sone for aa forhindre kryssmitte. Termisk desinfeksjon på minimum 85 grader er påkrevd.',
@@ -79,7 +79,7 @@ export default function MaskinvelgerPage() {
       }
     }
 
-    if (isSmå) {
+    if (isSmall) {
       return {
         maskintype: 'Kompakt profesjonell vaskemaskin',
         kapasitet: '6,5 til 10 kg',

@@ -24,36 +24,36 @@ export default function VaskeriROIPage() {
 
   // Calculations
   const calc = useMemo(() => {
-    const kgPerÅr = kgPerDag * dagerPerUke * 50 // 50 uker (ferie)
+    const kgPerAar = kgPerDag * dagerPerUke * 50 // 50 uker (ferie)
     const stromFaktor = stromPris / 200 // relativ til 2 kr/kWh
 
     // Outsourcing
-    const outsourcingÅr = kgPerÅr * outsourcingPris
+    const outsourcingAar = kgPerAar * outsourcingPris
 
     // Eget vaskeri
-    const avskrivningÅr = investering / levetidAar
-    const personalÅr = antallAnsatte * lonnskostnad
-    const stromÅr = kgPerÅr * STROM_PER_KG * stromFaktor
-    const vannÅr = kgPerÅr * VANN_PER_KG
-    const kjemikalierÅr = kgPerÅr * VASKEMIDDEL_PER_KG
-    const vedlikeholdÅr = investering * VEDLIKEHOLD_PROSENT
-    const driftÅr = stromÅr + vannÅr + kjemikalierAar
-    const egetTotaltÅr = avskrivningÅr + personalÅr + driftÅr + vedlikeholdAar
+    const avskrivningAar = investering / levetidAar
+    const personalAar = antallAnsatte * lonnskostnad
+    const stromAar = kgPerAar * STROM_PER_KG * stromFaktor
+    const vannAar = kgPerAar * VANN_PER_KG
+    const kjemikalierAar = kgPerAar * VASKEMIDDEL_PER_KG
+    const vedlikeholdAar = investering * VEDLIKEHOLD_PROSENT
+    const driftAar = stromAar + vannAar + kjemikalierAar
+    const egetTotaltAar = avskrivningAar + personalAar + driftAar + vedlikeholdAar
 
     // Per kilo
-    const egetPerKg = egetTotaltÅr / kgPerAar
+    const egetPerKg = egetTotaltAar / kgPerAar
 
     // Besparelse
-    const besparelseÅr = outsourcingÅr - egetTotaltAar
-    const besparelseProsent = Math.round((besparelseÅr / outsourcingAar) * 100)
+    const besparelseAar = outsourcingAar - egetTotaltAar
+    const besparelseProsent = Math.round((besparelseAar / outsourcingAar) * 100)
 
     // Breakeven
-    const nettoPerÅr = outsourcingÅr - (personalÅr + driftÅr + vedlikeholdAar)
-    const breakevenÅr = nettoPerÅr > 0 ? investering / nettoPerÅr : 99
+    const nettoPerAar = outsourcingAar - (personalAar + driftAar + vedlikeholdAar)
+    const breakevenAar = nettoPerAar > 0 ? investering / nettoPerAar : 99
 
     // 10 year total
-    const outsourcing10 = outsourcingÅr * 10
-    const eget10 = (personalÅr + driftÅr + vedlikeholdAar) * 10 + investering
+    const outsourcing10 = outsourcingAar * 10
+    const eget10 = (personalAar + driftAar + vedlikeholdAar) * 10 + investering
 
     return {
       kgPerAar,
@@ -66,10 +66,10 @@ export default function VaskeriROIPage() {
       egetPerKg: Math.round(egetPerKg * 100) / 100,
       besparelseAar: Math.round(besparelseAar),
       besparelseProsent,
-      breakevenAar: Math.round(breakevenÅr * 10) / 10,
+      breakevenAar: Math.round(breakevenAar * 10) / 10,
       outsourcing10: Math.round(outsourcing10),
       eget10: Math.round(eget10),
-      lønner: besparelseÅr > 0,
+      lønner: besparelseAar > 0,
     }
   }, [kgPerDag, dagerPerUke, outsourcingPris, investering, antallAnsatte, lonnskostnad, levetidAar, stromPris])
 
@@ -189,14 +189,14 @@ export default function VaskeriROIPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
               <div className="p-4 rounded-xl bg-aqua-50 border border-aqua-200 text-center">
                 <div className="text-xs text-aqua-700 font-medium mb-1">Årlig besparelse</div>
-                <div className={'font-serif text-2xl font-bold ' + (calc.besparelseÅr > 0 ? 'text-aqua-600' : 'text-red-500')}>
-                  {calc.besparelseÅr > 0 ? '+' : ''}{fmt(calc.besparelseAar)} kr
+                <div className={'font-serif text-2xl font-bold ' + (calc.besparelseAar > 0 ? 'text-aqua-600' : 'text-red-500')}>
+                  {calc.besparelseAar > 0 ? '+' : ''}{fmt(calc.besparelseAar)} kr
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
                 <div className="text-xs text-slate-500 mb-1">Breakeven</div>
                 <div className="font-serif text-2xl font-bold text-slate-800">
-                  {calc.breakevenÅr < 20 ? calc.breakevenÅr + ' aar' : 'Aldri'}
+                  {calc.breakevenAar < 20 ? calc.breakevenAar + ' aar' : 'Aldri'}
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
@@ -212,7 +212,7 @@ export default function VaskeriROIPage() {
               </h3>
               <p className={'text-sm ' + (calc.lønner ? 'text-aqua-700' : 'text-amber-700')}>
                 {calc.lønner
-                  ? 'Med ditt volum på ' + fmt(calc.kgPerAar) + ' kg per år sparer du ' + fmt(calc.besparelseAar) + ' kr årlig (' + calc.besparelseProsent + ' prosent) med eget vaskeri. Investeringen er tilbakebetalt etter ' + calc.breakevenÅr + ' år.'
+                  ? 'Med ditt volum på ' + fmt(calc.kgPerAar) + ' kg per år sparer du ' + fmt(calc.besparelseAar) + ' kr årlig (' + calc.besparelseProsent + ' prosent) med eget vaskeri. Investeringen er tilbakebetalt etter ' + calc.breakevenAar + ' år.'
                   : 'Med gjeldende volum og priser er outsourcing rimeligere. Prøv aa øke volumet, redusere investeringen eller forhandle på outsourcingprisen for aa se om regnestykket endrer seg.'
                 }
               </p>
@@ -255,8 +255,8 @@ export default function VaskeriROIPage() {
             <div className="p-6 rounded-xl border border-slate-200 bg-white">
               <div className="space-y-4">
                 {[1,2,3,4,5,6,7,8,9,10].map(aar => {
-                  const outCum = calc.outsourcingÅr * aar
-                  const egetCum = investering + (calc.egetTotaltÅr - calc.avskrivningAar) * aar
+                  const outCum = calc.outsourcingAar * aar
+                  const egetCum = investering + (calc.egetTotaltAar - calc.avskrivningAar) * aar
                   const maxVal = Math.max(outCum, egetCum)
                   const outPct = (outCum / maxVal) * 100
                   const egetPct = (egetCum / maxVal) * 100
