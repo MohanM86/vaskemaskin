@@ -14,7 +14,7 @@ const bransjeData: Record<Bransje, { label: string; kgPerEnhet: number; enhetNav
   borettslag: { label: 'Borettslag', kgPerEnhet: 0.3, enhetNavn: 'leilighet', defaultEnheter: 60, vaskerTimer: 12, maskinKg: 8, desc: '1 maskin per 15 til 20 leiligheter' },
   vaskeri: { label: 'Vaskeri', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 500, vaskerTimer: 10, maskinKg: 32, desc: 'Direkte kg input' },
   ridesenter: { label: 'Ridesenter', kgPerEnhet: 3, enhetNavn: 'hest', defaultEnheter: 25, vaskerTimer: 4, maskinKg: 14, desc: '3 kg utstyr per hest per uke' },
-  frisør: { label: 'Frisør', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg håndklær per stol per dag' },
+  frisor: { label: 'Frisør', kgPerEnhet: 8, enhetNavn: 'stol', defaultEnheter: 4, vaskerTimer: 6, maskinKg: 8, desc: '8 kg håndklær per stol per dag' },
   offshore: { label: 'Offshore', kgPerEnhet: 2, enhetNavn: 'køy', defaultEnheter: 50, vaskerTimer: 8, maskinKg: 14, desc: '2 kg per køy per døgn' },
   annet: { label: 'Annet', kgPerEnhet: 1, enhetNavn: 'kg daglig volum', defaultEnheter: 100, vaskerTimer: 8, maskinKg: 14, desc: 'Legg inn daglig volum direkte' },
 }
