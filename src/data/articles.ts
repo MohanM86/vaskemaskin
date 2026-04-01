@@ -1142,7 +1142,7 @@ export const articles: Article[] = [
     relatedSlugs: ['komplett-kjopsguide-2026', 'beste-vaskemaskin-2026', 'vaskemaskin-under-5000'],
   },
 
-,
+
   {
     slug: 'smarte-vaskemaskiner-guide',
     title: 'Smarte vaskemaskiner: Hvilke funksjoner er verdt pengene?',
