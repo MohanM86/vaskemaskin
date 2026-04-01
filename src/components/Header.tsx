@@ -161,7 +161,7 @@ export default function Header() {
             {/* Finn butikk */}
             <Link href="/fylker/" className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-aqua-700 hover:bg-slate-50 rounded-lg transition-colors">Finn butikk</Link>
 
-            {/* Sok */}
+            {/* Søk */}
             <SearchModal />
           </nav>
 

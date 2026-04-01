@@ -156,7 +156,7 @@ export default function VaskeriROIPage() {
                     <input type="range" min="5" max="20" value={levetidAar} onChange={e => setLevetidAar(Number(e.target.value))} className="w-full accent-aqua-600" />
                   </div>
                   <div>
-                    <label className="text-sm font-semibold text-slate-700 mb-2 block">Strompris: <span className="text-aqua-600 font-bold">{stromPris} ore/kWh</span></label>
+                    <label className="text-sm font-semibold text-slate-700 mb-2 block">Strømpris: <span className="text-aqua-600 font-bold">{stromPris} ore/kWh</span></label>
                     <input type="range" min="50" max="500" step="10" value={stromPris} onChange={e => setStromPris(Number(e.target.value))} className="w-full accent-aqua-600" />
                   </div>
                 </div>

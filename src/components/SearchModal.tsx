@@ -14,7 +14,7 @@ const typeLabels: Record<string, { label: string; color: string }> = {
   bruksanvisning: { label: 'Bruksanvisning', color: 'bg-emerald-100 text-emerald-700' },
   sammenligning:  { label: 'Sammenligning',  color: 'bg-sky-100 text-sky-700' },
   bedrift:        { label: 'Bedrift',        color: 'bg-slate-100 text-slate-700' },
-  verktoy:        { label: 'Verktoy',        color: 'bg-teal-100 text-teal-700' },
+  verktoy:        { label: 'Verktøy',        color: 'bg-teal-100 text-teal-700' },
 }
 
 export default function SearchModal() {
@@ -64,9 +64,9 @@ export default function SearchModal() {
 
   return (
     <>
-      <button onClick={() => setOpen(true)} className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 hover:border-aqua-300 hover:bg-aqua-50 transition-all text-sm text-slate-500 group" aria-label="Sok">
+      <button onClick={() => setOpen(true)} className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 hover:border-aqua-300 hover:bg-aqua-50 transition-all text-sm text-slate-500 group" aria-label="Søk">
         <IconSearch size={16} />
-        <span className="hidden sm:inline">Sok...</span>
+        <span className="hidden sm:inline">Søk...</span>
         <kbd className="hidden md:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-slate-100 text-[10px] font-mono text-slate-400 border border-slate-200 ml-2 group-hover:bg-aqua-50 group-hover:border-aqua-200">
           <span className="text-xs">&#8984;</span>K
         </kbd>
@@ -85,7 +85,7 @@ export default function SearchModal() {
                 value={query}
                 onChange={e => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Sok etter artikler, merker, feilkoder..."
+                placeholder="Søk etter artikler, merker, feilkoder..."
                 className="flex-1 text-base text-slate-900 placeholder:text-slate-400 outline-none bg-transparent"
                 autoComplete="off"
                 spellCheck={false}
@@ -96,7 +96,7 @@ export default function SearchModal() {
             <div ref={listRef} className="max-h-[50vh] overflow-y-auto overscroll-contain">
               {query.length < 2 ? (
                 <div className="p-4">
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Populaere sider</div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Populære sider</div>
                   {popular.map((item, i) => (
                     <ResultRow key={item.href} item={item} isActive={false} onClose={close} />
                   ))}
@@ -123,7 +123,7 @@ export default function SearchModal() {
               ) : (
                 <div className="p-8 text-center">
                   <p className="text-slate-500 text-sm">Ingen resultater for &laquo;{query}&raquo;</p>
-                  <p className="text-slate-400 text-xs mt-2">Prov et annet sokeord, f.eks. &laquo;Samsung feilkode&raquo; eller &laquo;energimerking&raquo;</p>
+                  <p className="text-slate-400 text-xs mt-2">Prøv et annet søkeord, f.eks. &laquo;Samsung feilkode&raquo; eller &laquo;energimerking&raquo;</p>
                 </div>
               )}
             </div>

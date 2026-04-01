@@ -29,25 +29,25 @@ const bedriftPages: SearchItem[] = [
   { title: 'Tunnelvaskemaskin', href: '/bedrift/maskintyper/tunnelmaskin/', type: 'bedrift', keywords: 'tunnelmaskin kontinuerlig storvasker', desc: 'Kontinuerlig vask for storvaskerier' },
   { title: 'Industrivaskemaskin', href: '/bedrift/maskintyper/industrimaskin/', type: 'bedrift', keywords: 'industrimaskin stor kapasitet 20kg 60kg', desc: 'Store maskiner fra 20 til 120 kg' },
   { title: 'Moppemaskin', href: '/bedrift/maskintyper/moppemaskin/', type: 'bedrift', keywords: 'moppemaskin mopp klut renhold INSTA800', desc: 'Spesialmaskin for mopper og kluter' },
-  { title: 'Torkeskap', href: '/bedrift/maskintyper/torkeskap/', type: 'bedrift', keywords: 'torkeskap uniform arbeidstoy boyle', desc: 'Skaansom torking paa boyler' },
+  { title: 'Torkeskap', href: '/bedrift/maskintyper/torkeskap/', type: 'bedrift', keywords: 'torkeskap uniform arbeidstoy boyle', desc: 'Skånsom tørking på bøyler' },
   { title: 'Miele Professional', href: '/bedrift/leverandorer/miele-professional/', type: 'bedrift', keywords: 'miele professional premium Little Giants', desc: 'Premium profesjonelle maskiner' },
   { title: 'Electrolux Professional', href: '/bedrift/leverandorer/electrolux-professional/', type: 'bedrift', keywords: 'electrolux professional myPRO Line6000', desc: 'Bredeste utvalget i Norden' },
-  { title: 'Jensen Group', href: '/bedrift/leverandorer/jensen-group/', type: 'bedrift', keywords: 'jensen tunnel storvasker', desc: 'Verdensledende paa tunnelsystemer' },
+  { title: 'Jensen Group', href: '/bedrift/leverandorer/jensen-group/', type: 'bedrift', keywords: 'jensen tunnel storvasker', desc: 'Verdensledende på tunnelsystemer' },
   { title: 'Girbau', href: '/bedrift/leverandorer/girbau/', type: 'bedrift', keywords: 'girbau spansk industri', desc: 'Spansk kvalitet for industrien' },
-  { title: 'Podab', href: '/bedrift/leverandorer/podab/', type: 'bedrift', keywords: 'podab torkeskap fellesvaskeri SmartWash', desc: 'Nordisk spesialist paa fellesvaskerier' },
+  { title: 'Podab', href: '/bedrift/leverandorer/podab/', type: 'bedrift', keywords: 'podab torkeskap fellesvaskeri SmartWash', desc: 'Nordisk spesialist på fellesvaskerier' },
   { title: 'Primus Alliance', href: '/bedrift/leverandorer/primus/', type: 'bedrift', keywords: 'primus alliance robust myntvaskeri', desc: 'Industrielle vaskemaskiner' },
   { title: 'LG Commercial', href: '/bedrift/leverandorer/lg-commercial/', type: 'bedrift', keywords: 'lg commercial AI Direct Drive', desc: 'Profesjonelle maskiner med AI motor' },
   { title: 'Schulthess', href: '/bedrift/leverandorer/schulthess/', type: 'bedrift', keywords: 'schulthess sveitsisk premium kvalitet', desc: 'Sveitsisk presisjon' },
   { title: 'Vaskeri ROI kalkulator', href: '/bedrift/verktoy/vaskeri-roi/', type: 'verktoy', keywords: 'ROI kalkulator lonnsom outsourcing', desc: 'Beregn lønnsomheten av eget vaskeri' },
   { title: 'Kapasitetsplanlegger', href: '/bedrift/verktoy/kapasitetsplanlegger/', type: 'verktoy', keywords: 'kapasitet planlegger antall maskiner', desc: 'Finn riktig antall maskiner' },
-  { title: 'Bedriftsmaskinvelger', href: '/bedrift/verktoy/maskinvelger/', type: 'verktoy', keywords: 'maskinvelger quiz anbefaling bedrift', desc: 'Svar paa 4 sporsmaal og faa anbefaling' },
+  { title: 'Bedriftsmaskinvelger', href: '/bedrift/verktoy/maskinvelger/', type: 'verktoy', keywords: 'maskinvelger quiz anbefaling bedrift', desc: 'Svar på 4 spørsmål og få anbefaling' },
 ]
 
 const verktoyPages: SearchItem[] = [
-  { title: 'Energikalkulator', href: '/verktoy/energikalkulator/', type: 'verktoy', keywords: 'energi kalkulator strøm kwh', desc: 'Beregn stromkostnad for vaskemaskinen' },
+  { title: 'Energikalkulator', href: '/verktoy/energikalkulator/', type: 'verktoy', keywords: 'energi kalkulator strøm kwh', desc: 'Beregn strømkostnad for vaskemaskinen' },
   { title: 'Vaskemaskinvelger', href: '/verktoy/vaskemaskinvelger/', type: 'verktoy', keywords: 'velger quiz anbefaling test', desc: 'Finn riktig vaskemaskin for deg' },
   { title: 'Kapasitetskalkulator', href: '/verktoy/kapasitetskalkulator/', type: 'verktoy', keywords: 'kapasitet kilo familie storrelse', desc: 'Hvor stor maskin trenger du?' },
-  { title: 'Sammenlign pris', href: '/verktoy/sammenlign-pris/', type: 'verktoy', keywords: 'sammenlign pris tilbud', desc: 'Sammenlign priser paa vaskemaskiner' },
+  { title: 'Sammenlign pris', href: '/verktoy/sammenlign-pris/', type: 'verktoy', keywords: 'sammenlign pris tilbud', desc: 'Sammenlign priser på vaskemaskiner' },
   { title: 'Reparere eller bytte?', href: '/verktoy/reparere-eller-bytte/', type: 'verktoy', keywords: 'reparere bytte gammel ny lonnsom', desc: 'Lønner det seg aa reparere?' },
 ]
 
