@@ -151,40 +151,6 @@ function IconSmartVaskemaskin({ size = 24, color = 'currentColor' }: { size?: nu
   )
 }
 
-function IconTorketrommel({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="3" />
-      <circle cx="12" cy="13" r="6" />
-      <path d="M9 13c0-1.5 1.5-3 3-1.5s3 0 3 1.5" />
-      <circle cx="7" cy="6" r="1" fill={color} />
-    </svg>
-  )
-}
-
-function IconProgrammer({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <path d="M3 9h18" />
-      <path d="M9 21V9" />
-      <circle cx="15" cy="15" r="2" />
-    </svg>
-  )
-}
-
-function IconKompakt({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="6" y="4" width="12" height="16" rx="2" />
-      <circle cx="12" cy="13" r="3" />
-      <path d="M9 7h6" />
-      <path d="M2 20h20" />
-    </svg>
-  )
-}
-
-
 function IconSmart({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
   return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" /><circle cx="12" cy="14" r="3" /><line x1="12" y1="6" x2="12" y2="6.01" /></svg>)
 }

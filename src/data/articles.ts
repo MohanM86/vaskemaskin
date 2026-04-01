@@ -1335,7 +1335,7 @@ export const articles: Article[] = [
     metaTitle: 'Vaskemaskin smarthjem 2026 | Google, Alexa og HomeKit',
     metaDescription: 'Slik integrerer du vaskemaskinen i smarthjemmet ditt. Kompatibilitet med Google Home, Amazon Alexa og Apple HomeKit forklart.',
     category: 'smart-vaskemaskin',
-    excerpt: 'Vil du si 'Hei Google, start vasken' og at lyset på vaskerommet slås på automatisk når maskinen er ferdig? Slik gjør du det.',
+    excerpt: 'Vil du si Hei Google, start vasken og at lyset på vaskerommet slås på automatisk når maskinen er ferdig? Slik gjør du det.',
     publishedDate: '2026-03-22',
     updatedDate: '2026-03-30',
     readingTime: '7 min',
