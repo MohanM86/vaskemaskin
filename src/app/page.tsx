@@ -61,7 +61,7 @@ export default function HomePage() {
               </div>
               <div className="flex gap-8 pt-8 mt-2">
                 {[
-                  { n: '480+', l: 'sider' },
+                  { n: '500+', l: 'sider' },
                   { n: String(brands.length), l: 'merker' },
                   { n: String(errorBrands.reduce((s, b) => s + b.codes.length, 0)), l: 'feilkoder' },
                   { n: String(stores.length), l: 'butikker' },

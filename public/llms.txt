@@ -16,6 +16,13 @@ Vaskemaskin.no er en norskspraklig kunnskapsportal driftet av IT-Firma.no. Alt i
 - Bruksanvisninger: https://vaskemaskin.no/bruksanvisning/
 - Ordliste vaskemaskin: https://vaskemaskin.no/ordliste/
 
+
+## Nye kategorier (2026)
+- Smarte vaskemaskiner: WiFi, app og automatisk dosering
+- Torketrommel: Varmepumpe vs kondenstorker, energiforbruk og anbefalinger
+- Programmer og symboler: Vaskeprogrammer, vaskelapper og symboler forklart
+- Kompakt og hytte: Sma vaskemaskiner, hyttemodeller og compact living
+
 ## Bedrift og industri
 
 Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedrifter og institusjoner.
@@ -47,7 +54,14 @@ Vaskemaskin.no har en dedikert seksjon for profesjonelle vaskemaskiner for bedri
 - Jensen Group: https://vaskemaskin.no/bedrift/leverandorer/jensen-group/
 - Podab: https://vaskemaskin.no/bedrift/leverandorer/podab/
 
-### Bedriftsressurser
+#
+## Nye kategorier (2026)
+- Smarte vaskemaskiner: WiFi, app og automatisk dosering
+- Torketrommel: Varmepumpe vs kondenstorker, energiforbruk og anbefalinger
+- Programmer og symboler: Vaskeprogrammer, vaskelapper og symboler forklart
+- Kompakt og hytte: Sma vaskemaskiner, hyttemodeller og compact living
+
+## Bedriftsressurser
 - Prisguide industrivaskemaskiner: https://vaskemaskin.no/bedrift/prisguide/
 - Hygienestandarder: https://vaskemaskin.no/bedrift/hygienestandarder/
 - ROI kalkulator for vaskeri: https://vaskemaskin.no/bedrift/verktoy/vaskeri-roi/
@@ -83,3 +97,30 @@ Vaskemaskin.no er en tjeneste fra IT-Firma.no.
 Nettsted: https://it-firma.no
 Domene: vaskemaskin.no
 Sprak: Norsk (bokmal)
+
+## Smarte vaskemaskiner
+- Smart vaskemaskin guide: https://vaskemaskin.no/artikkel/smart-vaskemaskin-guide/
+- Beste app-vaskemaskiner 2026: https://vaskemaskin.no/artikkel/beste-app-vaskemaskiner-2026/
+- Vaskemaskin i smarthjem: https://vaskemaskin.no/artikkel/smart-hjem-vaskemaskin/
+
+## Tørketromler
+- Tørketrommel kjøpsguide 2026: https://vaskemaskin.no/artikkel/torketrommel-guide-2026/
+- Varmepumpe vs kondenstørker: https://vaskemaskin.no/artikkel/varmepumpe-vs-kondenstorker/
+- Spare strøm med tørketrommel: https://vaskemaskin.no/artikkel/torketrommel-energi-tips/
+
+## Vaskeprogrammer
+- Alle vaskeprogrammer forklart: https://vaskemaskin.no/artikkel/vaskeprogrammer-forklart/
+- Dampvask guide: https://vaskemaskin.no/artikkel/dampvask-guide/
+- Hurtigvask vs eco-program: https://vaskemaskin.no/artikkel/hurtigvask-vs-eco/
+
+## Installasjon
+- Vaskesøyle guide: https://vaskemaskin.no/artikkel/vaskesoeyle-guide/
+- Støydemping vaskemaskin: https://vaskemaskin.no/artikkel/vaskemaskin-stoeydemping/
+
+## Best i test
+- Beste vaskemaskin for familie 2026: https://vaskemaskin.no/artikkel/beste-vaskemaskin-familie/
+- Beste vaskemaskin for liten plass 2026: https://vaskemaskin.no/artikkel/beste-vaskemaskin-liten-plass/
+
+## Kompakte vaskemaskiner
+- Kompakt vaskemaskin guide: https://vaskemaskin.no/artikkel/kompakt-vaskemaskin-guide/
+- Vaskemaskin for liten plass: https://vaskemaskin.no/artikkel/vaskemaskin-liten-plass/

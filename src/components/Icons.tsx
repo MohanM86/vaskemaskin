@@ -138,6 +138,77 @@ function IconOkonomi({ size = 24, color = 'currentColor' }: { size?: number; col
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
 }
 
+
+function IconSmartVaskemaskin({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="3" />
+      <circle cx="12" cy="14" r="4" />
+      <path d="M8 6h8" />
+      <path d="M15 2v2" />
+      <circle cx="7" cy="6" r="1" fill={color} />
+    </svg>
+  )
+}
+
+function IconTorketrommel({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="3" />
+      <circle cx="12" cy="13" r="6" />
+      <path d="M9 13c0-1.5 1.5-3 3-1.5s3 0 3 1.5" />
+      <circle cx="7" cy="6" r="1" fill={color} />
+    </svg>
+  )
+}
+
+function IconProgrammer({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M3 9h18" />
+      <path d="M9 21V9" />
+      <circle cx="15" cy="15" r="2" />
+    </svg>
+  )
+}
+
+function IconKompakt({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="6" y="4" width="12" height="16" rx="2" />
+      <circle cx="12" cy="13" r="3" />
+      <path d="M9 7h6" />
+      <path d="M2 20h20" />
+    </svg>
+  )
+}
+
+
+function IconSmart({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" /><circle cx="12" cy="14" r="3" /><line x1="12" y1="6" x2="12" y2="6.01" /></svg>)
+}
+
+function IconTorketrommel({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="3" /><circle cx="12" cy="13" r="6" /><path d="M9 13c1-1 2-1 3 0s2 1 3 0" /><line x1="6" y1="6" x2="6" y2="6.01" /></svg>)
+}
+
+function IconProgrammer({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /><circle cx="12" cy="12" r="3" /></svg>)
+}
+
+function IconInstallasjon({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg>)
+}
+
+function IconBestITest({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>)
+}
+
+function IconKompakt({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /><line x1="4" y1="12" x2="8" y2="12" /><line x1="16" y1="12" x2="20" y2="12" /></svg>)
+}
+
 const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }>> = {
   'toppmatere': IconToppmater,
   'frontmatere': IconFrontmater,
@@ -148,6 +219,10 @@ const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }
   'vaskeguide': IconVaskeguide,
   'allergi-og-hygiene': IconAllergi,
   'okonomi': IconOkonomi,
+  'smart-vaskemaskin': IconSmartVaskemaskin,
+  'torketrommel': IconTorketrommel,
+  'programmer-og-symboler': IconProgrammer,
+  'kompakt-og-hytte': IconKompakt,
 }
 
 export function CategoryIcon({ slug, size = 24, color = 'currentColor' }: { slug: string; size?: number; color?: string }) {
