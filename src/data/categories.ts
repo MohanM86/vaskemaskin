@@ -99,7 +99,7 @@ export const categories: Category[] = [
     metaDescription: 'Finn de beste vaskemaskinene til lavest pris. Budsjettmodeller, strømbesparing og tips for Black Friday.',
     intro: 'Du trenger ikke bruke en formue på en god vaskemaskin. Denne kategorien hjelper deg å finne det beste valget for budsjettet ditt, enten du jakter på budsjettmodeller under fem tusen kroner eller vil vite hvordan du sparer strøm med maskinen du allerede har.',
     articleSlugs: ['vaskemaskin-under-5000', 'spare-strom-vaskemaskin', 'black-friday-vaskemaskin', 'reklamasjon-garanti-vaskemaskin', 'naar-bytte-vaskemaskin'],
-  },,
+  },
 
   {
     slug: 'smart-vaskemaskin',
