@@ -175,6 +175,11 @@ function IconKompakt({ size = 24, color = 'currentColor' }: { size?: number; col
   return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /><line x1="4" y1="12" x2="8" y2="12" /><line x1="16" y1="12" x2="20" y2="12" /></svg>)
 }
 
+
+function IconGjenbruk({ size = 24, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 4 23 10 17 10" /><polyline points="1 20 1 14 7 14" /><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" /></svg>)
+}
+
 const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }>> = {
   'toppmatere': IconToppmater,
   'frontmatere': IconFrontmater,
@@ -185,10 +190,13 @@ const categoryIconMap: Record<string, React.FC<{ size?: number; color?: string }
   'vaskeguide': IconVaskeguide,
   'allergi-og-hygiene': IconAllergi,
   'okonomi': IconOkonomi,
-  'smart-vaskemaskin': IconSmartVaskemaskin,
+  'smart-vaskemaskin': IconSmart,
   'torketrommel': IconTorketrommel,
-  'programmer-og-symboler': IconProgrammer,
-  'kompakt-og-hytte': IconKompakt,
+  'vaskeprogrammer': IconProgrammer,
+  'installasjon': IconInstallasjon,
+  'best-i-test': IconBestITest,
+  'kompakt': IconKompakt,
+  'gjenbruk-og-miljo': IconGjenbruk,
 }
 
 export function CategoryIcon({ slug, size = 24, color = 'currentColor' }: { slug: string; size?: number; color?: string }) {

@@ -124,3 +124,8 @@ Sprak: Norsk (bokmal)
 ## Kompakte vaskemaskiner
 - Kompakt vaskemaskin guide: https://vaskemaskin.no/artikkel/kompakt-vaskemaskin-guide/
 - Vaskemaskin for liten plass: https://vaskemaskin.no/artikkel/vaskemaskin-liten-plass/
+
+## Gjenbruk og miljø
+- Resirkulere vaskemaskin: https://vaskemaskin.no/artikkel/resirkulere-vaskemaskin/
+- Kjøpe brukt vaskemaskin guide: https://vaskemaskin.no/artikkel/brukt-vaskemaskin-guide/
+- Miljøvennlig klesvask: https://vaskemaskin.no/artikkel/miljovennlig-vask/

@@ -161,6 +161,16 @@ export const categories: Category[] = [
     intro: 'Ikke alle har plass til en fullstørrelse vaskemaskin. Kompakte modeller med 40 til 50 cm bredde, benkevaskemaskiner og hyttevaskemaskiner gir deg full funksjonalitet i en mindre pakke. Denne kategorien hjelper deg å finne en maskin som passer plassen du har tilgjengelig.',
     articleSlugs: ["vaskemaskin-paa-hytta", "kompakt-vaskemaskin-guide", "vaskemaskin-liten-plass"],
   },
+  {
+    slug: 'gjenbruk-og-miljo',
+    name: 'Gjenbruk og miljø',
+    shortName: 'Gjenbruk',
+    description: 'Resirkulering, EE-avfall, bærekraft og miljøvennlig vasking.',
+    metaTitle: 'Gjenbruk vaskemaskin 2026 | Resirkulering, EE-avfall og bærekraft',
+    metaDescription: 'Alt om gjenbruk og resirkulering av vaskemaskiner i Norge. EE-avfall, innlevering, bærekraftig vask og miljøvennlige valg.',
+    intro: 'En vaskemaskin inneholder verdifulle materialer som stål, aluminium, kobber og plast som kan gjenvinnes og brukes i nye produkter. I Norge har vi gode ordninger for innlevering av EE-avfall, og alle elektronikkforhandlere er lovpålagt å ta imot gammel elektronikk gratis. Denne kategorien hjelper deg å kvitte deg med den gamle maskinen på riktig måte, vurdere om brukt maskin er et godt kjøp, og vaske mer miljøvennlig i hverdagen.',
+    articleSlugs: ["resirkulere-vaskemaskin", "brukt-vaskemaskin-guide", "miljovennlig-vask"],
+  },
 ]
 
 export function getCategoryBySlug(slug: string): Category | undefined {
